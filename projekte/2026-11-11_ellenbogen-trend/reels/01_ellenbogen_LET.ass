@@ -22,13 +22,14 @@ Style: Form,Bebas Neue,20,&H00FFFFFF,&H00FFFFFF,&H00000000,&H00000000,0,0,0,0,10
 Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
 Dialogue: 5,0:00:00.00,0:00:01.33,Trend,,0,0,0,,{\an5\pos(540,1180)\blur1.2\fs46\fscx85\fscy85\t(0,100,\fscx105\fscy105)\t(100,180,\fscx100\fscy100)\fad(40,120)}„Ich hab Schmerzen außen am Ellenbogen!!!“
 Dialogue: 4,0:00:01.33,0:00:02.80,Trend,,0,0,0,,{\an5\pos(540,960)\blur1.2\fs50\fad(60,0)}„Wo?“
-Dialogue: 4,0:00:02.80,0:00:04.37,Trend,,0,0,0,,{\an5\pos(540,960)\blur1.2\fs46\fad(60,0)}*zeigt auf die Außenseite
-Dialogue: 4,0:00:02.80,0:00:04.37,Trend,,0,0,0,,{\an5\pos(540,1016)\blur1.2\fs46\fad(60,0)}vom Ellenbogen*
+Dialogue: 4,0:00:02.80,0:00:04.37,Trend,,0,0,0,,{\an5\pos(540,960)\blur1.2\fs46\fad(60,0)}*zeigt genau auf die Stelle
+Dialogue: 4,0:00:02.80,0:00:04.37,Trend,,0,0,0,,{\an5\pos(540,1016)\blur1.2\fs46\fad(60,0)}außen am Ellenbogen*
 Dialogue: 4,0:00:04.37,0:00:05.77,Trend,,0,0,0,,{\an5\pos(540,1150)\blur1.2\fs50\fad(60,0)}„Laterale Ellenbogen-
 Dialogue: 4,0:00:04.37,0:00:05.77,Trend,,0,0,0,,{\an5\pos(540,1211)\blur1.2\fs50\fad(60,0)}Tendinopathie“
-Dialogue: 4,0:00:05.77,0:00:08.20,Trend,,0,0,0,,{\an5\pos(540,960)\blur1.2\fs46\fad(60,0)}Handgelenk strecken
-Dialogue: 4,0:00:05.77,0:00:08.20,Trend,,0,0,0,,{\an5\pos(540,1016)\blur1.2\fs46\fad(60,0)}isometrisch · 5 × 45 Sek halten
-Dialogue: 4,0:00:08.20,0:00:11.30,Trend,,0,0,0,,{\an5\pos(540,960)\blur1.2\fs46\fad(60,0)}Handgelenk strecken
-Dialogue: 4,0:00:08.20,0:00:11.30,Trend,,0,0,0,,{\an5\pos(540,1016)\blur1.2\fs46\fad(60,0)}langsam · 3 × 15
-Dialogue: 4,0:00:11.30,0:00:14.70,Trend,,0,0,0,,{\an5\pos(540,520)\blur1.2\fs46\fad(60,0)}Schulter-Außenrotation
-Dialogue: 4,0:00:11.30,0:00:14.70,Trend,,0,0,0,,{\an5\pos(540,576)\blur1.2\fs46\fad(60,0)}in Seitlage · 3 × 12
+Dialogue: 4,0:00:05.77,0:00:08.20,Trend,,0,0,0,,{\an5\pos(540,960)\blur1.2\fs46\fad(60,0)}Isometrisch halten
+Dialogue: 4,0:00:05.77,0:00:08.20,Trend,,0,0,0,,{\an5\pos(540,1016)\blur1.2\fs46\fad(60,0)}Handgelenk gestreckt · 5 × 45 Sek
+Dialogue: 4,0:00:08.20,0:00:11.30,Trend,,0,0,0,,{\an5\pos(540,960)\blur1.2\fs46\fad(60,0)}Pro- & Supination
+Dialogue: 4,0:00:08.20,0:00:11.30,Trend,,0,0,0,,{\an5\pos(540,1016)\blur1.2\fs46\fad(60,0)}mit Kurzhantel · 3 × 15 langsam
+Dialogue: 4,0:00:11.30,0:00:14.70,Trend,,0,0,0,,{\an5\pos(540,520)\blur1.2\fs46\fad(60,0)}Außenrotation in Seitlage
+Dialogue: 4,0:00:11.30,0:00:14.70,Trend,,0,0,0,,{\an5\pos(540,576)\blur1.2\fs46\fad(60,0)}exzentrisch: langsam zurück
+Dialogue: 4,0:00:11.30,0:00:14.70,Trend,,0,0,0,,{\an5\pos(540,632)\blur1.2\fs46\fad(60,0)}in die Neutralstellung · 3 × 10

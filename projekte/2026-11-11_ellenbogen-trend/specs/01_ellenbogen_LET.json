@@ -3,9 +3,9 @@
   "ausgabe": "../reels/01_ellenbogen_LET.mp4",
   "uebung": true,
   "skript": {
-    "hook": "Patient hält sich den Ellenbogen (Zoom drauf): 'Ich hab Schmerzen außen am Ellenbogen!!!'",
-    "aufbau": "Physio: 'Wo?' → Patient zeigt auf die Außenseite → Physio erkennt das Bild: laterale Ellenbogen-Tendinopathie (Schrei/Trompete).",
-    "payoff": "3 Übungen: Handgelenk strecken isometrisch → Handgelenk strecken langsam mit Gewicht → Schulter-Außenrotation in Seitlage."
+    "hook": "Patient schüttelt den Arm (Zoom drauf): 'Ich hab Schmerzen außen am Ellenbogen!!!'",
+    "aufbau": "Physio: 'Wo?' → Patient zeigt punktgenau auf die Außenseite → Physio erkennt das Bild: laterale Ellenbogen-Tendinopathie (Schrei).",
+    "payoff": "3 Übungen: isometrisch halten (Handgelenk gestreckt) → Pro- & Supination mit Kurzhantel → Außenrotation in Seitlage mit Fokus auf exzentrisches, langsames Zurückführen in die Neutralstellung."
   },
   "hook": {
     "stil": "trend",
@@ -16,18 +16,18 @@
     "groesse": 46,
     "animation": "pop",
     "punch_in": false,
-    "visuell": "Schneller Zoom auf den Ellenbogen (Hand hält die Außenseite) und wieder raus, wie bei der Knie-Version"
+    "visuell": "André schüttelt den schmerzenden Arm, kurzer Zoom drauf und wieder raus"
   },
   "segmente": [
     {
-      "quelle": "../roh/IMG_4126.mov",
-      "start": 4.1,
-      "ende": 5.43,
+      "quelle": "../roh/IMG_4127.mov",
+      "start": 3.75,
+      "ende": 5.08,
       "ton": false,
       "zoom_puls": {
-        "x": 0.48,
-        "y": 0.41,
-        "staerke": 0.8,
+        "x": 0.5,
+        "y": 0.45,
+        "staerke": 0.6,
         "ein": 0.15,
         "halten": 0.5,
         "aus": 0.3
@@ -40,9 +40,9 @@
       "ton": false
     },
     {
-      "quelle": "../roh/IMG_4127.mov",
-      "start": 3.9,
-      "ende": 5.47,
+      "quelle": "../roh/IMG_4126.mov",
+      "start": 4.0,
+      "ende": 5.57,
       "ton": false
     },
     {
@@ -59,14 +59,14 @@
     },
     {
       "quelle": "../roh/IMG_4129.mov",
-      "start": 3.95,
-      "ende": 7.05,
+      "start": 3.5,
+      "ende": 6.6,
       "ton": false
     },
     {
       "quelle": "../roh/IMG_4130.mov",
-      "start": 0.9,
-      "ende": 4.3,
+      "start": 0.0,
+      "ende": 3.4,
       "ton": false
     }
   ],
@@ -83,7 +83,7 @@
     },
     {
       "stil": "trend",
-      "text": "\\*zeigt auf die Außenseite\nvom Ellenbogen\\*",
+      "text": "\\*zeigt genau auf die Stelle\naußen am Ellenbogen\\*",
       "x": 540,
       "y": 960,
       "start": 2.8,
@@ -101,7 +101,7 @@
     },
     {
       "stil": "trend",
-      "text": "Handgelenk strecken\nisometrisch · 5 × 45 Sek halten",
+      "text": "Isometrisch halten\nHandgelenk gestreckt · 5 × 45 Sek",
       "x": 540,
       "y": 960,
       "start": 5.77,
@@ -110,7 +110,7 @@
     },
     {
       "stil": "trend",
-      "text": "Handgelenk strecken\nlangsam · 3 × 15",
+      "text": "Pro- & Supination\nmit Kurzhantel · 3 × 15 langsam",
       "x": 540,
       "y": 960,
       "start": 8.2,
@@ -119,7 +119,7 @@
     },
     {
       "stil": "trend",
-      "text": "Schulter-Außenrotation\nin Seitlage · 3 × 12",
+      "text": "Außenrotation in Seitlage\nexzentrisch: langsam zurück\nin die Neutralstellung · 3 × 10",
       "x": 540,
       "y": 520,
       "start": 11.3,
@@ -158,7 +158,8 @@
   ],
   "hinweise": [
     "Sound 1:1 aus der Vorlage (wie beim Knie). Besser in Instagram über 'Audio verwenden' den Original-Sound wählen.",
-    "Physio-Clips ('Wo?' und Schrei) identisch zur Knie-Version, Hand am Mund exakt beim Schrei-Einsatz (4,80 s).",
-    "Schnitte 1:1 wie in der Vorlage (1,33 / 2,80 / 4,37 / 5,77 / 8,20 / 11,30 s), Ende bei 14,7 s mit der Musik."
+    "Schnitte 1:1 wie in der Vorlage (1,33 / 2,80 / 4,37 / 5,77 / 8,20 / 11,30 s), Ende bei 14,7 s mit der Musik.",
+    "Physio-Clips ('Wo?' und Schrei) wie in der Knie-Version, Hand am Mund exakt beim Schrei-Einsatz (4,80 s).",
+    "Außenrotation: Clip startet oben in der Außenrotation, damit das langsame exzentrische Ablassen (ca. 1,5 s) und das Halten in Neutral komplett zu sehen sind."
   ]
 }

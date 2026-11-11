@@ -13,13 +13,13 @@ Speicher dir das Reel für dein nächstes Training.
 
 ## Hooks
 - Audio-Hook: kein Soundeffekt, Trend-Sound in Instagram darunterlegen
-- Visueller Hook: Schneller Zoom auf den Ellenbogen (Hand hält die Außenseite) und wieder raus, wie bei der Knie-Version
+- Visueller Hook: André schüttelt den schmerzenden Arm, kurzer Zoom drauf und wieder raus
 - Text-Hook: „Ich hab Schmerzen außen am Ellenbogen!!!“
 
 ## Skript
-- Hook: Patient hält sich den Ellenbogen (Zoom drauf): 'Ich hab Schmerzen außen am Ellenbogen!!!'
-- Aufbau: Physio: 'Wo?' → Patient zeigt auf die Außenseite → Physio erkennt das Bild: laterale Ellenbogen-Tendinopathie (Schrei/Trompete).
-- Payoff: 3 Übungen: Handgelenk strecken isometrisch → Handgelenk strecken langsam mit Gewicht → Schulter-Außenrotation in Seitlage.
+- Hook: Patient schüttelt den Arm (Zoom drauf): 'Ich hab Schmerzen außen am Ellenbogen!!!'
+- Aufbau: Physio: 'Wo?' → Patient zeigt punktgenau auf die Außenseite → Physio erkennt das Bild: laterale Ellenbogen-Tendinopathie (Schrei).
+- Payoff: 3 Übungen: isometrisch halten (Handgelenk gestreckt) → Pro- & Supination mit Kurzhantel → Außenrotation in Seitlage mit Fokus auf exzentrisches, langsames Zurückführen in die Neutralstellung.
 
 ## Aussagen & Quellen
 - "Schmerz außen am Ellenbogen passt oft zu einer lateralen Ellenbogen-Tendinopathie; das ist der heute akzeptierte Fachbegriff statt 'Epikondylitis' oder 'Tennisarm'." -> Bateman M et al. Development of a core outcome set for lateral elbow tendinopathy (COS-LET) using best available evidence and an international consensus process. Br J Sports Med 2022;56(12):657–666 [konsens] - Bateman: 'Historically ... lateral epicondylitis or tennis elbow, but the current accepted description is lateral elbow tendinopathy (LET).'
@@ -27,5 +27,6 @@ Speicher dir das Reel für dein nächstes Training.
 
 ## Hinweise fuer Andre
 - Sound 1:1 aus der Vorlage (wie beim Knie). Besser in Instagram über 'Audio verwenden' den Original-Sound wählen.
-- Physio-Clips ('Wo?' und Schrei) identisch zur Knie-Version, Hand am Mund exakt beim Schrei-Einsatz (4,80 s).
 - Schnitte 1:1 wie in der Vorlage (1,33 / 2,80 / 4,37 / 5,77 / 8,20 / 11,30 s), Ende bei 14,7 s mit der Musik.
+- Physio-Clips ('Wo?' und Schrei) wie in der Knie-Version, Hand am Mund exakt beim Schrei-Einsatz (4,80 s).
+- Außenrotation: Clip startet oben in der Außenrotation, damit das langsame exzentrische Ablassen (ca. 1,5 s) und das Halten in Neutral komplett zu sehen sind.
