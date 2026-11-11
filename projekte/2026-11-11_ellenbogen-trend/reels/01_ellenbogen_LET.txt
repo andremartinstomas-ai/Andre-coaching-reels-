@@ -1,0 +1,31 @@
+# Außen am Ellenbogen tut's weh: laterale Ellenbogen-Tendinopathie (Trend-Format)  (14.7 s)
+
+## Caption (zum Posten)
+Schmerz außen am Ellenbogen, vor allem beim Greifen, Tragen oder Tippen? Das passt oft zu einer lateralen Ellenbogen-Tendinopathie (früher 'Tennisarm'). Eine Ferndiagnose ist das aber nicht, lass deinen Ellenbogen untersuchen.
+
+3 Übungen, die du ausprobieren kannst, von leicht nach schwer.
+
+Wenn etwas wehtut, nicht tiefer in die Bewegung gehen.
+
+Speicher dir das Reel für dein nächstes Training.
+
+#tennisarm #ellenbogenschmerzen #tendinopathie #physiotherapie #armtraining
+
+## Hooks
+- Audio-Hook: kein Soundeffekt, Trend-Sound in Instagram darunterlegen
+- Visueller Hook: Schneller Zoom auf den Ellenbogen (Hand hält die Außenseite) und wieder raus, wie bei der Knie-Version
+- Text-Hook: „Ich hab Schmerzen außen am Ellenbogen!!!“
+
+## Skript
+- Hook: Patient hält sich den Ellenbogen (Zoom drauf): 'Ich hab Schmerzen außen am Ellenbogen!!!'
+- Aufbau: Physio: 'Wo?' → Patient zeigt auf die Außenseite → Physio erkennt das Bild: laterale Ellenbogen-Tendinopathie (Schrei/Trompete).
+- Payoff: 3 Übungen: Handgelenk strecken isometrisch → Handgelenk strecken langsam mit Gewicht → Schulter-Außenrotation in Seitlage.
+
+## Aussagen & Quellen
+- "Schmerz außen am Ellenbogen passt oft zu einer lateralen Ellenbogen-Tendinopathie; das ist der heute akzeptierte Fachbegriff statt 'Epikondylitis' oder 'Tennisarm'." -> Bateman M et al. Development of a core outcome set for lateral elbow tendinopathy (COS-LET) using best available evidence and an international consensus process. Br J Sports Med 2022;56(12):657–666 [konsens] - Bateman: 'Historically ... lateral epicondylitis or tennis elbow, but the current accepted description is lateral elbow tendinopathy (LET).'
+- "Aktive Kräftigung des Arms ist bei lateraler Ellenbogen-Tendinopathie Erstlinientherapie und besser als passives Abwarten." -> Karanasios S, Korakakis V, Moutzouri M et al. Exercise interventions in lateral elbow tendinopathy have better outcomes than passive interventions, but the effects are small: a systematic review and meta-analysis of 2123 subjects in 30 trials. Br J Sports Med 2021;55(9):477–485 [belegt] - 30 RCTs, 2123 Patienten; Effekte klein, Evidenz niedrig. Exzentrik nicht besser als andere Kräftigung (Chen & Baker 2021).
+
+## Hinweise fuer Andre
+- Sound 1:1 aus der Vorlage (wie beim Knie). Besser in Instagram über 'Audio verwenden' den Original-Sound wählen.
+- Physio-Clips ('Wo?' und Schrei) identisch zur Knie-Version, Hand am Mund exakt beim Schrei-Einsatz (4,80 s).
+- Schnitte 1:1 wie in der Vorlage (1,33 / 2,80 / 4,37 / 5,77 / 8,20 / 11,30 s), Ende bei 14,7 s mit der Musik.

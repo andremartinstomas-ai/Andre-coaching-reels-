@@ -1,0 +1,164 @@
+{
+  "titel": "Außen am Ellenbogen tut's weh: laterale Ellenbogen-Tendinopathie (Trend-Format)",
+  "ausgabe": "../reels/01_ellenbogen_LET.mp4",
+  "uebung": true,
+  "skript": {
+    "hook": "Patient hält sich den Ellenbogen (Zoom drauf): 'Ich hab Schmerzen außen am Ellenbogen!!!'",
+    "aufbau": "Physio: 'Wo?' → Patient zeigt auf die Außenseite → Physio erkennt das Bild: laterale Ellenbogen-Tendinopathie (Schrei/Trompete).",
+    "payoff": "3 Übungen: Handgelenk strecken isometrisch → Handgelenk strecken langsam mit Gewicht → Schulter-Außenrotation in Seitlage."
+  },
+  "hook": {
+    "stil": "trend",
+    "text": "„Ich hab Schmerzen außen am Ellenbogen!!!“",
+    "start": 0.0,
+    "dauer": 1.33,
+    "y": 1180,
+    "groesse": 46,
+    "animation": "pop",
+    "punch_in": false,
+    "visuell": "Schneller Zoom auf den Ellenbogen (Hand hält die Außenseite) und wieder raus, wie bei der Knie-Version"
+  },
+  "segmente": [
+    {
+      "quelle": "../roh/IMG_4126.mov",
+      "start": 4.1,
+      "ende": 5.43,
+      "ton": false,
+      "zoom_puls": {
+        "x": 0.48,
+        "y": 0.41,
+        "staerke": 0.8,
+        "ein": 0.15,
+        "halten": 0.5,
+        "aus": 0.3
+      }
+    },
+    {
+      "quelle": "../roh/IMG_4114.mov",
+      "start": 1.0,
+      "ende": 2.47,
+      "ton": false
+    },
+    {
+      "quelle": "../roh/IMG_4127.mov",
+      "start": 3.9,
+      "ende": 5.47,
+      "ton": false
+    },
+    {
+      "quelle": "../roh/IMG_4115.mov",
+      "start": 0.8,
+      "ende": 2.2,
+      "ton": false
+    },
+    {
+      "quelle": "../roh/IMG_4128.mov",
+      "start": 0.6,
+      "ende": 3.03,
+      "ton": false
+    },
+    {
+      "quelle": "../roh/IMG_4129.mov",
+      "start": 3.95,
+      "ende": 7.05,
+      "ton": false
+    },
+    {
+      "quelle": "../roh/IMG_4130.mov",
+      "start": 0.9,
+      "ende": 4.3,
+      "ton": false
+    }
+  ],
+  "untertitel": false,
+  "einblendungen": [
+    {
+      "stil": "trend",
+      "text": "„Wo?“",
+      "x": 540,
+      "y": 960,
+      "start": 1.33,
+      "ende": 2.8,
+      "groesse": 50
+    },
+    {
+      "stil": "trend",
+      "text": "\\*zeigt auf die Außenseite\nvom Ellenbogen\\*",
+      "x": 540,
+      "y": 960,
+      "start": 2.8,
+      "ende": 4.37,
+      "groesse": 46
+    },
+    {
+      "stil": "trend",
+      "text": "„Laterale Ellenbogen-\nTendinopathie“",
+      "x": 540,
+      "y": 1150,
+      "start": 4.37,
+      "ende": 5.77,
+      "groesse": 50
+    },
+    {
+      "stil": "trend",
+      "text": "Handgelenk strecken\nisometrisch · 5 × 45 Sek halten",
+      "x": 540,
+      "y": 960,
+      "start": 5.77,
+      "ende": 8.2,
+      "groesse": 46
+    },
+    {
+      "stil": "trend",
+      "text": "Handgelenk strecken\nlangsam · 3 × 15",
+      "x": 540,
+      "y": 960,
+      "start": 8.2,
+      "ende": 11.3,
+      "groesse": 46
+    },
+    {
+      "stil": "trend",
+      "text": "Schulter-Außenrotation\nin Seitlage · 3 × 12",
+      "x": 540,
+      "y": 520,
+      "start": 11.3,
+      "ende": 14.7,
+      "groesse": 46
+    }
+  ],
+  "sounds": [
+    {
+      "name": "../roh/vorlage_sound.wav",
+      "zeit": 0,
+      "lautstaerke": 1.0
+    }
+  ],
+  "aussagen": [
+    {
+      "text": "Schmerz außen am Ellenbogen passt oft zu einer lateralen Ellenbogen-Tendinopathie; das ist der heute akzeptierte Fachbegriff statt 'Epikondylitis' oder 'Tennisarm'.",
+      "quelle": "Bateman M et al. Development of a core outcome set for lateral elbow tendinopathy (COS-LET) using best available evidence and an international consensus process. Br J Sports Med 2022;56(12):657–666",
+      "status": "konsens",
+      "beleg": "Bateman: 'Historically ... lateral epicondylitis or tennis elbow, but the current accepted description is lateral elbow tendinopathy (LET).'"
+    },
+    {
+      "text": "Aktive Kräftigung des Arms ist bei lateraler Ellenbogen-Tendinopathie Erstlinientherapie und besser als passives Abwarten.",
+      "quelle": "Karanasios S, Korakakis V, Moutzouri M et al. Exercise interventions in lateral elbow tendinopathy have better outcomes than passive interventions, but the effects are small: a systematic review and meta-analysis of 2123 subjects in 30 trials. Br J Sports Med 2021;55(9):477–485",
+      "status": "belegt",
+      "beleg": "30 RCTs, 2123 Patienten; Effekte klein, Evidenz niedrig. Exzentrik nicht besser als andere Kräftigung (Chen & Baker 2021)."
+    }
+  ],
+  "caption": "Schmerz außen am Ellenbogen, vor allem beim Greifen, Tragen oder Tippen? Das passt oft zu einer lateralen Ellenbogen-Tendinopathie (früher 'Tennisarm'). Eine Ferndiagnose ist das aber nicht, lass deinen Ellenbogen untersuchen.\n\n3 Übungen, die du ausprobieren kannst, von leicht nach schwer.\n\nWenn etwas wehtut, nicht tiefer in die Bewegung gehen.\n\nSpeicher dir das Reel für dein nächstes Training.",
+  "hashtags": [
+    "#tennisarm",
+    "#ellenbogenschmerzen",
+    "#tendinopathie",
+    "#physiotherapie",
+    "#armtraining"
+  ],
+  "hinweise": [
+    "Sound 1:1 aus der Vorlage (wie beim Knie). Besser in Instagram über 'Audio verwenden' den Original-Sound wählen.",
+    "Physio-Clips ('Wo?' und Schrei) identisch zur Knie-Version, Hand am Mund exakt beim Schrei-Einsatz (4,80 s).",
+    "Schnitte 1:1 wie in der Vorlage (1,33 / 2,80 / 4,37 / 5,77 / 8,20 / 11,30 s), Ende bei 14,7 s mit der Musik."
+  ]
+}
