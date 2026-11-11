@@ -107,7 +107,7 @@ def pruefe(spec, spec_dir):
         fehler.append(f"Hook-Sound '{hook['sound']}' nicht gefunden (python3 scripts/hook_sounds.py ausfuehren).")
     if not hook.get("visuell"):
         fehler.append("Visueller Hook nicht beschrieben (hook.visuell).")
-    if hook.get("dauer", 3) > 3.5:
+    if hook.get("stil") != "trend" and hook.get("dauer", 3) > 3.5:
         fehler.append("Hook-Text muss in den ersten ~3 Sekunden wirken (hook.dauer <= 3.5).")
 
     skript = spec.get("skript", {})
@@ -278,6 +278,8 @@ def ass_schreiben(spec, spec_dir, pfad, dauer):
         style("Info", gr["info"], weiss, 3, 9),
         style("Sub", gr["untertitel"], weiss, 5, 2, BRAND["layout"]["untertitel_abstand"]),
         style("Quelle", gr["quelle"], weiss, 2, 2, BRAND["layout"]["quelle_abstand"]),
+        (f"Style: Trend,{BRAND['trend']['schrift']},{BRAND['trend']['groesse']},{weiss},{weiss},&H96000000,"
+         f"&H78000000,0,0,0,0,100,100,0,0,1,1.5,2,5,60,60,0,1"),
         f"Style: Form,{schrift},20,{weiss},{weiss},&H00000000,&H00000000,0,0,0,0,100,100,0,0,1,0,0,7,0,0,0,1",
         "", "[Events]", "Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text",
     ]
@@ -306,16 +308,33 @@ def ass_schreiben(spec, spec_dir, pfad, dauer):
             "fade": "\\fad(150,150)",
             "pop": "\\fscx85\\fscy85\\t(0,100,\\fscx105\\fscy105)\\t(100,180,\\fscx100\\fscy100)\\fad(40,120)"}[
         hook.get("animation", "slam")]
-    zeilen_hook = hook["text"].split("\n")
-    hg = passende_groesse(zeilen_hook, gr["hook"], W - 2 * BRAND["layout"]["rand"], fett=True)
-    hoehe = len(zeilen_hook) * hg * 0.86 + (gr["hook_unterzeile"] * 1.1 if hook.get("unterzeile") else 0)
-    y0 = BRAND["layout"]["hook_y"] - hoehe / 2
-    y = zeilen_block(0, hd, "Hook", hook["text"], W // 2, y0, 8, hg, anim + f"\\fs{hg}", layer=5)
-    if hook.get("unterzeile"):
-        zeilen_block(0, hd, "HookUnter", hook["unterzeile"], W // 2, y + 28, 8, gr["hook_unterzeile"], anim, layer=5)
+    if hook.get("stil") == "trend":
+        tr = BRAND["trend"]
+        tg = hook.get("groesse", tr["groesse"])
+        zeilen_t = hook["text"].split("\n")
+        for i, z in enumerate(zeilen_t):
+            ev(hook.get("start", 0), hd, "Trend",
+               f"{{\\an5\\pos({W // 2},{hook.get('y', tr['hook_y']) + i * tg * 1.22:.0f})\\blur{tr['blur']}\\fs{tg}}}"
+               + markup(z, gelb), layer=5)
+    else:
+        zeilen_hook = hook["text"].split("\n")
+        hg = passende_groesse(zeilen_hook, gr["hook"], W - 2 * BRAND["layout"]["rand"], fett=True)
+        hoehe = len(zeilen_hook) * hg * 0.86 + (gr["hook_unterzeile"] * 1.1 if hook.get("unterzeile") else 0)
+        y0 = BRAND["layout"]["hook_y"] - hoehe / 2
+        y = zeilen_block(0, hd, "Hook", hook["text"], W // 2, y0, 8, hg, anim + f"\\fs{hg}", layer=5)
+        if hook.get("unterzeile"):
+            zeilen_block(0, hd, "HookUnter", hook["unterzeile"], W // 2, y + 28, 8, gr["hook_unterzeile"], anim, layer=5)
 
     # --- Fakten (Aufbau) mittig oben, Quelle klein darunter
     for e in spec.get("einblendungen", []):
+        if e.get("stil") == "trend":
+            tr = BRAND["trend"]
+            g = e.get("groesse", tr["wort_groesse"])
+            for i, z in enumerate(e["text"].split("\n")):
+                ev(e["start"], e["ende"], "Trend",
+                   f"{{\\an5\\pos({e.get('x', W // 2)},{e.get('y', 960) + i * g * 1.22:.0f})\\blur{tr['blur']}"
+                   f"\\fs{g}\\fad({e.get('ein_ms', 60)},0)}}" + markup(z, gelb), layer=4)
+            continue
         fg = passende_groesse(e["text"].split("\n"), gr["fakt"], W - 2 * BRAND["layout"]["rand"], fett=True)
         zeilen_block(e["start"], e["ende"], "Fakt", e["text"], W // 2, BRAND["layout"]["fakt_y"], 8, fg,
                      f"\\fad(120,120)\\fs{fg}", layer=4)
@@ -400,8 +419,9 @@ def rendern(spec_pfad, vorschau=False):
             p = SOUNDS / f"{snd['name']}.wav"
             args += ["-i", str(p if p.exists() else Path(spec_dir, snd["name"]))]
         hd = spec["hook"].get("dauer", 3.0)
-        dunkel_zeiten = [(0, hd)] + [(e["start"], e["ende"]) for e in spec.get("einblendungen", [])]
-        enable = "+".join(f"between(t,{a},{b})" for a, b in dunkel_zeiten)
+        dunkel_zeiten = ([] if spec["hook"].get("stil") == "trend" else [(0, hd)]) + \
+            [(e["start"], e["ende"]) for e in spec.get("einblendungen", []) if e.get("stil") != "trend"]
+        enable = "+".join(f"between(t,{a},{b})" for a, b in dunkel_zeiten) or "0"
         ass = str(tmp / "text.ass").replace(":", "\\:")
         unten = "[v1][2:v]overlay=0:0[v2]" if spec.get("untertitel", True) or spec.get("untertitel_manuell") \
             else "[v1]null[v2]"

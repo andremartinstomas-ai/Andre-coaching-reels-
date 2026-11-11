@@ -1,0 +1,170 @@
+{
+  "titel": "Kommt drauf an: Welche Übung bei Rückenschmerzen?",
+  "ausgabe": "../reels/01_kommt_drauf_an.mp4",
+  "uebung": false,
+  "skript": {
+    "hook": "Patient kommt rein, greift sich an den Rücken: 'Ich hab Rückenschmerzen. Welche Übung soll ich machen?'",
+    "aufbau": "Physio denkt nach, um ihn herum ploppen die Fragen auf, die man vorher klären muss (Red Flags, Ausstrahlung, Stress, Schlaf, Ziele …).",
+    "payoff": "Pointe: 'Kommt drauf an…' Die eine Übung für alle gibt es nicht, es braucht eine gute Befundaufnahme."
+  },
+  "hook": {
+    "stil": "trend",
+    "text": "Ich hab Rückenschmerzen.\nWelche Übung soll ich machen?",
+    "start": 0.15,
+    "dauer": 4.1,
+    "y": 1150,
+    "punch_in": false,
+    "visuell": "André kommt ins Bild und greift sich an den unteren Rücken (Patient-Rolle), wie in der Vorlage"
+  },
+  "segmente": [
+    {
+      "quelle": "../roh/patient_IMG_4105.mov",
+      "start": 2.2,
+      "ende": 6.3,
+      "ton": false
+    },
+    {
+      "quelle": "../roh/physio_IMG_4109.mov",
+      "start": 0.0,
+      "ende": 11.4,
+      "ton": false
+    }
+  ],
+  "untertitel": false,
+  "einblendungen": [
+    {
+      "stil": "trend",
+      "text": "Seit wann?",
+      "x": 300,
+      "y": 470,
+      "start": 4.5,
+      "ende": 13.3
+    },
+    {
+      "stil": "trend",
+      "text": "Red Flags?",
+      "x": 790,
+      "y": 420,
+      "start": 5.1,
+      "ende": 13.3
+    },
+    {
+      "stil": "trend",
+      "text": "Bandscheibe?",
+      "x": 250,
+      "y": 640,
+      "start": 5.7,
+      "ende": 13.3
+    },
+    {
+      "stil": "trend",
+      "text": "Wo genau?",
+      "x": 860,
+      "y": 610,
+      "start": 6.3,
+      "ende": 13.3
+    },
+    {
+      "stil": "trend",
+      "text": "Strahlt es aus?",
+      "x": 850,
+      "y": 790,
+      "start": 6.9,
+      "ende": 13.3
+    },
+    {
+      "stil": "trend",
+      "text": "Stress?",
+      "x": 200,
+      "y": 820,
+      "start": 7.5,
+      "ende": 13.3
+    },
+    {
+      "stil": "trend",
+      "text": "Schlaf?",
+      "x": 900,
+      "y": 960,
+      "start": 8.1,
+      "ende": 13.3
+    },
+    {
+      "stil": "trend",
+      "text": "Welche Bewegung?",
+      "x": 850,
+      "y": 1120,
+      "start": 8.7,
+      "ende": 13.3
+    },
+    {
+      "stil": "trend",
+      "text": "Nachts schlimmer?",
+      "x": 250,
+      "y": 1140,
+      "start": 9.3,
+      "ende": 13.3
+    },
+    {
+      "stil": "trend",
+      "text": "Taubheitsgefühl?",
+      "x": 850,
+      "y": 1270,
+      "start": 9.9,
+      "ende": 13.3
+    },
+    {
+      "stil": "trend",
+      "text": "Trainingsziel?",
+      "x": 230,
+      "y": 1270,
+      "start": 10.5,
+      "ende": 13.3
+    },
+    {
+      "stil": "trend",
+      "text": "Angst vor Bewegung?",
+      "x": 540,
+      "y": 300,
+      "start": 11.1,
+      "ende": 13.3
+    },
+    {
+      "stil": "trend",
+      "text": "Belastungsmanagement?",
+      "x": 540,
+      "y": 1400,
+      "start": 11.7,
+      "ende": 13.3
+    },
+    {
+      "stil": "trend",
+      "text": "„Kommt drauf an…“",
+      "x": 540,
+      "y": 1120,
+      "groesse": 76,
+      "start": 13.3,
+      "ende": 15.5,
+      "ein_ms": 120
+    }
+  ],
+  "aussagen": [
+    {
+      "text": "Bei Rückenschmerzen gehören vor der Übungsauswahl Warnzeichen (Red Flags) und psychosoziale Faktoren wie Stress oder Angst vor Bewegung abgefragt.",
+      "quelle": "Bundesärztekammer (BÄK), KBV, AWMF. Nationale VersorgungsLeitlinie Nicht-spezifischer Kreuzschmerz, 2. Auflage 2017 (Kapitel Diagnostik: Warnhinweise und psychosoziale Risikofaktoren/Yellow Flags)",
+      "status": "konsens",
+      "beleg": "NVL empfiehlt in der Anamnese aktive Suche nach Red Flags (Fraktur, Infektion, Radikulopathie, Tumor, axSpA) und frühe Erfassung psychosozialer Risikofaktoren."
+    }
+  ],
+  "caption": "An alle Physios: Wie oft hört ihr diese Frage? 😅\n\nUnd an alle mit Rückenschmerzen: Die eine Übung für alle gibt es nicht. Erst wenn klar ist, was dahintersteckt, wird die Übung wirklich passend.\n\nSpeicher dir das Reel und schick es jemandem, der genau diese Frage stellt.",
+  "hashtags": [
+    "#rückenschmerzen",
+    "#physiotherapie",
+    "#physiohumor",
+    "#kommtdraufan",
+    "#schmerztherapie"
+  ],
+  "hinweise": [
+    "Format nach der Vorlage von @lauraaphysio nachgebaut (Schulter → Rücken). Ton ist stumm: in Instagram denselben Trend-Sound wie die Vorlage oder einen passenden Trend-Sound darunterlegen.",
+    "Deine eigene Tonspur ist rausgenommen, weil ich sie nicht transkribieren konnte. Wenn du im Clip selbst sprichst und das drin haben willst, sag Bescheid."
+  ]
+}
