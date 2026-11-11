@@ -1,0 +1,53 @@
+{
+  "titel": "Mobility-Routine für den Bürotag: 4 Übungen",
+  "ausgabe": "../reels/04_mobility_routine.mp4",
+  "uebung": true,
+  "skript": {
+    "hook": "Große Armbewegung im ersten Bild + Frage: Rücken steif vom Sitzen? 4 Übungen für zwischendurch.",
+    "aufbau": "Die perfekte Haltung gibt es nicht, die beste Haltung ist die nächste. Darum: Nacken, BWS rund/lang, Rotation, Armkreis, von oben nach unten durch den Oberkörper.",
+    "payoff": "Komplette Routine mit Wiederholungen zum Mitmachen + Speichern für den Bürotag."
+  },
+  "hook": {
+    "text": "Rücken steif\n*vom Sitzen?*",
+    "unterzeile": "4 Übungen für zwischendurch",
+    "dauer": 3.0, "animation": "slam", "punch_in": true,
+    "visuell": "Punch-in, André dreht im ersten Frame die Arme weit auf (Rotation im Halbkniestand)"
+  },
+  "segmente": [
+    {"quelle": "../roh/D_IMG_4021.mov", "start": 0.3, "ende": 3.3, "ton": false, "zoom": 1.1, "fokus_x": 0.55, "fokus_y": 0.5, "filter": "eq=brightness=0.04:gamma=1.12"},
+    {"quelle": "../roh/C_IMG_4021.mov", "start": 0.0, "ende": 3.0, "ton": false, "zoom": 1.0, "filter": "eq=brightness=0.04:gamma=1.12"},
+    {"quelle": "../roh/B_IMG_4024.mov", "start": 7.6, "ende": 12.1, "ton": false, "zoom": 1.55, "fokus_x": 0.62, "fokus_y": 0.2},
+    {"quelle": "../roh/A_IMG_4024.mov", "start": 0.0, "ende": 4.33, "ton": false, "zoom": 1.05, "fokus_x": 0.5, "fokus_y": 0.3},
+    {"quelle": "../roh/D_IMG_4021.mov", "start": 3.3, "ende": 8.1, "ton": false, "zoom": 1.0, "filter": "eq=brightness=0.04:gamma=1.12"},
+    {"quelle": "../roh/C_IMG_4021.mov", "start": 3.0, "ende": 8.1, "ton": false, "zoom": 1.05, "filter": "eq=brightness=0.04:gamma=1.12"}
+  ],
+  "untertitel": false,
+  "einblendungen": [
+    {"start": 3.05, "ende": 5.95, "text": "Die perfekte Haltung?\nGibt's nicht.\n*Die beste ist die nächste*"}
+  ],
+  "kapitel": [
+    {"start": 6.0, "ende": 10.5, "label": "Übung 1 von 4", "titel": "Chin Tuck", "info": "10x · 5 Sek halten"},
+    {"start": 10.5, "ende": 14.83, "label": "Übung 2 von 4", "titel": "Rund & lang", "info": "8x langsam"},
+    {"start": 14.83, "ende": 19.63, "label": "Übung 3 von 4", "titel": "Rotation", "info": "5x pro Seite"},
+    {"start": 19.63, "ende": 22.9, "label": "Übung 4 von 4", "titel": "Armkreis", "info": "5x pro Seite"},
+    {"start": 22.9, "ende": 24.73, "label": "Kurz merken", "titel": "Für den Bürotag\nspeichern", "fortschritt": false}
+  ],
+  "untertitel_manuell": [
+    {"start": 6.0, "ende": 24.73, "text": "Wenn etwas wehtut, nicht tiefer in die Bewegung gehen.", "groesse": 56}
+  ],
+  "aussagen": [
+    {"text": "Für die eine perfekte Haltung gibt es keine starke Evidenz.",
+     "quelle": "Slater D, Korakakis V, O'Sullivan P, Nolan D, O'Sullivan K. \"Sit Up Straight\": Time to Re-evaluate. J Orthop Sports Phys Ther 2019;49(8):562–564. doi:10.2519/jospt.2019.0610",
+     "status": "belegt",
+     "beleg": "Viewpoint: Überzeugungen zu 'falschem' Sitzen als Schmerzursache sind nicht durch starke Evidenz gestützt."},
+    {"text": "Die beste Haltung ist die nächste (Positionswechsel statt starrer Haltung).",
+     "quelle": "Slater D et al. JOSPT 2019;49(8):562–564; Patienteninfo NHS North Cheshire & Mersey auf Basis dieses Papers",
+     "status": "konsens"}
+  ],
+  "caption": "Deine Mobility-Routine für zwischendurch: Nacken, oberer Rücken, Rotation. 4 Übungen, die du direkt neben dem Schreibtisch ausprobieren kannst, ganz ohne Equipment.\n\nWenn etwas wehtut, nicht tiefer in die Bewegung gehen.\n\nSpeicher dir die Routine für deinen nächsten Bürotag.",
+  "hashtags": ["#mobility", "#rückenschmerzen", "#nackenschmerzen", "#physiotherapie", "#büroalltag"],
+  "hinweise": [
+    "Keine Soundeffekte eingebaut. In Instagram einen Trend-Sound aus der Bibliothek darunterlegen.",
+    "Übung 2 (rund & lang) zeigt nur eine Wiederholung, weil Clip A nur 4 s lang ist. Ein Nachdreh mit 2–3 Wiederholungen würde die Routine runder machen."
+  ]
+}

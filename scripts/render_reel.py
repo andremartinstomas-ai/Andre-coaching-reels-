@@ -405,7 +405,10 @@ def rendern(spec_pfad, vorschau=False):
         ass = str(tmp / "text.ass").replace(":", "\\:")
         unten = "[v1][2:v]overlay=0:0[v2]" if spec.get("untertitel", True) or spec.get("untertitel_manuell") \
             else "[v1]null[v2]"
-        fc = [f"[0:v][1:v]overlay=0:0:enable='{enable}'[v1]", unten,
+        look = BRAND.get("look", {})
+        look_an = spec.get("look", look.get("aktiv", False))
+        look_filter = look.get("filter", "null") if look_an else "null"
+        fc = [f"[0:v]{look_filter}[v0]", f"[v0][1:v]overlay=0:0:enable='{enable}'[v1]", unten,
               f"[v2]subtitles='{ass}':fontsdir='{FONTS}'[v]"]
         mix = ["[0:a]"]
         for i, snd in enumerate(sounds):

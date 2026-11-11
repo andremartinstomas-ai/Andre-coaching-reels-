@@ -107,6 +107,8 @@ Fertige Videos nicht ins Git committen (zu groß, `.gitignore`), sondern per Sen
   an die Breite angepasst.
 - Fortschrittsbalken oben (ein Segment pro Kapitel), rechts oben Label in Teal + gelbe Linie + Titel in Gelb.
 - Fakten (Aufbau) mittig oben auf abgedunkeltem Bild. Keine Quellenzeile im Bild.
+- **Warm-Vintage-Look** auf allen Videos (André, 2026-11-11): `look` in `config/brand.json`, wirkt nur aufs Bild,
+  nicht auf den Text. Pro Spec mit `"look": false` abschaltbar.
 - Werte in `config/brand.json`.
 
 ## Grenzen der Umgebung
