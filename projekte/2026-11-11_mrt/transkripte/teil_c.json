@@ -1,0 +1,193 @@
+{
+ "datei": "projekte/2026-11-11_mrt/roh/teil_c.mov",
+ "sprache": "de",
+ "woerter": [
+  {
+   "text": "Manche",
+   "start": 0.0,
+   "ende": 0.3
+  },
+  {
+   "text": "Patienten",
+   "start": 0.3,
+   "ende": 0.66
+  },
+  {
+   "text": "dagegen.",
+   "start": 0.66,
+   "ende": 1.34
+  },
+  {
+   "text": "Nochmal,",
+   "start": 2.06,
+   "ende": 2.4
+  },
+  {
+   "text": "was",
+   "start": 2.96,
+   "ende": 3.1
+  },
+  {
+   "text": "ist",
+   "start": 3.1,
+   "ende": 3.22
+  },
+  {
+   "text": "deine",
+   "start": 3.22,
+   "ende": 3.44
+  },
+  {
+   "text": "Hauptaussage?",
+   "start": 3.44,
+   "ende": 4.68
+  },
+  {
+   "text": "Egal,",
+   "start": 6.5,
+   "ende": 6.9
+  },
+  {
+   "text": "manche",
+   "start": 7.24,
+   "ende": 7.4
+  },
+  {
+   "text": "Patienten",
+   "start": 7.4,
+   "ende": 7.8
+  },
+  {
+   "text": "hatten",
+   "start": 7.8,
+   "ende": 7.94
+  },
+  {
+   "text": "im MRT",
+   "start": 7.94,
+   "ende": 8.28
+  },
+  {
+   "text": "vielleicht",
+   "start": 8.28,
+   "ende": 8.62
+  },
+  {
+   "text": "gar",
+   "start": 8.62,
+   "ende": 8.94
+  },
+  {
+   "text": "nichts",
+   "start": 8.94,
+   "ende": 9.1
+  },
+  {
+   "text": "zu",
+   "start": 9.1,
+   "ende": 9.36
+  },
+  {
+   "text": "sehen,",
+   "start": 9.36,
+   "ende": 9.78
+  },
+  {
+   "text": "hatten",
+   "start": 10.24,
+   "ende": 10.32
+  },
+  {
+   "text": "aber",
+   "start": 10.32,
+   "ende": 10.44
+  },
+  {
+   "text": "im",
+   "start": 10.44,
+   "ende": 10.58
+  },
+  {
+   "text": "Alltag",
+   "start": 10.58,
+   "ende": 11.0
+  },
+  {
+   "text": "oder",
+   "start": 11.0,
+   "ende": 11.28
+  },
+  {
+   "text": "beim",
+   "start": 11.28,
+   "ende": 11.4
+  },
+  {
+   "text": "Sport",
+   "start": 11.4,
+   "ende": 11.92
+  },
+  {
+   "text": "oder",
+   "start": 11.92,
+   "ende": 12.42
+  },
+  {
+   "text": "in",
+   "start": 12.42,
+   "ende": 12.58
+  },
+  {
+   "text": "beiden",
+   "start": 12.58,
+   "ende": 12.92
+  },
+  {
+   "text": "extreme",
+   "start": 12.92,
+   "ende": 13.38
+  },
+  {
+   "text": "Schmerzen.",
+   "start": 13.38,
+   "ende": 13.96
+  },
+  {
+   "text": "Was",
+   "start": 14.46,
+   "ende": 14.64
+  },
+  {
+   "text": "heißt",
+   "start": 14.64,
+   "ende": 14.84
+  },
+  {
+   "text": "das?",
+   "start": 14.84,
+   "ende": 15.02
+  }
+ ],
+ "saetze": [
+  {
+   "text": "Manche Patienten dagegen.",
+   "start": 0.0,
+   "ende": 1.34
+  },
+  {
+   "text": "Nochmal, was ist deine Hauptaussage?",
+   "start": 2.06,
+   "ende": 4.68
+  },
+  {
+   "text": "Egal, manche Patienten hatten MRT vielleicht gar nicht zu sehen, hatten aber im Alltag oder beim Sport oder in beiden extreme Schmerzen.",
+   "start": 6.5,
+   "ende": 13.96
+  },
+  {
+   "text": "Was heißt das?",
+   "start": 14.46,
+   "ende": 15.02
+  }
+ ]
+}

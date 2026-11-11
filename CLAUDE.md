@@ -112,6 +112,8 @@ Fertige Videos nicht ins Git committen (zu groß, `.gitignore`), sondern per Sen
 - **Virale Vorlagen nachbauen** (z. B. „Kommt drauf an“): `hook.stil: "trend"` und `einblendungen` mit
   `stil: "trend"`, `x`, `y`: weiße Inter-Schrift mit weichem Schatten, normale Schreibweise, kein Abdunkeln.
   So nah wie möglich an Format und Timing der Vorlage bleiben.
+- **Infokarten rechts oben** (Studie/Leitlinie/Fakt) in Sprechvideos: `einblendungen` mit `stil: "karte"`, `label`,
+  `text`, optional `quelle` (kurzer Studienname, nur wenn André Studien im Bild will).
 - Werte in `config/brand.json`.
 
 ## Grenzen der Umgebung

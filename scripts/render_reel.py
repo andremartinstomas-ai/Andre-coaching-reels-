@@ -339,6 +339,18 @@ def ass_schreiben(spec, spec_dir, pfad, dauer):
 
     # --- Fakten (Aufbau) mittig oben, Quelle klein darunter
     for e in spec.get("einblendungen", []):
+        if e.get("stil") == "karte":  # Infokarte rechts oben (Studie, Leitlinie, Fakt) im Kapitel-Look
+            a_, e_ = e["start"], e["ende"]
+            fad = "\\fad(150,120)"
+            ky = e.get("y", BRAND["layout"]["label_y"])
+            ev(a_, e_, "Label", f"{{\\an9\\pos({rechts},{ky}){fad}\\fs{e.get('label_groesse', 60)}}}" + text(e["label"]), layer=3)
+            ly_ = ky + e.get("label_groesse", 60) * 0.95
+            ev(a_, e_, "Form", rechteck(rechts - 300, ly_, 300, 5, gelb).replace("\\p1}", f"{fad}\\p1}}"), layer=3)
+            g = e.get("groesse", 58)
+            unter = zeilen_block(a_, e_, "Info", e["text"], rechts, ly_ + 14, 9, g, fad + f"\\fs{g}", abstand=0.9)
+            if e.get("quelle"):
+                zeilen_block(a_, e_, "Info", e["quelle"], rechts, unter + 8, 9, 34, fad + "\\fs34\\alpha&H30&")
+            continue
         if e.get("stil") == "trend":
             tr = BRAND["trend"]
             g = e.get("groesse", tr["wort_groesse"])
@@ -432,7 +444,7 @@ def rendern(spec_pfad, vorschau=False):
             args += ["-i", str(p if p.exists() else Path(spec_dir, snd["name"]))]
         hd = spec["hook"].get("dauer", 3.0)
         dunkel_zeiten = ([] if spec["hook"].get("stil") == "trend" else [(0, hd)]) + \
-            [(e["start"], e["ende"]) for e in spec.get("einblendungen", []) if e.get("stil") != "trend"]
+            [(e["start"], e["ende"]) for e in spec.get("einblendungen", []) if e.get("stil") not in ("trend", "karte")]
         enable = "+".join(f"between(t,{a},{b})" for a, b in dunkel_zeiten) or "0"
         ass = str(tmp / "text.ass").replace(":", "\\:")
         unten = "[v1][2:v]overlay=0:0[v2]" if spec.get("untertitel", True) or spec.get("untertitel_manuell") \

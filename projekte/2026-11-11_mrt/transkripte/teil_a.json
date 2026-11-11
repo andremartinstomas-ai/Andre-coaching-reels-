@@ -1,0 +1,78 @@
+{
+ "datei": "projekte/2026-11-11_mrt/roh/teil_a.mov",
+ "sprache": "de",
+ "woerter": [
+  {
+   "text": "Warum",
+   "start": 0.6200000000000001,
+   "ende": 1.18
+  },
+  {
+   "text": "dein",
+   "start": 1.18,
+   "ende": 1.4
+  },
+  {
+   "text": "MRT,",
+   "start": 1.4,
+   "ende": 1.7
+  },
+  {
+   "text": "dir",
+   "start": 1.7,
+   "ende": 1.82
+  },
+  {
+   "text": "manchmal",
+   "start": 1.82,
+   "ende": 2.16
+  },
+  {
+   "text": "mehr",
+   "start": 2.16,
+   "ende": 2.4
+  },
+  {
+   "text": "schaden",
+   "start": 2.4,
+   "ende": 2.74
+  },
+  {
+   "text": "kann,",
+   "start": 2.74,
+   "ende": 3.12
+  },
+  {
+   "text": "als",
+   "start": 3.98,
+   "ende": 4.08
+  },
+  {
+   "text": "es",
+   "start": 4.08,
+   "ende": 4.2
+  },
+  {
+   "text": "dir",
+   "start": 4.2,
+   "ende": 4.3
+  },
+  {
+   "text": "hilft?",
+   "start": 4.3,
+   "ende": 4.56
+  }
+ ],
+ "saetze": [
+  {
+   "text": "Warum denn MRT, die manchmal mehr schaden kann,",
+   "start": 0.6200000000000001,
+   "ende": 3.12
+  },
+  {
+   "text": "als er dir hilft?",
+   "start": 3.98,
+   "ende": 4.56
+  }
+ ]
+}

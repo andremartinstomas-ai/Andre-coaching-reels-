@@ -1,0 +1,212 @@
+{
+  "titel": "Warum ein MRT manchmal mehr schadet als hilft",
+  "ausgabe": "../reels/01_mrt_kritisch.mp4",
+  "uebung": false,
+  "skript": {
+    "hook": "Frage: Kann ein MRT mehr schaden als helfen?",
+    "aufbau": "MRT-Befund und Schmerz passen oft nicht zusammen: Befunde ohne Schmerz, Schmerz ohne Befund.",
+    "payoff": "MRT nur bei klarer Indikation (Lähmungen, neurologische Ausfälle), sonst vermittelt es eher das Bild 'kaputt'."
+  },
+  "hook": {
+    "text": "Kann ein MRT\n*mehr schaden als helfen?*",
+    "unterzeile": "Was Studien dazu sagen",
+    "dauer": 3.3,
+    "animation": "slam",
+    "punch_in": true,
+    "visuell": "Punch-in auf den Sprecher, der nachdenklich die Frage stellt"
+  },
+  "segmente": [
+    {
+      "quelle": "../roh/teil_a.mov",
+      "start": 0.57,
+      "ende": 3.2,
+      "transkript": "../transkripte/teil_a.json",
+      "zoom": 1.3,
+      "fokus_x": 1.0,
+      "fokus_y": 0.15
+    },
+    {
+      "quelle": "../roh/teil_a.mov",
+      "start": 3.93,
+      "ende": 4.7,
+      "transkript": "../transkripte/teil_a.json",
+      "zoom": 1.45,
+      "fokus_x": 1.0,
+      "fokus_y": 0.15
+    },
+    {
+      "quelle": "../roh/teil_b.mov",
+      "start": 2.35,
+      "ende": 4.75,
+      "transkript": "../transkripte/teil_b.json",
+      "zoom": 1.3,
+      "fokus_x": 1.0,
+      "fokus_y": 0.15
+    },
+    {
+      "quelle": "../roh/teil_b.mov",
+      "start": 5.37,
+      "ende": 10.1,
+      "transkript": "../transkripte/teil_b.json",
+      "zoom": 1.45,
+      "fokus_x": 1.0,
+      "fokus_y": 0.15
+    },
+    {
+      "quelle": "../roh/teil_c.mov",
+      "start": 7.19,
+      "ende": 9.86,
+      "transkript": "../transkripte/teil_c.json",
+      "zoom": 1.3,
+      "fokus_x": 1.0,
+      "fokus_y": 0.15
+    },
+    {
+      "quelle": "../roh/teil_c.mov",
+      "start": 10.18,
+      "ende": 14.1,
+      "transkript": "../transkripte/teil_c.json",
+      "zoom": 1.45,
+      "fokus_x": 1.0,
+      "fokus_y": 0.15
+    },
+    {
+      "quelle": "../roh/teil_c.mov",
+      "start": 14.4,
+      "ende": 15.12,
+      "transkript": "../transkripte/teil_c.json",
+      "zoom": 1.3,
+      "fokus_x": 1.0,
+      "fokus_y": 0.15
+    },
+    {
+      "quelle": "../roh/teil_d.mov",
+      "start": 3.57,
+      "ende": 11.05,
+      "transkript": "../transkripte/teil_d.json",
+      "zoom": 1.45,
+      "fokus_x": 1.0,
+      "fokus_y": 0.15
+    },
+    {
+      "quelle": "../roh/teil_d.mov",
+      "start": 11.19,
+      "ende": 15.2,
+      "transkript": "../transkripte/teil_d.json",
+      "zoom": 1.3,
+      "fokus_x": 1.0,
+      "fokus_y": 0.15
+    },
+    {
+      "quelle": "../roh/teil_d.mov",
+      "start": 15.55,
+      "ende": 16.95,
+      "transkript": "../transkripte/teil_d.json",
+      "zoom": 1.45,
+      "fokus_x": 1.0,
+      "fokus_y": 0.15
+    },
+    {
+      "quelle": "../roh/teil_d.mov",
+      "start": 17.29,
+      "ende": 23.75,
+      "transkript": "../transkripte/teil_d.json",
+      "zoom": 1.3,
+      "fokus_x": 1.0,
+      "fokus_y": 0.15
+    }
+  ],
+  "untertitel": true,
+  "einblendungen": [
+    {
+      "stil": "karte",
+      "start": 5.9,
+      "ende": 10.5,
+      "label": "Studie",
+      "text": "37 % der 20-Jährigen\n*ohne Schmerzen*:\nBandscheiben-\nveränderung im MRT",
+      "quelle": "Brinjikji et al. 2015 · AJNR",
+      "groesse": 68,
+      "label_groesse": 64,
+      "y": 205
+    },
+    {
+      "stil": "karte",
+      "start": 10.6,
+      "ende": 17.1,
+      "label": "Fakt",
+      "text": "Bei ca. *90 %*\nder Rückenschmerzen:\nkeine eindeutige\nUrsache im Bild",
+      "quelle": "Maher et al. 2017 · Lancet",
+      "groesse": 68,
+      "label_groesse": 64,
+      "y": 205
+    },
+    {
+      "stil": "karte",
+      "start": 25.4,
+      "ende": 30.7,
+      "label": "Leitlinie",
+      "text": "Bildgebung nur bei\n*Warnzeichen*, z. B.\nLähmungen oder\nTaubheit",
+      "quelle": "NVL Kreuzschmerz 2017",
+      "groesse": 68,
+      "label_groesse": 64,
+      "y": 205
+    },
+    {
+      "stil": "karte",
+      "start": 30.8,
+      "ende": 34.4,
+      "label": "Studie",
+      "text": "Frühes MRT ohne Grund:\nim Schnitt *länger*\narbeitsunfähig",
+      "quelle": "Webster et al. 2013 · Spine",
+      "groesse": 68,
+      "label_groesse": 64,
+      "y": 205
+    }
+  ],
+  "kapitel": [
+    {
+      "start": 34.5,
+      "ende": 37.19,
+      "label": "Kurz merken",
+      "titel": "MRT nur mit\nklarem Grund",
+      "fortschritt": false
+    }
+  ],
+  "aussagen": [
+    {
+      "text": "MRT-Befunde korrelieren oft schlecht mit Schmerz: ca. 37 % der beschwerdefreien 20-Jährigen zeigen Bandscheibenveränderungen.",
+      "quelle": "Brinjikji W et al. Systematic literature review of imaging features of spinal degeneration in asymptomatic populations. AJNR Am J Neuroradiol 2015;36(4):811–816",
+      "status": "belegt"
+    },
+    {
+      "text": "Bei rund 90 % der Rückenschmerzen lässt sich keine spezifische Ursache feststellen (nicht-spezifischer Rückenschmerz); Schmerz ohne Befund ist häufig.",
+      "quelle": "Maher C, Underwood M, Buchbinder R. Non-specific low back pain. Lancet 2017;389(10070):736–747; NVL Nicht-spezifischer Kreuzschmerz 2017",
+      "status": "konsens"
+    },
+    {
+      "text": "Bildgebung bei Rückenschmerz nur bei Warnzeichen (Red Flags), z. B. neurologische Ausfälle/Lähmungen, nicht routinemäßig.",
+      "quelle": "Nationale VersorgungsLeitlinie Nicht-spezifischer Kreuzschmerz, 2. Aufl. 2017; NICE NG59 (2016/2020)",
+      "status": "konsens"
+    },
+    {
+      "text": "Frühes MRT ohne Indikation geht mit längerer Arbeitsunfähigkeit und höheren Kosten einher.",
+      "quelle": "Webster BS, Bauer AZ, Choi Y, Cifuentes M, Pransky GS. Iatrogenic consequences of early magnetic resonance imaging in acute, work-related, disabling low back pain. Spine 2013;38(22):1939–1946",
+      "status": "belegt",
+      "beleg": "Retrospektive Kohorte (n=555), Assoziation, kein Kausalbeweis."
+    }
+  ],
+  "caption": "Dein MRT zeigt eine Bandscheibenvorwölbung? Das muss nicht der Grund für deinen Schmerz sein. Viele Menschen ohne Beschwerden haben solche Befunde, und viele mit starken Schmerzen haben ein unauffälliges Bild.\n\nEin MRT ist wichtig, wenn es klare Warnzeichen gibt, zum Beispiel Lähmungen oder Taubheit. Sonst hilft oft mehr: gute Untersuchung, Bewegung und ein Plan.\n\nSpeicher dir das Reel für dein nächstes Arztgespräch.",
+  "hashtags": [
+    "#rückenschmerzen",
+    "#mrt",
+    "#bandscheibenvorfall",
+    "#physiotherapie",
+    "#schmerztherapie"
+  ],
+  "hinweise": [
+    "Rausgeschnitten: Denkpausen, die Frage hinter der Kamera ('Nochmal, was ist deine Hauptaussage?'), das 'Egal' und die doppelte Überleitung ('Was können wir als Nutzen draus ziehen?').",
+    "Teil B bricht mitten im Satz ab ('manche hatten im MRT zwar Bandscheibenvorfälle…'). Den Satz habe ich weggelassen; die Aussage steckt jetzt in der Studien-Karte (37 %).",
+    "Untertitel automatisch (Whisper), an 6 Stellen korrigiert (z. B. 'Lähmungserscheinungen'). Bitte einmal gegen dein Gesagtes prüfen.",
+    "Teil D ist nur 720p und wirkt durch den Zoom etwas weicher."
+  ]
+}

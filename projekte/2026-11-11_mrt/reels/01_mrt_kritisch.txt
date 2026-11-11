@@ -1,0 +1,32 @@
+# Warum ein MRT manchmal mehr schadet als hilft  (37.2 s)
+
+## Caption (zum Posten)
+Dein MRT zeigt eine Bandscheibenvorwölbung? Das muss nicht der Grund für deinen Schmerz sein. Viele Menschen ohne Beschwerden haben solche Befunde, und viele mit starken Schmerzen haben ein unauffälliges Bild.
+
+Ein MRT ist wichtig, wenn es klare Warnzeichen gibt, zum Beispiel Lähmungen oder Taubheit. Sonst hilft oft mehr: gute Untersuchung, Bewegung und ein Plan.
+
+Speicher dir das Reel für dein nächstes Arztgespräch.
+
+#rückenschmerzen #mrt #bandscheibenvorfall #physiotherapie #schmerztherapie
+
+## Hooks
+- Audio-Hook: kein Soundeffekt, Trend-Sound in Instagram darunterlegen
+- Visueller Hook: Punch-in auf den Sprecher, der nachdenklich die Frage stellt
+- Text-Hook: Kann ein MRT mehr schaden als helfen? / Was Studien dazu sagen
+
+## Skript
+- Hook: Frage: Kann ein MRT mehr schaden als helfen?
+- Aufbau: MRT-Befund und Schmerz passen oft nicht zusammen: Befunde ohne Schmerz, Schmerz ohne Befund.
+- Payoff: MRT nur bei klarer Indikation (Lähmungen, neurologische Ausfälle), sonst vermittelt es eher das Bild 'kaputt'.
+
+## Aussagen & Quellen
+- "MRT-Befunde korrelieren oft schlecht mit Schmerz: ca. 37 % der beschwerdefreien 20-Jährigen zeigen Bandscheibenveränderungen." -> Brinjikji W et al. Systematic literature review of imaging features of spinal degeneration in asymptomatic populations. AJNR Am J Neuroradiol 2015;36(4):811–816 [belegt]
+- "Bei rund 90 % der Rückenschmerzen lässt sich keine spezifische Ursache feststellen (nicht-spezifischer Rückenschmerz); Schmerz ohne Befund ist häufig." -> Maher C, Underwood M, Buchbinder R. Non-specific low back pain. Lancet 2017;389(10070):736–747; NVL Nicht-spezifischer Kreuzschmerz 2017 [konsens]
+- "Bildgebung bei Rückenschmerz nur bei Warnzeichen (Red Flags), z. B. neurologische Ausfälle/Lähmungen, nicht routinemäßig." -> Nationale VersorgungsLeitlinie Nicht-spezifischer Kreuzschmerz, 2. Aufl. 2017; NICE NG59 (2016/2020) [konsens]
+- "Frühes MRT ohne Indikation geht mit längerer Arbeitsunfähigkeit und höheren Kosten einher." -> Webster BS, Bauer AZ, Choi Y, Cifuentes M, Pransky GS. Iatrogenic consequences of early magnetic resonance imaging in acute, work-related, disabling low back pain. Spine 2013;38(22):1939–1946 [belegt] - Retrospektive Kohorte (n=555), Assoziation, kein Kausalbeweis.
+
+## Hinweise fuer Andre
+- Rausgeschnitten: Denkpausen, die Frage hinter der Kamera ('Nochmal, was ist deine Hauptaussage?'), das 'Egal' und die doppelte Überleitung ('Was können wir als Nutzen draus ziehen?').
+- Teil B bricht mitten im Satz ab ('manche hatten im MRT zwar Bandscheibenvorfälle…'). Den Satz habe ich weggelassen; die Aussage steckt jetzt in der Studien-Karte (37 %).
+- Untertitel automatisch (Whisper), an 6 Stellen korrigiert (z. B. 'Lähmungserscheinungen'). Bitte einmal gegen dein Gesagtes prüfen.
+- Teil D ist nur 720p und wirkt durch den Zoom etwas weicher.

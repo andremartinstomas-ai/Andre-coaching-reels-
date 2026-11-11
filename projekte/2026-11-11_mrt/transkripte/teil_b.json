@@ -1,0 +1,158 @@
+{
+ "datei": "projekte/2026-11-11_mrt/roh/teil_b.mov",
+ "sprache": "de",
+ "woerter": [
+  {
+   "text": "In",
+   "start": 2.4,
+   "ende": 3.14
+  },
+  {
+   "text": "vielen",
+   "start": 3.14,
+   "ende": 3.42
+  },
+  {
+   "text": "Studien",
+   "start": 3.42,
+   "ende": 3.68
+  },
+  {
+   "text": "hat",
+   "start": 3.68,
+   "ende": 3.8
+  },
+  {
+   "text": "man",
+   "start": 3.8,
+   "ende": 3.98
+  },
+  {
+   "text": "gemerkt,",
+   "start": 3.98,
+   "ende": 4.68
+  },
+  {
+   "text": "dass",
+   "start": 5.42,
+   "ende": 5.54
+  },
+  {
+   "text": "ein",
+   "start": 5.54,
+   "ende": 5.72
+  },
+  {
+   "text": "MRT",
+   "start": 5.72,
+   "ende": 6.22
+  },
+  {
+   "text": "oft",
+   "start": 6.22,
+   "ende": 6.6
+  },
+  {
+   "text": "gar",
+   "start": 6.6,
+   "ende": 7.14
+  },
+  {
+   "text": "nicht",
+   "start": 7.14,
+   "ende": 7.24
+  },
+  {
+   "text": "korreliert",
+   "start": 7.24,
+   "ende": 7.66
+  },
+  {
+   "text": "mit",
+   "start": 7.66,
+   "ende": 7.82
+  },
+  {
+   "text": "dem",
+   "start": 7.82,
+   "ende": 7.98
+  },
+  {
+   "text": "Schmerz",
+   "start": 7.98,
+   "ende": 8.36
+  },
+  {
+   "text": "oder",
+   "start": 8.36,
+   "ende": 8.5
+  },
+  {
+   "text": "den",
+   "start": 8.5,
+   "ende": 8.66
+  },
+  {
+   "text": "Symptomatiken",
+   "start": 8.66,
+   "ende": 9.26
+  },
+  {
+   "text": "von",
+   "start": 9.26,
+   "ende": 9.48
+  },
+  {
+   "text": "Patienten,",
+   "start": 9.48,
+   "ende": 9.96
+  },
+  {
+   "text": "sondern",
+   "start": 10.94,
+   "ende": 11.3
+  },
+  {
+   "text": "manche",
+   "start": 11.3,
+   "ende": 11.7
+  },
+  {
+   "text": "hatten",
+   "start": 11.7,
+   "ende": 12.1
+  },
+  {
+   "text": "MRT",
+   "start": 12.1,
+   "ende": 12.94
+  },
+  {
+   "text": "zu",
+   "start": 12.94,
+   "ende": 13.0
+  },
+  {
+   "text": "den",
+   "start": 13.0,
+   "ende": 13.22
+  },
+  {
+   "text": "Bandscheibenvorfällen.",
+   "start": 13.22,
+   "ende": 14.12
+  }
+ ],
+ "saetze": [
+  {
+   "text": "In vielen Studien hat man gemerkt, dass ein MRT oft gar nicht korreliert mit dem Schmerz oder den Symptomatiken von Patienten,",
+   "start": 2.4,
+   "ende": 9.96
+  },
+  {
+   "text": "sondern manche hatten MRT zu den Bandscheibenvorfällen.",
+   "start": 10.94,
+   "ende": 14.12
+  }
+ ]
+}

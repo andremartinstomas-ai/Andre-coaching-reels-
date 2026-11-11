@@ -68,7 +68,13 @@ def normalisieren(daten, datei):
 def whisper(video, modell):
     from faster_whisper import WhisperModel  # noqa: import nur wenn gebraucht
     m = WhisperModel(modell, device="cpu", compute_type="int8")
-    segs, info = m.transcribe(str(video), language="de", word_timestamps=True, vad_filter=True)
+    # Audio selbst per ffmpeg dekodieren (PyAV-Versionen kollidieren gern mit faster-whisper)
+    import numpy as np
+    roh = subprocess.run(["ffmpeg", "-v", "error", "-i", str(video), "-ac", "1", "-ar", "16000", "-f", "s16le", "-"],
+                         capture_output=True, check=True).stdout
+    audio = np.frombuffer(roh, np.int16).astype(np.float32) / 32768
+    segs, info = m.transcribe(audio, language="de", word_timestamps=True, vad_filter=False,
+                              initial_prompt="Physiotherapie, MRT, Bandscheibe, Bandscheibenvorfall, Rückenschmerzen.")
     woerter = [{"text": w.word.strip(), "start": w.start, "ende": w.end} for s in segs for w in s.words]
     return {"woerter": woerter, "sprache": info.language}
 
