@@ -102,7 +102,7 @@ def pruefe(spec, spec_dir):
             fehler.append(f"Aussage {i + 1} nicht als 'belegt'/'konsens' markiert (status={a.get('status')}).")
 
     alle_texte = " ".join([hook.get("text", ""), spec.get("caption", ""),
-                           *[e.get("text", "") for e in spec.get("einblendungen", [])]]).lower()
+                           *[e.get("text", "") for e in spec.get("einblendungen", []) + spec.get("untertitel_manuell", [])]]).lower()
     for muster in VERBOTEN:
         if re.search(muster, alle_texte):
             fehler.append(f"Heilversprechen/Uebertreibung gefunden: '{muster}'.")
@@ -147,6 +147,8 @@ def segment_rendern(seg, idx, spec, spec_dir, tmp, punch_in, qualitaet):
               f"crop={W}:{H}:(iw-{W})*{fx}:(ih-{H})*{fy}")
     else:
         vf = f"scale={int(bw / 2) * 2 + 2}:{int(bh / 2) * 2 + 2},crop={W}:{H}:(iw-{W})*{fx}:(ih-{H})*{fy}"
+    if seg.get("filter"):  # z. B. Helligkeit: "eq=brightness=0.05:gamma=1.15"
+        vf += "," + seg["filter"]
     if seg.get("geschwindigkeit"):
         vf += f",setpts=PTS/{seg['geschwindigkeit']}"
     vf += f",fps={FPS},setsar=1,format=yuv420p"
@@ -230,7 +232,7 @@ def ass_schreiben(spec, spec_dir, pfad, dauer):
         "Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, "
         "Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, "
         "MarginR, MarginV, Encoding",
-        f"Style: Hook,{schrift},{gr['hook']},{weiss},{weiss},&H00000000,{schatten},{fett},0,0,0,100,100,0,0,1,4,4,8,80,80,330,1",
+        f"Style: Hook,{schrift},{gr['hook']},{weiss},{weiss},&H00000000,{schatten},{fett},0,0,0,100,100,0,0,1,4,4,8,80,80,270,1",
         f"Style: Sub,{schrift},{gr['untertitel']},{weiss},{weiss},&H00000000,{schatten},{fett},0,0,0,100,100,0,0,1,5,3,2,90,90,560,1",
         f"Style: Info,{schrift},{gr['einblendung']},{weiss},{weiss},{teal},{schatten},{fett},0,0,0,100,100,0,0,3,18,0,5,90,90,0,1",
         f"Style: InfoOben,{schrift},{gr['einblendung']},{weiss},{weiss},{teal},{schatten},{fett},0,0,0,100,100,0,0,3,18,0,8,90,90,330,1",

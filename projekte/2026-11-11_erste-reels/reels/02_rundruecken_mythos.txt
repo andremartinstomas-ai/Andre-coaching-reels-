@@ -1,0 +1,27 @@
+# Rund sitzen macht Rückenschmerzen? Mythos-Check  (17.3 s)
+
+## Caption (zum Posten)
+Rund sitzen ist nicht verboten. Studien finden keinen klaren Beleg, dass deine Haltung allein Rückenschmerzen verursacht. Viel wichtiger: dass dein Rücken sich in alle Richtungen bewegen darf. Probier die Übung 5–10x langsam aus.
+
+Wenn etwas wehtut, nicht tiefer in die Bewegung gehen.
+
+Speicher dir das Reel und schick es jemandem, der ständig gerade sitzen will.
+
+#rückenschmerzen #haltung #physiotherapie #rückengesundheit #mobility
+
+## Hooks
+- Audio-Hook: riser_boom
+- Visueller Hook: Punch-in auf André, der sich im Kniestand bewusst rund macht (die Haltung, vor der alle warnen)
+- Text-Hook: Rund sitzen macht Rückenschmerzen?
+
+## Skript
+- Hook: Mythos-Frage: Rund sitzen macht Rückenschmerzen?
+- Aufbau: 41 Übersichtsarbeiten: kein klarer Beleg, dass Haltung Rückenschmerzen verursacht. Dein Rücken darf sich also rund machen.
+- Payoff: Übung zum Mitmachen: erst rund, dann lang, 5–10x langsam. Beweglich statt perfekt gerade.
+
+## Aussagen & Quellen
+- "41 Übersichtsarbeiten zeigen keinen klaren Beleg, dass Haltung Rückenschmerzen verursacht." -> Swain CTV, Pan F, Owen PJ, Schmidt H, Belavy DL. No consensus on causality of spine postures or physical exposure and low back pain: A systematic review of systematic reviews. J Biomech 2020;102:109312 [belegt] - Umbrella-Review, 41 systematische Reviews, Bradford-Hill-Kriterien: Zusammenhänge ja, aber kein Beleg für Ursache.
+
+## Hinweise fuer Andre
+- Clip A (4,4 s) läuft 4x als Schleife mit Zoomwechsel, damit Text und Übung Zeit haben. Besser wäre ein längerer Clip mit 3–4 echten Wiederholungen. Bitte beim nächsten Dreh nachdrehen.
+- Audio-Hook: synthetischer Riser mit Bass-Boom (nicht angehört). Danach in Instagram einen Trend-Sound darunterlegen.

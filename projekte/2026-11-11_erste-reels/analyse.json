@@ -1,0 +1,59 @@
+[
+  {
+    "datei": "projekte/2026-11-11_erste-reels/roh/A_IMG_4024.mov",
+    "dauer": 4.36,
+    "ton": true,
+    "breite": 1080,
+    "hoehe": 1920,
+    "drehung": -90,
+    "fps": 30.21,
+    "format": "hochkant",
+    "pausen": [],
+    "szenenwechsel": []
+  },
+  {
+    "datei": "projekte/2026-11-11_erste-reels/roh/B_IMG_4024.mov",
+    "dauer": 15.22,
+    "ton": true,
+    "breite": 1080,
+    "hoehe": 1920,
+    "drehung": -90,
+    "fps": 30.02,
+    "format": "hochkant",
+    "pausen": [],
+    "szenenwechsel": []
+  },
+  {
+    "datei": "projekte/2026-11-11_erste-reels/roh/C_IMG_4021.mov",
+    "dauer": 8.14,
+    "ton": true,
+    "breite": 1080,
+    "hoehe": 1920,
+    "drehung": -90,
+    "fps": 30.01,
+    "format": "hochkant",
+    "pausen": [
+      {
+        "start": 0.0,
+        "ende": 0.56
+      },
+      {
+        "start": 2.53,
+        "ende": 2.98
+      }
+    ],
+    "szenenwechsel": []
+  },
+  {
+    "datei": "projekte/2026-11-11_erste-reels/roh/D_IMG_4021.mov",
+    "dauer": 8.13,
+    "ton": true,
+    "breite": 1080,
+    "hoehe": 1920,
+    "drehung": -90,
+    "fps": 30.01,
+    "format": "hochkant",
+    "pausen": [],
+    "szenenwechsel": []
+  }
+]

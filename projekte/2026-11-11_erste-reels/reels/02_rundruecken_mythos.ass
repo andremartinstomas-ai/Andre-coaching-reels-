@@ -1,0 +1,25 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 0
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Hook,Liberation Sans,92,&H00FFFFFF,&H00FFFFFF,&H00000000,&H60000000,-1,0,0,0,100,100,0,0,1,4,4,8,80,80,270,1
+Style: Sub,Liberation Sans,72,&H00FFFFFF,&H00FFFFFF,&H00000000,&H60000000,-1,0,0,0,100,100,0,0,1,5,3,2,90,90,560,1
+Style: Info,Liberation Sans,64,&H00FFFFFF,&H00FFFFFF,&H008C8C0E,&H60000000,-1,0,0,0,100,100,0,0,3,18,0,5,90,90,0,1
+Style: InfoOben,Liberation Sans,64,&H00FFFFFF,&H00FFFFFF,&H008C8C0E,&H60000000,-1,0,0,0,100,100,0,0,3,18,0,8,90,90,330,1
+Style: Quelle,Liberation Sans,34,&H00FFFFFF,&H00FFFFFF,&H00000000,&H60000000,0,1,0,0,100,100,0,0,1,2,1,2,90,90,420,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 3,0:00:00.00,0:00:03.00,Hook,,0,0,0,,{\fscx140\fscy140\t(0,160,\fscx100\fscy100)\fad(40,200)}Rund sitzen macht\N{\c&H003FD2FF}Rückenschmerzen{\c&H00FFFFFF&}?
+Dialogue: 1,0:00:08.75,0:00:10.90,Sub,,0,0,0,,{\fad(80,80)}Erst {\c&H003FD2FF}rund{\c&H00FFFFFF&} machen
+Dialogue: 1,0:00:10.90,0:00:13.00,Sub,,0,0,0,,{\fad(80,80)}dann {\c&H003FD2FF}lang{\c&H00FFFFFF&} machen
+Dialogue: 1,0:00:13.00,0:00:15.00,Sub,,0,0,0,,{\fad(80,80)}{\c&H003FD2FF}5–10x{\c&H00FFFFFF&}, ganz langsam
+Dialogue: 1,0:00:15.00,0:00:17.30,Sub,,0,0,0,,{\fad(80,80)}Wenn etwas wehtut, nicht tiefer in die Bewegung gehen.
+Dialogue: 2,0:00:03.10,0:00:08.60,InfoOben,,0,0,0,,{\fad(120,120)}41 Übersichtsarbeiten:\N{\c&H003FD2FF}kein klarer Beleg{\c&H00FFFFFF&}, dass\NHaltung die Ursache ist
+Dialogue: 2,0:00:13.00,0:00:17.30,InfoOben,,0,0,0,,{\fad(120,120)}Beweglich statt\N{\c&H003FD2FF}perfekt gerade{\c&H00FFFFFF&}
+Dialogue: 1,0:00:03.10,0:00:08.60,Quelle,,0,0,0,,{\fad(200,200)}Quelle: Swain et al. 2020, Journal of Biomechanics

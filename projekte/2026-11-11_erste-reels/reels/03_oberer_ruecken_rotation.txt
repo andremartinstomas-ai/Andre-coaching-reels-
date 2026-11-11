@@ -1,0 +1,28 @@
+# Oberer Rücken steif vom Sitzen? Rotation  (15.9 s)
+
+## Caption (zum Posten)
+Es gibt nicht die eine perfekte Sitzhaltung. Viel hilfreicher: öfter die Position wechseln und den oberen Rücken bewegen. Zwei Varianten, die du ausprobieren kannst, je 5x pro Seite.
+
+Wenn etwas wehtut, nicht tiefer in die Bewegung gehen.
+
+Speicher dir das Reel für deine nächste Sitzpause.
+
+#brustwirbelsäule #rückenschmerzen #physiotherapie #mobilität #büroalltag
+
+## Hooks
+- Audio-Hook: blubb_pops
+- Visueller Hook: Punch-in, während André im ersten Frame den Arm weit nach hinten aufdreht
+- Text-Hook: Oberer Rücken steif vom Sitzen?
+
+## Skript
+- Hook: Große Armbewegung im ersten Bild + Frage: Oberer Rücken steif vom Sitzen?
+- Aufbau: Die eine perfekte Haltung gibt es laut Fachliteratur nicht. Die beste Haltung ist die nächste, also Positionswechsel und Bewegung.
+- Payoff: Zwei Rotationsvarianten zum Mitmachen, 5x pro Seite.
+
+## Aussagen & Quellen
+- "Für die eine richtige Haltung gibt es keine starke Evidenz." -> Slater D, Korakakis V, O'Sullivan P, Nolan D, O'Sullivan K. "Sit Up Straight": Time to Re-evaluate. J Orthop Sports Phys Ther 2019;49(8):562–564. doi:10.2519/jospt.2019.0610 [belegt] - Viewpoint: Überzeugungen zu 'falschem' Sitzen/Stehen/Bücken als Schmerzursache sind nicht durch starke Evidenz gestützt.
+- "Die beste Haltung ist die nächste (Positionswechsel statt starrer Haltung)." -> Slater D et al. JOSPT 2019;49(8):562–564; Patienteninfo NHS North Cheshire & Mersey auf Basis dieses Papers [konsens]
+
+## Hinweise fuer Andre
+- C und D waren recht dunkel, deshalb sind sie leicht aufgehellt.
+- Audio-Hook: synthetische Blubb-Pops (nicht angehört). Danach in Instagram einen Trend-Sound darunterlegen.
