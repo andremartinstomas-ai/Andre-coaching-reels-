@@ -10,9 +10,9 @@ Speicher dir das Reel für deine nächste Sitzpause.
 #brustwirbelsäule #rückenschmerzen #physiotherapie #mobilität #büroalltag
 
 ## Hooks
-- Audio-Hook: blubb_pops
+- Audio-Hook: kein Soundeffekt, Trend-Sound in Instagram darunterlegen
 - Visueller Hook: Punch-in, während André im ersten Frame den Arm weit nach hinten aufdreht
-- Text-Hook: Oberer Rücken steif vom Sitzen?
+- Text-Hook: Oberer Rücken steif vom Sitzen? / 2 Varianten für zwischendurch
 
 ## Skript
 - Hook: Große Armbewegung im ersten Bild + Frage: Oberer Rücken steif vom Sitzen?
@@ -25,4 +25,4 @@ Speicher dir das Reel für deine nächste Sitzpause.
 
 ## Hinweise fuer Andre
 - C und D waren recht dunkel, deshalb sind sie leicht aufgehellt.
-- Audio-Hook: synthetische Blubb-Pops (nicht angehört). Danach in Instagram einen Trend-Sound darunterlegen.
+- Keine Soundeffekte eingebaut. In Instagram einen Trend-Sound aus der Bibliothek darunterlegen.

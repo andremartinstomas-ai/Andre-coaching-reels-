@@ -17,8 +17,9 @@ Arbeitssprache mit André: Deutsch, locker, direkt. Kein KI-Deutsch.
    lässt, wird gestrichen oder vorsichtiger formuliert. Nie eine Quelle erfinden. Details: `docs/faktencheck.md`.
 4. **Hook → Aufbau → Payoff.** Jedes Reel hat einen Spannungsbogen, bei dem sich das Dranbleiben lohnt.
    Details: `docs/skript-regeln.md`.
-5. **Drei Hooks gleichzeitig in den ersten 3 Sekunden:** Audio-Hook, visueller Hook und Text-Hook (siehe Skill
-   `reel-drei-hooks`).
+5. **Hooks in den ersten 3 Sekunden:** visueller Hook + Text-Hook (Hauptzeile, gelbe Zeile, kleine Unterzeile).
+   **Keine Soundeffekte** (Andre, 2026-11-11: klingen schlecht). Ton = Trend-Sound, den Andre in Instagram
+   darunterlegt; das in `hinweise` notieren. `hook.sound` nur setzen, wenn Andre es ausdrücklich will.
 6. **Kein Heilversprechen, kein Nocebo.** Hoffnungsvoller Ton. Nicht „schmerzfrei“, sondern „Übungen, die du
    ausprobieren kannst“. Bei Übungen immer: „Wenn etwas wehtut, nicht tiefer in die Bewegung gehen.“
 7. **Übung passt zum Problem.** Typische Übung für typisches Problem. Fehlt passendes Material, sag André, welchen
@@ -71,9 +72,11 @@ Pfade in der Spec sind relativ zum `specs/`-Ordner.
   dem ersten Wort, Ende ca. 0,15 s nach dem letzten Wort). Gelaber dazwischen herausschneiden = mehrere Segmente.
   Das erste Segment trägt den visuellen Hook (Bewegung oder Nahaufnahme, `punch_in: true`).
   `zoom` (1.0–1.3) im Wechsel nutzen, damit Jump-Cuts lebendig wirken.
-- `hook`: Text (max. ~8 Wörter, Problem + Neugier, `*Wort*` = gelb), Sound, visuelle Beschreibung
+- `hook`: `text` (2 Zeilen, Problem + Neugier, `*Zeile*` = gelb), `unterzeile` (klein), `visuell` (Beschreibung)
+- `kapitel`: Übungs-/Schritt-Abschnitte mit `label` („Übung 1 von 3“), `titel` (Übungsname), optional `info`.
+  Steuert den Fortschrittsbalken oben. Letzte Karte „Kurz merken / … speichern“ mit `fortschritt: false`.
 - `einblendungen`: Kernzahlen und Aufbau-Punkte; `quelle_einblendung` bei Zahlen und Studien
-- `untertitel_manuell`: Text für Übungsclips ohne Ton
+- `untertitel_manuell`: Text unten (z. B. Sicherheitssatz mit `groesse: 56`)
 - `aussagen`: **jede** Aussage mit Quelle und Status
 - `caption` (kurz, Speichern-Aufruf), genau 5 `hashtags`, `uebung: true` bei Übungen
 
@@ -91,18 +94,21 @@ Der Renderer bricht bei Regelverstößen ab (fehlende Quelle, Heilversprechen, k
   im unteren Instagram-UI-Bereich?
 - Untertitel gegen das Gesagte prüfen (Fachbegriffe!)
 - Lautheit liegt bei ca. -14 LUFS (macht der Renderer automatisch)
-- Ehrlich sagen, dass der Sound nicht angehört werden konnte
 
 ### 7. Übergabe an André
 Pro Reel: MP4, `.cover.jpg` und `.txt` (Caption, Hooks je eine Zeile, Skript, Aussagen mit Quellen).
 Dazu eine Kurzübersicht: welche Reels, welche Kandidaten verworfen und warum, welche Clips nachgedreht werden sollten.
 Fertige Videos nicht ins Git committen (zu groß, `.gitignore`), sondern per SendUserFile schicken.
 
-## Markenstil Reels
-Teal, Gelb, Weiß (`config/brand.json`). Hook-Text oben mit dunklem Verlauf, Untertitel unten mit gelbem aktiven
-Wort, Einblendungen in Teal-Box. Eigene Schrift: `.ttf` in `fonts/` legen und in `brand.json` eintragen.
+## Markenstil Reels (Vorlage: Andres „12-nacken-5-uebungen-hook-B“)
+- Schrift Bebas Neue, alles Großbuchstaben, dunkle Kontur. Gelb `#F8B800`, Weiß, Label-Teal `#005058`.
+- Hook: Bild abgedunkelt, Text mittig, Zeile 1 weiß, Zeile 2 gelb, kleine weiße Unterzeile. Größe wird automatisch
+  an die Breite angepasst.
+- Fortschrittsbalken oben (ein Segment pro Kapitel), rechts oben Label in Teal + gelbe Linie + Titel in Gelb.
+- Fakten (Aufbau) mittig oben auf abgedunkeltem Bild, Quelle klein unten.
+- Werte in `config/brand.json`.
 
 ## Grenzen der Umgebung
-- Keine Soundbibliotheken erreichbar → Hook-Sounds sind synthetisch (`scripts/hook_sounds.py`). Alternative: in
-  Instagram einen Sound aus der Bibliothek darüberlegen (in `hinweise` notieren).
+- Keine Soundbibliotheken erreichbar. Synthetische Sounds (`scripts/hook_sounds.py`) klangen für Andre schlecht und
+  werden nicht mehr verwendet.
 - Keine urheberrechtlich geschützte Musik einbauen.

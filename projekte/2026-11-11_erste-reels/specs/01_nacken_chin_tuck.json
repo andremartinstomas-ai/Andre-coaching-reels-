@@ -8,39 +8,104 @@
     "payoff": "Fertige Mini-Übung: 5 Sek halten, 10x, für die nächste Pause."
   },
   "hook": {
-    "text": "Nacken *fest*\nnach dem Bürotag?",
-    "dauer": 3.0, "animation": "slam",
-    "sound": "benachrichtigung", "sound_lautstaerke": 0.6,
+    "text": "Nacken fest\n*nach dem Büro?*",
+    "dauer": 3.0,
+    "animation": "slam",
     "punch_in": true,
-    "visuell": "Punch-in-Nahaufnahme auf Kopf und Kinn, Finger schiebt das Kinn zurück"
+    "visuell": "Punch-in-Nahaufnahme auf Kopf und Kinn, Finger schiebt das Kinn zurück",
+    "unterzeile": "Diese Übung geht direkt am Platz"
   },
   "segmente": [
-    {"quelle": "../roh/B_IMG_4024.mov", "start": 0.0, "ende": 3.0, "ton": false, "zoom": 1.7, "fokus_x": 0.62, "fokus_y": 0.21},
-    {"quelle": "../roh/B_IMG_4024.mov", "start": 3.0, "ende": 7.6, "ton": false, "zoom": 1.15, "fokus_x": 0.55, "fokus_y": 0.35},
-    {"quelle": "../roh/B_IMG_4024.mov", "start": 7.6, "ende": 15.15, "ton": false, "zoom": 1.55, "fokus_x": 0.62, "fokus_y": 0.2}
+    {
+      "quelle": "../roh/B_IMG_4024.mov",
+      "start": 0.0,
+      "ende": 3.0,
+      "ton": false,
+      "zoom": 1.7,
+      "fokus_x": 0.62,
+      "fokus_y": 0.21
+    },
+    {
+      "quelle": "../roh/B_IMG_4024.mov",
+      "start": 3.0,
+      "ende": 7.6,
+      "ton": false,
+      "zoom": 1.15,
+      "fokus_x": 0.55,
+      "fokus_y": 0.35
+    },
+    {
+      "quelle": "../roh/B_IMG_4024.mov",
+      "start": 7.6,
+      "ende": 15.15,
+      "ton": false,
+      "zoom": 1.55,
+      "fokus_x": 0.62,
+      "fokus_y": 0.2
+    }
   ],
   "untertitel": false,
   "einblendungen": [
-    {"start": 3.15, "ende": 7.5, "position": "oben", "text": "Leitlinien empfehlen:\n*gezielte Übungen*\nstatt Schonung"}
+    {
+      "start": 3.1,
+      "ende": 7.5,
+      "text": "Leitlinien empfehlen:\n*gezielte Übungen*\nstatt Schonung"
+    }
   ],
   "untertitel_manuell": [
-    {"start": 7.7, "ende": 10.0, "text": "Kinn *gerade nach hinten*"},
-    {"start": 10.0, "ende": 12.0, "text": "nicht nach unten nicken"},
-    {"start": 12.0, "ende": 13.6, "text": "*5 Sek* halten · *10x*"},
-    {"start": 13.6, "ende": 15.15, "text": "Wenn etwas wehtut, nicht tiefer in die Bewegung gehen."}
+    {
+      "start": 7.6,
+      "ende": 15.15,
+      "text": "Wenn etwas wehtut, nicht tiefer in die Bewegung gehen.",
+      "groesse": 56
+    }
   ],
-  "quelle_einblendung": {"text": "Quelle: Blanpied et al. 2017, JOSPT (Leitlinie Nackenschmerz)", "start": 3.15, "ende": 7.5},
-  "sounds": [{"name": "whoosh", "zeit": 7.45, "lautstaerke": 0.35}],
+  "quelle_einblendung": {
+    "text": "Quelle: Blanpied et al. 2017, JOSPT – Leitlinie Nackenschmerz",
+    "start": 3.1,
+    "ende": 7.5
+  },
   "aussagen": [
-    {"text": "Leitlinien empfehlen bei Nackenschmerzen gezielte Übungen (Nacken- und Schulterblattregion).",
-     "quelle": "Blanpied PR, Gross AR, Elliott JM et al. Neck Pain: Revision 2017. Clinical Practice Guidelines. J Orthop Sports Phys Ther 2017;47(7):A1–A83. doi:10.2519/jospt.2017.0302",
-     "status": "konsens",
-     "beleg": "Leitlinie empfiehlt je nach Klassifikation u. a. Beweglichkeitsübungen, Kraft-/Ausdauertraining und neuromuskuläre Übungen für Nacken und Schulterblattregion."}
+    {
+      "text": "Leitlinien empfehlen bei Nackenschmerzen gezielte Übungen (Nacken- und Schulterblattregion).",
+      "quelle": "Blanpied PR, Gross AR, Elliott JM et al. Neck Pain: Revision 2017. Clinical Practice Guidelines. J Orthop Sports Phys Ther 2017;47(7):A1–A83. doi:10.2519/jospt.2017.0302",
+      "status": "konsens",
+      "beleg": "Leitlinie empfiehlt je nach Klassifikation u. a. Beweglichkeitsübungen, Kraft-/Ausdauertraining und neuromuskuläre Übungen für Nacken und Schulterblattregion."
+    }
   ],
   "caption": "Nacken fest nach einem langen Tag am Schreibtisch? Der Chin Tuck ist eine Übung, die du direkt am Platz ausprobieren kannst. Kinn gerade nach hinten schieben, 5 Sekunden halten, 10 Wiederholungen.\n\nWenn etwas wehtut, nicht tiefer in die Bewegung gehen.\n\nSpeicher dir das Reel für deine nächste Pause.",
-  "hashtags": ["#nackenschmerzen", "#nackenverspannung", "#physiotherapie", "#büroalltag", "#chintuck"],
+  "hashtags": [
+    "#nackenschmerzen",
+    "#nackenverspannung",
+    "#physiotherapie",
+    "#büroalltag",
+    "#chintuck"
+  ],
   "hinweise": [
-    "Audio-Hook ist ein synthetischer Benachrichtigungston (selbst erzeugt, nicht angehört). Danach läuft kein Ton: in Instagram einen Trend-Sound aus der Bibliothek leise darunterlegen.",
-    "Raumton aus dem Clip entfernt, weil nicht gesprochen wird."
+    "Raumton aus dem Clip entfernt, weil nicht gesprochen wird.",
+    "Keine Soundeffekte eingebaut. In Instagram einen Trend-Sound aus der Bibliothek darunterlegen."
+  ],
+  "kapitel": [
+    {
+      "start": 7.6,
+      "ende": 10.5,
+      "label": "Schritt 1 von 2",
+      "titel": "Chin Tuck",
+      "info": "Kinn gerade nach hinten"
+    },
+    {
+      "start": 10.5,
+      "ende": 13.4,
+      "label": "Schritt 2 von 2",
+      "titel": "5 Sek halten",
+      "info": "10 Wiederholungen"
+    },
+    {
+      "start": 13.4,
+      "ende": 15.15,
+      "label": "Kurz merken",
+      "titel": "Für den Bürotag\nspeichern",
+      "fortschritt": false
+    }
   ]
 }

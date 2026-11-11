@@ -8,13 +8,12 @@
     "payoff": "Übung zum Mitmachen: erst rund, dann lang, 5–10x langsam. Beweglich statt perfekt gerade."
   },
   "hook": {
-    "text": "Rund sitzen macht\n*Rückenschmerzen*?",
+    "text": "Rund sitzen macht\n*Rückenschmerzen?*",
     "dauer": 3.0,
     "animation": "slam",
-    "sound": "riser_boom",
-    "sound_lautstaerke": 0.55,
     "punch_in": true,
-    "visuell": "Punch-in auf André, der sich im Kniestand bewusst rund macht (die Haltung, vor der alle warnen)"
+    "visuell": "Punch-in auf André, der sich im Kniestand bewusst rund macht (die Haltung, vor der alle warnen)",
+    "unterzeile": "Was die Studienlage wirklich sagt"
   },
   "segmente": [
     {
@@ -59,36 +58,15 @@
     {
       "start": 3.1,
       "ende": 8.6,
-      "position": "oben",
-      "text": "41 Übersichtsarbeiten:\n*kein klarer Beleg*, dass\nHaltung die Ursache ist"
-    },
-    {
-      "start": 13.0,
-      "ende": 17.3,
-      "position": "oben",
-      "text": "Beweglich statt\n*perfekt gerade*"
+      "text": "41 Übersichtsarbeiten:\n*kein klarer Beleg*\nfür Haltung als Ursache"
     }
   ],
   "untertitel_manuell": [
     {
-      "start": 8.75,
-      "ende": 10.9,
-      "text": "Erst *rund* machen"
-    },
-    {
-      "start": 10.9,
-      "ende": 13.0,
-      "text": "dann *lang* machen"
-    },
-    {
-      "start": 13.0,
-      "ende": 15.0,
-      "text": "*5–10x*, ganz langsam"
-    },
-    {
-      "start": 15.0,
-      "ende": 17.3,
-      "text": "Wenn etwas wehtut, nicht tiefer in die Bewegung gehen."
+      "start": 8.7,
+      "ende": 17.32,
+      "text": "Wenn etwas wehtut, nicht tiefer in die Bewegung gehen.",
+      "groesse": 56
     }
   ],
   "quelle_einblendung": {
@@ -96,13 +74,6 @@
     "start": 3.1,
     "ende": 8.6
   },
-  "sounds": [
-    {
-      "name": "whoosh",
-      "zeit": 8.55,
-      "lautstaerke": 0.35
-    }
-  ],
   "aussagen": [
     {
       "text": "41 Übersichtsarbeiten zeigen keinen klaren Beleg, dass Haltung Rückenschmerzen verursacht.",
@@ -121,6 +92,34 @@
   ],
   "hinweise": [
     "Clip A (4,4 s) läuft 4x als Schleife mit Zoomwechsel, damit Text und Übung Zeit haben. Besser wäre ein längerer Clip mit 3–4 echten Wiederholungen. Bitte beim nächsten Dreh nachdrehen.",
-    "Audio-Hook: synthetischer Riser mit Bass-Boom (nicht angehört). Danach in Instagram einen Trend-Sound darunterlegen."
+    "Keine Soundeffekte eingebaut. In Instagram einen Trend-Sound aus der Bibliothek darunterlegen."
+  ],
+  "kapitel": [
+    {
+      "start": 8.7,
+      "ende": 10.8,
+      "label": "Schritt 1 von 2",
+      "titel": "Rund machen"
+    },
+    {
+      "start": 10.8,
+      "ende": 13.0,
+      "label": "Schritt 2 von 2",
+      "titel": "Lang machen"
+    },
+    {
+      "start": 13.0,
+      "ende": 15.2,
+      "label": "Dosis",
+      "titel": "5–10x langsam",
+      "fortschritt": false
+    },
+    {
+      "start": 15.2,
+      "ende": 17.32,
+      "label": "Kurz merken",
+      "titel": "Beweglich statt\nperfekt gerade",
+      "fortschritt": false
+    }
   ]
 }

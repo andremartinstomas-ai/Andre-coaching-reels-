@@ -7,20 +7,40 @@ ScaledBorderAndShadow: yes
 
 [V4+ Styles]
 Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
-Style: Hook,Liberation Sans,92,&H00FFFFFF,&H00FFFFFF,&H00000000,&H60000000,-1,0,0,0,100,100,0,0,1,4,4,8,80,80,270,1
-Style: Sub,Liberation Sans,72,&H00FFFFFF,&H00FFFFFF,&H00000000,&H60000000,-1,0,0,0,100,100,0,0,1,5,3,2,90,90,560,1
-Style: Info,Liberation Sans,64,&H00FFFFFF,&H00FFFFFF,&H008C8C0E,&H60000000,-1,0,0,0,100,100,0,0,3,18,0,5,90,90,0,1
-Style: InfoOben,Liberation Sans,64,&H00FFFFFF,&H00FFFFFF,&H008C8C0E,&H60000000,-1,0,0,0,100,100,0,0,3,18,0,8,90,90,330,1
-Style: Quelle,Liberation Sans,34,&H00FFFFFF,&H00FFFFFF,&H00000000,&H60000000,0,1,0,0,100,100,0,0,1,2,1,2,90,90,420,1
+Style: Hook,Bebas Neue,230,&H00FFFFFF,&H00FFFFFF,&H00141414,&H80000000,-1,0,0,0,100,100,1,0,1,5,0,5,60,60,0,1
+Style: HookUnter,Bebas Neue,70,&H00FFFFFF,&H00FFFFFF,&H00141414,&H80000000,0,0,0,0,100,100,1,0,1,3,0,8,60,60,0,1
+Style: Fakt,Bebas Neue,118,&H00FFFFFF,&H00FFFFFF,&H00141414,&H80000000,-1,0,0,0,100,100,1,0,1,4,0,8,60,60,0,1
+Style: Label,Bebas Neue,84,&H00585000,&H00585000,&H00FFFFFF,&H80000000,0,0,0,0,100,100,1,0,1,3,0,9,60,60,0,1
+Style: Titel,Bebas Neue,160,&H0000B8F8,&H0000B8F8,&H00141414,&H80000000,-1,0,0,0,100,100,1,0,1,4,0,9,60,60,0,1
+Style: Info,Bebas Neue,66,&H00FFFFFF,&H00FFFFFF,&H00141414,&H80000000,0,0,0,0,100,100,1,0,1,3,0,9,60,60,0,1
+Style: Sub,Bebas Neue,96,&H00FFFFFF,&H00FFFFFF,&H00141414,&H80000000,0,0,0,0,100,100,1,0,1,5,0,2,60,60,500,1
+Style: Quelle,Bebas Neue,44,&H00FFFFFF,&H00FFFFFF,&H00141414,&H80000000,0,0,0,0,100,100,1,0,1,2,0,2,60,60,400,1
+Style: Form,Bebas Neue,20,&H00FFFFFF,&H00FFFFFF,&H00000000,&H00000000,0,0,0,0,100,100,0,0,1,0,0,7,0,0,0,1
 
 [Events]
 Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
-Dialogue: 3,0:00:00.00,0:00:03.00,Hook,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx108\fscy108)\t(90,180,\fscx100\fscy100)\fad(30,200)}Oberer Rücken {\c&H003FD2FF}steif{\c&H00FFFFFF&}\Nvom Sitzen?
-Dialogue: 1,0:00:03.20,0:00:05.30,Sub,,0,0,0,,{\fad(80,80)}Arme vorne zusammen
-Dialogue: 1,0:00:05.30,0:00:07.80,Sub,,0,0,0,,{\fad(80,80)}eine Seite {\c&H003FD2FF}weit aufdrehen{\c&H00FFFFFF&}
-Dialogue: 1,0:00:07.90,0:00:10.60,Sub,,0,0,0,,{\fad(80,80)}Variante: {\c&H003FD2FF}Armkreis{\c&H00FFFFFF&} an der Wand
-Dialogue: 1,0:00:10.60,0:00:13.20,Sub,,0,0,0,,{\fad(80,80)}{\c&H003FD2FF}5x pro Seite{\c&H00FFFFFF&}, ruhig atmen
-Dialogue: 1,0:00:13.20,0:00:15.90,Sub,,0,0,0,,{\fad(80,80)}Wenn etwas wehtut, nicht tiefer in die Bewegung gehen.
-Dialogue: 2,0:00:03.10,0:00:07.00,InfoOben,,0,0,0,,{\fad(120,120)}Die {\c&H003FD2FF}eine{\c&H00FFFFFF&} richtige Haltung?\NDafür gibt es keine\Nstarke Evidenz
-Dialogue: 2,0:00:07.00,0:00:10.60,InfoOben,,0,0,0,,{\fad(120,120)}Die beste Haltung:\N{\c&H003FD2FF}die nächste{\c&H00FFFFFF&}
-Dialogue: 1,0:00:03.10,0:00:10.60,Quelle,,0,0,0,,{\fad(200,200)}Quelle: Slater et al. 2019, JOSPT
+Dialogue: 5,0:00:00.00,0:00:03.00,Hook,,0,0,0,,{\an8\pos(540,351)\fscx118\fscy118\t(0,140,\fscx100\fscy100)\fad(60,120)\fs198}OBERER RÜCKEN
+Dialogue: 5,0:00:00.00,0:00:03.00,Hook,,0,0,0,,{\an8\pos(540,522)\fscx118\fscy118\t(0,140,\fscx100\fscy100)\fad(60,120)\fs198}{\c&H0000B8F8}STEIF VOM SITZEN?{\c&H00FFFFFF&}
+Dialogue: 5,0:00:00.00,0:00:03.00,HookUnter,,0,0,0,,{\an8\pos(540,720)\fscx118\fscy118\t(0,140,\fscx100\fscy100)\fad(60,120)}2 VARIANTEN FÜR ZWISCHENDURCH
+Dialogue: 4,0:00:03.10,0:00:06.50,Fakt,,0,0,0,,{\an8\pos(540,260)\fad(120,120)\fs118}DIE EINE RICHTIGE HALTUNG?
+Dialogue: 4,0:00:03.10,0:00:06.50,Fakt,,0,0,0,,{\an8\pos(540,361)\fad(120,120)\fs118}{\c&H0000B8F8}KEINE STARKE EVIDENZ{\c&H00FFFFFF&}
+Dialogue: 1,0:00:03.10,0:00:15.90,Quelle,,0,0,0,,{\fad(150,150)}Quelle: Slater et al. 2019, JOSPT
+Dialogue: 1,0:00:00.00,0:00:15.90,Form,,0,0,0,,{\an7\pos(85,30)\c&H00FFFFFF\alpha&H50&\bord0\shad0\p1}m 0 0 l 448 0 448 8 0 8{\p0}
+Dialogue: 2,0:00:06.60,0:00:11.40,Form,,0,0,0,,{\an7\pos(85,30)\c&H0000B8F8\alpha&H00&\bord0\shad0\fscx0\t(0,4800,\fscx100)\p1}m 0 0 l 448 0 448 8 0 8{\p0}
+Dialogue: 2,0:00:11.40,0:00:15.90,Form,,0,0,0,,{\an7\pos(85,30)\c&H0000B8F8\alpha&H00&\bord0\shad0\p1}m 0 0 l 448 0 448 8 0 8{\p0}
+Dialogue: 1,0:00:00.00,0:00:15.90,Form,,0,0,0,,{\an7\pos(547,30)\c&H00FFFFFF\alpha&H50&\bord0\shad0\p1}m 0 0 l 448 0 448 8 0 8{\p0}
+Dialogue: 2,0:00:11.40,0:00:14.10,Form,,0,0,0,,{\an7\pos(547,30)\c&H0000B8F8\alpha&H00&\bord0\shad0\fscx0\t(0,2699,\fscx100)\p1}m 0 0 l 448 0 448 8 0 8{\p0}
+Dialogue: 2,0:00:14.10,0:00:15.90,Form,,0,0,0,,{\an7\pos(547,30)\c&H0000B8F8\alpha&H00&\bord0\shad0\p1}m 0 0 l 448 0 448 8 0 8{\p0}
+Dialogue: 3,0:00:06.60,0:00:11.40,Label,,0,0,0,,{\an9\pos(995,270)\fad(120,100)}VARIANTE 1 VON 2
+Dialogue: 3,0:00:06.60,0:00:11.40,Form,,0,0,0,,{\an7\pos(565,350)\c&H0000B8F8\alpha&H00&\bord0\shad0\fad(120,100)\p1}m 0 0 l 430 0 430 6 0 6{\p0}
+Dialogue: 3,0:00:06.60,0:00:11.40,Titel,,0,0,0,,{\an9\pos(995,366)\fad(120,100)\fs160}ROTATION
+Dialogue: 3,0:00:06.60,0:00:11.40,Info,,0,0,0,,{\an9\pos(995,509)\fad(120,100)}EINE SEITE WEIT AUFDREHEN
+Dialogue: 3,0:00:11.40,0:00:14.10,Label,,0,0,0,,{\an9\pos(995,270)\fad(120,100)}VARIANTE 2 VON 2
+Dialogue: 3,0:00:11.40,0:00:14.10,Form,,0,0,0,,{\an7\pos(565,350)\c&H0000B8F8\alpha&H00&\bord0\shad0\fad(120,100)\p1}m 0 0 l 430 0 430 6 0 6{\p0}
+Dialogue: 3,0:00:11.40,0:00:14.10,Titel,,0,0,0,,{\an9\pos(995,366)\fad(120,100)\fs160}ARMKREIS
+Dialogue: 3,0:00:11.40,0:00:14.10,Info,,0,0,0,,{\an9\pos(995,509)\fad(120,100)}5X PRO SEITE
+Dialogue: 3,0:00:14.10,0:00:15.90,Label,,0,0,0,,{\an9\pos(995,270)\fad(120,100)}KURZ MERKEN
+Dialogue: 3,0:00:14.10,0:00:15.90,Form,,0,0,0,,{\an7\pos(565,350)\c&H0000B8F8\alpha&H00&\bord0\shad0\fad(120,100)\p1}m 0 0 l 430 0 430 6 0 6{\p0}
+Dialogue: 3,0:00:14.10,0:00:15.90,Titel,,0,0,0,,{\an9\pos(995,366)\fad(120,100)\fs160}BESTE HALTUNG:
+Dialogue: 3,0:00:14.10,0:00:15.90,Titel,,0,0,0,,{\an9\pos(995,503)\fad(120,100)\fs160}DIE NÄCHSTE
+Dialogue: 1,0:00:06.60,0:00:15.90,Sub,,0,0,0,,{\fad(100,100)\fs56}WENN ETWAS WEHTUT, NICHT TIEFER IN DIE BEWEGUNG GEHEN.

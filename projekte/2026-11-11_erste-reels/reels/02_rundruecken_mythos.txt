@@ -10,9 +10,9 @@ Speicher dir das Reel und schick es jemandem, der ständig gerade sitzen will.
 #rückenschmerzen #haltung #physiotherapie #rückengesundheit #mobility
 
 ## Hooks
-- Audio-Hook: riser_boom
+- Audio-Hook: kein Soundeffekt, Trend-Sound in Instagram darunterlegen
 - Visueller Hook: Punch-in auf André, der sich im Kniestand bewusst rund macht (die Haltung, vor der alle warnen)
-- Text-Hook: Rund sitzen macht Rückenschmerzen?
+- Text-Hook: Rund sitzen macht Rückenschmerzen? / Was die Studienlage wirklich sagt
 
 ## Skript
 - Hook: Mythos-Frage: Rund sitzen macht Rückenschmerzen?
@@ -24,4 +24,4 @@ Speicher dir das Reel und schick es jemandem, der ständig gerade sitzen will.
 
 ## Hinweise fuer Andre
 - Clip A (4,4 s) läuft 4x als Schleife mit Zoomwechsel, damit Text und Übung Zeit haben. Besser wäre ein längerer Clip mit 3–4 echten Wiederholungen. Bitte beim nächsten Dreh nachdrehen.
-- Audio-Hook: synthetischer Riser mit Bass-Boom (nicht angehört). Danach in Instagram einen Trend-Sound darunterlegen.
+- Keine Soundeffekte eingebaut. In Instagram einen Trend-Sound aus der Bibliothek darunterlegen.

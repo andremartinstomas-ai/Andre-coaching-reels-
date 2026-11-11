@@ -8,13 +8,12 @@
     "payoff": "Zwei Rotationsvarianten zum Mitmachen, 5x pro Seite."
   },
   "hook": {
-    "text": "Oberer Rücken *steif*\nvom Sitzen?",
+    "text": "Oberer Rücken\n*steif vom Sitzen?*",
     "dauer": 3.0,
-    "animation": "pop",
-    "sound": "blubb_pops",
-    "sound_lautstaerke": 0.6,
+    "animation": "slam",
     "punch_in": true,
-    "visuell": "Punch-in, während André im ersten Frame den Arm weit nach hinten aufdreht"
+    "visuell": "Punch-in, während André im ersten Frame den Arm weit nach hinten aufdreht",
+    "unterzeile": "2 Varianten für zwischendurch"
   },
   "segmente": [
     {
@@ -28,6 +27,14 @@
       "filter": "eq=brightness=0.05:contrast=1.06:gamma=1.18:saturation=1.1"
     },
     {
+      "quelle": "../roh/C_IMG_4021.mov",
+      "start": 0.0,
+      "ende": 3.6,
+      "ton": false,
+      "zoom": 1.0,
+      "filter": "eq=brightness=0.05:contrast=1.06:gamma=1.18:saturation=1.1"
+    },
+    {
       "quelle": "../roh/D_IMG_4021.mov",
       "start": 3.3,
       "ende": 8.1,
@@ -37,10 +44,10 @@
     },
     {
       "quelle": "../roh/C_IMG_4021.mov",
-      "start": 0.0,
+      "start": 3.6,
       "ende": 8.1,
       "ton": false,
-      "zoom": 1.0,
+      "zoom": 1.05,
       "filter": "eq=brightness=0.05:contrast=1.06:gamma=1.18:saturation=1.1"
     }
   ],
@@ -48,56 +55,23 @@
   "einblendungen": [
     {
       "start": 3.1,
-      "ende": 7.0,
-      "position": "oben",
-      "text": "Die *eine* richtige Haltung?\nDafür gibt es keine\nstarke Evidenz"
-    },
-    {
-      "start": 7.0,
-      "ende": 10.6,
-      "position": "oben",
-      "text": "Die beste Haltung:\n*die nächste*"
+      "ende": 6.5,
+      "text": "Die eine richtige Haltung?\n*Keine starke Evidenz*"
     }
   ],
   "untertitel_manuell": [
     {
-      "start": 3.2,
-      "ende": 5.3,
-      "text": "Arme vorne zusammen"
-    },
-    {
-      "start": 5.3,
-      "ende": 7.8,
-      "text": "eine Seite *weit aufdrehen*"
-    },
-    {
-      "start": 7.9,
-      "ende": 10.6,
-      "text": "Variante: *Armkreis* an der Wand"
-    },
-    {
-      "start": 10.6,
-      "ende": 13.2,
-      "text": "*5x pro Seite*, ruhig atmen"
-    },
-    {
-      "start": 13.2,
+      "start": 6.6,
       "ende": 15.9,
-      "text": "Wenn etwas wehtut, nicht tiefer in die Bewegung gehen."
+      "text": "Wenn etwas wehtut, nicht tiefer in die Bewegung gehen.",
+      "groesse": 56
     }
   ],
   "quelle_einblendung": {
     "text": "Quelle: Slater et al. 2019, JOSPT",
     "start": 3.1,
-    "ende": 10.6
+    "ende": 15.9
   },
-  "sounds": [
-    {
-      "name": "whoosh",
-      "zeit": 7.65,
-      "lautstaerke": 0.35
-    }
-  ],
   "aussagen": [
     {
       "text": "Für die eine richtige Haltung gibt es keine starke Evidenz.",
@@ -121,6 +95,29 @@
   ],
   "hinweise": [
     "C und D waren recht dunkel, deshalb sind sie leicht aufgehellt.",
-    "Audio-Hook: synthetische Blubb-Pops (nicht angehört). Danach in Instagram einen Trend-Sound darunterlegen."
+    "Keine Soundeffekte eingebaut. In Instagram einen Trend-Sound aus der Bibliothek darunterlegen."
+  ],
+  "kapitel": [
+    {
+      "start": 6.6,
+      "ende": 11.4,
+      "label": "Variante 1 von 2",
+      "titel": "Rotation",
+      "info": "Eine Seite weit aufdrehen"
+    },
+    {
+      "start": 11.4,
+      "ende": 14.1,
+      "label": "Variante 2 von 2",
+      "titel": "Armkreis",
+      "info": "5x pro Seite"
+    },
+    {
+      "start": 14.1,
+      "ende": 15.9,
+      "label": "Kurz merken",
+      "titel": "Beste Haltung:\ndie nächste",
+      "fortschritt": false
+    }
   ]
 }

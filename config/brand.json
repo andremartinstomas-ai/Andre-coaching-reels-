@@ -1,21 +1,43 @@
 {
-  "_hinweis": "Markenfarben fuer Reels (Teal, Gelb, Weiss). Hex-Werte hier anpassen, wenn Andre exakte Farbcodes hat.",
+  "_hinweis": "Stil nach Andres Vorlage (12-nacken-5-uebungen-hook-B): Bebas Neue, Grossbuchstaben, Weiss/Gelb mit dunkler Kontur, Teal fuer Kapitel-Labels.",
   "farben": {
     "teal": "#0E8C8C",
-    "gelb": "#FFD23F",
+    "teal_dunkel": "#005058",
+    "gelb": "#F8B800",
     "weiss": "#FFFFFF",
+    "kontur": "#141414",
     "schatten": "#000000"
   },
   "schrift": {
-    "_hinweis": "Eigene Schrift (z. B. Montserrat ExtraBold .ttf) in den Ordner fonts/ legen und hier den Familiennamen eintragen. Fallback: Liberation Sans Bold.",
-    "familie": "Liberation Sans",
-    "fett": true
+    "_hinweis": "Bebas Neue (SIL OFL) liegt in fonts/. Andere Schrift: .ttf in fonts/ legen und Familiennamen hier eintragen.",
+    "familie": "Bebas Neue",
+    "fett": false,
+    "fett_stile": [
+      "Hook",
+      "Titel",
+      "Fakt"
+    ]
   },
   "groessen": {
-    "hook": 92,
-    "untertitel": 72,
-    "einblendung": 64,
-    "quelle": 34
+    "hook": 230,
+    "hook_unterzeile": 70,
+    "fakt": 118,
+    "label": 84,
+    "titel": 160,
+    "info": 66,
+    "untertitel": 96,
+    "quelle": 44
+  },
+  "layout": {
+    "rand": 85,
+    "balken_y": 30,
+    "hook_y": 560,
+    "fakt_y": 260,
+    "label_y": 270,
+    "linie_breite": 430,
+    "untertitel_abstand": 500,
+    "quelle_abstand": 400,
+    "abdunkeln": 0.5
   },
   "video": {
     "breite": 1080,

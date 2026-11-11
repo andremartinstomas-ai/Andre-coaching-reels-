@@ -66,6 +66,31 @@ def ass_zeit(s):
     return f"{int(h)}:{int(m):02d}:{sek:05.2f}"
 
 
+_FONT_CACHE = {}
+
+
+def textbreite(text, groesse):
+    """Breite in Pixeln fuer die Markenschrift (gemessen mit fontTools, Grossbuchstaben)."""
+    if "font" not in _FONT_CACHE:
+        from fontTools.ttLib import TTFont
+        datei = next((f for f in FONTS.glob("*.[ot]tf")
+                      if TTFont(f)["name"].getDebugName(1) == BRAND["schrift"]["familie"]), None)
+        if datei is None:
+            return len(text) * groesse * 0.45
+        ft = TTFont(datei)
+        # libass skaliert die Schriftgroesse auf winAscent+winDescent, nicht auf unitsPerEm
+        _FONT_CACHE["font"] = (ft.getBestCmap(), ft["hmtx"], ft["OS/2"].usWinAscent + ft["OS/2"].usWinDescent)
+    cmap, hmtx, upm = _FONT_CACHE["font"]
+    breite = sum(hmtx[cmap[ord(c)]][0] if ord(c) in cmap else upm * 0.4 for c in text.replace("*", "").upper())
+    return breite / upm * groesse
+
+
+def passende_groesse(zeilen, max_groesse, max_breite, fett=False):
+    faktor = 1.04 if fett else 1.0
+    breitest = max(textbreite(z, 100) * faktor for z in zeilen) or 1
+    return min(max_groesse, int(max_breite / breitest * 100))
+
+
 def markup(text, gelb):
     """*wort* -> gelb hervorgehoben; \\n -> Zeilenumbruch."""
     text = text.replace("{", "(").replace("}", ")").replace("\n", "\\N")
@@ -78,9 +103,7 @@ def pruefe(spec, spec_dir):
     hook = spec.get("hook", {})
     if not hook.get("text"):
         fehler.append("Kein Text-Hook (hook.text).")
-    if not hook.get("sound"):
-        fehler.append("Kein Audio-Hook (hook.sound).")
-    elif not (SOUNDS / f"{hook['sound']}.wav").exists() and not Path(spec_dir, hook["sound"]).exists():
+    if hook.get("sound") and not (SOUNDS / f"{hook['sound']}.wav").exists() and not Path(spec_dir, hook["sound"]).exists():
         fehler.append(f"Hook-Sound '{hook['sound']}' nicht gefunden (python3 scripts/hook_sounds.py ausfuehren).")
     if not hook.get("visuell"):
         fehler.append("Visueller Hook nicht beschrieben (hook.visuell).")
@@ -173,6 +196,13 @@ def segment_rendern(seg, idx, spec, spec_dir, tmp, punch_in, qualitaet):
     return dauer
 
 
+def abdunkeln_png(pfad, staerke):
+    W, H = BRAND["video"]["breite"], BRAND["video"]["hoehe"]
+    rgba = np.zeros((H, W, 4), np.uint8)
+    rgba[..., 3] = int(staerke * 255)
+    Image.fromarray(rgba, "RGBA").save(pfad)
+
+
 def verlauf_png(pfad, oben=True, staerke=0.7, anteil=0.45):
     W, H = BRAND["video"]["breite"], BRAND["video"]["hoehe"]
     y = np.linspace(0, 1, H)
@@ -217,13 +247,21 @@ def gruppen(woerter, max_w=3, max_zeichen=22):
 
 
 def ass_schreiben(spec, spec_dir, pfad, dauer):
+    """Textlayer im Stil von Andres Vorlage: Bebas Neue, Grossbuchstaben, Weiss/Gelb mit dunkler Kontur,
+    Fortschrittsbalken oben, Kapitel-Label rechts ('UEBUNG 1 VON 3' + gelbe Linie + Uebungsname)."""
     W, H = BRAND["video"]["breite"], BRAND["video"]["hoehe"]
-    f = BRAND["farben"]
-    gr = BRAND["groessen"]
+    f, gr = BRAND["farben"], BRAND["groessen"]
     schrift = BRAND["schrift"]["familie"]
-    fett = -1 if BRAND["schrift"].get("fett", True) else 0
-    weiss, gelb, teal = hex_ass(f["weiss"]), hex_ass(f["gelb"]), hex_ass(f["teal"])
-    schatten = hex_ass(f["schatten"], 0x60)
+    weiss, gelb = hex_ass(f["weiss"]), hex_ass(f["gelb"])
+    teal = hex_ass(f.get("teal_dunkel", f["teal"]))
+    kontur = hex_ass(f.get("kontur", "#141414"))
+    rechts = W - BRAND["layout"]["rand"]
+    links = BRAND["layout"]["rand"]
+
+    def style(name, groesse, farbe, outline, align, margin_v=0, kontur_farbe=kontur):
+        fett = -1 if name in BRAND["schrift"].get("fett_stile", []) else 0
+        return (f"Style: {name},{schrift},{groesse},{farbe},{farbe},{kontur_farbe},&H80000000,{fett},0,0,0,100,100,1,0,"
+                f"1,{outline},0,{align},60,60,{margin_v},1")
 
     zeilen = [
         "[Script Info]", "ScriptType: v4.00+", f"PlayResX: {W}", f"PlayResY: {H}", "WrapStyle: 0",
@@ -232,45 +270,98 @@ def ass_schreiben(spec, spec_dir, pfad, dauer):
         "Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, "
         "Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, "
         "MarginR, MarginV, Encoding",
-        f"Style: Hook,{schrift},{gr['hook']},{weiss},{weiss},&H00000000,{schatten},{fett},0,0,0,100,100,0,0,1,4,4,8,80,80,270,1",
-        f"Style: Sub,{schrift},{gr['untertitel']},{weiss},{weiss},&H00000000,{schatten},{fett},0,0,0,100,100,0,0,1,5,3,2,90,90,560,1",
-        f"Style: Info,{schrift},{gr['einblendung']},{weiss},{weiss},{teal},{schatten},{fett},0,0,0,100,100,0,0,3,18,0,5,90,90,0,1",
-        f"Style: InfoOben,{schrift},{gr['einblendung']},{weiss},{weiss},{teal},{schatten},{fett},0,0,0,100,100,0,0,3,18,0,8,90,90,330,1",
-        f"Style: Quelle,{schrift},{gr['quelle']},{weiss},{weiss},&H00000000,{schatten},0,1,0,0,100,100,0,0,1,2,1,2,90,90,420,1",
+        style("Hook", gr["hook"], weiss, 5, 5),
+        style("HookUnter", gr["hook_unterzeile"], weiss, 3, 8),
+        style("Fakt", gr["fakt"], weiss, 4, 8),
+        style("Label", gr["label"], teal, 3, 9, kontur_farbe=weiss),
+        style("Titel", gr["titel"], gelb, 4, 9),
+        style("Info", gr["info"], weiss, 3, 9),
+        style("Sub", gr["untertitel"], weiss, 5, 2, BRAND["layout"]["untertitel_abstand"]),
+        style("Quelle", gr["quelle"], weiss, 2, 2, BRAND["layout"]["quelle_abstand"]),
+        f"Style: Form,{schrift},20,{weiss},{weiss},&H00000000,&H00000000,0,0,0,0,100,100,0,0,1,0,0,7,0,0,0,1",
         "", "[Events]", "Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text",
     ]
 
     def ev(start, ende, stil, text, layer=1):
         zeilen.append(f"Dialogue: {layer},{ass_zeit(start)},{ass_zeit(ende)},{stil},,0,0,0,,{text}")
 
-    # Text-Hook: Slam-Einblendung (gross -> normal), gelbe Hervorhebung mit *...*
-    hook = spec["hook"]
-    stil_anim = {
-        "slam": "{\\fscx140\\fscy140\\t(0,160,\\fscx100\\fscy100)\\fad(40,200)}",
-        "fade": "{\\fad(150,200)}",
-        "pop": "{\\fscx80\\fscy80\\t(0,90,\\fscx108\\fscy108)\\t(90,180,\\fscx100\\fscy100)\\fad(30,200)}",
-    }[hook.get("animation", "slam")]
-    ev(0, hook.get("dauer", 3.0), "Hook", stil_anim + markup(hook["text"], gelb), layer=3)
+    def text(t):
+        return markup(t.upper(), gelb)
 
-    # Untertitel: Wortgruppen, aktives Wort gelb
+    def zeilen_block(a, e, stil, roh, x, y, an, groesse, extra="", layer=3, abstand=0.86):
+        """Setzt jede Zeile einzeln mit engem Zeilenabstand (Bebas hat grosse Standard-Zeilenhoehe).
+        Gibt die y-Position unter dem Block zurueck."""
+        for i, zeile in enumerate(roh.split("\n")):
+            ev(a, e, stil, f"{{\\an{an}\\pos({x:.0f},{y + i * groesse * abstand:.0f}){extra}}}" + text(zeile), layer)
+        return y + len(roh.split("\n")) * groesse * abstand
+
+    def rechteck(x, y, b, h, farbe, alpha=0):
+        return (f"{{\\an7\\pos({x:.0f},{y:.0f})\\c{farbe}\\alpha&H{alpha:02X}&\\bord0\\shad0\\p1}}"
+                f"m 0 0 l {b:.0f} 0 {b:.0f} {h} 0 {h}{{\\p0}}")
+
+    # --- Hook: mittig, Hauptzeilen gross (Weiss, *Gelb*), Unterzeile klein
+    hook = spec["hook"]
+    hd = hook.get("dauer", 3.0)
+    anim = {"slam": "\\fscx118\\fscy118\\t(0,140,\\fscx100\\fscy100)\\fad(60,120)",
+            "fade": "\\fad(150,150)",
+            "pop": "\\fscx85\\fscy85\\t(0,100,\\fscx105\\fscy105)\\t(100,180,\\fscx100\\fscy100)\\fad(40,120)"}[
+        hook.get("animation", "slam")]
+    zeilen_hook = hook["text"].split("\n")
+    hg = passende_groesse(zeilen_hook, gr["hook"], W - 2 * BRAND["layout"]["rand"], fett=True)
+    hoehe = len(zeilen_hook) * hg * 0.86 + (gr["hook_unterzeile"] * 1.1 if hook.get("unterzeile") else 0)
+    y0 = BRAND["layout"]["hook_y"] - hoehe / 2
+    y = zeilen_block(0, hd, "Hook", hook["text"], W // 2, y0, 8, hg, anim + f"\\fs{hg}", layer=5)
+    if hook.get("unterzeile"):
+        zeilen_block(0, hd, "HookUnter", hook["unterzeile"], W // 2, y + 28, 8, gr["hook_unterzeile"], anim, layer=5)
+
+    # --- Fakten (Aufbau) mittig oben, Quelle klein darunter
+    for e in spec.get("einblendungen", []):
+        fg = passende_groesse(e["text"].split("\n"), gr["fakt"], W - 2 * BRAND["layout"]["rand"], fett=True)
+        zeilen_block(e["start"], e["ende"], "Fakt", e["text"], W // 2, BRAND["layout"]["fakt_y"], 8, fg,
+                     f"\\fad(120,120)\\fs{fg}", layer=4)
+    q = spec.get("quelle_einblendung")
+    if q:
+        ev(q.get("start", 0), q.get("ende", dauer), "Quelle", "{\\fad(150,150)}" + markup(q["text"], gelb))
+
+    # --- Kapitel: Fortschrittsbalken + Label/Linie/Titel/Info rechts oben
+    kapitel = spec.get("kapitel", [])
+    mit_balken = [k for k in kapitel if k.get("fortschritt", True)]
+    if mit_balken:
+        n, by, bh, gap = len(mit_balken), BRAND["layout"]["balken_y"], 8, 14
+        bb = (rechts - links - gap * (n - 1)) / n
+        for i, k in enumerate(mit_balken):
+            x = links + i * (bb + gap)
+            ev(0, dauer, "Form", rechteck(x, by, bb, bh, weiss, 0x50), layer=1)
+            d = int((k["ende"] - k["start"]) * 1000)
+            ev(k["start"], k["ende"], "Form",
+               rechteck(x, by, bb, bh, gelb).replace("\\p1}", f"\\fscx0\\t(0,{d},\\fscx100)\\p1}}"), layer=2)
+            ev(k["ende"], dauer, "Form", rechteck(x, by, bb, bh, gelb), layer=2)
+    ly = BRAND["layout"]["label_y"]
+    for k in kapitel:
+        a, e = k["start"], k["ende"]
+        fad = "\\fad(120,100)"
+        if k.get("label"):
+            ev(a, e, "Label", f"{{\\an9\\pos({rechts},{ly}){fad}}}" + text(k["label"]), layer=3)
+        linie_y = ly + gr["label"] * 0.95
+        ev(a, e, "Form", rechteck(rechts - BRAND["layout"]["linie_breite"], linie_y, BRAND["layout"]["linie_breite"],
+                                  6, gelb).replace("\\p1}", f"{fad}\\p1}}"), layer=3)
+        titel_y = linie_y + 16
+        tg = passende_groesse(k["titel"].split("\n"), gr["titel"], rechts - links, fett=True)
+        unter = zeilen_block(a, e, "Titel", k["titel"], rechts, titel_y, 9, tg, fad + f"\\fs{tg}")
+        if k.get("info"):
+            zeilen_block(a, e, "Info", k["info"], rechts, unter + 6, 9, gr["info"], fad)
+
+    # --- Untertitel (Sprechvideos): Wortgruppen, aktives Wort gelb
     if spec.get("untertitel", True):
         woerter = woerter_auf_zeitachse(spec, spec_dir)
         for g in gruppen(woerter):
             for i, w in enumerate(g):
                 ende = g[i + 1]["start"] if i + 1 < len(g) else max(w["ende"], g[-1]["ende"])
-                teile = [(f"{{\\c{gelb}}}{x['text']}{{\\c{weiss}}}" if x is w else x["text"]) for x in g]
+                teile = [(f"{{\\c{gelb}}}{x['text'].upper()}{{\\c{weiss}}}" if x is w else x["text"].upper()) for x in g]
                 ev(w["start"], ende, "Sub", " ".join(teile))
     for u in spec.get("untertitel_manuell", []):
-        ev(u["start"], u["ende"], "Sub", "{\\fad(80,80)}" + markup(u["text"], gelb))
-
-    # Einblendungen (Aufbau-Punkte, Payoff, Sicherheitssatz)
-    for e in spec.get("einblendungen", []):
-        stil = "InfoOben" if e.get("position") == "oben" else ("Sub" if e.get("position") == "unten" else "Info")
-        ev(e["start"], e["ende"], stil, "{\\fad(120,120)}" + markup(e["text"], gelb), layer=2)
-
-    q = spec.get("quelle_einblendung")
-    if q:
-        ev(q.get("start", 0), q.get("ende", dauer), "Quelle", "{\\fad(200,200)}" + markup(q["text"], gelb))
+        gross = f"\\fs{u['groesse']}" if u.get("groesse") else ""
+        ev(u["start"], u["ende"], "Sub", f"{{\\fad(100,100){gross}}}" + text(u["text"]))
 
     Path(pfad).write_text("\n".join(zeilen) + "\n", encoding="utf-8")
 
@@ -294,27 +385,32 @@ def rendern(spec_pfad, vorschau=False):
         sh(["ffmpeg", "-y", "-hide_banner", "-loglevel", "error", "-f", "concat", "-safe", "0",
             "-i", str(liste), "-c", "copy", str(tmp / "roh.mp4")])
 
-        verlauf_png(tmp / "oben.png", oben=True, staerke=0.75, anteil=0.42)
-        verlauf_png(tmp / "unten.png", oben=False, staerke=0.55, anteil=0.4)
+        abdunkeln_png(tmp / "dunkel.png", BRAND["layout"]["abdunkeln"])
+        verlauf_png(tmp / "unten.png", oben=False, staerke=0.5, anteil=0.4)
         ass_schreiben(spec, spec_dir, tmp / "text.ass", dauer)
 
-        # Sounds: Hook-Sound bei t=0 (oder hook.sound_zeit) + optionale Effekte
-        sounds = [{"name": spec["hook"]["sound"], "zeit": spec["hook"].get("sound_zeit", 0),
-                   "lautstaerke": spec["hook"].get("sound_lautstaerke", 0.6)}] + spec.get("sounds", [])
+        # Sounds nur wenn explizit gewuenscht (Andre: keine Soundeffekte als Standard)
+        sounds = list(spec.get("sounds", []))
+        if spec["hook"].get("sound"):
+            sounds.insert(0, {"name": spec["hook"]["sound"], "zeit": spec["hook"].get("sound_zeit", 0),
+                              "lautstaerke": spec["hook"].get("sound_lautstaerke", 0.6)})
         args = ["ffmpeg", "-y", "-hide_banner", "-loglevel", "error", "-i", str(tmp / "roh.mp4"),
-                "-i", str(tmp / "oben.png"), "-i", str(tmp / "unten.png")]
-        for s in sounds:
-            p = SOUNDS / f"{s['name']}.wav"
-            args += ["-i", str(p if p.exists() else Path(spec_dir, s["name"]))]
+                "-i", str(tmp / "dunkel.png"), "-i", str(tmp / "unten.png")]
+        for snd in sounds:
+            p = SOUNDS / f"{snd['name']}.wav"
+            args += ["-i", str(p if p.exists() else Path(spec_dir, snd["name"]))]
         hd = spec["hook"].get("dauer", 3.0)
+        dunkel_zeiten = [(0, hd)] + [(e["start"], e["ende"]) for e in spec.get("einblendungen", [])]
+        enable = "+".join(f"between(t,{a},{b})" for a, b in dunkel_zeiten)
         ass = str(tmp / "text.ass").replace(":", "\\:")
-        fc = [f"[0:v][1:v]overlay=0:0:enable='between(t,0,{hd + 0.3})'[v1]",
-              "[v1][2:v]overlay=0:0[v2]",
+        unten = "[v1][2:v]overlay=0:0[v2]" if spec.get("untertitel", True) or spec.get("untertitel_manuell") \
+            else "[v1]null[v2]"
+        fc = [f"[0:v][1:v]overlay=0:0:enable='{enable}'[v1]", unten,
               f"[v2]subtitles='{ass}':fontsdir='{FONTS}'[v]"]
         mix = ["[0:a]"]
-        for i, s in enumerate(sounds):
-            ms = int(float(s.get("zeit", 0)) * 1000)
-            fc.append(f"[{3 + i}:a]aresample=48000,volume={s.get('lautstaerke', 0.6)},adelay={ms}|{ms}[s{i}]")
+        for i, snd in enumerate(sounds):
+            ms = int(float(snd.get("zeit", 0)) * 1000)
+            fc.append(f"[{3 + i}:a]aresample=48000,volume={snd.get('lautstaerke', 0.6)},adelay={ms}|{ms}[s{i}]")
             mix.append(f"[s{i}]")
         lufs = BRAND["video"]["lautheit_lufs"]
         fc.append(f"{''.join(mix)}amix=inputs={len(mix)}:duration=first:normalize=0,"
@@ -344,6 +440,8 @@ def lautheit_messen(pfad):
 def lautheit_angleichen(pfad, ziel, tmp):
     """loudnorm im Einzeldurchlauf landet bei kurzen Clips oft 2-3 LU zu leise -> nachmessen und Gain anpassen."""
     ist, _ = lautheit_messen(pfad)
+    if ist < -60:  # (fast) stille Tonspur -> nichts anheben
+        return
     gain = min(ziel - ist, 10.0)  # Spitzen faengt der Limiter ab (-1 dBFS)
     if abs(gain) < 0.5:
         return
@@ -359,9 +457,9 @@ def begleittext_schreiben(spec, ausgabe, dauer):
     z = [f"# {spec.get('titel', ausgabe.stem)}  ({dauer:.1f} s)", "",
          "## Caption (zum Posten)", spec["caption"].strip(), "", " ".join(spec["hashtags"]), "",
          "## Hooks",
-         f"- Audio-Hook: {h['sound']}" + (f" ({h['sound_hinweis']})" if h.get("sound_hinweis") else ""),
+         "- Audio-Hook: " + (h.get("sound") or h.get("sound_hinweis") or "kein Soundeffekt, Trend-Sound in Instagram darunterlegen"),
          f"- Visueller Hook: {h['visuell']}",
-         f"- Text-Hook: {h['text'].replace('*', '').replace(chr(10), ' ')}", "",
+         f"- Text-Hook: {h['text'].replace('*', '').replace(chr(10), ' ')}" + (f" / {h['unterzeile']}" if h.get("unterzeile") else ""), "",
          "## Skript",
          f"- Hook: {spec['skript']['hook']}", f"- Aufbau: {spec['skript']['aufbau']}",
          f"- Payoff: {spec['skript']['payoff']}", "",

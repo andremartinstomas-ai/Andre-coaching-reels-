@@ -10,9 +10,9 @@ Speicher dir das Reel für deine nächste Pause.
 #nackenschmerzen #nackenverspannung #physiotherapie #büroalltag #chintuck
 
 ## Hooks
-- Audio-Hook: benachrichtigung
+- Audio-Hook: kein Soundeffekt, Trend-Sound in Instagram darunterlegen
 - Visueller Hook: Punch-in-Nahaufnahme auf Kopf und Kinn, Finger schiebt das Kinn zurück
-- Text-Hook: Nacken fest nach dem Bürotag?
+- Text-Hook: Nacken fest nach dem Büro? / Diese Übung geht direkt am Platz
 
 ## Skript
 - Hook: Nahaufnahme Kinn/Nacken + Frage: Nacken fest nach dem Bürotag?
@@ -23,5 +23,5 @@ Speicher dir das Reel für deine nächste Pause.
 - "Leitlinien empfehlen bei Nackenschmerzen gezielte Übungen (Nacken- und Schulterblattregion)." -> Blanpied PR, Gross AR, Elliott JM et al. Neck Pain: Revision 2017. Clinical Practice Guidelines. J Orthop Sports Phys Ther 2017;47(7):A1–A83. doi:10.2519/jospt.2017.0302 [konsens] - Leitlinie empfiehlt je nach Klassifikation u. a. Beweglichkeitsübungen, Kraft-/Ausdauertraining und neuromuskuläre Übungen für Nacken und Schulterblattregion.
 
 ## Hinweise fuer Andre
-- Audio-Hook ist ein synthetischer Benachrichtigungston (selbst erzeugt, nicht angehört). Danach läuft kein Ton: in Instagram einen Trend-Sound aus der Bibliothek leise darunterlegen.
 - Raumton aus dem Clip entfernt, weil nicht gesprochen wird.
+- Keine Soundeffekte eingebaut. In Instagram einen Trend-Sound aus der Bibliothek darunterlegen.
