@@ -25,7 +25,7 @@
     },
     {
       "quelle": "../roh/physio_IMG_4109.mov",
-      "start": 0.0,
+      "start": 1.0,
       "ende": 11.4,
       "ton": false
     }
@@ -37,104 +37,104 @@
       "text": "Seit wann?",
       "x": 300,
       "y": 470,
-      "start": 4.5,
-      "ende": 13.3
+      "start": 4.3,
+      "ende": 12.3
     },
     {
       "stil": "trend",
       "text": "Red Flags?",
       "x": 790,
       "y": 420,
-      "start": 5.1,
-      "ende": 13.3
+      "start": 4.85,
+      "ende": 12.3
     },
     {
       "stil": "trend",
       "text": "Bandscheibe?",
       "x": 250,
       "y": 640,
-      "start": 5.7,
-      "ende": 13.3
+      "start": 5.4,
+      "ende": 12.3
     },
     {
       "stil": "trend",
       "text": "Wo genau?",
       "x": 860,
       "y": 610,
-      "start": 6.3,
-      "ende": 13.3
+      "start": 5.95,
+      "ende": 12.3
     },
     {
       "stil": "trend",
       "text": "Strahlt es aus?",
       "x": 850,
       "y": 790,
-      "start": 6.9,
-      "ende": 13.3
+      "start": 6.5,
+      "ende": 12.3
     },
     {
       "stil": "trend",
       "text": "Stress?",
       "x": 200,
       "y": 820,
-      "start": 7.5,
-      "ende": 13.3
+      "start": 7.05,
+      "ende": 12.3
     },
     {
       "stil": "trend",
       "text": "Schlaf?",
       "x": 900,
       "y": 960,
-      "start": 8.1,
-      "ende": 13.3
+      "start": 7.6,
+      "ende": 12.3
     },
     {
       "stil": "trend",
       "text": "Welche Bewegung?",
       "x": 850,
       "y": 1120,
-      "start": 8.7,
-      "ende": 13.3
+      "start": 8.15,
+      "ende": 12.3
     },
     {
       "stil": "trend",
       "text": "Nachts schlimmer?",
       "x": 250,
       "y": 1140,
-      "start": 9.3,
-      "ende": 13.3
+      "start": 8.7,
+      "ende": 12.3
     },
     {
       "stil": "trend",
       "text": "Taubheitsgefühl?",
       "x": 850,
       "y": 1270,
-      "start": 9.9,
-      "ende": 13.3
+      "start": 9.25,
+      "ende": 12.3
     },
     {
       "stil": "trend",
       "text": "Trainingsziel?",
       "x": 230,
       "y": 1270,
-      "start": 10.5,
-      "ende": 13.3
+      "start": 9.8,
+      "ende": 12.3
     },
     {
       "stil": "trend",
       "text": "Angst vor Bewegung?",
       "x": 540,
       "y": 300,
-      "start": 11.1,
-      "ende": 13.3
+      "start": 10.35,
+      "ende": 12.3
     },
     {
       "stil": "trend",
       "text": "Belastungsmanagement?",
       "x": 540,
       "y": 1400,
-      "start": 11.7,
-      "ende": 13.3
+      "start": 10.9,
+      "ende": 12.3
     },
     {
       "stil": "trend",
@@ -142,8 +142,8 @@
       "x": 540,
       "y": 1120,
       "groesse": 76,
-      "start": 13.3,
-      "ende": 15.5,
+      "start": 12.3,
+      "ende": 14.5,
       "ein_ms": 120
     }
   ],
