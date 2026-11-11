@@ -371,7 +371,7 @@ def rendern(spec_pfad, vorschau=False):
     spec_pfad = Path(spec_pfad)
     spec = json.loads(spec_pfad.read_text())
     spec_dir = spec_pfad.parent
-    qualitaet = {"preset": "veryfast", "crf": "28"} if vorschau else {"preset": "slow", "crf": "18"}
+    qualitaet = {"preset": "veryfast", "crf": "28"} if vorschau else {"preset": "medium", "crf": "20"}
     ausgabe = Path(spec_dir, spec["ausgabe"])
     ausgabe.parent.mkdir(parents=True, exist_ok=True)
 
@@ -420,6 +420,7 @@ def rendern(spec_pfad, vorschau=False):
                   f"loudnorm=I={lufs}:TP=-1.5:LRA=11:linear=true,aresample=48000[a]")
         args += ["-filter_complex", ";".join(fc), "-map", "[v]", "-map", "[a]",
                  "-c:v", "libx264", "-preset", qualitaet["preset"], "-crf", qualitaet["crf"],
+                 "-maxrate", "14M", "-bufsize", "28M",  # Korn wuerde sonst die Datei aufblaehen
                  "-pix_fmt", "yuv420p", "-profile:v", "high", "-movflags", "+faststart",
                  "-c:a", "aac", "-b:a", "192k", "-ar", "48000", str(ausgabe)]
         sh(args)

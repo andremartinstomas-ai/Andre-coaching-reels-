@@ -48,6 +48,6 @@
   "look": {
     "_hinweis": "Warm-Vintage-Look fuer alle Reels (nur Video, nicht der Text). In einer Spec mit \"look\": false abschaltbar.",
     "aktiv": true,
-    "filter": "colortemperature=temperature=4300:mix=0.8,colorbalance=rm=0.04:bm=-0.03:rh=0.03:bh=-0.04,curves=all='0/0.08 0.5/0.56 1/0.95',eq=saturation=0.85:gamma=1.08,vignette=angle=PI/7,noise=c0s=7:c0f=t"
+    "filter": "colortemperature=temperature=4300:mix=0.8,colorbalance=rm=0.04:bm=-0.03:rh=0.03:bh=-0.04,curves=all='0/0.08 0.5/0.56 1/0.95',eq=saturation=0.85:gamma=1.08,vignette=angle=PI/7,noise=c0s=5:c0f=t"
   }
 }
