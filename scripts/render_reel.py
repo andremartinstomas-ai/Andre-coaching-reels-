@@ -93,8 +93,9 @@ def passende_groesse(zeilen, max_groesse, max_breite, fett=False):
 
 def markup(text, gelb):
     """*wort* -> gelb hervorgehoben; \\n -> Zeilenumbruch."""
-    text = text.replace("{", "(").replace("}", ")").replace("\n", "\\N")
-    return re.sub(r"\*(.+?)\*", lambda m: f"{{\\c{gelb}}}{m.group(1)}{{\\c&H00FFFFFF&}}", text)
+    text = text.replace("{", "(").replace("}", ")").replace("\n", "\\N").replace("\\*", "\x00")
+    text = re.sub(r"\*(.+?)\*", lambda m: f"{{\\c{gelb}}}{m.group(1)}{{\\c&H00FFFFFF&}}", text)
+    return text.replace("\x00", "*")  # \* = woertliches Sternchen
 
 
 # ------------------------------------------------------------------ Regelpruefung

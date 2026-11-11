@@ -1,0 +1,198 @@
+[
+  {
+    "datei": "projekte/2026-11-11_knie-trend/roh/IMG_4110.mov",
+    "dauer": 3.97,
+    "ton": true,
+    "breite": 1080,
+    "hoehe": 1920,
+    "drehung": -90,
+    "fps": 30.0,
+    "format": "hochkant",
+    "pausen": [
+      {
+        "start": 0.14,
+        "ende": 2.23
+      }
+    ]
+  },
+  {
+    "datei": "projekte/2026-11-11_knie-trend/roh/IMG_4112.mov",
+    "dauer": 2.7,
+    "ton": true,
+    "breite": 1080,
+    "hoehe": 1920,
+    "drehung": -90,
+    "fps": 30.0,
+    "format": "hochkant",
+    "pausen": [
+      {
+        "start": 0.24,
+        "ende": 1.62
+      },
+      {
+        "start": 2.01,
+        "ende": 2.71
+      }
+    ]
+  },
+  {
+    "datei": "projekte/2026-11-11_knie-trend/roh/IMG_4114.mov",
+    "dauer": 3.6,
+    "ton": true,
+    "breite": 1080,
+    "hoehe": 1920,
+    "drehung": -90,
+    "fps": 30.0,
+    "format": "hochkant",
+    "pausen": [
+      {
+        "start": 0.1,
+        "ende": 1.94
+      },
+      {
+        "start": 2.54,
+        "ende": 3.52
+      }
+    ]
+  },
+  {
+    "datei": "projekte/2026-11-11_knie-trend/roh/IMG_4115.mov",
+    "dauer": 2.87,
+    "ton": true,
+    "breite": 1080,
+    "hoehe": 1920,
+    "drehung": -90,
+    "fps": 30.0,
+    "format": "hochkant",
+    "pausen": [
+      {
+        "start": 0.0,
+        "ende": 2.59
+      }
+    ]
+  },
+  {
+    "datei": "projekte/2026-11-11_knie-trend/roh/IMG_4117.mov",
+    "dauer": 2.1,
+    "ton": true,
+    "breite": 1080,
+    "hoehe": 1920,
+    "drehung": -90,
+    "fps": 30.0,
+    "format": "hochkant",
+    "pausen": [
+      {
+        "start": 0.0,
+        "ende": 2.11
+      }
+    ]
+  },
+  {
+    "datei": "projekte/2026-11-11_knie-trend/roh/IMG_4119.mov",
+    "dauer": 7.93,
+    "ton": true,
+    "breite": 1080,
+    "hoehe": 1920,
+    "drehung": -90,
+    "fps": 30.0,
+    "format": "hochkant",
+    "pausen": [
+      {
+        "start": 2.05,
+        "ende": 2.48
+      },
+      {
+        "start": 4.79,
+        "ende": 5.2
+      }
+    ]
+  },
+  {
+    "datei": "projekte/2026-11-11_knie-trend/roh/IMG_4120.mov",
+    "dauer": 5.6,
+    "ton": true,
+    "breite": 1080,
+    "hoehe": 1920,
+    "drehung": -90,
+    "fps": 30.0,
+    "format": "hochkant",
+    "pausen": [
+      {
+        "start": 0.4,
+        "ende": 3.39
+      },
+      {
+        "start": 3.76,
+        "ende": 5.55
+      }
+    ]
+  },
+  {
+    "datei": "projekte/2026-11-11_knie-trend/roh/IMG_4123.mov",
+    "dauer": 10.8,
+    "ton": true,
+    "breite": 1080,
+    "hoehe": 1920,
+    "drehung": -90,
+    "fps": 30.0,
+    "format": "hochkant",
+    "pausen": [
+      {
+        "start": 0.42,
+        "ende": 0.83
+      },
+      {
+        "start": 0.9,
+        "ende": 1.31
+      },
+      {
+        "start": 1.38,
+        "ende": 1.8
+      },
+      {
+        "start": 1.86,
+        "ende": 2.27
+      },
+      {
+        "start": 3.94,
+        "ende": 4.87
+      },
+      {
+        "start": 5.47,
+        "ende": 6.09
+      },
+      {
+        "start": 6.65,
+        "ende": 7.07
+      },
+      {
+        "start": 7.62,
+        "ende": 8.03
+      },
+      {
+        "start": 9.53,
+        "ende": 9.94
+      }
+    ]
+  },
+  {
+    "datei": "projekte/2026-11-11_knie-trend/roh/vorlage.mp4",
+    "dauer": 18.7,
+    "ton": true,
+    "breite": 720,
+    "hoehe": 1280,
+    "drehung": 0,
+    "fps": 30.0,
+    "format": "hochkant",
+    "pausen": [
+      {
+        "start": 14.56,
+        "ende": 15.07
+      },
+      {
+        "start": 16.24,
+        "ende": 16.9
+      }
+    ]
+  }
+]
