@@ -75,7 +75,8 @@ Pfade in der Spec sind relativ zum `specs/`-Ordner.
 - `hook`: `text` (2 Zeilen, Problem + Neugier, `*Zeile*` = gelb), `unterzeile` (klein), `visuell` (Beschreibung)
 - `kapitel`: Übungs-/Schritt-Abschnitte mit `label` („Übung 1 von 3“), `titel` (Übungsname), optional `info`.
   Steuert den Fortschrittsbalken oben. Letzte Karte „Kurz merken / … speichern“ mit `fortschritt: false`.
-- `einblendungen`: Kernzahlen und Aufbau-Punkte; `quelle_einblendung` bei Zahlen und Studien
+- `einblendungen`: Kernzahlen und Aufbau-Punkte. **Keine Quellenzeile im Video** (André, 2026-11-11);
+  Quellen stehen nur in `aussagen` und damit in der `.txt` für André. `quelle_einblendung` nur auf Wunsch.
 - `untertitel_manuell`: Text unten (z. B. Sicherheitssatz mit `groesse: 56`)
 - `aussagen`: **jede** Aussage mit Quelle und Status
 - `caption` (kurz, Speichern-Aufruf), genau 5 `hashtags`, `uebung: true` bei Übungen
@@ -105,7 +106,7 @@ Fertige Videos nicht ins Git committen (zu groß, `.gitignore`), sondern per Sen
 - Hook: Bild abgedunkelt, Text mittig, Zeile 1 weiß, Zeile 2 gelb, kleine weiße Unterzeile. Größe wird automatisch
   an die Breite angepasst.
 - Fortschrittsbalken oben (ein Segment pro Kapitel), rechts oben Label in Teal + gelbe Linie + Titel in Gelb.
-- Fakten (Aufbau) mittig oben auf abgedunkeltem Bild, Quelle klein unten.
+- Fakten (Aufbau) mittig oben auf abgedunkeltem Bild. Keine Quellenzeile im Bild.
 - Werte in `config/brand.json`.
 
 ## Grenzen der Umgebung

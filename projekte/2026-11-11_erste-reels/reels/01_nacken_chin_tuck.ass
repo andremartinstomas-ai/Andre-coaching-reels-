@@ -25,7 +25,6 @@ Dialogue: 5,0:00:00.00,0:00:03.00,HookUnter,,0,0,0,,{\an8\pos(540,736)\fscx118\f
 Dialogue: 4,0:00:03.10,0:00:07.50,Fakt,,0,0,0,,{\an8\pos(540,260)\fad(120,120)\fs118}LEITLINIEN EMPFEHLEN:
 Dialogue: 4,0:00:03.10,0:00:07.50,Fakt,,0,0,0,,{\an8\pos(540,361)\fad(120,120)\fs118}{\c&H0000B8F8}GEZIELTE ÜBUNGEN{\c&H00FFFFFF&}
 Dialogue: 4,0:00:03.10,0:00:07.50,Fakt,,0,0,0,,{\an8\pos(540,463)\fad(120,120)\fs118}STATT SCHONUNG
-Dialogue: 1,0:00:03.10,0:00:07.50,Quelle,,0,0,0,,{\fad(150,150)}Quelle: Blanpied et al. 2017, JOSPT – Leitlinie Nackenschmerz
 Dialogue: 1,0:00:00.00,0:00:15.15,Form,,0,0,0,,{\an7\pos(85,30)\c&H00FFFFFF\alpha&H50&\bord0\shad0\p1}m 0 0 l 448 0 448 8 0 8{\p0}
 Dialogue: 2,0:00:07.60,0:00:10.50,Form,,0,0,0,,{\an7\pos(85,30)\c&H0000B8F8\alpha&H00&\bord0\shad0\fscx0\t(0,2900,\fscx100)\p1}m 0 0 l 448 0 448 8 0 8{\p0}
 Dialogue: 2,0:00:10.50,0:00:15.15,Form,,0,0,0,,{\an7\pos(85,30)\c&H0000B8F8\alpha&H00&\bord0\shad0\p1}m 0 0 l 448 0 448 8 0 8{\p0}
