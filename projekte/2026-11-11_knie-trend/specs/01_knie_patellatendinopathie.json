@@ -5,15 +5,15 @@
   "skript": {
     "hook": "Patient hält sich das Knie: 'Vorne am Knie tut's weh!!!'",
     "aufbau": "Physio: 'Wo?' → Patient zeigt unter die Kniescheibe → Physio erkennt das typische Bild: Patellatendinopathie (Chef's Kiss).",
-    "payoff": "3 Übungen als Progression: Spanish Squat (isometrisch) → Step-Down hüftdominant (leicht) → Step-Down kniedominant (schwer)."
+    "payoff": "4 Übungen als Progression: Spanish Squat (isometrisch) → Step-Down hüftdominant (leicht, reizt meist weniger) → Step-Down kniedominant (schwer, reizt eher) → einbeinige Kniebeuge zur Box."
   },
   "hook": {
     "stil": "trend",
-    "text": "„Vorne am Knie tut's weh!!!“",
+    "text": "„Ich hab Schmerzen vorne am Knie!!!“",
     "start": 0.0,
     "dauer": 1.33,
     "y": 960,
-    "groesse": 54,
+    "groesse": 50,
     "punch_in": false,
     "visuell": "André steht gebeugt mit beiden Händen am Knie und schaut leidend in die Kamera, wie in der Vorlage"
   },
@@ -38,8 +38,8 @@
     },
     {
       "quelle": "../roh/IMG_4115.mov",
-      "start": 0.6,
-      "ende": 2.0,
+      "start": 0.8,
+      "ende": 2.2,
       "ton": false
     },
     {
@@ -47,27 +47,31 @@
       "start": 0.0,
       "ende": 2.1,
       "ton": false,
-      "geschwindigkeit": 0.864
+      "geschwindigkeit": 0.946
     },
     {
       "quelle": "../roh/IMG_4119.mov",
-      "start": 1.4,
-      "ende": 4.5,
+      "start": 1.5,
+      "ende": 3.71,
       "ton": false
     },
     {
       "quelle": "../roh/IMG_4120.mov",
       "start": 1.0,
-      "ende": 4.4,
+      "ende": 3.3,
       "ton": false
     },
     {
-      "quelle": "../roh/IMG_4120.mov",
-      "start": 4.4,
-      "ende": 5.6,
-      "ton": false,
-      "geschwindigkeit": 0.5,
-      "filter": "eq=brightness=-0.28:saturation=0.6"
+      "quelle": "../roh/IMG_4123.mov",
+      "start": 0.9,
+      "ende": 2.4,
+      "ton": false
+    },
+    {
+      "quelle": "../roh/IMG_4123.mov",
+      "start": 4.0,
+      "ende": 4.7,
+      "ton": false
     }
   ],
   "untertitel": false,
@@ -78,7 +82,8 @@
       "x": 540,
       "y": 960,
       "start": 1.33,
-      "ende": 2.8
+      "ende": 2.8,
+      "groesse": 50
     },
     {
       "stil": "trend",
@@ -104,36 +109,35 @@
       "x": 540,
       "y": 960,
       "start": 5.77,
-      "ende": 8.2,
-      "groesse": 48
+      "ende": 7.99,
+      "groesse": 46
     },
     {
       "stil": "trend",
-      "text": "Step-Down hüftdominant\nleicht · 3 × 10",
+      "text": "Step-Down hüftdominant\nleichte Version\nreizt die Sehne meist weniger",
       "x": 540,
       "y": 960,
-      "start": 8.2,
-      "ende": 11.3,
-      "groesse": 48
+      "start": 7.99,
+      "ende": 10.2,
+      "groesse": 46
     },
     {
       "stil": "trend",
-      "text": "Step-Down kniedominant\nschwer · 3 × 8 langsam",
+      "text": "Step-Down kniedominant\nschwere Version\nreizt die Sehne eher",
       "x": 540,
       "y": 960,
-      "start": 11.3,
+      "start": 10.2,
+      "ende": 12.5,
+      "groesse": 46
+    },
+    {
+      "stil": "trend",
+      "text": "Einbeinige Kniebeuge zur Box\n3 × 6 langsam",
+      "x": 540,
+      "y": 960,
+      "start": 12.5,
       "ende": 14.7,
-      "groesse": 48
-    },
-    {
-      "stil": "trend",
-      "text": "@andrephysio",
-      "x": 540,
-      "y": 960,
-      "start": 14.7,
-      "ende": 17.1,
-      "groesse": 64,
-      "ein_ms": 200
+      "groesse": 46
     }
   ],
   "sounds": [
@@ -154,9 +158,15 @@
       "text": "Behandelt wird mit schrittweise gesteigerter Belastung der Sehne, z. B. Isometrie, dann langsames, schweres Krafttraining.",
       "quelle": "Malliaras P et al. JOSPT 2015;45(11):887–898; Rio E et al. Isometric exercise induces analgesia and reduces inhibition in patellar tendinopathy. Br J Sports Med 2015;49(19):1277–1283",
       "status": "konsens"
+    },
+    {
+      "text": "Hüftdominanter Step-Down (Rumpf vor) reizt die Patellasehne meist weniger als der kniedominante (Knie weit vor, Rumpf aufrecht).",
+      "quelle": "Kulas AS, Hortobágyi T, DeVita P. Trunk position modulates anterior cruciate ligament forces and strains during a single-leg squat. Clin Biomech 2012;27(1):16–21 (Rumpfvorlage: mehr Hamstrings-, weniger Quadrizepskraft in tiefer Beugung); Malliaras P et al. JOSPT 2015 (Kniestrecker-Last provoziert Patellatendinopathie)",
+      "status": "konsens",
+      "beleg": "Direkte Messung der Patellasehnenlast fehlt; biomechanische Daten + klinischer Konsens. Deshalb vorsichtig formuliert ('meist', 'eher')."
     }
   ],
-  "caption": "Schmerz direkt unter der Kniescheibe, vor allem bei Treppen, Sprüngen oder Kniebeugen? Das passt oft zu einer Patellatendinopathie. Eine Ferndiagnose ist das aber nicht, lass dein Knie untersuchen.\n\n3 Übungen, die du ausprobieren kannst, von leicht nach schwer. Wenn etwas wehtut, nicht tiefer in die Bewegung gehen.\n\nSpeicher dir das Reel für dein nächstes Knietraining.",
+  "caption": "Schmerz direkt unter der Kniescheibe, vor allem bei Treppen, Sprüngen oder Kniebeugen? Das passt oft zu einer Patellatendinopathie. Eine Ferndiagnose ist das aber nicht, lass dein Knie untersuchen.\n\n4 Übungen, die du ausprobieren kannst, von leicht nach schwer. Tipp: Der hüftdominante Step-Down reizt die Sehne meist weniger, der kniedominante eher. Starte mit der leichten Version.\n\nWenn etwas wehtut, nicht tiefer in die Bewegung gehen.\n\nSpeicher dir das Reel für dein nächstes Knietraining.",
   "hashtags": [
     "#knieschmerzen",
     "#patellatendinopathie",
@@ -166,8 +176,7 @@
   ],
   "hinweise": [
     "Sound 1:1 aus der Vorlage übernommen (auf deinen Wunsch). Sicherer für Reichweite und Rechte: in Instagram über 'Audio verwenden' den Original-Sound der Vorlage wählen und den eingebetteten Ton stummschalten.",
-    "Spanish Squat (2,1 s) läuft minimal verlangsamt (0,86x), damit er den Takt der Vorlage füllt. Bei einer Halteübung sieht man das nicht.",
-    "Clip IMG_4123 (einbeinige Kniebeuge zur Box) ist nicht drin, weil die Vorlage nur 3 Übungsplätze hat. Passt gut als 4. Stufe in einer Variante.",
-    "Abspann: letzter Clip abgedunkelt mit @andrephysio statt Instagram-Logo."
+    "Spanish Squat (2,1 s) läuft minimal verlangsamt (0,95x), damit er den Takt der Vorlage füllt. Bei einer Halteübung sieht man das nicht.",
+    "Übungsschnitte liegen auf Taktschlägen der Musik (ca. 146 BPM): 5,77 / 7,99 / 10,20 / 12,50 s. Das Video endet bei 14,7 s, wo die Musik aufhört."
   ]
 }
