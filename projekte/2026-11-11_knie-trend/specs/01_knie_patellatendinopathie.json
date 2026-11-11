@@ -5,24 +5,33 @@
   "skript": {
     "hook": "Patient hält sich das Knie: 'Vorne am Knie tut's weh!!!'",
     "aufbau": "Physio: 'Wo?' → Patient zeigt unter die Kniescheibe → Physio erkennt das typische Bild: Patellatendinopathie (Chef's Kiss).",
-    "payoff": "4 Übungen als Progression: Spanish Squat (isometrisch) → Step-Down hüftdominant (leicht, reizt meist weniger) → Step-Down kniedominant (schwer, reizt eher) → einbeinige Kniebeuge zur Box."
+    "payoff": "4 Übungen als Progression: Spanish Squat (isometrisch) → Step-Down hüftdominant (einfacher) → Step-Down kniedominant (schwieriger) → einbeinige Kniebeuge zur Box."
   },
   "hook": {
     "stil": "trend",
     "text": "„Ich hab Schmerzen vorne am Knie!!!“",
     "start": 0.0,
     "dauer": 1.33,
-    "y": 960,
+    "y": 800,
     "groesse": 50,
     "punch_in": false,
-    "visuell": "André steht gebeugt mit beiden Händen am Knie und schaut leidend in die Kamera, wie in der Vorlage"
+    "visuell": "Schneller Zoom aufs Knie (Hände am Knie) und wieder raus, André gebeugt mit Schmerzgesicht",
+    "animation": "pop"
   },
   "segmente": [
     {
       "quelle": "../roh/IMG_4110.mov",
       "start": 2.4,
       "ende": 3.73,
-      "ton": false
+      "ton": false,
+      "zoom_puls": {
+        "x": 0.28,
+        "y": 0.6,
+        "staerke": 0.8,
+        "ein": 0.15,
+        "halten": 0.5,
+        "aus": 0.3
+      }
     },
     {
       "quelle": "../roh/IMG_4114.mov",
@@ -114,7 +123,7 @@
     },
     {
       "stil": "trend",
-      "text": "Step-Down hüftdominant\nleichte Version\nreizt die Sehne meist weniger",
+      "text": "Step-Down hüftdominant\neinfacher",
       "x": 540,
       "y": 960,
       "start": 7.99,
@@ -123,7 +132,7 @@
     },
     {
       "stil": "trend",
-      "text": "Step-Down kniedominant\nschwere Version\nreizt die Sehne eher",
+      "text": "Step-Down kniedominant\nschwieriger",
       "x": 540,
       "y": 960,
       "start": 10.2,
@@ -158,15 +167,9 @@
       "text": "Behandelt wird mit schrittweise gesteigerter Belastung der Sehne, z. B. Isometrie, dann langsames, schweres Krafttraining.",
       "quelle": "Malliaras P et al. JOSPT 2015;45(11):887–898; Rio E et al. Isometric exercise induces analgesia and reduces inhibition in patellar tendinopathy. Br J Sports Med 2015;49(19):1277–1283",
       "status": "konsens"
-    },
-    {
-      "text": "Hüftdominanter Step-Down (Rumpf vor) reizt die Patellasehne meist weniger als der kniedominante (Knie weit vor, Rumpf aufrecht).",
-      "quelle": "Kulas AS, Hortobágyi T, DeVita P. Trunk position modulates anterior cruciate ligament forces and strains during a single-leg squat. Clin Biomech 2012;27(1):16–21 (Rumpfvorlage: mehr Hamstrings-, weniger Quadrizepskraft in tiefer Beugung); Malliaras P et al. JOSPT 2015 (Kniestrecker-Last provoziert Patellatendinopathie)",
-      "status": "konsens",
-      "beleg": "Direkte Messung der Patellasehnenlast fehlt; biomechanische Daten + klinischer Konsens. Deshalb vorsichtig formuliert ('meist', 'eher')."
     }
   ],
-  "caption": "Schmerz direkt unter der Kniescheibe, vor allem bei Treppen, Sprüngen oder Kniebeugen? Das passt oft zu einer Patellatendinopathie. Eine Ferndiagnose ist das aber nicht, lass dein Knie untersuchen.\n\n4 Übungen, die du ausprobieren kannst, von leicht nach schwer. Tipp: Der hüftdominante Step-Down reizt die Sehne meist weniger, der kniedominante eher. Starte mit der leichten Version.\n\nWenn etwas wehtut, nicht tiefer in die Bewegung gehen.\n\nSpeicher dir das Reel für dein nächstes Knietraining.",
+  "caption": "Schmerz direkt unter der Kniescheibe, vor allem bei Treppen, Sprüngen oder Kniebeugen? Das passt oft zu einer Patellatendinopathie. Eine Ferndiagnose ist das aber nicht, lass dein Knie untersuchen.\n\n4 Übungen, die du ausprobieren kannst, von leicht nach schwer. Starte mit dem hüftdominanten Step-Down, der kniedominante ist die schwierigere Version.\n\nWenn etwas wehtut, nicht tiefer in die Bewegung gehen.\n\nSpeicher dir das Reel für dein nächstes Knietraining.",
   "hashtags": [
     "#knieschmerzen",
     "#patellatendinopathie",

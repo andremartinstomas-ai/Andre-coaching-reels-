@@ -3,7 +3,7 @@
 ## Caption (zum Posten)
 Schmerz direkt unter der Kniescheibe, vor allem bei Treppen, Sprüngen oder Kniebeugen? Das passt oft zu einer Patellatendinopathie. Eine Ferndiagnose ist das aber nicht, lass dein Knie untersuchen.
 
-4 Übungen, die du ausprobieren kannst, von leicht nach schwer. Tipp: Der hüftdominante Step-Down reizt die Sehne meist weniger, der kniedominante eher. Starte mit der leichten Version.
+4 Übungen, die du ausprobieren kannst, von leicht nach schwer. Starte mit dem hüftdominanten Step-Down, der kniedominante ist die schwierigere Version.
 
 Wenn etwas wehtut, nicht tiefer in die Bewegung gehen.
 
@@ -13,18 +13,17 @@ Speicher dir das Reel für dein nächstes Knietraining.
 
 ## Hooks
 - Audio-Hook: kein Soundeffekt, Trend-Sound in Instagram darunterlegen
-- Visueller Hook: André steht gebeugt mit beiden Händen am Knie und schaut leidend in die Kamera, wie in der Vorlage
+- Visueller Hook: Schneller Zoom aufs Knie (Hände am Knie) und wieder raus, André gebeugt mit Schmerzgesicht
 - Text-Hook: „Ich hab Schmerzen vorne am Knie!!!“
 
 ## Skript
 - Hook: Patient hält sich das Knie: 'Vorne am Knie tut's weh!!!'
 - Aufbau: Physio: 'Wo?' → Patient zeigt unter die Kniescheibe → Physio erkennt das typische Bild: Patellatendinopathie (Chef's Kiss).
-- Payoff: 4 Übungen als Progression: Spanish Squat (isometrisch) → Step-Down hüftdominant (leicht, reizt meist weniger) → Step-Down kniedominant (schwer, reizt eher) → einbeinige Kniebeuge zur Box.
+- Payoff: 4 Übungen als Progression: Spanish Squat (isometrisch) → Step-Down hüftdominant (einfacher) → Step-Down kniedominant (schwieriger) → einbeinige Kniebeuge zur Box.
 
 ## Aussagen & Quellen
 - "Schmerz am unteren Pol der Kniescheibe (Patellasehne) ist das typische Leitsymptom einer Patellatendinopathie." -> Malliaras P, Cook J, Purdam C, Rio E. Patellar Tendinopathy: Clinical Diagnosis, Load Management, and Advice for Challenging Case Presentations. J Orthop Sports Phys Ther 2015;45(11):887–898 [belegt] - Leitsymptome: Schmerz am unteren Patellapol + belastungsabhängiger Schmerz bei Kniestrecker-Last. Diagnose bleibt klinisch.
 - "Behandelt wird mit schrittweise gesteigerter Belastung der Sehne, z. B. Isometrie, dann langsames, schweres Krafttraining." -> Malliaras P et al. JOSPT 2015;45(11):887–898; Rio E et al. Isometric exercise induces analgesia and reduces inhibition in patellar tendinopathy. Br J Sports Med 2015;49(19):1277–1283 [konsens]
-- "Hüftdominanter Step-Down (Rumpf vor) reizt die Patellasehne meist weniger als der kniedominante (Knie weit vor, Rumpf aufrecht)." -> Kulas AS, Hortobágyi T, DeVita P. Trunk position modulates anterior cruciate ligament forces and strains during a single-leg squat. Clin Biomech 2012;27(1):16–21 (Rumpfvorlage: mehr Hamstrings-, weniger Quadrizepskraft in tiefer Beugung); Malliaras P et al. JOSPT 2015 (Kniestrecker-Last provoziert Patellatendinopathie) [konsens] - Direkte Messung der Patellasehnenlast fehlt; biomechanische Daten + klinischer Konsens. Deshalb vorsichtig formuliert ('meist', 'eher').
 
 ## Hinweise fuer Andre
 - Sound 1:1 aus der Vorlage übernommen (auf deinen Wunsch). Sicherer für Reichweite und Rechte: in Instagram über 'Audio verwenden' den Original-Sound der Vorlage wählen und den eingebetteten Ton stummschalten.

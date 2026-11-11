@@ -165,10 +165,20 @@ def segment_rendern(seg, idx, spec, spec_dir, tmp, punch_in, qualitaet):
     s = max(W / ib, H / ih) * z
     bw, bh = ib * s, ih * s
     fx, fy = float(seg.get("fokus_x", 0.5)), float(seg.get("fokus_y", 0.5))
-    if punch_in:
-        p = "(1+0.18*max(0\\,1-t/0.5))"
+    puls = seg.get("zoom_puls")
+    if puls:  # kurz auf einen Punkt (z. B. Knie) rein- und wieder rauszoomen, Punkt bleibt an seiner Stelle
+        fx, fy = float(puls["x"]), float(puls["y"])
+        a_, e_, h_, r_ = (float(puls.get(k, d)) for k, d in
+                          (("staerke", 0.6), ("ein", 0.15), ("halten", 0.45), ("aus", 0.25)))
+        p = (f"(1+{a_}*min(1\\,t/{e_})*min(1\\,max(0\\,({e_ + h_ + r_}-t)/{r_})))")
+        # crop-x/y aus derselben Zeitkurve rechnen: 'iw/ih' bleiben im crop-Filter auf dem Startwert stehen
         vf = (f"scale=w='trunc({bw:.1f}*{p}/2)*2':h='trunc({bh:.1f}*{p}/2)*2':eval=frame,"
-              f"crop={W}:{H}:(iw-{W})*{fx}:(ih-{H})*{fy}")
+              f"crop={W}:{H}:'max(0\\,({bw:.1f}*{p}-{W})*{fx})':'max(0\\,({bh:.1f}*{p}-{H})*{fy})'")
+    elif punch_in:
+        p = "(1+0.18*max(0\\,1-t/0.5))"
+        # crop-x/y aus derselben Zeitkurve rechnen: 'iw/ih' bleiben im crop-Filter auf dem Startwert stehen
+        vf = (f"scale=w='trunc({bw:.1f}*{p}/2)*2':h='trunc({bh:.1f}*{p}/2)*2':eval=frame,"
+              f"crop={W}:{H}:'max(0\\,({bw:.1f}*{p}-{W})*{fx})':'max(0\\,({bh:.1f}*{p}-{H})*{fy})'")
     else:
         vf = f"scale={int(bw / 2) * 2 + 2}:{int(bh / 2) * 2 + 2},crop={W}:{H}:(iw-{W})*{fx}:(ih-{H})*{fy}"
     if seg.get("filter"):  # z. B. Helligkeit: "eq=brightness=0.05:gamma=1.15"
@@ -315,7 +325,8 @@ def ass_schreiben(spec, spec_dir, pfad, dauer):
         zeilen_t = hook["text"].split("\n")
         for i, z in enumerate(zeilen_t):
             ev(hook.get("start", 0), hd, "Trend",
-               f"{{\\an5\\pos({W // 2},{hook.get('y', tr['hook_y']) + i * tg * 1.22:.0f})\\blur{tr['blur']}\\fs{tg}}}"
+               f"{{\\an5\\pos({W // 2},{hook.get('y', tr['hook_y']) + i * tg * 1.22:.0f})\\blur{tr['blur']}\\fs{tg}"
+               + (anim if hook.get("animation") else "") + "}"
                + markup(z, gelb), layer=5)
     else:
         zeilen_hook = hook["text"].split("\n")
