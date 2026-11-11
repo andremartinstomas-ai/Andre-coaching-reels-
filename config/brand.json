@@ -1,0 +1,26 @@
+{
+  "_hinweis": "Markenfarben fuer Reels (Teal, Gelb, Weiss). Hex-Werte hier anpassen, wenn Andre exakte Farbcodes hat.",
+  "farben": {
+    "teal": "#0E8C8C",
+    "gelb": "#FFD23F",
+    "weiss": "#FFFFFF",
+    "schatten": "#000000"
+  },
+  "schrift": {
+    "_hinweis": "Eigene Schrift (z. B. Montserrat ExtraBold .ttf) in den Ordner fonts/ legen und hier den Familiennamen eintragen. Fallback: Liberation Sans Bold.",
+    "familie": "Liberation Sans",
+    "fett": true
+  },
+  "groessen": {
+    "hook": 92,
+    "untertitel": 72,
+    "einblendung": 64,
+    "quelle": 34
+  },
+  "video": {
+    "breite": 1080,
+    "hoehe": 1920,
+    "fps": 30,
+    "lautheit_lufs": -14
+  }
+}

@@ -1,0 +1,4 @@
+numpy
+Pillow
+# optional, nur wenn Whisper-Modelle ladbar sind:
+# faster-whisper

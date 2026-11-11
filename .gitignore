@@ -1,0 +1,10 @@
+# Videos und Renderings nicht ins Git (zu groß); Specs, Transkripte, Kandidatenlisten schon
+*.mp4
+*.mov
+*.MOV
+*.m4v
+*.mp3
+*.cover.jpg
+projekte/*/roh/
+tests/testprojekt/
+__pycache__/

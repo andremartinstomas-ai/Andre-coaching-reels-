@@ -1,0 +1,66 @@
+{
+  "titel": "MRT-Befund Bandscheibe – was er wirklich bedeutet",
+  "ausgabe": "../reels/01_mrt_bandscheibe.mp4",
+  "uebung": true,
+
+  "skript": {
+    "hook": "Dein MRT zeigt eine Bandscheibenvorwölbung? Bevor du dir Sorgen machst: schau dir diese Zahl an.",
+    "aufbau": "1) Studie: Viele Menschen OHNE Schmerzen haben solche Befunde. 2) Folge: Das Bild allein erklärt deinen Schmerz nicht. 3) Was Leitlinien stattdessen empfehlen: aktiv bleiben.",
+    "payoff": "Konkrete erste Übung (Katze-Kuh) + Einordnung: Dein Rücken ist belastbar."
+  },
+
+  "hook": {
+    "text": "MRT zeigt *Bandscheibe*?\nWarte kurz.",
+    "dauer": 3.0,
+    "animation": "slam",
+    "sound": "riser_boom",
+    "sound_zeit": 0,
+    "sound_lautstaerke": 0.55,
+    "punch_in": true,
+    "visuell": "Punch-in-Zoom auf André, der ein MRT-Bild in die Kamera hält"
+  },
+
+  "segmente": [
+    {"quelle": "../roh/sprechen.mp4", "start": 2.0, "ende": 9.6, "transkript": "../transkripte/sprechen.json", "zoom": 1.0, "fokus_x": 0.5, "fokus_y": 0.5},
+    {"quelle": "../roh/sprechen.mp4", "start": 9.9, "ende": 16.6, "transkript": "../transkripte/sprechen.json", "zoom": 1.15},
+    {"quelle": "../roh/uebung.mp4", "start": 0.0, "ende": 6.0, "ton": false}
+  ],
+
+  "untertitel": true,
+  "untertitel_korrekturen": {"Rueckenschmerzen": "Rückenschmerzen"},
+  "untertitel_manuell": [
+    {"start": 14.5, "ende": 17.5, "text": "Katze-Kuh: *10x* langsam"},
+    {"start": 17.5, "ende": 20.2, "text": "Wenn etwas wehtut, nicht tiefer in die Bewegung gehen."}
+  ],
+
+  "einblendungen": [
+    {"start": 3.2, "ende": 7.0, "position": "oben", "text": "*37 %* der 20-Jährigen\nohne Rückenschmerzen"}
+  ],
+
+  "quelle_einblendung": {"text": "Quelle: Brinjikji et al. 2015, AJNR", "start": 3.2, "ende": 7.0},
+
+  "sounds": [
+    {"name": "whoosh", "zeit": 14.3, "lautstaerke": 0.4}
+  ],
+
+  "aussagen": [
+    {
+      "text": "Etwa 37 % der 20-Jährigen ohne Rückenschmerzen zeigen im MRT Bandscheibendegeneration.",
+      "quelle": "Brinjikji W et al. Systematic literature review of imaging features of spinal degeneration in asymptomatic populations. AJNR Am J Neuroradiol. 2015;36(4):811-816.",
+      "status": "belegt",
+      "beleg": "Systematisches Review, 33 Studien, über 3000 beschwerdefreie Personen"
+    },
+    {
+      "text": "Leitlinien empfehlen bei Kreuzschmerz, aktiv zu bleiben, statt Bettruhe.",
+      "quelle": "Nationale VersorgungsLeitlinie Nicht-spezifischer Kreuzschmerz, 2. Aufl. 2017; NICE NG59 (2016, aktualisiert 2020)",
+      "status": "konsens"
+    }
+  ],
+
+  "caption": "Ein MRT-Befund ist nicht automatisch der Grund für deinen Schmerz. Viele Menschen ohne Beschwerden haben genau die gleichen Bilder. Speicher dir das Reel für den nächsten Arzttermin.\n\nWenn etwas wehtut, nicht tiefer in die Bewegung gehen.",
+  "hashtags": ["#rückenschmerzen", "#bandscheibenvorfall", "#physiotherapie", "#schmerztherapie", "#rückentraining"],
+
+  "hinweise": [
+    "Hook-Sound ist synthetisch erzeugt und wurde nicht angehört. Alternativ in Instagram einen Riser/Boom aus der Bibliothek darüberlegen."
+  ]
+}
