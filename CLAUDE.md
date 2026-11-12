@@ -107,8 +107,9 @@ Fertige Videos nicht ins Git committen (zu groß, `.gitignore`), sondern per Sen
   an die Breite angepasst.
 - Fortschrittsbalken oben (ein Segment pro Kapitel), rechts oben Label in Teal + gelbe Linie + Titel in Gelb.
 - Fakten (Aufbau) mittig oben auf abgedunkeltem Bild. Keine Quellenzeile im Bild.
-- **Warm-Vintage-Look** auf allen Videos (André, 2026-11-11): `look` in `config/brand.json`, wirkt nur aufs Bild,
-  nicht auf den Text. Pro Spec mit `"look": false` abschaltbar.
+- **Warm-klar-Look** auf allen Videos (André, 2026-11-12, ersetzt den Vintage-Filter): leicht wärmer, satte Schatten
+  ohne blassen Schleier, etwas mehr Kontrast, geschärfte Konturen. Kein Fade, kein Korn, keine Vignette.
+  `look` in `config/brand.json`, wirkt nur aufs Bild, nicht auf den Text. Pro Spec mit `"look": false` abschaltbar.
 - **Virale Vorlagen nachbauen** (z. B. „Kommt drauf an“): `hook.stil: "trend"` und `einblendungen` mit
   `stil: "trend"`, `x`, `y`: weiße Inter-Schrift mit weichem Schatten, normale Schreibweise, kein Abdunkeln.
   So nah wie möglich an Format und Timing der Vorlage bleiben.
