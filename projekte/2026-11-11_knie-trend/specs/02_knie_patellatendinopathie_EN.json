@@ -1,0 +1,184 @@
+{
+  "titel": "Front of my knee hurts: patellar tendinopathy (trend format, EN)",
+  "ausgabe": "../reels/01_knie_patellatendinopathie_EN.mp4",
+  "uebung": true,
+  "skript": {
+    "hook": "Patient holds his knee: 'The front of my knee hurts!!!'",
+    "aufbau": "Physio: 'Where?' → patient points below the kneecap → physio recognises the typical picture: patellar tendinopathy (chef's kiss).",
+    "payoff": "4 exercises as a progression: Spanish squat → hip-dominant step-down (easier) → knee-dominant step-down (harder) → single-leg squat to box."
+  },
+  "hook": {
+    "stil": "trend",
+    "text": "“The front of my knee hurts!!!”",
+    "start": 0.0,
+    "dauer": 1.33,
+    "y": 800,
+    "groesse": 50,
+    "punch_in": false,
+    "visuell": "Schneller Zoom aufs Knie (Hände am Knie) und wieder raus, André gebeugt mit Schmerzgesicht",
+    "animation": "pop"
+  },
+  "segmente": [
+    {
+      "quelle": "../roh/IMG_4110.mov",
+      "start": 2.4,
+      "ende": 3.73,
+      "ton": false,
+      "zoom_puls": {
+        "x": 0.28,
+        "y": 0.6,
+        "staerke": 0.8,
+        "ein": 0.15,
+        "halten": 0.5,
+        "aus": 0.3
+      }
+    },
+    {
+      "quelle": "../roh/IMG_4114.mov",
+      "start": 1.0,
+      "ende": 2.47,
+      "ton": false
+    },
+    {
+      "quelle": "../roh/IMG_4112.mov",
+      "start": 1.03,
+      "ende": 2.6,
+      "ton": false
+    },
+    {
+      "quelle": "../roh/IMG_4115.mov",
+      "start": 0.8,
+      "ende": 2.2,
+      "ton": false
+    },
+    {
+      "quelle": "../roh/IMG_4117.mov",
+      "start": 0.0,
+      "ende": 2.1,
+      "ton": false,
+      "geschwindigkeit": 0.946
+    },
+    {
+      "quelle": "../roh/IMG_4119.mov",
+      "start": 1.5,
+      "ende": 3.71,
+      "ton": false
+    },
+    {
+      "quelle": "../roh/IMG_4120.mov",
+      "start": 1.0,
+      "ende": 3.3,
+      "ton": false
+    },
+    {
+      "quelle": "../roh/IMG_4123.mov",
+      "start": 0.9,
+      "ende": 2.4,
+      "ton": false
+    },
+    {
+      "quelle": "../roh/IMG_4123.mov",
+      "start": 4.0,
+      "ende": 4.7,
+      "ton": false
+    }
+  ],
+  "untertitel": false,
+  "einblendungen": [
+    {
+      "stil": "trend",
+      "text": "“Where?”",
+      "x": 540,
+      "y": 960,
+      "start": 1.33,
+      "ende": 2.8,
+      "groesse": 50
+    },
+    {
+      "stil": "trend",
+      "text": "\\*points to the tendon\nbelow the kneecap\\*",
+      "x": 540,
+      "y": 960,
+      "start": 2.8,
+      "ende": 4.37,
+      "groesse": 46
+    },
+    {
+      "stil": "trend",
+      "text": "“Patellar tendinopathy”",
+      "x": 540,
+      "y": 1150,
+      "start": 4.37,
+      "ende": 5.77,
+      "groesse": 52
+    },
+    {
+      "stil": "trend",
+      "text": "Spanish squat\n5 × 45 sec hold",
+      "x": 540,
+      "y": 960,
+      "start": 5.77,
+      "ende": 7.99,
+      "groesse": 46
+    },
+    {
+      "stil": "trend",
+      "text": "Step-down, hip-dominant\neasier",
+      "x": 540,
+      "y": 960,
+      "start": 7.99,
+      "ende": 10.2,
+      "groesse": 46
+    },
+    {
+      "stil": "trend",
+      "text": "Step-down, knee-dominant\nharder",
+      "x": 540,
+      "y": 960,
+      "start": 10.2,
+      "ende": 12.5,
+      "groesse": 46
+    },
+    {
+      "stil": "trend",
+      "text": "Single-leg squat to box\n3 × 6 slow",
+      "x": 540,
+      "y": 960,
+      "start": 12.5,
+      "ende": 14.7,
+      "groesse": 46
+    }
+  ],
+  "sounds": [
+    {
+      "name": "../roh/vorlage_sound.wav",
+      "zeit": 0,
+      "lautstaerke": 1.0
+    }
+  ],
+  "aussagen": [
+    {
+      "text": "Pain at the lower pole of the kneecap (patellar tendon) is the typical key symptom of patellar tendinopathy.",
+      "quelle": "Malliaras P, Cook J, Purdam C, Rio E. Patellar Tendinopathy: Clinical Diagnosis, Load Management, and Advice for Challenging Case Presentations. J Orthop Sports Phys Ther 2015;45(11):887–898",
+      "status": "belegt"
+    },
+    {
+      "text": "Treatment: progressively increasing tendon load, e.g. isometrics, then slow heavy strength training.",
+      "quelle": "Malliaras P et al. JOSPT 2015;45(11):887–898; Rio E et al. Isometric exercise induces analgesia and reduces inhibition in patellar tendinopathy. Br J Sports Med 2015;49(19):1277–1283",
+      "status": "konsens"
+    }
+  ],
+  "caption": "Pain right below your kneecap, especially on stairs, jumping or squats? That often fits patellar tendinopathy. This is not a remote diagnosis though, get your knee checked.\n\n4 exercises you can try, from easier to harder. Start with the hip-dominant step-down, the knee-dominant one is the harder version.\n\nIf something hurts, don't go deeper into the movement.\n\nSave this reel for your next knee workout.",
+  "hashtags": [
+    "#kneepain",
+    "#patellartendinopathy",
+    "#jumpersknee",
+    "#physiotherapy",
+    "#kneerehab"
+  ],
+  "hinweise": [
+    "English version of the German knee reel; same cuts, same sound timing.",
+    "Better: use the original trend sound via 'Use audio' in Instagram and mute the embedded sound."
+  ],
+  "sprache": "en"
+}

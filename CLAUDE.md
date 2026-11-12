@@ -120,6 +120,8 @@ Fertige Videos nicht ins Git committen (zu groß, `.gitignore`), sondern per Sen
   Pausen automatisch mit `scripts/pausen_schnitt.py` entfernen. Bei übersteuertem Ton `"ton_reparatur": true`.
 - **Fail-Gag Spirale** (Versprecher): `effekte: [{typ: "spirale", quelle, start, ende (Quellzeit), x, y (Gesicht im
   Quellbild), zoom, drehungen}]` = Zoom aufs Gesicht + volle Drehung, ohne schwarze Ecken.
+- **Englische Versionen:** Spec kopieren, `"sprache": "en"` setzen, alle Texte/Caption/Hashtags übersetzen
+  (Regelprüfung dann mit „Save“ und „If something hurts, don't go deeper into the movement.“).
 - Werte in `config/brand.json`.
 
 ## Grenzen der Umgebung

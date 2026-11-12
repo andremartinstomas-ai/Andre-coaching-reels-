@@ -29,6 +29,11 @@ FONTS = ROOT / "fonts"
 VERBOTEN = [r"schmerzfrei", r"\bheilt\b", r"heilung garantiert", r"garantiert", r"nie wieder schmerz",
             r"f[üu]r immer weg", r"wunder", r"100\s?%", r"sofort weg"]
 SICHERHEITSSATZ = "wenn etwas wehtut"
+VERBOTEN_EN = [r"pain[- ]free", r"\bcures?\b", r"guaranteed", r"never hurt again", r"instant(ly)? relief", r"100\s?%"]
+SPRACHE = {  # Regelpruefung je Sprache: Speichern-Aufruf, Sicherheitssatz
+    "de": {"speichern": "speicher", "sicherheit": "wenn etwas wehtut"},
+    "en": {"speichern": "save", "sicherheit": "if something hurts"},
+}
 
 
 # ------------------------------------------------------------------ Helfer
@@ -127,16 +132,17 @@ def pruefe(spec, spec_dir):
 
     alle_texte = " ".join([hook.get("text", ""), spec.get("caption", ""),
                            *[e.get("text", "") for e in spec.get("einblendungen", []) + spec.get("untertitel_manuell", [])]]).lower()
-    for muster in VERBOTEN:
+    regeln = SPRACHE[spec.get("sprache", "de")]
+    for muster in VERBOTEN + (VERBOTEN_EN if spec.get("sprache") == "en" else []):
         if re.search(muster, alle_texte):
             fehler.append(f"Heilversprechen/Uebertreibung gefunden: '{muster}'.")
 
     tags = spec.get("hashtags", [])
     if len(tags) != 5:
         fehler.append(f"Genau 5 Hashtags noetig (sind {len(tags)}).")
-    if "speicher" not in spec.get("caption", "").lower():
+    if regeln["speichern"] not in spec.get("caption", "").lower():
         fehler.append("Caption braucht einen Speichern-Aufruf.")
-    if spec.get("uebung") and SICHERHEITSSATZ not in alle_texte:
+    if spec.get("uebung") and regeln["sicherheit"] not in alle_texte:
         fehler.append("Uebungs-Reel ohne Sicherheitssatz ('Wenn etwas wehtut, nicht tiefer in die Bewegung gehen.').")
 
     dauer = sum(s["ende"] - s["start"] for s in spec.get("segmente", []))
