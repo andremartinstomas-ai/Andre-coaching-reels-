@@ -32,8 +32,8 @@ Dialogue: 3,0:00:07.22,0:00:17.20,Info,,0,0,0,,{\an7\pos(85,546)\fad(150,120)\fs
 Dialogue: 3,0:00:07.22,0:00:17.20,Info,,0,0,0,,{\an7\pos(85,626)\fad(150,120)\fs34\alpha&H30&}BRINJIKJI ET AL. 2015
 Dialogue: 3,0:00:17.20,0:00:21.12,Label,,0,0,0,,{\an7\pos(85,250)\fad(150,120)\fs70}KURZ MERKEN
 Dialogue: 3,0:00:17.20,0:00:21.12,Form,,0,0,0,,{\an7\pos(85,316)\c&H0000B8F8\alpha&H00&\bord0\shad0\fad(150,120)\p1}m 0 0 l 300 0 300 5 0 5{\p0}
-Dialogue: 3,0:00:17.20,0:00:21.12,Info,,0,0,0,,{\an7\pos(85,330)\fad(150,120)\fs120}{\c&H0000B8F8}SCHMERZ ≠{\c&H00FFFFFF&}
-Dialogue: 3,0:00:17.20,0:00:21.12,Info,,0,0,0,,{\an7\pos(85,438)\fad(150,120)\fs120}{\c&H0000B8F8}SCHADEN{\c&H00FFFFFF&}
+Dialogue: 3,0:00:17.20,0:00:21.12,Info,,0,0,0,,{\an7\pos(85,330)\fad(150,120)\fs165}{\c&H0000B8F8}SCHMERZ ≠{\c&H00FFFFFF&}
+Dialogue: 3,0:00:17.20,0:00:21.12,Info,,0,0,0,,{\an7\pos(85,479)\fad(150,120)\fs165}{\c&H0000B8F8}SCHADEN{\c&H00FFFFFF&}
 Dialogue: 1,0:00:00.00,0:00:00.50,Sub,,0,0,0,,{\c&H0000B8F8}DENKEN{\c&H00FFFFFF} WIR MENSCHEN,
 Dialogue: 1,0:00:00.50,0:00:00.66,Sub,,0,0,0,,DENKEN {\c&H0000B8F8}WIR{\c&H00FFFFFF} MENSCHEN,
 Dialogue: 1,0:00:00.66,0:00:01.10,Sub,,0,0,0,,DENKEN WIR {\c&H0000B8F8}MENSCHEN,{\c&H00FFFFFF}
