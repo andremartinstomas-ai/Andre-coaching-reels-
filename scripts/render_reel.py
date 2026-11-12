@@ -181,6 +181,10 @@ def segment_rendern(seg, idx, spec, spec_dir, tmp, punch_in, qualitaet):
               f"crop={W}:{H}:'max(0\\,({bw:.1f}*{p}-{W})*{fx})':'max(0\\,({bh:.1f}*{p}-{H})*{fy})'")
     else:
         vf = f"scale={int(bw / 2) * 2 + 2}:{int(bh / 2) * 2 + 2},crop={W}:{H}:(iw-{W})*{fx}:(ih-{H})*{fy}"
+    spiral = spirale_segment(spec, seg, int(bw / 2) * 2 + 2, int(bh / 2) * 2 + 2)
+    if spiral and not puls and not punch_in:
+        vf = (f"scale={int(bw / 2) * 2 + 2}:{int(bh / 2) * 2 + 2}," + spiral +
+              f"crop={W}:{H}:(iw-{W})*{fx}:(ih-{H})*{fy}")
     if seg.get("filter"):  # z. B. Helligkeit: "eq=brightness=0.05:gamma=1.15"
         vf += "," + seg["filter"]
     if seg.get("geschwindigkeit"):
@@ -212,6 +216,54 @@ def segment_rendern(seg, idx, spec, spec_dir, tmp, punch_in, qualitaet):
     return dauer
 
 
+def spirale_segment(spec, seg, A, B):
+    """Spiral-Zoom (Fail-Gag) auf Quell-Ebene: Zoom aufs Gesicht (x/y = Anteil im Quellbild) + volle Drehung.
+    Zeiten in Sekunden der Quelldatei, wirkt auf alle Segmente dieser Quelle, die das Fenster schneiden.
+    Nach der Drehung wird so nachgezoomt, dass keine schwarzen Ecken entstehen."""
+    for e in spec.get("effekte", []):
+        if e.get("typ") != "spirale" or "quelle" not in e or Path(e["quelle"]).name != Path(seg["quelle"]).name:
+            continue
+        q0, q1 = float(e["start"]), float(e["ende"])
+        if q1 <= seg["start"] or q0 >= seg["ende"]:
+            continue
+        t0, t1 = q0 - seg["start"], q1 - seg["start"]
+        rein, raus = float(e.get("rein", 0.5)), float(e.get("raus", 0.25))
+        zm, dreh, fx, fy = float(e.get("zoom", 2.2)), float(e.get("drehungen", 1)), float(e["x"]), float(e["y"])
+        k = "\\,"
+        E = f"(between(t{k}{t0}{k}{t1})*min(1{k}(t-({t0}))/{rein})*min(1{k}({t1}-t)/{raus}))"
+        Z = f"(1+{zm - 1}*{E})"
+        ANG = f"(between(t{k}{t0}{k}{t1})*2*PI*{dreh}*min(1{k}max(0{k}(t-({t0}))/{t1 - t0 - raus})))"
+        KF = f"(abs(cos({ANG}))+{B / A:.4f}*abs(sin({ANG})))"
+        return (f"scale=w='trunc({A}*{Z}/2)*2':h='trunc({B}*{Z}/2)*2':eval=frame,"
+                f"crop={A}:{B}:'min({A}*({Z}-1){k}max(0{k}{fx}*{A}*{Z}-{A // 2}))':"
+                f"'min({B}*({Z}-1){k}max(0{k}{fy}*{B}*{Z}-{B // 2}))',"
+                f"rotate=a='{ANG}':fillcolor=black,"
+                f"scale=w='trunc({A}*{KF}/2)*2':h='trunc({B}*{KF}/2)*2':eval=frame,"
+                f"crop={A}:{B}:'({A}*{KF}-{A})/2':'({B}*{KF}-{B})/2',")
+    return ""
+
+
+def effekte_filter(effekte):
+    """Video-Effekte auf der Reel-Zeitachse (vor Text/Look). typ 'spirale': Zoom aufs Gesicht + volle Drehung (Fail-Gag)."""
+    W, H = BRAND["video"]["breite"], BRAND["video"]["hoehe"]
+    teile = []
+    for e in effekte:
+        if e.get("typ") != "spirale" or "quelle" in e:
+            continue
+        t0, t1 = float(e["start"]), float(e["start"]) + float(e.get("dauer", 1.0))
+        rein, raus = float(e.get("rein", 0.6)), float(e.get("raus", 0.25))
+        zm, dreh, fx, fy = float(e.get("zoom", 2.8)), float(e.get("drehungen", 1)), float(e["x"]), float(e["y"])
+        E = f"(between(t\\,{t0}\\,{t1})*min(1\\,(t-{t0})/{rein})*min(1\\,({t1}-t)/{raus}))"
+        Z = f"(1+{zm - 1}*{E})"
+        teile.append(
+            f"scale=w='trunc({W}*{Z}/2)*2':h='trunc({H}*{Z}/2)*2':eval=frame,"
+            f"crop={W}:{H}:'min({W}*({Z}-1)\\,max(0\\,{E}*({fx}*{W}*{Z}-{W // 2})))':"
+            f"'min({H}*({Z}-1)\\,max(0\\,{E}*({fy}*{H}*{Z}-{H // 2})))',"
+            f"rotate=a='between(t\\,{t0}\\,{t1})*2*PI*{dreh}*min(1\\,(t-{t0})/{t1 - t0 - raus})':fillcolor=black,"
+        )
+    return "".join(teile)
+
+
 def abdunkeln_png(pfad, staerke):
     W, H = BRAND["video"]["breite"], BRAND["video"]["hoehe"]
     rgba = np.zeros((H, W, 4), np.uint8)
@@ -231,22 +283,39 @@ def verlauf_png(pfad, oben=True, staerke=0.7, anteil=0.45):
 
 # ------------------------------------------------------------------ Untertitel
 def woerter_auf_zeitachse(spec, spec_dir):
-    """Mappt Transkript-Woerter jedes Segments auf die Reel-Zeitachse."""
+    """Mappt Transkript-Woerter auf die Reel-Zeitachse. Jedes Wort landet genau einmal: im Segment, das seine Mitte
+    enthaelt, sonst (Mitte liegt in einer herausgeschnittenen Pause) im Segment mit der groessten Ueberlappung."""
     korrektur = spec.get("untertitel_korrekturen", {})
-    out, offset = [], 0.0
+    segs, offset = [], 0.0
     for seg in spec["segmente"]:
         speed = float(seg.get("geschwindigkeit", 1))
-        if seg.get("transkript") and seg.get("ton", True):
-            tr = json.loads(Path(spec_dir, seg["transkript"]).read_text())
-            for w in tr["woerter"]:
-                mitte = (w["start"] + w["ende"]) / 2
-                if seg["start"] <= mitte < seg["ende"]:
-                    text = korrektur.get(w["text"], w["text"])
-                    out.append({"text": text,
-                                "start": offset + (max(w["start"], seg["start"]) - seg["start"]) / speed,
-                                "ende": offset + (min(w["ende"], seg["ende"]) - seg["start"]) / speed})
+        segs.append((seg, offset, speed))
         offset += (seg["ende"] - seg["start"]) / speed
-    return out
+    zuordnung = {}  # (transkript, wortindex) -> (prioritaet, ueberlappung, seg-index)
+    cache = {}
+    for i, (seg, _, _) in enumerate(segs):
+        if not (seg.get("transkript") and seg.get("ton", True)):
+            continue
+        tp = seg["transkript"]
+        if tp not in cache:
+            cache[tp] = json.loads(Path(spec_dir, tp).read_text())["woerter"]
+        for j, w in enumerate(cache[tp]):
+            ueber = min(w["ende"], seg["ende"]) - max(w["start"], seg["start"])
+            if ueber <= 0:
+                continue
+            mitte = (w["start"] + w["ende"]) / 2
+            prio = 1 if seg["start"] <= mitte < seg["ende"] else 0
+            alt = zuordnung.get((tp, j))
+            if alt is None or (prio, ueber) > alt[:2]:
+                zuordnung[(tp, j)] = (prio, ueber, i)
+    out = []
+    for (tp, j), (_, _, i) in zuordnung.items():
+        seg, off, speed = segs[i]
+        w = cache[tp][j]
+        out.append({"text": korrektur.get(w["text"], w["text"]),
+                    "start": off + (max(w["start"], seg["start"]) - seg["start"]) / speed,
+                    "ende": off + (min(w["ende"], seg["ende"]) - seg["start"]) / speed})
+    return sorted(out, key=lambda w: w["start"])
 
 
 def gruppen(woerter, max_w=3, max_zeichen=22):
@@ -464,7 +533,8 @@ def rendern(spec_pfad, vorschau=False):
         n_in = 3 + len(sounds)
         for b in bilder:
             args += ["-loop", "1", "-t", f"{dauer}", "-i", str(Path(spec_dir, b["datei"]))]
-        fc = [f"[0:v]{look_filter}[v0]", f"[v0][1:v]overlay=0:0:enable='{enable}'[v1]", unten]
+        effekt = effekte_filter(spec.get("effekte", []))
+        fc = [f"[0:v]{effekt}{look_filter}[v0]", f"[v0][1:v]overlay=0:0:enable='{enable}'[v1]", unten]
         letzter = "v2"
         for i, b in enumerate(bilder):
             ein = b.get("ein", 0.25)

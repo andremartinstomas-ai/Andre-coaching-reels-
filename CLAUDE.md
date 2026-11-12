@@ -118,6 +118,8 @@ Fertige Videos nicht ins Git committen (zu groß, `.gitignore`), sondern per Sen
 - **Sprechvideos:** Karten auf Andrés rechter Seite = **links im Bild** (`"seite": "links"`), Sprecher per `fokus_x: 0`
   nach rechts schieben. Grafiken über `bilder` (z. B. `scripts/grafik_mindmap.py`), groß + `abdunkeln`.
   Pausen automatisch mit `scripts/pausen_schnitt.py` entfernen. Bei übersteuertem Ton `"ton_reparatur": true`.
+- **Fail-Gag Spirale** (Versprecher): `effekte: [{typ: "spirale", quelle, start, ende (Quellzeit), x, y (Gesicht im
+  Quellbild), zoom, drehungen}]` = Zoom aufs Gesicht + volle Drehung, ohne schwarze Ecken.
 - Werte in `config/brand.json`.
 
 ## Grenzen der Umgebung
