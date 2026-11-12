@@ -1,0 +1,32 @@
+# 03_tiktok_schmerz_viele_einfluesse  (27.5 s)
+
+## Caption (zum Posten)
+Schmerz ist multifaktoriell: Neben dem Gewebe spielen Schlaf, Stress, Bewegung und dein Umfeld mit.
+
+4 Fragen an dich: Schlaf? Ernährung? Aktivität? Stress?
+
+Speicher dir das Reel und schreib in die Kommentare: Was hilft dir am meisten bei Schmerzen?
+
+#schmerzen #schmerztherapie #physiotherapie #rückenschmerzen #schmerzverstehen
+
+## Hooks
+- Audio-Hook: kein Soundeffekt, Trend-Sound in Instagram darunterlegen
+- Visueller Hook: Punch-in, direkt mit 'Schmerz ist multifaktoriell'
+- Text-Hook: Schmerz hat viele Einflüsse / 4 Fragen an dich
+
+## Skript
+- Hook: Schmerz hat viele Einflüsse, nicht nur das Gewebe.
+- Aufbau: Stress, Schlaf, Ernährung, bio-psycho-soziale Faktoren (Mindmap).
+- Payoff: 4 Fragen an dich + Call-to-Action.
+
+## Aussagen & Quellen
+- "Schmerz ist immer eine persönliche Erfahrung, die von biologischen, psychologischen und sozialen Faktoren beeinflusst wird; Schmerz und Gewebeschaden sind nicht dasselbe." -> Raja SN et al. The revised International Association for the Study of Pain definition of pain. Pain 2020;161(9):1976–1982 [belegt]
+- "Schlaf, Stress und körperliche Aktivität beeinflussen das Schmerzerleben." -> Finan PH, Goodin BR, Smith MT. The association of sleep and pain: an update and a path forward. J Pain 2013;14(12):1539–1552; Geneen LJ et al. Physical activity and exercise for chronic pain in adults: an overview of Cochrane Reviews. Cochrane 2017; Raja et al. 2020 (IASP) [konsens]
+- "Auch Ernährung wird als Einflussfaktor diskutiert (Evidenz schwächer als bei Schlaf/Aktivität)." -> Elma Ö et al. Nutritional factors in chronic musculoskeletal pain: unravelling the underlying mechanisms. Br J Anaesth 2020;125(2):e231–e242 [konsens] - Mechanistische Übersicht, wenig RCT-Evidenz – deshalb nur als Frage formuliert, nicht als Behauptung.
+
+## Hinweise fuer Andre
+- Ton repariert (Mikro zu nah): Übersteuerung geglättet, Dröhnen/Plopp-Bass abgesenkt, Zischlaute gedämpft, leicht komprimiert. Echte Verzerrung lässt sich nur teilweise retten. Nächstes Mal Mikro ca. eine Handbreit (10–15 cm) vom Mund, leicht seitlich.
+- Rausgeschnitten: alle Versuche/Absprachen, 'Ne, das war scheiße', abgebrochener Satzanfang bei 'dass der Strukturschaden…', Füllwörter.
+- Mindmap ist eine eigene Grafik nach der IASP-Definition (bio-psycho-sozial). Die '350 Ursachen'-Mindmap konnte ich nicht eindeutig finden; schick mir Autor/Link, dann baue ich die Originalquelle ein.
+- Untertitel automatisch (Whisper medium). Bitte einmal gegenlesen.
+- Keine Soundeffekte. In Instagram/TikTok bei Bedarf leise Musik darunterlegen.

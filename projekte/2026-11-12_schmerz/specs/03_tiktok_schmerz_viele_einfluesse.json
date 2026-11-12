@@ -194,7 +194,7 @@
     {
       "stil": "karte",
       "seite": "links",
-      "start": 0.2,
+      "start": 3.1,
       "ende": 10.17,
       "label": "IASP 2020",
       "text": "Schmerz ist *multifaktoriell*",
@@ -206,7 +206,7 @@
   "bilder": [
     {
       "datei": "../grafiken/mindmap.png",
-      "start": 0.2,
+      "start": 3.1,
       "ende": 10.17,
       "x": 40,
       "y": 420,

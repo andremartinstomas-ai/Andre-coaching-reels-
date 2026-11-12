@@ -51,10 +51,10 @@ Dialogue: 3,0:00:36.83,0:00:38.37,Info,,0,0,0,,{\an7\pos(85,563)\fad(150,120)\fs
 Dialogue: 3,0:00:17.40,0:00:27.37,Label,,0,0,0,,{\an7\pos(85,230)\fad(150,120)\fs70}IASP 2020
 Dialogue: 3,0:00:17.40,0:00:27.37,Form,,0,0,0,,{\an7\pos(85,296)\c&H0000B8F8\alpha&H00&\bord0\shad0\fad(150,120)\p1}m 0 0 l 300 0 300 5 0 5{\p0}
 Dialogue: 3,0:00:17.40,0:00:27.37,Info,,0,0,0,,{\an7\pos(85,310)\fad(150,120)\fs84}SCHMERZ IST {\c&H0000B8F8}MULTIFAKTORIELL{\c&H00FFFFFF&}
-Dialogue: 3,0:00:38.37,0:00:42.29,Label,,0,0,0,,{\an9\pos(995,270)\fad(120,100)}KURZ MERKEN
-Dialogue: 3,0:00:38.37,0:00:42.29,Form,,0,0,0,,{\an7\pos(565,350)\c&H0000B8F8\alpha&H00&\bord0\shad0\fad(120,100)\p1}m 0 0 l 430 0 430 6 0 6{\p0}
-Dialogue: 3,0:00:38.37,0:00:42.29,Titel,,0,0,0,,{\an9\pos(995,366)\fad(120,100)\fs160}SCHMERZ ≠
-Dialogue: 3,0:00:38.37,0:00:42.29,Titel,,0,0,0,,{\an9\pos(995,503)\fad(120,100)\fs160}SCHADEN
+Dialogue: 3,0:00:38.37,0:00:42.29,Label,,0,0,0,,{\an7\pos(85,250)\fad(150,120)\fs70}KURZ MERKEN
+Dialogue: 3,0:00:38.37,0:00:42.29,Form,,0,0,0,,{\an7\pos(85,316)\c&H0000B8F8\alpha&H00&\bord0\shad0\fad(150,120)\p1}m 0 0 l 300 0 300 5 0 5{\p0}
+Dialogue: 3,0:00:38.37,0:00:42.29,Info,,0,0,0,,{\an7\pos(85,330)\fad(150,120)\fs165}{\c&H0000B8F8}SCHMERZ ≠{\c&H00FFFFFF&}
+Dialogue: 3,0:00:38.37,0:00:42.29,Info,,0,0,0,,{\an7\pos(85,479)\fad(150,120)\fs165}{\c&H0000B8F8}SCHADEN{\c&H00FFFFFF&}
 Dialogue: 1,0:00:00.00,0:00:00.50,Sub,,0,0,0,,{\c&H0000B8F8}DENKEN{\c&H00FFFFFF} WIR MENSCHEN,
 Dialogue: 1,0:00:00.50,0:00:00.66,Sub,,0,0,0,,DENKEN {\c&H0000B8F8}WIR{\c&H00FFFFFF} MENSCHEN,
 Dialogue: 1,0:00:00.66,0:00:01.10,Sub,,0,0,0,,DENKEN WIR {\c&H0000B8F8}MENSCHEN,{\c&H00FFFFFF}
