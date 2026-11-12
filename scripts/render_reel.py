@@ -193,7 +193,12 @@ def segment_rendern(seg, idx, spec, spec_dir, tmp, punch_in, qualitaet):
     nutze_ton = seg.get("ton", True) and hat_ton
     if not nutze_ton:
         args += ["-f", "lavfi", "-t", f"{dauer}", "-i", "anullsrc=r=48000:cl=stereo"]
-    af = (f"volume={seg.get('lautstaerke', 1.0)},afade=t=in:d=0.015,"
+    reparatur = ""
+    if spec.get("ton_reparatur"):  # Mikro zu nah: Clipping glaetten, Nahbesprechungs-Bass/Plopp runter, Zischlaute daempfen
+        reparatur = ("adeclip=window=55:overlap=75,highpass=f=85,equalizer=f=160:t=q:w=1.2:g=-5,"
+                     "equalizer=f=3800:t=q:w=1.2:g=1.5,deesser=i=0.35,"
+                     "acompressor=threshold=-24dB:ratio=3:attack=8:release=160:makeup=3,afftdn=nf=-45,")
+    af = (f"{reparatur}volume={seg.get('lautstaerke', 1.0)},afade=t=in:d=0.015,"
           f"afade=t=out:st={max(0, dauer - 0.02):.3f}:d=0.02,aresample=48000")
     if seg.get("geschwindigkeit"):
         af = f"atempo={seg['geschwindigkeit']}," + af
@@ -343,13 +348,15 @@ def ass_schreiben(spec, spec_dir, pfad, dauer):
             a_, e_ = e["start"], e["ende"]
             fad = "\\fad(150,120)"
             ky = e.get("y", BRAND["layout"]["label_y"])
-            ev(a_, e_, "Label", f"{{\\an9\\pos({rechts},{ky}){fad}\\fs{e.get('label_groesse', 60)}}}" + text(e["label"]), layer=3)
+            links_ = e.get("seite") == "links"
+            kx, an = (links, 7) if links_ else (rechts, 9)
+            ev(a_, e_, "Label", f"{{\\an{an}\\pos({kx},{ky}){fad}\\fs{e.get('label_groesse', 60)}}}" + text(e["label"]), layer=3)
             ly_ = ky + e.get("label_groesse", 60) * 0.95
-            ev(a_, e_, "Form", rechteck(rechts - 300, ly_, 300, 5, gelb).replace("\\p1}", f"{fad}\\p1}}"), layer=3)
+            ev(a_, e_, "Form", rechteck(kx if links_ else kx - 300, ly_, 300, 5, gelb).replace("\\p1}", f"{fad}\\p1}}"), layer=3)
             g = e.get("groesse", 58)
-            unter = zeilen_block(a_, e_, "Info", e["text"], rechts, ly_ + 14, 9, g, fad + f"\\fs{g}", abstand=0.9)
+            unter = zeilen_block(a_, e_, "Info", e["text"], kx, ly_ + 14, an, g, fad + f"\\fs{g}", abstand=0.9)
             if e.get("quelle"):
-                zeilen_block(a_, e_, "Info", e["quelle"], rechts, unter + 8, 9, 34, fad + "\\fs34\\alpha&H30&")
+                zeilen_block(a_, e_, "Info", e["quelle"], kx, unter + 8, an, 34, fad + "\\fs34\\alpha&H30&")
             continue
         if e.get("stil") == "trend":
             tr = BRAND["trend"]
@@ -444,7 +451,8 @@ def rendern(spec_pfad, vorschau=False):
             args += ["-i", str(p if p.exists() else Path(spec_dir, snd["name"]))]
         hd = spec["hook"].get("dauer", 3.0)
         dunkel_zeiten = ([] if spec["hook"].get("stil") == "trend" else [(0, hd)]) + \
-            [(e["start"], e["ende"]) for e in spec.get("einblendungen", []) if e.get("stil") not in ("trend", "karte")]
+            [(e["start"], e["ende"]) for e in spec.get("einblendungen", []) if e.get("stil") not in ("trend", "karte")] + \
+            [(b["start"], b["ende"]) for b in spec.get("bilder", []) if b.get("abdunkeln")]
         enable = "+".join(f"between(t,{a},{b})" for a, b in dunkel_zeiten) or "0"
         ass = str(tmp / "text.ass").replace(":", "\\:")
         unten = "[v1][2:v]overlay=0:0[v2]" if spec.get("untertitel", True) or spec.get("untertitel_manuell") \
@@ -452,8 +460,19 @@ def rendern(spec_pfad, vorschau=False):
         look = BRAND.get("look", {})
         look_an = spec.get("look", look.get("aktiv", False))
         look_filter = look.get("filter", "null") if look_an else "null"
-        fc = [f"[0:v]{look_filter}[v0]", f"[v0][1:v]overlay=0:0:enable='{enable}'[v1]", unten,
-              f"[v2]subtitles='{ass}':fontsdir='{FONTS}'[v]"]
+        bilder = spec.get("bilder", [])
+        n_in = 3 + len(sounds)
+        for b in bilder:
+            args += ["-loop", "1", "-t", f"{dauer}", "-i", str(Path(spec_dir, b["datei"]))]
+        fc = [f"[0:v]{look_filter}[v0]", f"[v0][1:v]overlay=0:0:enable='{enable}'[v1]", unten]
+        letzter = "v2"
+        for i, b in enumerate(bilder):
+            ein = b.get("ein", 0.25)
+            fc.append(f"[{n_in + i}:v]scale={b.get('breite', 480)}:-1,format=rgba,"
+                      f"fade=t=in:st={b['start']}:d={ein}:alpha=1,fade=t=out:st={b['ende'] - 0.2}:d=0.2:alpha=1[b{i}]")
+            fc.append(f"[{letzter}][b{i}]overlay={b.get('x', 40)}:{b.get('y', 260)}:enable='between(t,{b['start']},{b['ende']})'[vb{i}]")
+            letzter = f"vb{i}"
+        fc.append(f"[{letzter}]subtitles='{ass}':fontsdir='{FONTS}'[v]")
         mix = ["[0:a]"]
         for i, snd in enumerate(sounds):
             ms = int(float(snd.get("zeit", 0)) * 1000)

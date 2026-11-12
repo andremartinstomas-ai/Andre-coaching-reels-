@@ -1,0 +1,643 @@
+{
+ "datei": "projekte/2026-11-12_schmerz/roh/teil_3.mov",
+ "sprache": "de",
+ "woerter": [
+  {
+   "text": "Wenn",
+   "start": 0.7800000000000002,
+   "ende": 1.38
+  },
+  {
+   "text": "du",
+   "start": 1.38,
+   "ende": 1.64
+  },
+  {
+   "text": "Nackenschmerzen",
+   "start": 1.64,
+   "ende": 2.24
+  },
+  {
+   "text": "hast,",
+   "start": 2.24,
+   "ende": 2.44
+  },
+  {
+   "text": "dann",
+   "start": 2.62,
+   "ende": 2.7
+  },
+  {
+   "text": "bleib",
+   "start": 2.7,
+   "ende": 3.0
+  },
+  {
+   "text": "dran.",
+   "start": 3.0,
+   "ende": 4.12
+  },
+  {
+   "text": "Oft",
+   "start": 13.360000000000001,
+   "ende": 13.96
+  },
+  {
+   "text": "denken",
+   "start": 13.96,
+   "ende": 14.56
+  },
+  {
+   "text": "wir",
+   "start": 14.56,
+   "ende": 14.72
+  },
+  {
+   "text": "Menschen,",
+   "start": 14.72,
+   "ende": 15.16
+  },
+  {
+   "text": "dass",
+   "start": 15.6,
+   "ende": 15.72
+  },
+  {
+   "text": "Schmerzen",
+   "start": 15.72,
+   "ende": 16.66
+  },
+  {
+   "text": "mit",
+   "start": 16.66,
+   "ende": 17.08
+  },
+  {
+   "text": "Strukturschäden",
+   "start": 17.08,
+   "ende": 18.5
+  },
+  {
+   "text": "korreliert.",
+   "start": 18.5,
+   "ende": 19.0
+  },
+  {
+   "text": "Heißt,",
+   "start": 19.92,
+   "ende": 20.52
+  },
+  {
+   "text": "dass,",
+   "start": 21.34,
+   "ende": 21.34
+  },
+  {
+   "text": "ja,",
+   "start": 21.34,
+   "ende": 21.88
+  },
+  {
+   "text": "desto",
+   "start": 21.94,
+   "ende": 22.12
+  },
+  {
+   "text": "mehr",
+   "start": 22.12,
+   "ende": 22.36
+  },
+  {
+   "text": "Schmerz,",
+   "start": 22.36,
+   "ende": 22.74
+  },
+  {
+   "text": "desto",
+   "start": 22.8,
+   "ende": 22.98
+  },
+  {
+   "text": "mehr",
+   "start": 22.98,
+   "ende": 23.18
+  },
+  {
+   "text": "Schaden",
+   "start": 23.18,
+   "ende": 23.48
+  },
+  {
+   "text": "da",
+   "start": 23.48,
+   "ende": 23.7
+  },
+  {
+   "text": "ist.",
+   "start": 23.7,
+   "ende": 23.9
+  },
+  {
+   "text": "Jedoch",
+   "start": 24.36,
+   "ende": 24.5
+  },
+  {
+   "text": "hat",
+   "start": 24.5,
+   "ende": 24.6
+  },
+  {
+   "text": "man",
+   "start": 24.6,
+   "ende": 24.74
+  },
+  {
+   "text": "in",
+   "start": 24.74,
+   "ende": 24.92
+  },
+  {
+   "text": "Studien",
+   "start": 24.92,
+   "ende": 25.26
+  },
+  {
+   "text": "und",
+   "start": 25.26,
+   "ende": 25.74
+  },
+  {
+   "text": "vor",
+   "start": 25.74,
+   "ende": 25.9
+  },
+  {
+   "text": "allem",
+   "start": 25.9,
+   "ende": 26.04
+  },
+  {
+   "text": "auch",
+   "start": 26.04,
+   "ende": 26.24
+  },
+  {
+   "text": "in",
+   "start": 26.24,
+   "ende": 26.32
+  },
+  {
+   "text": "anderen",
+   "start": 26.32,
+   "ende": 26.72
+  },
+  {
+   "text": "Beobachtungen",
+   "start": 26.72,
+   "ende": 27.96
+  },
+  {
+   "text": "Jedoch",
+   "start": 29.18,
+   "ende": 29.86
+  },
+  {
+   "text": "hat",
+   "start": 29.86,
+   "ende": 29.92
+  },
+  {
+   "text": "man",
+   "start": 29.92,
+   "ende": 30.08
+  },
+  {
+   "text": "in",
+   "start": 30.08,
+   "ende": 30.16
+  },
+  {
+   "text": "Studien",
+   "start": 30.16,
+   "ende": 30.44
+  },
+  {
+   "text": "herausfinden",
+   "start": 30.44,
+   "ende": 31.02
+  },
+  {
+   "text": "können,",
+   "start": 31.02,
+   "ende": 31.34
+  },
+  {
+   "text": "dass",
+   "start": 32.1,
+   "ende": 32.3
+  },
+  {
+   "text": "Schmerz",
+   "start": 32.3,
+   "ende": 32.62
+  },
+  {
+   "text": "nicht",
+   "start": 32.62,
+   "ende": 32.74
+  },
+  {
+   "text": "immer",
+   "start": 32.74,
+   "ende": 32.86
+  },
+  {
+   "text": "gleich",
+   "start": 32.86,
+   "ende": 33.04
+  },
+  {
+   "text": "bedeutet,",
+   "start": 33.04,
+   "ende": 33.56
+  },
+  {
+   "text": "dass",
+   "start": 34.18,
+   "ende": 34.88
+  },
+  {
+   "text": "ein",
+   "start": 34.88,
+   "ende": 35.16
+  },
+  {
+   "text": "Strukturschaden",
+   "start": 35.16,
+   "ende": 35.6
+  },
+  {
+   "text": "vorhanden",
+   "start": 35.6,
+   "ende": 36.7
+  },
+  {
+   "text": "ist",
+   "start": 36.7,
+   "ende": 36.72
+  },
+  {
+   "text": "oder",
+   "start": 36.72,
+   "ende": 37.06
+  },
+  {
+   "text": "dass",
+   "start": 37.06,
+   "ende": 38.08
+  },
+  {
+   "text": "der",
+   "start": 38.08,
+   "ende": 38.34
+  },
+  {
+   "text": "Strukturschaden",
+   "start": 38.34,
+   "ende": 42.86
+  },
+  {
+   "text": "nicht",
+   "start": 42.86,
+   "ende": 45.9
+  },
+  {
+   "text": "der",
+   "start": 45.9,
+   "ende": 46.12
+  },
+  {
+   "text": "stärkste",
+   "start": 46.12,
+   "ende": 46.52
+  },
+  {
+   "text": "Faktor",
+   "start": 46.52,
+   "ende": 46.92
+  },
+  {
+   "text": "oder",
+   "start": 46.92,
+   "ende": 47.12
+  },
+  {
+   "text": "Treiber",
+   "start": 47.12,
+   "ende": 47.38
+  },
+  {
+   "text": "für",
+   "start": 47.38,
+   "ende": 47.6
+  },
+  {
+   "text": "Schmerz",
+   "start": 47.6,
+   "ende": 47.96
+  },
+  {
+   "text": "ist.",
+   "start": 47.96,
+   "ende": 49.1
+  },
+  {
+   "text": "Schmerz",
+   "start": 49.8,
+   "ende": 50.18
+  },
+  {
+   "text": "ist",
+   "start": 50.18,
+   "ende": 50.52
+  },
+  {
+   "text": "multifaktoriell.",
+   "start": 50.52,
+   "ende": 51.3
+  },
+  {
+   "text": "Er",
+   "start": 51.46,
+   "ende": 51.46
+  },
+  {
+   "text": "kann",
+   "start": 51.46,
+   "ende": 53.26
+  },
+  {
+   "text": "zurückzuführen",
+   "start": 53.26,
+   "ende": 53.74
+  },
+  {
+   "text": "sein",
+   "start": 53.74,
+   "ende": 53.94
+  },
+  {
+   "text": "auf",
+   "start": 53.94,
+   "ende": 54.08
+  },
+  {
+   "text": "Stress,",
+   "start": 54.08,
+   "ende": 54.48
+  },
+  {
+   "text": "auf",
+   "start": 54.68,
+   "ende": 54.84
+  },
+  {
+   "text": "Schlaf,",
+   "start": 54.84,
+   "ende": 55.2
+  },
+  {
+   "text": "auf",
+   "start": 55.46,
+   "ende": 55.54
+  },
+  {
+   "text": "Ernährung,",
+   "start": 55.54,
+   "ende": 56.24
+  },
+  {
+   "text": "auf",
+   "start": 56.24,
+   "ende": 56.98
+  },
+  {
+   "text": "allgemein",
+   "start": 56.98,
+   "ende": 57.36
+  },
+  {
+   "text": "psycho-bio-",
+   "start": 57.36,
+   "ende": 57.82
+  },
+  {
+   "text": "soziale",
+   "start": 57.86,
+   "ende": 58.24
+  },
+  {
+   "text": "Faktoren",
+   "start": 58.24,
+   "ende": 59.08
+  },
+  {
+   "text": "und",
+   "start": 59.08,
+   "ende": 59.72
+  },
+  {
+   "text": "hat",
+   "start": 59.72,
+   "ende": 60.84
+  },
+  {
+   "text": "ziemlich",
+   "start": 60.84,
+   "ende": 61.44
+  },
+  {
+   "text": "viele",
+   "start": 61.44,
+   "ende": 62.08
+  },
+  {
+   "text": "Einflüsse.",
+   "start": 62.08,
+   "ende": 62.54
+  },
+  {
+   "text": "Deswegen",
+   "start": 71.08,
+   "ende": 71.6
+  },
+  {
+   "text": "als",
+   "start": 71.6,
+   "ende": 72.6
+  },
+  {
+   "text": "Gedankentipp",
+   "start": 72.6,
+   "ende": 73.5
+  },
+  {
+   "text": "bei",
+   "start": 73.5,
+   "ende": 74.14
+  },
+  {
+   "text": "Schmerz",
+   "start": 74.14,
+   "ende": 74.68
+  },
+  {
+   "text": "nicht",
+   "start": 74.68,
+   "ende": 74.9
+  },
+  {
+   "text": "direkt",
+   "start": 74.9,
+   "ende": 75.16
+  },
+  {
+   "text": "denken,",
+   "start": 75.16,
+   "ende": 75.28
+  },
+  {
+   "text": "dass",
+   "start": 75.3,
+   "ende": 75.38
+  },
+  {
+   "text": "etwas",
+   "start": 75.38,
+   "ende": 75.5
+  },
+  {
+   "text": "kaputt",
+   "start": 75.5,
+   "ende": 75.9
+  },
+  {
+   "text": "ist,",
+   "start": 75.9,
+   "ende": 76.24
+  },
+  {
+   "text": "sondern",
+   "start": 76.48,
+   "ende": 76.62
+  },
+  {
+   "text": "versuchen",
+   "start": 76.62,
+   "ende": 77.04
+  },
+  {
+   "text": "andere...",
+   "start": 77.04,
+   "ende": 77.5
+  },
+  {
+   "text": "Also",
+   "start": 104.86000000000001,
+   "ende": 105.54
+  },
+  {
+   "text": "bei",
+   "start": 105.54,
+   "ende": 105.74
+  },
+  {
+   "text": "Schmerzen",
+   "start": 105.74,
+   "ende": 106.5
+  },
+  {
+   "text": "nicht",
+   "start": 106.5,
+   "ende": 106.82
+  },
+  {
+   "text": "direkt",
+   "start": 106.82,
+   "ende": 107.12
+  },
+  {
+   "text": "die",
+   "start": 107.12,
+   "ende": 107.32
+  },
+  {
+   "text": "Alarmglocken",
+   "start": 107.32,
+   "ende": 108.92
+  },
+  {
+   "text": "läuten",
+   "start": 108.92,
+   "ende": 109.16
+  },
+  {
+   "text": "lassen.",
+   "start": 109.16,
+   "ende": 109.52
+  }
+ ],
+ "saetze": [
+  {
+   "text": "Wenn du Nackenschmerzen hast, dann bleib dran.",
+   "start": 0.7800000000000002,
+   "ende": 4.12
+  },
+  {
+   "text": "Oft denken wir Menschen, dass Schmerzen mit Strukturschäden korreliert.",
+   "start": 13.360000000000001,
+   "ende": 19.0
+  },
+  {
+   "text": "Heißt,",
+   "start": 19.92,
+   "ende": 20.52
+  },
+  {
+   "text": "dass, ja, desto mehr Schmerz, desto mehr Schaden da ist.",
+   "start": 21.34,
+   "ende": 23.9
+  },
+  {
+   "text": "Jedoch hat man in Studien und vor allem auch in anderen Beobachtungen",
+   "start": 24.36,
+   "ende": 27.96
+  },
+  {
+   "text": "Jedoch hat man in Studien herausfinden können, dass Schmerz nicht immer gleich bedeutet, dass ein Strukturschaden vorhanden ist oder dass der Strukturschaden nicht der stärkste Faktor oder Treiber für Schmerz ist.",
+   "start": 29.18,
+   "ende": 49.1
+  },
+  {
+   "text": "Schmerz ist multifaktoriell.",
+   "start": 49.8,
+   "ende": 51.3
+  },
+  {
+   "text": "Er kann zurückzuführen sein auf Stress, auf Schlaf, auf Ernährung, auf allgemein psychobio, soziale Faktoren und hat ziemlich viele Einflüsse.",
+   "start": 51.46,
+   "ende": 62.54
+  },
+  {
+   "text": "Deswegen als Gedankentipp bei Schmerz nicht direkt denken, dass etwas kaputt ist, sondern versuchen andere...",
+   "start": 71.08,
+   "ende": 77.5
+  },
+  {
+   "text": "Also bei Schmerzen nicht direkt die Alarmglocken läuten lassen.",
+   "start": 104.86000000000001,
+   "ende": 109.52
+  }
+ ]
+}

@@ -114,6 +114,9 @@ Fertige Videos nicht ins Git committen (zu groß, `.gitignore`), sondern per Sen
   So nah wie möglich an Format und Timing der Vorlage bleiben.
 - **Infokarten rechts oben** (Studie/Leitlinie/Fakt) in Sprechvideos: `einblendungen` mit `stil: "karte"`, `label`,
   `text`, optional `quelle` (kurzer Studienname, nur wenn André Studien im Bild will).
+- **Sprechvideos:** Karten auf Andrés rechter Seite = **links im Bild** (`"seite": "links"`), Sprecher per `fokus_x: 0`
+  nach rechts schieben. Grafiken über `bilder` (z. B. `scripts/grafik_mindmap.py`), groß + `abdunkeln`.
+  Pausen automatisch mit `scripts/pausen_schnitt.py` entfernen. Bei übersteuertem Ton `"ton_reparatur": true`.
 - Werte in `config/brand.json`.
 
 ## Grenzen der Umgebung

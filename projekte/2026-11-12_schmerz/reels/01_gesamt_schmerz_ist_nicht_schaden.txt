@@ -1,0 +1,33 @@
+# 01_gesamt_schmerz_ist_nicht_schaden  (48.7 s)
+
+## Caption (zum Posten)
+Mehr Schmerz heißt nicht automatisch mehr Schaden. Schmerz wird von vielen Faktoren beeinflusst: Gewebe, aber auch Schlaf, Stress, Bewegung und dein Umfeld.
+
+Frag dich mal: Wie war dein Schlaf? Wie viel bewegst du dich? Ist der Stress mehr geworden?
+
+Speicher dir das Reel und schreib in die Kommentare: Was hilft dir am meisten bei Schmerzen?
+
+#schmerzen #schmerztherapie #physiotherapie #rückenschmerzen #schmerzverstehen
+
+## Hooks
+- Audio-Hook: kein Soundeffekt, Trend-Sound in Instagram darunterlegen
+- Visueller Hook: Punch-in auf André, der direkt mit der Kernaussage startet
+- Text-Hook: Mehr Schmerz = mehr Schaden? / Nicht unbedingt
+
+## Skript
+- Hook: Mehr Schmerz = mehr Schaden? Viele denken das.
+- Aufbau: Studien: Schmerz bedeutet nicht automatisch Strukturschaden. Schmerz ist multifaktoriell (Stress, Schlaf, Ernährung, bio-psycho-sozial).
+- Payoff: Fragen an dich (Schlaf, Ernährung, Aktivität, Stress) + Merksatz: nicht gleich die Alarmglocken läuten lassen.
+
+## Aussagen & Quellen
+- "Viele Menschen ohne Schmerzen haben Befunde im MRT (z. B. 37 % der 20-Jährigen Bandscheibenveränderungen); Schmerz und Strukturschaden hängen oft nur schwach zusammen." -> Brinjikji W et al. Systematic literature review of imaging features of spinal degeneration in asymptomatic populations. AJNR Am J Neuroradiol 2015;36(4):811–816 [belegt]
+- "Schmerz ist immer eine persönliche Erfahrung, die von biologischen, psychologischen und sozialen Faktoren beeinflusst wird; Schmerz und Gewebeschaden sind nicht dasselbe." -> Raja SN et al. The revised International Association for the Study of Pain definition of pain. Pain 2020;161(9):1976–1982 [belegt]
+- "Schlaf, Stress und körperliche Aktivität beeinflussen das Schmerzerleben." -> Finan PH, Goodin BR, Smith MT. The association of sleep and pain: an update and a path forward. J Pain 2013;14(12):1539–1552; Geneen LJ et al. Physical activity and exercise for chronic pain in adults: an overview of Cochrane Reviews. Cochrane 2017; Raja et al. 2020 (IASP) [konsens]
+- "Auch Ernährung wird als Einflussfaktor diskutiert (Evidenz schwächer als bei Schlaf/Aktivität)." -> Elma Ö et al. Nutritional factors in chronic musculoskeletal pain: unravelling the underlying mechanisms. Br J Anaesth 2020;125(2):e231–e242 [konsens] - Mechanistische Übersicht, wenig RCT-Evidenz – deshalb nur als Frage formuliert, nicht als Behauptung.
+
+## Hinweise fuer Andre
+- Ton repariert (Mikro zu nah): Übersteuerung geglättet, Dröhnen/Plopp-Bass abgesenkt, Zischlaute gedämpft, leicht komprimiert. Echte Verzerrung lässt sich nur teilweise retten. Nächstes Mal Mikro ca. eine Handbreit (10–15 cm) vom Mund, leicht seitlich.
+- Rausgeschnitten: alle Versuche/Absprachen, 'Ne, das war scheiße', abgebrochener Satzanfang bei 'dass der Strukturschaden…', Füllwörter.
+- Mindmap ist eine eigene Grafik nach der IASP-Definition (bio-psycho-sozial). Die '350 Ursachen'-Mindmap konnte ich nicht eindeutig finden; schick mir Autor/Link, dann baue ich die Originalquelle ein.
+- Untertitel automatisch (Whisper medium). Bitte einmal gegenlesen.
+- Keine Soundeffekte. In Instagram/TikTok bei Bedarf leise Musik darunterlegen.

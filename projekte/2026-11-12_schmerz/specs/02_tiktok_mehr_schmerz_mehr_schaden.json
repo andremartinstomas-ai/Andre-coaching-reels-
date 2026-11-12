@@ -1,0 +1,212 @@
+{
+  "titel": "02_tiktok_mehr_schmerz_mehr_schaden",
+  "ausgabe": "../reels/02_tiktok_mehr_schmerz_mehr_schaden.mp4",
+  "uebung": false,
+  "ton_reparatur": true,
+  "skript": {
+    "hook": "Mehr Schmerz = mehr Schaden? Viele denken das.",
+    "aufbau": "Studien: Schmerz bedeutet nicht automatisch Strukturschaden. Schmerz ist multifaktoriell (Stress, Schlaf, Ernährung, bio-psycho-sozial).",
+    "payoff": "Fragen an dich (Schlaf, Ernährung, Aktivität, Stress) + Merksatz: nicht gleich die Alarmglocken läuten lassen."
+  },
+  "hook": {
+    "text": "Mehr Schmerz =\n*mehr Schaden?*",
+    "unterzeile": "Nicht unbedingt",
+    "dauer": 3.0,
+    "animation": "slam",
+    "punch_in": true,
+    "visuell": "Punch-in auf André, der direkt mit der Kernaussage startet"
+  },
+  "segmente": [
+    {
+      "quelle": "../roh/teil_3.mov",
+      "start": 14.06,
+      "ende": 15.26,
+      "transkript": "../transkripte/teil_3.json",
+      "zoom": 1.25,
+      "fokus_x": 0.0,
+      "fokus_y": 0.2
+    },
+    {
+      "quelle": "../roh/teil_3.mov",
+      "start": 15.48,
+      "ende": 16.36,
+      "transkript": "../transkripte/teil_3.json",
+      "zoom": 1.4,
+      "fokus_x": 0.0,
+      "fokus_y": 0.2
+    },
+    {
+      "quelle": "../roh/teil_3.mov",
+      "start": 16.6,
+      "ende": 19.04,
+      "transkript": "../transkripte/teil_3.json",
+      "zoom": 1.25,
+      "fokus_x": 0.0,
+      "fokus_y": 0.2
+    },
+    {
+      "quelle": "../roh/teil_3.mov",
+      "start": 19.64,
+      "ende": 20.12,
+      "transkript": "../transkripte/teil_3.json",
+      "zoom": 1.4,
+      "fokus_x": 0.0,
+      "fokus_y": 0.2
+    },
+    {
+      "quelle": "../roh/teil_3.mov",
+      "start": 21.85,
+      "ende": 23.77,
+      "transkript": "../transkripte/teil_3.json",
+      "zoom": 1.25,
+      "fokus_x": 0.0,
+      "fokus_y": 0.2
+    },
+    {
+      "quelle": "../roh/teil_3.mov",
+      "start": 29.61,
+      "ende": 31.31,
+      "transkript": "../transkripte/teil_3.json",
+      "zoom": 1.4,
+      "fokus_x": 0.0,
+      "fokus_y": 0.2
+    },
+    {
+      "quelle": "../roh/teil_3.mov",
+      "start": 31.55,
+      "ende": 33.59,
+      "transkript": "../transkripte/teil_3.json",
+      "zoom": 1.25,
+      "fokus_x": 0.0,
+      "fokus_y": 0.2
+    },
+    {
+      "quelle": "../roh/teil_3.mov",
+      "start": 33.95,
+      "ende": 36.37,
+      "transkript": "../transkripte/teil_3.json",
+      "zoom": 1.4,
+      "fokus_x": 0.0,
+      "fokus_y": 0.2
+    },
+    {
+      "quelle": "../roh/teil_3.mov",
+      "start": 44.03,
+      "ende": 48.15,
+      "transkript": "../transkripte/teil_3.json",
+      "zoom": 1.25,
+      "fokus_x": 0.0,
+      "fokus_y": 0.2
+    },
+    {
+      "quelle": "../roh/teil_3.mov",
+      "start": 105.18,
+      "ende": 106.32,
+      "transkript": "../transkripte/teil_3.json",
+      "zoom": 1.4,
+      "fokus_x": 0.0,
+      "fokus_y": 0.2
+    },
+    {
+      "quelle": "../roh/teil_3.mov",
+      "start": 106.5,
+      "ende": 108.02,
+      "transkript": "../transkripte/teil_3.json",
+      "zoom": 1.25,
+      "fokus_x": 0.0,
+      "fokus_y": 0.2
+    },
+    {
+      "quelle": "../roh/teil_3.mov",
+      "start": 108.26,
+      "ende": 109.52,
+      "transkript": "../transkripte/teil_3.json",
+      "zoom": 1.4,
+      "fokus_x": 0.0,
+      "fokus_y": 0.2
+    },
+    {
+      "quelle": "../roh/teil_1.mov",
+      "start": 73.28,
+      "ende": 75.12,
+      "transkript": "../transkripte/teil_1.json",
+      "zoom": 1.25,
+      "fokus_x": 0.0,
+      "fokus_y": 0.2
+    },
+    {
+      "quelle": "../roh/teil_1.mov",
+      "start": 75.42,
+      "ende": 76.62,
+      "transkript": "../transkripte/teil_1.json",
+      "zoom": 1.4,
+      "fokus_x": 0.0,
+      "fokus_y": 0.2
+    },
+    {
+      "quelle": "../roh/teil_1.mov",
+      "start": 77.04,
+      "ende": 80.38,
+      "transkript": "../transkripte/teil_1.json",
+      "zoom": 1.25,
+      "fokus_x": 0.0,
+      "fokus_y": 0.2
+    }
+  ],
+  "untertitel": true,
+  "untertitel_korrekturen": {},
+  "einblendungen": [
+    {
+      "stil": "karte",
+      "seite": "links",
+      "start": 7.22,
+      "ende": 17.2,
+      "label": "Studie",
+      "text": "Viele Menschen\n*ohne Schmerzen*\nhaben Befunde\nim MRT",
+      "quelle": "Brinjikji et al. 2015",
+      "groesse": 80,
+      "label_groesse": 70,
+      "y": 250
+    },
+    {
+      "stil": "karte",
+      "seite": "links",
+      "start": 17.2,
+      "ende": 21.12,
+      "label": "Kurz merken",
+      "text": "*Schmerz ≠*\n*Schaden*",
+      "groesse": 120,
+      "label_groesse": 70,
+      "y": 250
+    }
+  ],
+  "bilder": [],
+  "kapitel": [],
+  "aussagen": [
+    {
+      "text": "Viele Menschen ohne Schmerzen haben Befunde im MRT (z. B. 37 % der 20-Jährigen Bandscheibenveränderungen); Schmerz und Strukturschaden hängen oft nur schwach zusammen.",
+      "quelle": "Brinjikji W et al. Systematic literature review of imaging features of spinal degeneration in asymptomatic populations. AJNR Am J Neuroradiol 2015;36(4):811–816",
+      "status": "belegt"
+    },
+    {
+      "text": "Schmerz ist immer eine persönliche Erfahrung, die von biologischen, psychologischen und sozialen Faktoren beeinflusst wird; Schmerz und Gewebeschaden sind nicht dasselbe.",
+      "quelle": "Raja SN et al. The revised International Association for the Study of Pain definition of pain. Pain 2020;161(9):1976–1982",
+      "status": "belegt"
+    }
+  ],
+  "caption": "Mehr Schmerz heißt nicht automatisch mehr Schaden. Viele Menschen ohne Schmerzen haben auffällige Befunde, und umgekehrt.\n\nSpeicher dir das Reel und schreib in die Kommentare: Was hilft dir am meisten bei Schmerzen?",
+  "hashtags": [
+    "#schmerzen",
+    "#schmerztherapie",
+    "#physiotherapie",
+    "#rückenschmerzen",
+    "#schmerzverstehen"
+  ],
+  "hinweise": [
+    "Ton repariert (Mikro zu nah): Übersteuerung geglättet, Dröhnen/Plopp-Bass abgesenkt, Zischlaute gedämpft, leicht komprimiert. Echte Verzerrung lässt sich nur teilweise retten. Nächstes Mal Mikro ca. eine Handbreit (10–15 cm) vom Mund, leicht seitlich.",
+    "Rausgeschnitten: alle Versuche/Absprachen, 'Ne, das war scheiße', abgebrochener Satzanfang bei 'dass der Strukturschaden…', Füllwörter.",
+    "Mindmap ist eine eigene Grafik nach der IASP-Definition (bio-psycho-sozial). Die '350 Ursachen'-Mindmap konnte ich nicht eindeutig finden; schick mir Autor/Link, dann baue ich die Originalquelle ein.",
+    "Untertitel automatisch (Whisper medium). Bitte einmal gegenlesen.",
+    "Keine Soundeffekte. In Instagram/TikTok bei Bedarf leise Musik darunterlegen."
+  ]
+}

@@ -1,0 +1,251 @@
+{
+  "titel": "03_tiktok_schmerz_viele_einfluesse",
+  "ausgabe": "../reels/03_tiktok_schmerz_viele_einfluesse.mp4",
+  "uebung": false,
+  "ton_reparatur": true,
+  "skript": {
+    "hook": "Schmerz hat viele Einflüsse, nicht nur das Gewebe.",
+    "aufbau": "Stress, Schlaf, Ernährung, bio-psycho-soziale Faktoren (Mindmap).",
+    "payoff": "4 Fragen an dich + Call-to-Action."
+  },
+  "hook": {
+    "text": "Schmerz hat\n*viele Einflüsse*",
+    "unterzeile": "4 Fragen an dich",
+    "dauer": 3.0,
+    "animation": "slam",
+    "punch_in": true,
+    "visuell": "Punch-in, direkt mit 'Schmerz ist multifaktoriell'"
+  },
+  "segmente": [
+    {
+      "quelle": "../roh/teil_3.mov",
+      "start": 49.65,
+      "ende": 52.11,
+      "transkript": "../transkripte/teil_3.json",
+      "zoom": 1.25,
+      "fokus_x": 0.0,
+      "fokus_y": 0.2
+    },
+    {
+      "quelle": "../roh/teil_3.mov",
+      "start": 52.83,
+      "ende": 55.13,
+      "transkript": "../transkripte/teil_3.json",
+      "zoom": 1.4,
+      "fokus_x": 0.0,
+      "fokus_y": 0.2
+    },
+    {
+      "quelle": "../roh/teil_3.mov",
+      "start": 55.31,
+      "ende": 56.07,
+      "transkript": "../transkripte/teil_3.json",
+      "zoom": 1.25,
+      "fokus_x": 0.0,
+      "fokus_y": 0.2
+    },
+    {
+      "quelle": "../roh/teil_3.mov",
+      "start": 56.31,
+      "ende": 58.79,
+      "transkript": "../transkripte/teil_3.json",
+      "zoom": 1.4,
+      "fokus_x": 0.0,
+      "fokus_y": 0.2
+    },
+    {
+      "quelle": "../roh/teil_3.mov",
+      "start": 60.58,
+      "ende": 62.75,
+      "transkript": "../transkripte/teil_3.json",
+      "zoom": 1.25,
+      "fokus_x": 0.0,
+      "fokus_y": 0.2
+    },
+    {
+      "quelle": "../roh/teil_2.mov",
+      "start": 26.22,
+      "ende": 27.28,
+      "transkript": "../transkripte/teil_2.json",
+      "zoom": 1.4,
+      "fokus_x": 0.0,
+      "fokus_y": 0.2
+    },
+    {
+      "quelle": "../roh/teil_2.mov",
+      "start": 27.6,
+      "ende": 30.18,
+      "transkript": "../transkripte/teil_2.json",
+      "zoom": 1.25,
+      "fokus_x": 0.0,
+      "fokus_y": 0.2
+    },
+    {
+      "quelle": "../roh/teil_2.mov",
+      "start": 30.42,
+      "ende": 32.98,
+      "transkript": "../transkripte/teil_2.json",
+      "zoom": 1.4,
+      "fokus_x": 0.0,
+      "fokus_y": 0.2
+    },
+    {
+      "quelle": "../roh/teil_2.mov",
+      "start": 33.56,
+      "ende": 35.22,
+      "transkript": "../transkripte/teil_2.json",
+      "zoom": 1.25,
+      "fokus_x": 0.0,
+      "fokus_y": 0.2
+    },
+    {
+      "quelle": "../roh/teil_2.mov",
+      "start": 35.54,
+      "ende": 36.8,
+      "transkript": "../transkripte/teil_2.json",
+      "zoom": 1.4,
+      "fokus_x": 0.0,
+      "fokus_y": 0.2
+    },
+    {
+      "quelle": "../roh/teil_2.mov",
+      "start": 37.36,
+      "ende": 39.24,
+      "transkript": "../transkripte/teil_2.json",
+      "zoom": 1.25,
+      "fokus_x": 0.0,
+      "fokus_y": 0.2
+    },
+    {
+      "quelle": "../roh/teil_1.mov",
+      "start": 73.28,
+      "ende": 75.12,
+      "transkript": "../transkripte/teil_1.json",
+      "zoom": 1.4,
+      "fokus_x": 0.0,
+      "fokus_y": 0.2
+    },
+    {
+      "quelle": "../roh/teil_1.mov",
+      "start": 75.42,
+      "ende": 76.62,
+      "transkript": "../transkripte/teil_1.json",
+      "zoom": 1.25,
+      "fokus_x": 0.0,
+      "fokus_y": 0.2
+    },
+    {
+      "quelle": "../roh/teil_1.mov",
+      "start": 77.04,
+      "ende": 80.38,
+      "transkript": "../transkripte/teil_1.json",
+      "zoom": 1.4,
+      "fokus_x": 0.0,
+      "fokus_y": 0.2
+    }
+  ],
+  "untertitel": true,
+  "untertitel_korrekturen": {},
+  "einblendungen": [
+    {
+      "stil": "karte",
+      "seite": "links",
+      "start": 16.66,
+      "ende": 17.41,
+      "label": "Frag dich",
+      "text": "*Schlaf?*",
+      "groesse": 86,
+      "label_groesse": 70,
+      "y": 250
+    },
+    {
+      "stil": "karte",
+      "seite": "links",
+      "start": 17.41,
+      "ende": 18.49,
+      "label": "Frag dich",
+      "text": "Schlaf?\n*Ernährung?*",
+      "groesse": 86,
+      "label_groesse": 70,
+      "y": 250
+    },
+    {
+      "stil": "karte",
+      "seite": "links",
+      "start": 18.49,
+      "ende": 19.63,
+      "label": "Frag dich",
+      "text": "Schlaf?\nErnährung?\n*Aktivität?*",
+      "groesse": 86,
+      "label_groesse": 70,
+      "y": 250
+    },
+    {
+      "stil": "karte",
+      "seite": "links",
+      "start": 19.63,
+      "ende": 21.17,
+      "label": "Frag dich",
+      "text": "Schlaf?\nErnährung?\nAktivität?\n*Stress?*",
+      "groesse": 86,
+      "label_groesse": 70,
+      "y": 250
+    },
+    {
+      "stil": "karte",
+      "seite": "links",
+      "start": 0.2,
+      "ende": 10.17,
+      "label": "IASP 2020",
+      "text": "Schmerz ist *multifaktoriell*",
+      "groesse": 84,
+      "label_groesse": 70,
+      "y": 230
+    }
+  ],
+  "bilder": [
+    {
+      "datei": "../grafiken/mindmap.png",
+      "start": 0.2,
+      "ende": 10.17,
+      "x": 40,
+      "y": 420,
+      "breite": 1000,
+      "abdunkeln": true
+    }
+  ],
+  "kapitel": [],
+  "aussagen": [
+    {
+      "text": "Schmerz ist immer eine persönliche Erfahrung, die von biologischen, psychologischen und sozialen Faktoren beeinflusst wird; Schmerz und Gewebeschaden sind nicht dasselbe.",
+      "quelle": "Raja SN et al. The revised International Association for the Study of Pain definition of pain. Pain 2020;161(9):1976–1982",
+      "status": "belegt"
+    },
+    {
+      "text": "Schlaf, Stress und körperliche Aktivität beeinflussen das Schmerzerleben.",
+      "quelle": "Finan PH, Goodin BR, Smith MT. The association of sleep and pain: an update and a path forward. J Pain 2013;14(12):1539–1552; Geneen LJ et al. Physical activity and exercise for chronic pain in adults: an overview of Cochrane Reviews. Cochrane 2017; Raja et al. 2020 (IASP)",
+      "status": "konsens"
+    },
+    {
+      "text": "Auch Ernährung wird als Einflussfaktor diskutiert (Evidenz schwächer als bei Schlaf/Aktivität).",
+      "quelle": "Elma Ö et al. Nutritional factors in chronic musculoskeletal pain: unravelling the underlying mechanisms. Br J Anaesth 2020;125(2):e231–e242",
+      "status": "konsens",
+      "beleg": "Mechanistische Übersicht, wenig RCT-Evidenz – deshalb nur als Frage formuliert, nicht als Behauptung."
+    }
+  ],
+  "caption": "Schmerz ist multifaktoriell: Neben dem Gewebe spielen Schlaf, Stress, Bewegung und dein Umfeld mit.\n\n4 Fragen an dich: Schlaf? Ernährung? Aktivität? Stress?\n\nSpeicher dir das Reel und schreib in die Kommentare: Was hilft dir am meisten bei Schmerzen?",
+  "hashtags": [
+    "#schmerzen",
+    "#schmerztherapie",
+    "#physiotherapie",
+    "#rückenschmerzen",
+    "#schmerzverstehen"
+  ],
+  "hinweise": [
+    "Ton repariert (Mikro zu nah): Übersteuerung geglättet, Dröhnen/Plopp-Bass abgesenkt, Zischlaute gedämpft, leicht komprimiert. Echte Verzerrung lässt sich nur teilweise retten. Nächstes Mal Mikro ca. eine Handbreit (10–15 cm) vom Mund, leicht seitlich.",
+    "Rausgeschnitten: alle Versuche/Absprachen, 'Ne, das war scheiße', abgebrochener Satzanfang bei 'dass der Strukturschaden…', Füllwörter.",
+    "Mindmap ist eine eigene Grafik nach der IASP-Definition (bio-psycho-sozial). Die '350 Ursachen'-Mindmap konnte ich nicht eindeutig finden; schick mir Autor/Link, dann baue ich die Originalquelle ein.",
+    "Untertitel automatisch (Whisper medium). Bitte einmal gegenlesen.",
+    "Keine Soundeffekte. In Instagram/TikTok bei Bedarf leise Musik darunterlegen."
+  ]
+}
