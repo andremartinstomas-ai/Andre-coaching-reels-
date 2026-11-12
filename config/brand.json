@@ -46,9 +46,9 @@
     "lautheit_lufs": -14
   },
   "look": {
-    "_hinweis": "Warm + klar (André, 2026-11-12): etwas wärmer, satte Schatten ohne grauen Schleier, leicht mehr Kontrast, Schärfung für Konturen (Gesicht/Kieferlinie). Kein Vintage-Fade, kein Korn, keine Vignette. Pro Spec mit \"look\": false abschaltbar.",
+    "_hinweis": "Neutral + scharf (André, 2026-11-12): normales Licht, keine Farbverschiebung (kein Wärme-/Vintage-Look), Schatten etwas dunkler, leicht mehr Kontrast, Schärfung für Konturen. Pro Spec mit \"look\": false abschaltbar.",
     "aktiv": true,
-    "filter": "colortemperature=temperature=5300:mix=0.55,eq=contrast=1.08:saturation=1.06:gamma=0.97,curves=all='0/0 0.25/0.22 0.5/0.5 0.75/0.78 1/1',unsharp=5:5:0.9:5:5:0.0"
+    "filter": "eq=contrast=1.05:saturation=1.03,curves=all='0/0 0.2/0.18 0.5/0.5 1/1',unsharp=5:5:0.9:5:5:0.0"
   },
   "trend": {
     "_hinweis": "Stil fuer nachgebaute virale Vorlagen: weisse Schrift, weicher Schatten, normale Schreibweise.",

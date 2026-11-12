@@ -198,7 +198,7 @@ def segment_rendern(seg, idx, spec, spec_dir, tmp, punch_in, qualitaet):
     if not nutze_ton:
         args += ["-f", "lavfi", "-t", f"{dauer}", "-i", "anullsrc=r=48000:cl=stereo"]
     reparatur = ""
-    if spec.get("ton_reparatur"):  # Mikro zu nah: Clipping glaetten, Nahbesprechungs-Bass/Plopp runter, Zischlaute daempfen
+    if spec.get("ton_reparatur") and seg.get("ton_reparatur", True):  # Mikro zu nah: Clipping glaetten, Nahbesprechungs-Bass/Plopp runter, Zischlaute daempfen
         reparatur = ("adeclip=window=55:overlap=75,highpass=f=85,equalizer=f=160:t=q:w=1.2:g=-5,"
                      "equalizer=f=3800:t=q:w=1.2:g=1.5,deesser=i=0.35,"
                      "acompressor=threshold=-24dB:ratio=3:attack=8:release=160:makeup=3,afftdn=nf=-45,")

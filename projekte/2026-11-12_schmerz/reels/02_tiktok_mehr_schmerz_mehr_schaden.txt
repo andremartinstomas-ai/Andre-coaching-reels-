@@ -1,4 +1,4 @@
-# 02_tiktok_mehr_schmerz_mehr_schaden  (27.5 s)
+# 02_tiktok_mehr_schmerz_mehr_schaden  (29.5 s)
 
 ## Caption (zum Posten)
 Mehr Schmerz heißt nicht automatisch mehr Schaden. Viele Menschen ohne Schmerzen haben auffällige Befunde, und umgekehrt.
@@ -27,4 +27,4 @@ Speicher dir das Reel und schreib in die Kommentare: Was hilft dir am meisten be
 - Mindmap ist eine eigene Grafik nach der IASP-Definition (bio-psycho-sozial). Die '350 Ursachen'-Mindmap konnte ich nicht eindeutig finden; schick mir Autor/Link, dann baue ich die Originalquelle ein.
 - Untertitel automatisch (Whisper medium). Bitte einmal gegenlesen.
 - Keine Soundeffekte. In Instagram/TikTok bei Bedarf leise Musik darunterlegen.
-- Fail-Gag: Beim Versprecher in 'Alarmglocken' Spiral-Zoom aufs Gesicht mit einer Drehung (ca. 1 s).
+- Fail-Gag: Nach 'läuten lassen' das Flüstern (verstärkt) mit Spiral-Zoom aufs Gesicht + einer Drehung (ca. 2 s).

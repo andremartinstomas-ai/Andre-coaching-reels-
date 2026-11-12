@@ -126,6 +126,17 @@
       "fokus_y": 0.2
     },
     {
+      "quelle": "../roh/teil_3.mov",
+      "start": 111.1,
+      "ende": 113.1,
+      "ton": true,
+      "lautstaerke": 6.0,
+      "ton_reparatur": false,
+      "zoom": 1.25,
+      "fokus_x": 0.0,
+      "fokus_y": 0.2
+    },
+    {
       "quelle": "../roh/teil_1.mov",
       "start": 73.28,
       "ende": 75.12,
@@ -172,7 +183,7 @@
       "stil": "karte",
       "seite": "links",
       "start": 17.2,
-      "ende": 21.12,
+      "ende": 23.12,
       "label": "Kurz merken",
       "text": "*Schmerz ≠*\n*Schaden*",
       "groesse": 165,
@@ -208,20 +219,20 @@
     "Mindmap ist eine eigene Grafik nach der IASP-Definition (bio-psycho-sozial). Die '350 Ursachen'-Mindmap konnte ich nicht eindeutig finden; schick mir Autor/Link, dann baue ich die Originalquelle ein.",
     "Untertitel automatisch (Whisper medium). Bitte einmal gegenlesen.",
     "Keine Soundeffekte. In Instagram/TikTok bei Bedarf leise Musik darunterlegen.",
-    "Fail-Gag: Beim Versprecher in 'Alarmglocken' Spiral-Zoom aufs Gesicht mit einer Drehung (ca. 1 s)."
+    "Fail-Gag: Nach 'läuten lassen' das Flüstern (verstärkt) mit Spiral-Zoom aufs Gesicht + einer Drehung (ca. 2 s)."
   ],
   "effekte": [
     {
       "typ": "spirale",
       "quelle": "../roh/teil_3.mov",
-      "start": 107.3,
-      "ende": 108.55,
+      "start": 111.1,
+      "ende": 113.1,
       "zoom": 2.2,
       "drehungen": 1,
       "x": 0.68,
       "y": 0.3,
-      "rein": 0.45,
-      "raus": 0.22
+      "rein": 0.5,
+      "raus": 0.3
     }
   ]
 }
