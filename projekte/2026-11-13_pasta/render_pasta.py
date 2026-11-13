@@ -27,7 +27,7 @@ SZENEN = [
 PINK, GELB, DUNKEL = (255, 45, 120, 255), (255, 210, 63, 255), (18, 18, 18, 205)
 
 # Hook: zwei Zeilen, Zeile 2 pink
-HOOK = (["Diese pinke Buchweizenpasta", "macht irgendwas mit dir."], 0.0, 2.6, 200, 84)
+HOOK = (["Diese pinke Buchweizenpasta", "sollte verboten werden."], 0.0, 2.6, 200, 84)
 BADGES = (["VEGETARISCH", "GLUTENFREI", "HIGH PROTEIN", "NITRATREICH"], 0.35, 2.6, 470)
 ENDE = (["Jetzt speichern.", "Und bloß nicht nachkochen."], 20.0, 22.8, 200, 84)
 TON_NUR = {"IMG_4163"}  # Originalton nur beim cremigen Umruehren, sonst stumm
