@@ -3,9 +3,9 @@
     "szene": "Hook: fertige Pasta in der Hand",
     "datei": "IMG_4164.mov",
     "quelle_von": 0.3,
-    "quelle_bis": 2.3,
+    "quelle_bis": 2.9,
     "reel_von": 0.0,
-    "reel_bis": 2.0,
+    "reel_bis": 2.6,
     "ton_lufs_roh": -63.8
   },
   {
@@ -13,8 +13,8 @@
     "datei": "IMG_4159.mov",
     "quelle_von": 0.0,
     "quelle_bis": 2.1,
-    "reel_von": 2.0,
-    "reel_bis": 4.1,
+    "reel_von": 2.6,
+    "reel_bis": 4.7,
     "ton_lufs_roh": -59.1
   },
   {
@@ -22,8 +22,8 @@
     "datei": "IMG_4161.mov",
     "quelle_von": 0.0,
     "quelle_bis": 2.0,
-    "reel_von": 4.1,
-    "reel_bis": 6.1,
+    "reel_von": 4.7,
+    "reel_bis": 6.7,
     "ton_lufs_roh": -65.0
   },
   {
@@ -31,8 +31,8 @@
     "datei": "IMG_4162.mov",
     "quelle_von": 0.0,
     "quelle_bis": 2.2,
-    "reel_von": 6.1,
-    "reel_bis": 8.3,
+    "reel_von": 6.7,
+    "reel_bis": 8.9,
     "ton_lufs_roh": -58.2
   },
   {
@@ -40,8 +40,8 @@
     "datei": "IMG_4160.mov",
     "quelle_von": 0.3,
     "quelle_bis": 3.8,
-    "reel_von": 8.3,
-    "reel_bis": 11.8,
+    "reel_von": 8.9,
+    "reel_bis": 12.4,
     "ton_lufs_roh": -22.9
   },
   {
@@ -49,8 +49,8 @@
     "datei": "IMG_4163.mov",
     "quelle_von": 1.5,
     "quelle_bis": 5.5,
-    "reel_von": 11.8,
-    "reel_bis": 15.8,
+    "reel_von": 12.4,
+    "reel_bis": 16.4,
     "ton_lufs_roh": -45.5
   },
   {
@@ -58,8 +58,8 @@
     "datei": "IMG_4167.mov",
     "quelle_von": 3.5,
     "quelle_bis": 6.87,
-    "reel_von": 15.8,
-    "reel_bis": 19.17,
+    "reel_von": 16.4,
+    "reel_bis": 19.77,
     "ton_lufs_roh": -64.3
   },
   {
@@ -67,8 +67,8 @@
     "datei": "IMG_4165.mov",
     "quelle_von": 0.3,
     "quelle_bis": 3.3,
-    "reel_von": 19.17,
-    "reel_bis": 22.17,
+    "reel_von": 19.77,
+    "reel_bis": 22.77,
     "ton_lufs_roh": -63.5
   }
 ]

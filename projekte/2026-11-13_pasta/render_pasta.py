@@ -15,7 +15,7 @@ W, H, FPS = 1080, 1920, 30
 
 # Szenen: (Datei, Start, Ende, Zoom, Fokus-y, Aufhellen)  -> Reihenfolge = Schnitt
 SZENEN = [
-    ("IMG_4164", 0.30, 2.30, 1.00, 0.5, False, "Hook: fertige Pasta in der Hand"),
+    ("IMG_4164", 0.30, 2.90, 1.00, 0.5, False, "Hook: fertige Pasta in der Hand"),
     ("IMG_4159", 0.00, 2.10, 1.00, 0.5, False, "Zutaten"),
     ("IMG_4161", 0.00, 2.00, 1.00, 0.5, False, "Soße: Zutaten im Mixbecher"),
     ("IMG_4162", 0.00, 2.20, 1.00, 0.5, False, "Soße: fertig gemixt"),
@@ -27,19 +27,22 @@ SZENEN = [
 PINK, GELB, DUNKEL = (255, 45, 120, 255), (255, 210, 63, 255), (18, 18, 18, 205)
 
 # Hook: zwei Zeilen, Zeile 2 pink
-HOOK = (["Sieht aus wie ein Tatort.", "Schmeckt aber richtig gut."], 0.0, 2.0, 230, 84)
+HOOK = (["Diese pinke Buchweizenpasta", "macht irgendwas mit dir."], 0.0, 2.6, 200, 84)
+BADGES = (["VEGETARISCH", "GLUTENFREI", "HIGH PROTEIN", "NITRATREICH"], 0.35, 2.6, 470)
+ENDE = (["Jetzt speichern.", "Und bloß nicht nachkochen."], 20.0, 22.8, 200, 84)
+TON_NUR = {"IMG_4163"}  # Originalton nur beim cremigen Umruehren, sonst stumm
 
 # Zutatenliste (Soße): erscheint nach und nach, Bild darunter abgedunkelt
-LISTE_START, LISTE_ENDE = 2.0, 8.3
+LISTE_START, LISTE_ENDE = 2.6, 8.9
 LISTE_KOPF = "1. Die pinke Soße"
-ZUTATEN = [("Rote Bete", None), ("Körniger Frischkäse", "GAMECHANGER"), ("Tomaten", None), ("Tomatenmark", None),
+ZUTATEN = [("Rote Bete", None), ("Körniger Frischkäse", "UNGLAUBLICH WICHTIG"), ("Tomaten", None), ("Tomatenmark", None),
            ("Etwas Pastawasser", None), ("Etwas Honig", None), ("Salz, Pfeffer, Gewürze", None)]
 
 # Schritt-Pills: (Nummer, Text, Start, Ende, y)
 SCHRITTE = [
-    ("2", "Tofu + Champignons anbraten", 8.3, 11.8, 210),
-    ("3", "Alles vermischen", 11.8, 15.8, 300),
-    ("4", "Zitronenzeste drüber", 15.8, 17.7, 300),
+    ("2", "Tofu + Champignons anbraten", 8.9, 12.4, 210),
+    ("3", "Alles cremig vermischen", 12.4, 16.4, 300),
+    ("4", "Zitronenzeste drüber", 16.4, 18.3, 300),
 ]
 
 
@@ -109,6 +112,16 @@ def elemente(tmp):
     el = []
     bw, bh = hook_png(tmp / "hook.png", HOOK[0], HOOK[4])
     el.append((tmp / "hook.png", (W - bw) // 2, HOOK[3], HOOK[1], HOOK[2], "runter"))
+    # Badges unter dem Hook: 2x2, ploppen nacheinander rein
+    for i, b in enumerate(BADGES[0]):
+        f = tmp / f"badge{i}.png"
+        bwid, bhei = pill_png(f, b, 40, bullet=False, fuellung=(255, 255, 255, 235) if False else PINK)
+        spalte, reihe = i % 2, i // 2
+        x = W // 2 - 20 - bwid if spalte == 0 else W // 2 + 20 - 30
+        x = x + (30 if spalte == 0 else 0)
+        el.append((f, x, BADGES[3] + reihe * (bhei - 18), BADGES[1] + i * 0.18, BADGES[2], "links"))
+    ew, eh = hook_png(tmp / "ende.png", ENDE[0], ENDE[4])
+    el.append((tmp / "ende.png", (W - ew) // 2, ENDE[3], ENDE[1], ENDE[2], "runter"))
     kw, kh = pill_png(tmp / "kopf.png", LISTE_KOPF, 62, bullet=False, fuellung=PINK)
     el.append((tmp / "kopf.png", 70, 300, LISTE_START + 0.1, LISTE_ENDE, "links"))
     for i, (z, tag) in enumerate(ZUTATEN):
@@ -176,9 +189,8 @@ def main():
                   ",format=yuv420p")
             # Ton: Originalton; hoerbaren Ton (Zischen/Ruehren) gleichmaessig auf -20 LUFS, sehr leise Clips bleiben leise
             roh_lufs = lautheit(quelle)
-            af = "aresample=48000,afade=t=in:d=0.02,afade=t=out:st=%.3f:d=0.03" % (e - a - 0.03)
-            if roh_lufs > -50:
-                af = "loudnorm=I=-20:TP=-2:LRA=7," + af
+            af = "aresample=48000,afade=t=in:d=0.08,afade=t=out:st=%.3f:d=0.08" % (e - a - 0.08)
+            af = ("loudnorm=I=-16:TP=-1.5:LRA=7," + af) if datei in TON_NUR else ("volume=0," + af)
             sh(["ffmpeg", "-y", "-hide_banner", "-loglevel", "error", "-ss", str(a), "-to", str(e), "-i", str(quelle),
                 "-vf", vf, "-af", af, "-ac", "2", "-ar", "48000", "-c:v", "libx264", "-preset", "medium", "-crf", "18",
                 "-c:a", "aac", "-b:a", "192k", "-t", f"{e - a:.3f}", str(seg)])
