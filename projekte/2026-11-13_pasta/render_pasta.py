@@ -16,23 +16,111 @@ W, H, FPS = 1080, 1920, 30
 # Szenen: (Datei, Start, Ende, Zoom, Fokus-y, Aufhellen)  -> Reihenfolge = Schnitt
 SZENEN = [
     ("IMG_4164", 0.30, 2.30, 1.00, 0.5, False, "Hook: fertige Pasta in der Hand"),
-    ("IMG_4159", 0.20, 1.80, 1.00, 0.5, False, "Zutaten"),
+    ("IMG_4159", 0.00, 2.10, 1.00, 0.5, False, "Zutaten"),
     ("IMG_4161", 0.00, 2.00, 1.00, 0.5, False, "Soße: Zutaten im Mixbecher"),
     ("IMG_4162", 0.00, 2.20, 1.00, 0.5, False, "Soße: fertig gemixt"),
-    ("IMG_4160", 0.30, 3.80, 1.30, 1.0, False, "Tofu + Gemüse anbraten (Topf oben weggeschnitten)"),
+    ("IMG_4160", 0.30, 3.80, 1.30, 1.0, False, "Tofu + Champignons anbraten (Topf oben weggeschnitten)"),
     ("IMG_4163", 1.50, 5.50, 1.00, 0.5, True, "Alles vermischen"),
     ("IMG_4167", 3.50, 6.87, 1.00, 0.5, False, "Zitronenzeste (Nahfahrt)"),
     ("IMG_4165", 0.30, 3.30, 1.00, 0.5, False, "Fertiger Teller"),
 ]
-# Texte: (Text, Start, Ende, y-Mitte, Groesse)
-TEXTE = [
-    ("Mein Lieblingsessen nach dem Training", 0.0, 2.0, 250, 66),
-    ("1. Soße: Rote Bete +\nFrischkäse + Tomate", 3.6, 5.6, 1640, 56),   # Becher oben -> Text unten
-    ("1. Soße: Rote Bete +\nFrischkäse + Tomate", 5.6, 7.8, 260, 56),    # Becher reicht nach unten -> Text oben
-    ("2. Tofu + Gemüse anbraten", 7.8, 11.3, 200, 56),                    # unten Hand/Pfannenwender -> oben
-    ("3. Alles vermischen", 11.3, 15.3, 300, 56),
-    ("4. Zitronenzeste", 15.3, 17.2, 300, 56),
+PINK, GELB, DUNKEL = (255, 45, 120, 255), (255, 210, 63, 255), (18, 18, 18, 205)
+
+# Hook: zwei Zeilen, Zeile 2 pink
+HOOK = (["Sieht aus wie ein Tatort.", "Schmeckt aber richtig gut."], 0.0, 2.0, 230, 84)
+
+# Zutatenliste (Soße): erscheint nach und nach, Bild darunter abgedunkelt
+LISTE_START, LISTE_ENDE = 2.0, 8.3
+LISTE_KOPF = "1. Die pinke Soße"
+ZUTATEN = [("Rote Bete", None), ("Körniger Frischkäse", "GAMECHANGER"), ("Tomaten", None), ("Tomatenmark", None),
+           ("Etwas Pastawasser", None), ("Etwas Honig", None), ("Salz, Pfeffer, Gewürze", None)]
+
+# Schritt-Pills: (Nummer, Text, Start, Ende, y)
+SCHRITTE = [
+    ("2", "Tofu + Champignons anbraten", 8.3, 11.8, 210),
+    ("3", "Alles vermischen", 11.8, 15.8, 300),
+    ("4", "Zitronenzeste drüber", 15.8, 17.7, 300),
 ]
+
+
+def _schatten(img, radius=10, deckung=1.6):
+    a = img.split()[3].filter(ImageFilter.GaussianBlur(radius))
+    a = a.point(lambda v: min(255, int(v * deckung)))
+    sch = Image.new("RGBA", img.size, (0, 0, 0, 0))
+    sch.putalpha(a)
+    return sch
+
+
+def pill_png(ziel, text, groesse=54, bullet=True, fuellung=DUNKEL, tag=None, nummer=None):
+    """Abgerundete 'Pill' mit Text; optional pinker Punkt, pinke Nummer oder gelbes Tag."""
+    font = ImageFont.truetype(FONT, groesse)
+    tfont = ImageFont.truetype(FONT, int(groesse * 0.62))
+    h = int(groesse * 1.55)
+    pad = int(groesse * 0.55)
+    links = pad + (int(h * 0.42) if bullet else 0) + (h if nummer else 0)
+    tb = int(font.getlength(text))
+    tag_b = int(tfont.getlength(tag)) + 2 * int(h * 0.25) if tag else 0
+    b = links + tb + pad + (tag_b + pad if tag else 0)
+    rand = 30
+    img = Image.new("RGBA", (b + 2 * rand, h + 2 * rand), (0, 0, 0, 0))
+    d = ImageDraw.Draw(img)
+    d.rounded_rectangle([rand, rand, rand + b, rand + h], radius=h // 2, fill=fuellung)
+    x = rand + pad
+    if nummer:
+        d.ellipse([rand + 6, rand + 6, rand + h - 6, rand + h - 6], fill=PINK)
+        d.text((rand + h / 2, rand + h / 2 + 2), nummer, font=font, fill=(255, 255, 255, 255), anchor="mm")
+        x = rand + h + int(pad * 0.5)
+    if bullet:
+        r = int(h * 0.13)
+        cy = rand + h // 2
+        d.ellipse([x, cy - r, x + 2 * r, cy + r], fill=PINK)
+        x += int(h * 0.42)
+    d.text((x, rand + h / 2 + 2), text, font=font, fill=(255, 255, 255, 255), anchor="lm")
+    if tag:
+        tx = x + tb + pad
+        th = int(h * 0.62)
+        ty = rand + (h - th) // 2
+        d.rounded_rectangle([tx, ty, tx + tag_b, ty + th], radius=th // 2, fill=GELB)
+        d.text((tx + tag_b / 2, ty + th / 2 + 1), tag, font=tfont, fill=(20, 20, 20, 255), anchor="mm")
+    out = Image.alpha_composite(_schatten(img, 12, 0.9), img)
+    out.save(ziel)
+    return out.size
+
+
+def hook_png(ziel, zeilen, groesse):
+    font = ImageFont.truetype(FONT, groesse)
+    zh = int(groesse * 1.12)
+    b = max(int(font.getlength(z)) for z in zeilen) + 100
+    h = zh * len(zeilen) + 100
+    img = Image.new("RGBA", (b, h), (0, 0, 0, 0))
+    d = ImageDraw.Draw(img)
+    for i, z in enumerate(zeilen):
+        assert len(z) <= 38, z
+        farbe = PINK if i == 1 else (255, 255, 255, 255)
+        d.text((b / 2, 50 + i * zh + zh / 2), z, font=font, fill=farbe, anchor="mm",
+               stroke_width=3, stroke_fill=(15, 15, 15, 255))
+    out = Image.alpha_composite(_schatten(img, 10, 2.0), img)
+    out.save(ziel)
+    return out.size
+
+
+def elemente(tmp):
+    """Liste aller Overlays: (png, x_ziel, y_oben, start, ende, animation)."""
+    el = []
+    bw, bh = hook_png(tmp / "hook.png", HOOK[0], HOOK[4])
+    el.append((tmp / "hook.png", (W - bw) // 2, HOOK[3], HOOK[1], HOOK[2], "runter"))
+    kw, kh = pill_png(tmp / "kopf.png", LISTE_KOPF, 62, bullet=False, fuellung=PINK)
+    el.append((tmp / "kopf.png", 70, 300, LISTE_START + 0.1, LISTE_ENDE, "links"))
+    for i, (z, tag) in enumerate(ZUTATEN):
+        f = tmp / f"z{i}.png"
+        pill_png(f, z, 52, tag=tag)
+        el.append((f, 70, 300 + kh - 10 + i * 102, LISTE_START + 0.55 + i * 0.6, LISTE_ENDE, "links"))
+    for i, (n, txt, a, e, y) in enumerate(SCHRITTE):
+        assert len(f"{n}. {txt}") <= 38
+        f = tmp / f"s{i}.png"
+        sw, sh_ = pill_png(f, txt, 56, bullet=False, nummer=n)
+        el.append((f, (W - sw) // 2, y - sh_ // 2, a, e, "links"))
+    return el
 
 
 def sh(args):
@@ -103,13 +191,30 @@ def main():
             str(tmp / "liste.txt"), "-c", "copy", str(tmp / "roh.mp4")])
 
         args = ["ffmpeg", "-y", "-hide_banner", "-loglevel", "error", "-i", str(tmp / "roh.mp4")]
-        fc, letzter = [], "0:v"
-        for i, (txt, a, e, y, g) in enumerate(TEXTE):
-            png = tmp / f"t{i}.png"
-            bw, bh = text_png(txt, g, png)
+        # Verlauf nur links hinter der Liste (Farbe rechts bleibt kraeftig)
+        import numpy as np
+        g = np.zeros((H, W, 4), np.uint8)
+        x = np.linspace(0, 1, W)
+        g[..., 3] = (np.clip(1 - (x - 0.25) / 0.55, 0, 1) ** 1.3 * 175).astype(np.uint8)[None, :]
+        Image.fromarray(g, "RGBA").save(tmp / "verlauf.png")
+        args += ["-loop", "1", "-t", f"{t:.3f}", "-i", str(tmp / "verlauf.png")]
+        fc = [f"[1:v]format=rgba,fade=t=in:st={LISTE_START}:d=0.25:alpha=1,fade=t=out:st={LISTE_ENDE - 0.25}:d=0.25:alpha=1[vl]",
+              f"[0:v][vl]overlay=0:0:enable='between(t,{LISTE_START},{LISTE_ENDE})'[d]"]
+        letzter = "d"
+        for i, (png, xz, y, a, e, anim) in enumerate(elemente(tmp)):
             args += ["-loop", "1", "-t", f"{t:.3f}", "-i", str(png)]
-            fc.append(f"[{i + 1}:v]format=rgba,fade=t=in:st={a}:d=0.2:alpha=1,fade=t=out:st={e - 0.2}:d=0.2:alpha=1[t{i}]")
-            fc.append(f"[{letzter}][t{i}]overlay=(W-w)/2:{y}-h/2:enable='between(t,{a},{e})'[v{i}]")
+            ein = "" if a == 0 else f"fade=t=in:st={a}:d=0.2:alpha=1,"   # Hook ab Frame 0 voll sichtbar
+            fc.append(f"[{i + 2}:v]format=rgba,{ein}fade=t=out:st={e - 0.2}:d=0.2:alpha=1[e{i}]")
+            k = "\\,"
+            p = f"min(1{k}max(0{k}(t-{a})/0.35))"
+            ease = f"(1-pow(1-{p}{k}3))"
+            if a == 0:
+                xe, ye = f"{xz}", f"{y}"
+            elif anim == "links":   # von links reingleiten, weich abbremsen
+                xe, ye = f"-w+({xz}+w)*{ease}", f"{y}"
+            else:                 # 'runter': leicht von oben einsinken
+                xe, ye = f"{xz}", f"{y}-40*(1-{ease})"
+            fc.append(f"[{letzter}][e{i}]overlay=x='{xe}':y='{ye}':enable='between(t,{a},{e})'[v{i}]")
             letzter = f"v{i}"
         args += ["-filter_complex", ";".join(fc), "-map", f"[{letzter}]", "-map", "0:a",
                  "-c:v", "libx264", "-preset", "medium", "-crf", "19", "-maxrate", "12M", "-bufsize", "24M",
