@@ -1,0 +1,74 @@
+[
+  {
+    "szene": "Hook: fertige Pasta in der Hand",
+    "datei": "IMG_4164.mov",
+    "quelle_von": 0.3,
+    "quelle_bis": 2.3,
+    "reel_von": 0.0,
+    "reel_bis": 2.0,
+    "ton_lufs_roh": -63.8
+  },
+  {
+    "szene": "Zutaten",
+    "datei": "IMG_4159.mov",
+    "quelle_von": 0.2,
+    "quelle_bis": 1.8,
+    "reel_von": 2.0,
+    "reel_bis": 3.6,
+    "ton_lufs_roh": -59.1
+  },
+  {
+    "szene": "Soße: Zutaten im Mixbecher",
+    "datei": "IMG_4161.mov",
+    "quelle_von": 0.0,
+    "quelle_bis": 2.0,
+    "reel_von": 3.6,
+    "reel_bis": 5.6,
+    "ton_lufs_roh": -65.0
+  },
+  {
+    "szene": "Soße: fertig gemixt",
+    "datei": "IMG_4162.mov",
+    "quelle_von": 0.0,
+    "quelle_bis": 2.2,
+    "reel_von": 5.6,
+    "reel_bis": 7.8,
+    "ton_lufs_roh": -58.2
+  },
+  {
+    "szene": "Tofu + Gemüse anbraten (Topf oben weggeschnitten)",
+    "datei": "IMG_4160.mov",
+    "quelle_von": 0.3,
+    "quelle_bis": 3.8,
+    "reel_von": 7.8,
+    "reel_bis": 11.3,
+    "ton_lufs_roh": -22.9
+  },
+  {
+    "szene": "Alles vermischen",
+    "datei": "IMG_4163.mov",
+    "quelle_von": 1.5,
+    "quelle_bis": 5.5,
+    "reel_von": 11.3,
+    "reel_bis": 15.3,
+    "ton_lufs_roh": -45.5
+  },
+  {
+    "szene": "Zitronenzeste (Nahfahrt)",
+    "datei": "IMG_4167.mov",
+    "quelle_von": 3.5,
+    "quelle_bis": 6.87,
+    "reel_von": 15.3,
+    "reel_bis": 18.67,
+    "ton_lufs_roh": -64.3
+  },
+  {
+    "szene": "Fertiger Teller",
+    "datei": "IMG_4165.mov",
+    "quelle_von": 0.3,
+    "quelle_bis": 3.3,
+    "reel_von": 18.67,
+    "reel_bis": 21.67,
+    "ton_lufs_roh": -63.5
+  }
+]
