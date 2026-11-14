@@ -1,0 +1,170 @@
+{
+  "titel": "It depends: Which exercise for low back pain? (EN)",
+  "ausgabe": "../reels/01_kommt_drauf_an_EN.mp4",
+  "uebung": false,
+  "skript": {
+    "hook": "Patient walks in, holds his back: 'My lower back hurts. Which exercise should I do?'",
+    "aufbau": "Physio thinks, the questions pop up around him (red flags, radiating pain, stress, sleep, goals ...).",
+    "payoff": "Punchline: 'It depends…' There is no one exercise for everyone, it takes a proper assessment."
+  },
+  "hook": {
+    "stil": "trend",
+    "text": "“My lower back hurts.\nWhich exercise should I do?”",
+    "start": 0.15,
+    "dauer": 3.7,
+    "y": 1150,
+    "punch_in": false,
+    "visuell": "André kommt ins Bild und greift sich an den unteren Rücken (Patient-Rolle), wie in der Vorlage"
+  },
+  "segmente": [
+    {
+      "quelle": "../roh/patient_IMG_4105.mov",
+      "start": 2.2,
+      "ende": 5.9,
+      "ton": false
+    },
+    {
+      "quelle": "../roh/physio_IMG_4109.mov",
+      "start": 1.0,
+      "ende": 11.4,
+      "ton": false
+    }
+  ],
+  "untertitel": false,
+  "einblendungen": [
+    {
+      "stil": "trend",
+      "text": "Since when?",
+      "x": 300,
+      "y": 470,
+      "start": 3.9,
+      "ende": 11.9
+    },
+    {
+      "stil": "trend",
+      "text": "Red flags?",
+      "x": 790,
+      "y": 420,
+      "start": 4.45,
+      "ende": 11.9
+    },
+    {
+      "stil": "trend",
+      "text": "Disc?",
+      "x": 250,
+      "y": 640,
+      "start": 5.0,
+      "ende": 11.9
+    },
+    {
+      "stil": "trend",
+      "text": "Where exactly?",
+      "x": 860,
+      "y": 610,
+      "start": 5.55,
+      "ende": 11.9
+    },
+    {
+      "stil": "trend",
+      "text": "Does it radiate?",
+      "x": 850,
+      "y": 790,
+      "start": 6.1,
+      "ende": 11.9
+    },
+    {
+      "stil": "trend",
+      "text": "Stress?",
+      "x": 200,
+      "y": 820,
+      "start": 6.65,
+      "ende": 11.9
+    },
+    {
+      "stil": "trend",
+      "text": "Sleep?",
+      "x": 900,
+      "y": 960,
+      "start": 7.2,
+      "ende": 11.9
+    },
+    {
+      "stil": "trend",
+      "text": "Which movement?",
+      "x": 850,
+      "y": 1120,
+      "start": 7.75,
+      "ende": 11.9
+    },
+    {
+      "stil": "trend",
+      "text": "Worse at night?",
+      "x": 250,
+      "y": 1140,
+      "start": 8.3,
+      "ende": 11.9
+    },
+    {
+      "stil": "trend",
+      "text": "Numbness?",
+      "x": 850,
+      "y": 1270,
+      "start": 8.85,
+      "ende": 11.9
+    },
+    {
+      "stil": "trend",
+      "text": "Training goals?",
+      "x": 230,
+      "y": 1270,
+      "start": 9.4,
+      "ende": 11.9
+    },
+    {
+      "stil": "trend",
+      "text": "Fear of movement?",
+      "x": 540,
+      "y": 300,
+      "start": 9.95,
+      "ende": 11.9
+    },
+    {
+      "stil": "trend",
+      "text": "Load management?",
+      "x": 540,
+      "y": 1400,
+      "start": 10.5,
+      "ende": 11.9
+    },
+    {
+      "stil": "trend",
+      "text": "“It depends…”",
+      "x": 540,
+      "y": 1120,
+      "groesse": 76,
+      "start": 11.9,
+      "ende": 14.1,
+      "ein_ms": 120
+    }
+  ],
+  "aussagen": [
+    {
+      "text": "Before choosing exercises for low back pain, warning signs (red flags) and psychosocial factors such as stress or fear of movement should be assessed.",
+      "quelle": "Bundesärztekammer (BÄK), KBV, AWMF. Nationale VersorgungsLeitlinie Nicht-spezifischer Kreuzschmerz, 2. Auflage 2017 (Kapitel Diagnostik: Warnhinweise und psychosoziale Risikofaktoren/Yellow Flags)",
+      "status": "konsens"
+    }
+  ],
+  "caption": "To all physios: how often do you hear this question?\n\nAnd to everyone with back pain: there is no one exercise that works for everyone. Once it's clear what's behind your pain, the exercise actually fits.\n\nSave this reel and send it to someone who always asks exactly this.",
+  "hashtags": [
+    "#backpain",
+    "#physiotherapy",
+    "#physiohumor",
+    "#itdepends",
+    "#painscience"
+  ],
+  "hinweise": [
+    "English version of the German 'Kommt drauf an' reel; same cuts and timing.",
+    "Use the same trend sound in Instagram as the German version."
+  ],
+  "sprache": "en"
+}
