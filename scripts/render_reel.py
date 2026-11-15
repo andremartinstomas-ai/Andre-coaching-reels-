@@ -133,7 +133,7 @@ def pruefe(spec, spec_dir):
             fehler.append(f"Skript unvollstaendig: skript.{teil} fehlt.")
 
     aussagen = spec.get("aussagen", [])
-    if not aussagen:
+    if not aussagen and not spec.get("keine_aussagen"):
         fehler.append("Keine Aussagen gelistet. Jede inhaltliche Aussage muss mit Quelle in 'aussagen' stehen.")
     for i, a in enumerate(aussagen):
         if not a.get("quelle"):
@@ -393,6 +393,8 @@ def ass_schreiben(spec, spec_dir, pfad, dauer):
         (f"Style: Trend,{BRAND['trend']['schrift']},{BRAND['trend']['groesse']},{weiss},{weiss},&H96000000,"
          f"&H78000000,0,0,0,0,100,100,0,0,1,1.5,2,5,60,60,0,1"),
         f"Style: Form,{schrift},20,{weiss},{weiss},&H00000000,&H00000000,0,0,0,0,100,100,0,0,1,0,0,7,0,0,0,1",
+        (f"Style: Fuss,Inter Medium,34,&H18FFFFFF,&H18FFFFFF,&H00000000,&H90000000,0,0,0,0,100,100,0,0,"
+         f"1,0,2,1,0,0,0,1"),
         "", "[Events]", "Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text",
     ]
 
@@ -441,6 +443,10 @@ def ass_schreiben(spec, spec_dir, pfad, dauer):
 
     # --- Fakten (Aufbau) mittig oben, Quelle klein darunter
     for e in spec.get("einblendungen", []):
+        if e.get("stil") == "fussnote":  # kleiner Hinweis unten links, z. B. Disclaimer
+            ev(e["start"], e["ende"], "Fuss",
+               f"{{\\an1\\pos({e.get('x', 44)},{e.get('y', 1490)})\\fad(300,300)}}" + markup(e["text"], gelb), layer=2)
+            continue
         if e.get("stil") == "karte":  # Infokarte rechts oben (Studie, Leitlinie, Fakt) im Kapitel-Look
             a_, e_ = e["start"], e["ende"]
             fad = "\\fad(150,120)"
@@ -549,7 +555,7 @@ def rendern(spec_pfad, vorschau=False):
             args += ["-i", str(p if p.exists() else Path(spec_dir, snd["name"]))]
         hd = spec["hook"].get("dauer", 3.0)
         dunkel_zeiten = ([] if spec["hook"].get("stil") == "trend" else [(0, hd)]) + \
-            [(e["start"], e["ende"]) for e in spec.get("einblendungen", []) if e.get("stil") not in ("trend", "karte")] + \
+            [(e["start"], e["ende"]) for e in spec.get("einblendungen", []) if e.get("stil") not in ("trend", "karte", "fussnote")] + \
             [(b["start"], b["ende"]) for b in spec.get("bilder", []) if b.get("abdunkeln")]
         enable = "+".join(f"between(t,{a},{b})" for a, b in dunkel_zeiten) or "0"
         ass = str(tmp / "text.ass").replace(":", "\\:")

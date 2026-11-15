@@ -1,0 +1,149 @@
+{
+  "titel": "08_outtakes_tierlist",
+  "ausgabe": "../reels/08_outtakes_tierlist.mp4",
+  "uebung": false,
+  "ton_reparatur": true,
+  "keine_aussagen": true,
+  "skript": {
+    "hook": "Behind the Scenes: So entsteht eine Tierlist",
+    "aufbau": "Vergessen zu ranken, Neustart-Diskussion, Matcha-Gelaber",
+    "payoff": "Ehrlicher Einblick, macht nahbar"
+  },
+  "hook": {
+    "text": "So entsteht\n*eine Tierlist*",
+    "unterzeile": "Behind the Scenes",
+    "dauer": 2.6,
+    "animation": "slam",
+    "punch_in": true,
+    "visuell": "Punch-in, André merkt, dass er vergessen hat zu ranken"
+  },
+  "segmente": [
+    {
+      "quelle": "../roh/teil_2.mov",
+      "start": 47.7,
+      "ende": 49.14,
+      "transkript": "../transkripte/teil_2.json",
+      "zoom": 1.0,
+      "fokus_x": 0.5,
+      "fokus_y": 0.25
+    },
+    {
+      "quelle": "../roh/teil_2.mov",
+      "start": 49.88,
+      "ende": 52.56,
+      "transkript": "../transkripte/teil_2.json",
+      "zoom": 1.15,
+      "fokus_x": 0.5,
+      "fokus_y": 0.25
+    },
+    {
+      "quelle": "../roh/teil_2.mov",
+      "start": 53.62,
+      "ende": 54.24,
+      "transkript": "../transkripte/teil_2.json",
+      "zoom": 1.0,
+      "fokus_x": 0.5,
+      "fokus_y": 0.25
+    },
+    {
+      "quelle": "../roh/teil_2.mov",
+      "start": 55.36,
+      "ende": 61.56,
+      "transkript": "../transkripte/teil_2.json",
+      "zoom": 1.15,
+      "fokus_x": 0.5,
+      "fokus_y": 0.25
+    },
+    {
+      "quelle": "../roh/teil_2.mov",
+      "start": 62.04,
+      "ende": 63.7,
+      "transkript": "../transkripte/teil_2.json",
+      "zoom": 1.0,
+      "fokus_x": 0.5,
+      "fokus_y": 0.25
+    },
+    {
+      "quelle": "../roh/teil_2.mov",
+      "start": 64.8,
+      "ende": 66.8,
+      "transkript": "../transkripte/teil_2.json",
+      "zoom": 1.15,
+      "fokus_x": 0.5,
+      "fokus_y": 0.25
+    },
+    {
+      "quelle": "../roh/teil_1.mov",
+      "start": 40.58,
+      "ende": 42.46,
+      "transkript": "../transkripte/teil_1.json",
+      "zoom": 1.0,
+      "fokus_x": 0.5,
+      "fokus_y": 0.25
+    },
+    {
+      "quelle": "../roh/teil_2.mov",
+      "start": 17.0,
+      "ende": 19.02,
+      "transkript": "../transkripte/teil_2.json",
+      "zoom": 1.15,
+      "fokus_x": 0.5,
+      "fokus_y": 0.25
+    },
+    {
+      "quelle": "../roh/teil_2.mov",
+      "start": 19.9,
+      "ende": 24.36,
+      "transkript": "../transkripte/teil_2.json",
+      "zoom": 1.0,
+      "fokus_x": 0.5,
+      "fokus_y": 0.25
+    }
+  ],
+  "untertitel": true,
+  "untertitel_korrekturen": {
+    "esstier,": "S-Tier,",
+    "esstier": "S-Tier",
+    "Belastungstheoranz": "Belastungstoleranz",
+    "Rutebete": "Rote Bete",
+    "Komplette": "Komponente",
+    "Den?": "Dehnen?",
+    "Den": "Dehnen",
+    "Stutzgürtel?": "Stützgürtel?",
+    "Pilatus?": "Pilates?",
+    "Art": "A-",
+    "hier": "Tier",
+    "hier.": "Tier.",
+    "esst": "S-",
+    "Verschehen": "Verstehen",
+    "Bööön.": "Böööh.",
+    "Sprecherplatz": "Sprechapparat"
+  },
+  "effekte": [
+    {
+      "typ": "spirale",
+      "quelle": "../roh/teil_2.mov",
+      "start": 55.7,
+      "ende": 56.9,
+      "zoom": 2.0,
+      "drehungen": 1,
+      "x": 0.62,
+      "y": 0.32,
+      "rein": 0.35,
+      "raus": 0.2
+    }
+  ],
+  "einblendungen": [],
+  "aussagen": [],
+  "caption": "Was ihr nicht seht: wie oft ich vergesse zu ranken. Die fertige Tierlist gibt's auf meinem Profil.\n\nSpeicher dir die Serie und schreib mir, was ich als Nächstes ranken soll.",
+  "hashtags": [
+    "#behindthescenes",
+    "#outtakes",
+    "#physiotherapie",
+    "#tierlist",
+    "#physiohumor"
+  ],
+  "hinweise": [
+    "Outtakes ohne inhaltliche Aussagen. Spiral-Gag beim 'Böööh'."
+  ]
+}

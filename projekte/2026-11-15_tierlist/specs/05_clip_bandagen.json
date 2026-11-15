@@ -1,0 +1,143 @@
+{
+  "titel": "05_clip_bandagen",
+  "ausgabe": "../reels/05_clip_bandagen.mp4",
+  "uebung": false,
+  "ton_reparatur": true,
+  "skript": {
+    "hook": "Bandagen bei Rückenschmerzen?",
+    "aufbau": "Bandagen und Stützgürtel können Sicherheit geben, machen dich aber langfristig nicht belastbarer.",
+    "payoff": "Einordnung: C-Tier + Verweis auf die ganze Tierlist"
+  },
+  "hook": {
+    "text": "Bandagen bei\n*Rückenschmerzen?*",
+    "unterzeile": "Warum ich sie nur auf C packe",
+    "dauer": 3.0,
+    "animation": "slam",
+    "punch_in": true,
+    "visuell": "Punch-in auf André"
+  },
+  "segmente": [
+    {
+      "quelle": "../roh/teil_3.mov",
+      "start": 58.36,
+      "ende": 61.18,
+      "transkript": "../transkripte/teil_3.json",
+      "zoom": 1.18,
+      "fokus_x": 0.05,
+      "fokus_y": 0.2
+    },
+    {
+      "quelle": "../roh/teil_3.mov",
+      "start": 70.38,
+      "ende": 71.34,
+      "transkript": "../transkripte/teil_3.json",
+      "zoom": 1.3,
+      "fokus_x": 0.05,
+      "fokus_y": 0.2
+    },
+    {
+      "quelle": "../roh/teil_3.mov",
+      "start": 71.58,
+      "ende": 74.56,
+      "transkript": "../transkripte/teil_3.json",
+      "zoom": 1.18,
+      "fokus_x": 0.05,
+      "fokus_y": 0.2
+    },
+    {
+      "quelle": "../roh/teil_3.mov",
+      "start": 74.86,
+      "ende": 76.96,
+      "transkript": "../transkripte/teil_3.json",
+      "zoom": 1.3,
+      "fokus_x": 0.05,
+      "fokus_y": 0.2
+    },
+    {
+      "quelle": "../roh/teil_3.mov",
+      "start": 77.56,
+      "ende": 80.56,
+      "transkript": "../transkripte/teil_3.json",
+      "zoom": 1.18,
+      "fokus_x": 0.05,
+      "fokus_y": 0.2
+    },
+    {
+      "quelle": "../roh/teil_3.mov",
+      "start": 80.96,
+      "ende": 82.0,
+      "transkript": "../transkripte/teil_3.json",
+      "zoom": 1.3,
+      "fokus_x": 0.05,
+      "fokus_y": 0.2
+    },
+    {
+      "quelle": "../roh/teil_1.mov",
+      "start": 12.1,
+      "ende": 14.7,
+      "ton": false,
+      "zoom": 1.18,
+      "fokus_x": 0.05,
+      "fokus_y": 0.2
+    }
+  ],
+  "untertitel": true,
+  "untertitel_korrekturen": {
+    "esstier,": "S-Tier,",
+    "esstier": "S-Tier",
+    "Belastungstheoranz": "Belastungstoleranz",
+    "Rutebete": "Rote Bete",
+    "Komplette": "Komponente",
+    "Den?": "Dehnen?",
+    "Den": "Dehnen",
+    "Stutzgürtel?": "Stützgürtel?",
+    "Pilatus?": "Pilates?",
+    "Art": "A-",
+    "hier": "Tier",
+    "hier.": "Tier.",
+    "esst": "S-",
+    "Verschehen": "Verstehen"
+  },
+  "einblendungen": [
+    {
+      "stil": "fussnote",
+      "start": 3.3,
+      "ende": 12.9,
+      "text": "Gerankt nach Nachhaltigkeit, nicht nach Wirkung"
+    },
+    {
+      "start": 12.9,
+      "ende": 15.5,
+      "text": "Ganze Tierlist\n*auf meinem Profil*"
+    }
+  ],
+  "bilder": [
+    {
+      "datei": "../grafiken/einzel_bandagen.png",
+      "start": 4.64,
+      "ende": 12.9,
+      "x": 10,
+      "y": 230,
+      "breite": 600,
+      "ein": 0.15
+    }
+  ],
+  "aussagen": [
+    {
+      "text": "Bandagen/Stützgürtel können Sicherheit vermitteln, werden bei Rückenschmerz aber nicht empfohlen.",
+      "quelle": "NICE NG59, Empfehlung 1.2.3 ('Do not offer belts or corsets')",
+      "status": "belegt"
+    }
+  ],
+  "caption": "Bandagen und Stützgürtel können Sicherheit geben, machen dich aber langfristig nicht belastbarer.\n\nGerankt nach Nachhaltigkeit, also danach, wie gut etwas auf lange Sicht hilft, nicht ob es überhaupt wirkt. Jeder Schmerz ist individuell.\n\nSpeicher dir das Reel. Die ganze Tierlist findest du auf meinem Profil.",
+  "hashtags": [
+    "#rückenschmerzen",
+    "#bandage",
+    "#physiotherapie",
+    "#schmerztherapie",
+    "#tierlist"
+  ],
+  "hinweise": [
+    "Ausschnitt aus der Tierlist-Serie als eigenständiger Clip."
+  ]
+}

@@ -44,6 +44,12 @@ RANG = {
     "bandagen": ("3", 72.44, "C", "Bandagen"),
 }
 
+KORREKTUR = {"esstier,": "S-Tier,", "esstier": "S-Tier", "Belastungstheoranz": "Belastungstoleranz",
+                                   "Rutebete": "Rote Bete", "Komplette": "Komponente", "Den?": "Dehnen?",
+                                   "Den": "Dehnen", "Stutzgürtel?": "Stützgürtel?", "Pilatus?": "Pilates?",
+                                   "Art": "A-", "hier": "Tier", "hier.": "Tier.", "esst": "S-",
+                                   "Verschehen": "Verstehen"}
+
 QUELLEN = {
     "aktiv": {"text": "Bei Rückenschmerzen aktiv bleiben und den Alltag weiterführen statt Schonung.",
               "quelle": "NVL Nicht-spezifischer Kreuzschmerz, 2. Aufl. 2017; NICE NG59 (2016/2020)", "status": "konsens"},
@@ -163,21 +169,18 @@ def baue(name, reihe, vorher, titel, unterzeile, endtext, caption, tags):
         bilder.append({"datei": f"../grafiken/{f.name}", "start": round(start, 2), "ende": round(ende + 0.02, 2),
                        "x": 10, "y": 230, "breite": 600, "ein": 0.12})
     a_end = marken["pause"][0]
-    einbl = [{"start": round(a_end, 2), "ende": round(t, 2), "text": endtext}]
+    einbl = [{"start": round(a_end, 2), "ende": round(t, 2), "text": endtext},
+             {"stil": "fussnote", "start": 3.3, "ende": round(a_end, 2), "text": FUSSNOTE}]
     aussagen = [QUELLEN[k] for k in reihe if k in QUELLEN]
     spec = {
-        "titel": name, "ausgabe": f"../reels/{name}.mp4", "uebung": False, "ton_reparatur": True, "textstil": "modern",
+        "titel": name, "ausgabe": f"../reels/{name}.mp4", "uebung": False, "ton_reparatur": True,
         "skript": {"hook": "Was hilft eigentlich bei Schmerzen? Tierlist.",
                    "aufbau": "Behandlungen werden nacheinander eingeordnet, das Board füllt sich live.",
                    "payoff": "Fertiges Board + Hinweis: Caption lesen (Ranking nach Nachhaltigkeit)."},
         "hook": {"text": titel, "unterzeile": unterzeile, "dauer": 3.0, "animation": "slam", "punch_in": True,
                  "visuell": "Punch-in auf André, Tierlist-Board erscheint direkt nach dem Hook"},
         "segmente": segs, "untertitel": True,
-        "untertitel_korrekturen": {"esstier,": "S-Tier,", "esstier": "S-Tier", "Belastungstheoranz": "Belastungstoleranz",
-                                   "Rutebete": "Rote Bete", "Komplette": "Komponente", "Den?": "Dehnen?",
-                                   "Den": "Dehnen", "Stutzgürtel?": "Stützgürtel?", "Pilatus?": "Pilates?",
-                                   "Art": "A-", "hier": "Tier", "hier.": "Tier.", "esst": "S-",
-                                   "Verschehen": "Verstehen"},
+        "untertitel_korrekturen": KORREKTUR,
         "einblendungen": einbl, "bilder": bilder,
         "aussagen": aussagen, "caption": caption, "hashtags": tags,
         "hinweise": ["Board-Grafik füllt sich genau dann, wenn André die Stufe ausspricht.",
@@ -188,21 +191,117 @@ def baue(name, reihe, vorher, titel, unterzeile, endtext, caption, tags):
     return stand, t
 
 
+FUSSNOTE = "Gerankt nach Nachhaltigkeit, nicht nach Wirkung"
 DISCLAIMER = ("Wichtig: Wir haben nach NACHHALTIGKEIT gerankt, also danach, wie gut etwas deine Schmerzen auf lange Sicht "
               "in den Griff bekommt. Nicht danach, ob es überhaupt wirkt. Eine Bandage oder Akupunktur kann kurzfristig "
               "helfen, macht dich aber langfristig nicht belastbarer. Und: Jeder Schmerz ist individuell, das ersetzt "
               "keine Untersuchung.")
 TAGS = ["#schmerztherapie", "#physiotherapie", "#rückenschmerzen", "#tierlist", "#schmerzverstehen"]
 
+EINZEL = {
+    "pilates": ("Pilates bei\n*Rückenschmerzen?*", "Und was Matcha damit zu tun hat",
+                "Pilates bei Rückenschmerzen? Ja, kann richtig gut sein. Und ja, Matcha-Trinker sind klar im Vorteil.",
+                ["#pilates", "#rückenschmerzen", "#physiotherapie", "#matcha", "#tierlist"]),
+    "kraft": ("Was hilft *langfristig*\nbei Schmerzen?", "Platz 1 in meiner Tierlist",
+              "Langsam gesteigertes Krafttraining baut Belastbarkeit auf, und genau das hilft auf lange Sicht.",
+              ["#krafttraining", "#rückenschmerzen", "#physiotherapie", "#schmerztherapie", "#tierlist"]),
+    "bandagen": ("Bandagen bei\n*Rückenschmerzen?*", "Warum ich sie nur auf C packe",
+                 "Bandagen und Stützgürtel können Sicherheit geben, machen dich aber langfristig nicht belastbarer.",
+                 ["#rückenschmerzen", "#bandage", "#physiotherapie", "#schmerztherapie", "#tierlist"]),
+    "aufklaerung": ("Schmerz ist nicht\n*immer Schaden*", "Warum Verstehen S-Tier ist",
+                    "Schmerz muss nicht immer strukturell sein. Wer versteht, wie Schmerz entsteht, geht anders damit um.",
+                    ["#schmerzverstehen", "#schmerztherapie", "#physiotherapie", "#rückenschmerzen", "#tierlist"]),
+    "schlaf": ("Schlecht geschlafen,\n*mehr Schmerzen?*", "Schlaf und Stress in meiner Tierlist",
+               "Schlaf und Stress beeinflussen, wie stark du Schmerz wahrnimmst. Je nach Ursache S- oder A-Tier.",
+               ["#schlaf", "#stress", "#schmerztherapie", "#physiotherapie", "#tierlist"]),
+}
+
+
+def baue_einzel(nr, key):
+    hook, unter, satz, tags = EINZEL[key]
+    reihe = ["pause_kurz", key] if False else [key]
+    segs, t, quellzeit = [], 0.0, []
+    for teil, a, e in PASS[key]:
+        for s0, s1 in sprechbereiche(str(P / f"roh/teil_{teil}.mov"), a, e):
+            segs.append({"quelle": f"../roh/teil_{teil}.mov", "start": s0, "ende": s1,
+                         "transkript": f"../transkripte/teil_{teil}.json", "zoom": [1.18, 1.3][len(segs) % 2],
+                         "fokus_x": 0.05, "fokus_y": 0.2})
+            quellzeit.append((teil, s0, s1, t)); t += s1 - s0
+    sprech_ende = t
+    for teil, a, e in PASS["pause"]:
+        for s0, s1 in [(a, a + 2.6)]:
+            segs.append({"quelle": f"../roh/teil_{teil}.mov", "start": s0, "ende": s1, "ton": False,
+                         "zoom": 1.18, "fokus_x": 0.05, "fokus_y": 0.2})
+            t += s1 - s0
+    teil, q, tier, lab = RANG[key]
+    rang = next(o + q - s0 for tl, s0, s1, o in quellzeit if tl == teil and s0 <= q <= s1)
+    rang = max(rang, 3.3)
+    f = P / "grafiken" / f"einzel_{key}.png"
+    board_png(f, [(tier, lab)], lab)
+    name = f"{nr:02d}_clip_{key}"
+    spec = {
+        "titel": name, "ausgabe": f"../reels/{name}.mp4", "uebung": False, "ton_reparatur": True,
+        "skript": {"hook": hook.replace("*", "").replace("\n", " "), "aufbau": satz,
+                   "payoff": f"Einordnung: {tier}-Tier + Verweis auf die ganze Tierlist"},
+        "hook": {"text": hook, "unterzeile": unter, "dauer": 3.0, "animation": "slam", "punch_in": True,
+                 "visuell": "Punch-in auf André"},
+        "segmente": segs, "untertitel": True, "untertitel_korrekturen": KORREKTUR,
+        "einblendungen": [{"stil": "fussnote", "start": 3.3, "ende": round(sprech_ende, 2), "text": FUSSNOTE},
+                          {"start": round(sprech_ende, 2), "ende": round(t, 2),
+                           "text": "Ganze Tierlist\n*auf meinem Profil*"}],
+        "bilder": [{"datei": f"../grafiken/{f.name}", "start": round(rang, 2), "ende": round(sprech_ende, 2),
+                    "x": 10, "y": 230, "breite": 600, "ein": 0.15}],
+        "aussagen": [QUELLEN[key]],
+        "caption": satz + "\n\nGerankt nach Nachhaltigkeit, also danach, wie gut etwas auf lange Sicht hilft, nicht ob es "
+                   "überhaupt wirkt. Jeder Schmerz ist individuell.\n\nSpeicher dir das Reel. Die ganze Tierlist findest du auf meinem Profil.",
+        "hashtags": tags,
+        "hinweise": ["Ausschnitt aus der Tierlist-Serie als eigenständiger Clip."],
+    }
+    (P / "specs" / f"{name}.json").write_text(json.dumps(spec, ensure_ascii=False, indent=2))
+
+
+def baue_outtakes(nr):
+    stuecke = [("2", 47.7, 66.8), ("1", 40.4, 42.8), ("2", 17.0, 24.4)]
+    segs, t = [], 0.0
+    for teil, a, e in stuecke:
+        for s0, s1 in sprechbereiche(str(P / f"roh/teil_{teil}.mov"), a, e, min_pause=0.6):
+            segs.append({"quelle": f"../roh/teil_{teil}.mov", "start": s0, "ende": s1,
+                         "transkript": f"../transkripte/teil_{teil}.json", "zoom": [1.0, 1.15][len(segs) % 2],
+                         "fokus_x": 0.5, "fokus_y": 0.25})
+            t += s1 - s0
+    name = f"{nr:02d}_outtakes_tierlist"
+    spec = {
+        "titel": name, "ausgabe": f"../reels/{name}.mp4", "uebung": False, "ton_reparatur": True,
+        "keine_aussagen": True,
+        "skript": {"hook": "Behind the Scenes: So entsteht eine Tierlist", "aufbau": "Vergessen zu ranken, Neustart-Diskussion, Matcha-Gelaber",
+                   "payoff": "Ehrlicher Einblick, macht nahbar"},
+        "hook": {"text": "So entsteht\n*eine Tierlist*", "unterzeile": "Behind the Scenes", "dauer": 2.6,
+                 "animation": "slam", "punch_in": True, "visuell": "Punch-in, André merkt, dass er vergessen hat zu ranken"},
+        "segmente": segs, "untertitel": True,
+        "untertitel_korrekturen": dict(KORREKTUR, **{"Bööön.": "Böööh.", "Sprecherplatz": "Sprechapparat"}),
+        "effekte": [{"typ": "spirale", "quelle": "../roh/teil_2.mov", "start": 55.7, "ende": 56.9,
+                     "zoom": 2.0, "drehungen": 1, "x": 0.62, "y": 0.32, "rein": 0.35, "raus": 0.2}],
+        "einblendungen": [], "aussagen": [],
+        "caption": "Was ihr nicht seht: wie oft ich vergesse zu ranken. Die fertige Tierlist gibt's auf meinem Profil.\n\n"
+                   "Speicher dir die Serie und schreib mir, was ich als Nächstes ranken soll.",
+        "hashtags": ["#behindthescenes", "#outtakes", "#physiotherapie", "#tierlist", "#physiohumor"],
+        "hinweise": ["Outtakes ohne inhaltliche Aussagen. Spiral-Gag beim 'Böööh'."],
+    }
+    (P / "specs" / f"{name}.json").write_text(json.dumps(spec, ensure_ascii=False, indent=2))
+
+
 if __name__ == "__main__":
     stand1, d1 = baue("01_tierlist_teil1", ["intro", "aktiv", "akupunktur", "pilates", "dehnen", "pause"], [],
-                      "Was hilft *wirklich*\nbei Schmerzen?", "Tierlist · Teil 1", "Teil 2 folgt\n*Lies die Caption*",
+                      "Was hilft *wirklich*\nbei Schmerzen?", "Tierlist · Teil 1", "Teil 2 folgt\n*Lies die Caption!*",
                       "Was hilft eigentlich bei Schmerzen? Teil 1 unserer Schmerz-Tierlist.\n\n" + DISCLAIMER +
                       "\n\nWo würdest du anders ranken? Schreib's in die Kommentare und speicher dir das Reel für Teil 2.",
                       TAGS)
     stand2, d2 = baue("02_tierlist_teil2", ["intro", "kraft", "bandagen", "aufklaerung", "schlaf", "pause"],
-                      stand1, "Was hilft *wirklich*\nbei Schmerzen?", "Tierlist · Teil 2", "Das ist die Liste\n*Lies die Caption*",
+                      stand1, "Was hilft *wirklich*\nbei Schmerzen?", "Tierlist · Teil 2", "Das ist die Liste\n*Lies die Caption!*",
                       "Teil 2 unserer Schmerz-Tierlist, jetzt ist das Board komplett.\n\n" + DISCLAIMER +
                       "\n\nStimmst du zu? Schreib's in die Kommentare und speicher dir die Liste.", TAGS)
     print(f"Teil 1: {d1:.1f}s  Teil 2: {d2:.1f}s")
     print("Endstand:", stand2)
+    for i, k in enumerate(["pilates", "kraft", "bandagen", "aufklaerung", "schlaf"], start=3):
+        baue_einzel(i, k)
+    baue_outtakes(8)

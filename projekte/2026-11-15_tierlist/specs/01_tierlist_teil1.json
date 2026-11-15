@@ -3,7 +3,6 @@
   "ausgabe": "../reels/01_tierlist_teil1.mp4",
   "uebung": false,
   "ton_reparatur": true,
-  "textstil": "modern",
   "skript": {
     "hook": "Was hilft eigentlich bei Schmerzen? Tierlist.",
     "aufbau": "Behandlungen werden nacheinander eingeordnet, das Board füllt sich live.",
@@ -310,7 +309,13 @@
     {
       "start": 47.78,
       "ende": 51.4,
-      "text": "Teil 2 folgt\n*Lies die Caption*"
+      "text": "Teil 2 folgt\n*Lies die Caption!*"
+    },
+    {
+      "stil": "fussnote",
+      "start": 3.3,
+      "ende": 47.78,
+      "text": "Gerankt nach Nachhaltigkeit, nicht nach Wirkung"
     }
   ],
   "bilder": [

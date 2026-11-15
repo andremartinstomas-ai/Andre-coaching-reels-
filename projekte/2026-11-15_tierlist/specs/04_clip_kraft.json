@@ -1,0 +1,116 @@
+{
+  "titel": "04_clip_kraft",
+  "ausgabe": "../reels/04_clip_kraft.mp4",
+  "uebung": false,
+  "ton_reparatur": true,
+  "skript": {
+    "hook": "Was hilft langfristig bei Schmerzen?",
+    "aufbau": "Langsam gesteigertes Krafttraining baut Belastbarkeit auf, und genau das hilft auf lange Sicht.",
+    "payoff": "Einordnung: S-Tier + Verweis auf die ganze Tierlist"
+  },
+  "hook": {
+    "text": "Was hilft *langfristig*\nbei Schmerzen?",
+    "unterzeile": "Platz 1 in meiner Tierlist",
+    "dauer": 3.0,
+    "animation": "slam",
+    "punch_in": true,
+    "visuell": "Punch-in auf André"
+  },
+  "segmente": [
+    {
+      "quelle": "../roh/teil_1.mov",
+      "start": 59.48,
+      "ende": 61.04,
+      "transkript": "../transkripte/teil_1.json",
+      "zoom": 1.18,
+      "fokus_x": 0.05,
+      "fokus_y": 0.2
+    },
+    {
+      "quelle": "../roh/teil_1.mov",
+      "start": 77.92,
+      "ende": 80.46,
+      "transkript": "../transkripte/teil_1.json",
+      "zoom": 1.3,
+      "fokus_x": 0.05,
+      "fokus_y": 0.2
+    },
+    {
+      "quelle": "../roh/teil_1.mov",
+      "start": 80.74,
+      "ende": 83.5,
+      "transkript": "../transkripte/teil_1.json",
+      "zoom": 1.18,
+      "fokus_x": 0.05,
+      "fokus_y": 0.2
+    },
+    {
+      "quelle": "../roh/teil_1.mov",
+      "start": 12.1,
+      "ende": 14.7,
+      "ton": false,
+      "zoom": 1.18,
+      "fokus_x": 0.05,
+      "fokus_y": 0.2
+    }
+  ],
+  "untertitel": true,
+  "untertitel_korrekturen": {
+    "esstier,": "S-Tier,",
+    "esstier": "S-Tier",
+    "Belastungstheoranz": "Belastungstoleranz",
+    "Rutebete": "Rote Bete",
+    "Komplette": "Komponente",
+    "Den?": "Dehnen?",
+    "Den": "Dehnen",
+    "Stutzgürtel?": "Stützgürtel?",
+    "Pilatus?": "Pilates?",
+    "Art": "A-",
+    "hier": "Tier",
+    "hier.": "Tier.",
+    "esst": "S-",
+    "Verschehen": "Verstehen"
+  },
+  "einblendungen": [
+    {
+      "stil": "fussnote",
+      "start": 3.3,
+      "ende": 6.86,
+      "text": "Gerankt nach Nachhaltigkeit, nicht nach Wirkung"
+    },
+    {
+      "start": 6.86,
+      "ende": 9.46,
+      "text": "Ganze Tierlist\n*auf meinem Profil*"
+    }
+  ],
+  "bilder": [
+    {
+      "datei": "../grafiken/einzel_kraft.png",
+      "start": 3.62,
+      "ende": 6.86,
+      "x": 10,
+      "y": 230,
+      "breite": 600,
+      "ein": 0.15
+    }
+  ],
+  "aussagen": [
+    {
+      "text": "Langsam gesteigertes Krafttraining baut Belastungstoleranz auf und gehört zu den wirksamsten Übungsformen.",
+      "quelle": "Owen PJ et al. Br J Sports Med 2020; Hayden JA et al. Cochrane 2021",
+      "status": "belegt"
+    }
+  ],
+  "caption": "Langsam gesteigertes Krafttraining baut Belastbarkeit auf, und genau das hilft auf lange Sicht.\n\nGerankt nach Nachhaltigkeit, also danach, wie gut etwas auf lange Sicht hilft, nicht ob es überhaupt wirkt. Jeder Schmerz ist individuell.\n\nSpeicher dir das Reel. Die ganze Tierlist findest du auf meinem Profil.",
+  "hashtags": [
+    "#krafttraining",
+    "#rückenschmerzen",
+    "#physiotherapie",
+    "#schmerztherapie",
+    "#tierlist"
+  ],
+  "hinweise": [
+    "Ausschnitt aus der Tierlist-Serie als eigenständiger Clip."
+  ]
+}

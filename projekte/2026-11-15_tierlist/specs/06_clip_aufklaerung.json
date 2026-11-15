@@ -1,0 +1,125 @@
+{
+  "titel": "06_clip_aufklaerung",
+  "ausgabe": "../reels/06_clip_aufklaerung.mp4",
+  "uebung": false,
+  "ton_reparatur": true,
+  "skript": {
+    "hook": "Schmerz ist nicht immer Schaden",
+    "aufbau": "Schmerz muss nicht immer strukturell sein. Wer versteht, wie Schmerz entsteht, geht anders damit um.",
+    "payoff": "Einordnung: S-Tier + Verweis auf die ganze Tierlist"
+  },
+  "hook": {
+    "text": "Schmerz ist nicht\n*immer Schaden*",
+    "unterzeile": "Warum Verstehen S-Tier ist",
+    "dauer": 3.0,
+    "animation": "slam",
+    "punch_in": true,
+    "visuell": "Punch-in auf André"
+  },
+  "segmente": [
+    {
+      "quelle": "../roh/teil_1.mov",
+      "start": 27.0,
+      "ende": 28.36,
+      "transkript": "../transkripte/teil_1.json",
+      "zoom": 1.18,
+      "fokus_x": 0.05,
+      "fokus_y": 0.2
+    },
+    {
+      "quelle": "../roh/teil_1.mov",
+      "start": 51.8,
+      "ende": 53.74,
+      "transkript": "../transkripte/teil_1.json",
+      "zoom": 1.3,
+      "fokus_x": 0.05,
+      "fokus_y": 0.2
+    },
+    {
+      "quelle": "../roh/teil_1.mov",
+      "start": 54.06,
+      "ende": 56.2,
+      "transkript": "../transkripte/teil_1.json",
+      "zoom": 1.18,
+      "fokus_x": 0.05,
+      "fokus_y": 0.2
+    },
+    {
+      "quelle": "../roh/teil_1.mov",
+      "start": 56.5,
+      "ende": 58.32,
+      "transkript": "../transkripte/teil_1.json",
+      "zoom": 1.3,
+      "fokus_x": 0.05,
+      "fokus_y": 0.2
+    },
+    {
+      "quelle": "../roh/teil_1.mov",
+      "start": 12.1,
+      "ende": 14.7,
+      "ton": false,
+      "zoom": 1.18,
+      "fokus_x": 0.05,
+      "fokus_y": 0.2
+    }
+  ],
+  "untertitel": true,
+  "untertitel_korrekturen": {
+    "esstier,": "S-Tier,",
+    "esstier": "S-Tier",
+    "Belastungstheoranz": "Belastungstoleranz",
+    "Rutebete": "Rote Bete",
+    "Komplette": "Komponente",
+    "Den?": "Dehnen?",
+    "Den": "Dehnen",
+    "Stutzgürtel?": "Stützgürtel?",
+    "Pilatus?": "Pilates?",
+    "Art": "A-",
+    "hier": "Tier",
+    "hier.": "Tier.",
+    "esst": "S-",
+    "Verschehen": "Verstehen"
+  },
+  "einblendungen": [
+    {
+      "stil": "fussnote",
+      "start": 3.3,
+      "ende": 7.26,
+      "text": "Gerankt nach Nachhaltigkeit, nicht nach Wirkung"
+    },
+    {
+      "start": 7.26,
+      "ende": 9.86,
+      "text": "Ganze Tierlist\n*auf meinem Profil*"
+    }
+  ],
+  "bilder": [
+    {
+      "datei": "../grafiken/einzel_aufklaerung.png",
+      "start": 3.3,
+      "ende": 7.26,
+      "x": 10,
+      "y": 230,
+      "breite": 600,
+      "ein": 0.15
+    }
+  ],
+  "aussagen": [
+    {
+      "text": "Schmerz muss nicht immer strukturell bedingt sein; Schmerzaufklärung hilft, das zu verstehen.",
+      "quelle": "Raja SN et al. Revised IASP definition of pain. Pain 2020; Louw A et al. Physiother Theory Pract 2016",
+      "status": "konsens"
+    }
+  ],
+  "caption": "Schmerz muss nicht immer strukturell sein. Wer versteht, wie Schmerz entsteht, geht anders damit um.\n\nGerankt nach Nachhaltigkeit, also danach, wie gut etwas auf lange Sicht hilft, nicht ob es überhaupt wirkt. Jeder Schmerz ist individuell.\n\nSpeicher dir das Reel. Die ganze Tierlist findest du auf meinem Profil.",
+  "hashtags": [
+    "#schmerzverstehen",
+    "#schmerztherapie",
+    "#physiotherapie",
+    "#rückenschmerzen",
+    "#tierlist"
+  ],
+  "hinweise": [
+    "Ausschnitt aus der Tierlist-Serie als eigenständiger Clip."
+  ]
+}

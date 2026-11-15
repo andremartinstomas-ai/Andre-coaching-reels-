@@ -1,0 +1,170 @@
+{
+  "titel": "07_clip_schlaf",
+  "ausgabe": "../reels/07_clip_schlaf.mp4",
+  "uebung": false,
+  "ton_reparatur": true,
+  "skript": {
+    "hook": "Schlecht geschlafen, mehr Schmerzen?",
+    "aufbau": "Schlaf und Stress beeinflussen, wie stark du Schmerz wahrnimmst. Je nach Ursache S- oder A-Tier.",
+    "payoff": "Einordnung: A-Tier + Verweis auf die ganze Tierlist"
+  },
+  "hook": {
+    "text": "Schlecht geschlafen,\n*mehr Schmerzen?*",
+    "unterzeile": "Schlaf und Stress in meiner Tierlist",
+    "dauer": 3.0,
+    "animation": "slam",
+    "punch_in": true,
+    "visuell": "Punch-in auf André"
+  },
+  "segmente": [
+    {
+      "quelle": "../roh/teil_2.mov",
+      "start": 97.66,
+      "ende": 98.7,
+      "transkript": "../transkripte/teil_2.json",
+      "zoom": 1.18,
+      "fokus_x": 0.05,
+      "fokus_y": 0.2
+    },
+    {
+      "quelle": "../roh/teil_3.mov",
+      "start": 2.44,
+      "ende": 4.26,
+      "transkript": "../transkripte/teil_3.json",
+      "zoom": 1.3,
+      "fokus_x": 0.05,
+      "fokus_y": 0.2
+    },
+    {
+      "quelle": "../roh/teil_3.mov",
+      "start": 4.44,
+      "ende": 5.78,
+      "transkript": "../transkripte/teil_3.json",
+      "zoom": 1.18,
+      "fokus_x": 0.05,
+      "fokus_y": 0.2
+    },
+    {
+      "quelle": "../roh/teil_3.mov",
+      "start": 5.98,
+      "ende": 7.56,
+      "transkript": "../transkripte/teil_3.json",
+      "zoom": 1.3,
+      "fokus_x": 0.05,
+      "fokus_y": 0.2
+    },
+    {
+      "quelle": "../roh/teil_3.mov",
+      "start": 7.74,
+      "ende": 8.94,
+      "transkript": "../transkripte/teil_3.json",
+      "zoom": 1.18,
+      "fokus_x": 0.05,
+      "fokus_y": 0.2
+    },
+    {
+      "quelle": "../roh/teil_3.mov",
+      "start": 9.24,
+      "ende": 11.48,
+      "transkript": "../transkripte/teil_3.json",
+      "zoom": 1.3,
+      "fokus_x": 0.05,
+      "fokus_y": 0.2
+    },
+    {
+      "quelle": "../roh/teil_3.mov",
+      "start": 11.96,
+      "ende": 12.64,
+      "transkript": "../transkripte/teil_3.json",
+      "zoom": 1.18,
+      "fokus_x": 0.05,
+      "fokus_y": 0.2
+    },
+    {
+      "quelle": "../roh/teil_3.mov",
+      "start": 12.82,
+      "ende": 13.82,
+      "transkript": "../transkripte/teil_3.json",
+      "zoom": 1.3,
+      "fokus_x": 0.05,
+      "fokus_y": 0.2
+    },
+    {
+      "quelle": "../roh/teil_3.mov",
+      "start": 14.04,
+      "ende": 17.7,
+      "transkript": "../transkripte/teil_3.json",
+      "zoom": 1.18,
+      "fokus_x": 0.05,
+      "fokus_y": 0.2
+    },
+    {
+      "quelle": "../roh/teil_1.mov",
+      "start": 12.1,
+      "ende": 14.7,
+      "ton": false,
+      "zoom": 1.18,
+      "fokus_x": 0.05,
+      "fokus_y": 0.2
+    }
+  ],
+  "untertitel": true,
+  "untertitel_korrekturen": {
+    "esstier,": "S-Tier,",
+    "esstier": "S-Tier",
+    "Belastungstheoranz": "Belastungstoleranz",
+    "Rutebete": "Rote Bete",
+    "Komplette": "Komponente",
+    "Den?": "Dehnen?",
+    "Den": "Dehnen",
+    "Stutzgürtel?": "Stützgürtel?",
+    "Pilatus?": "Pilates?",
+    "Art": "A-",
+    "hier": "Tier",
+    "hier.": "Tier.",
+    "esst": "S-",
+    "Verschehen": "Verstehen"
+  },
+  "einblendungen": [
+    {
+      "stil": "fussnote",
+      "start": 3.3,
+      "ende": 14.56,
+      "text": "Gerankt nach Nachhaltigkeit, nicht nach Wirkung"
+    },
+    {
+      "start": 14.56,
+      "ende": 17.16,
+      "text": "Ganze Tierlist\n*auf meinem Profil*"
+    }
+  ],
+  "bilder": [
+    {
+      "datei": "../grafiken/einzel_schlaf.png",
+      "start": 3.68,
+      "ende": 14.56,
+      "x": 10,
+      "y": 230,
+      "breite": 600,
+      "ein": 0.15
+    }
+  ],
+  "aussagen": [
+    {
+      "text": "Schlaf und Stress beeinflussen das Schmerzerleben.",
+      "quelle": "Finan PH et al. The association of sleep and pain. J Pain 2013; Raja SN et al. Pain 2020",
+      "status": "konsens"
+    }
+  ],
+  "caption": "Schlaf und Stress beeinflussen, wie stark du Schmerz wahrnimmst. Je nach Ursache S- oder A-Tier.\n\nGerankt nach Nachhaltigkeit, also danach, wie gut etwas auf lange Sicht hilft, nicht ob es überhaupt wirkt. Jeder Schmerz ist individuell.\n\nSpeicher dir das Reel. Die ganze Tierlist findest du auf meinem Profil.",
+  "hashtags": [
+    "#schlaf",
+    "#stress",
+    "#schmerztherapie",
+    "#physiotherapie",
+    "#tierlist"
+  ],
+  "hinweise": [
+    "Ausschnitt aus der Tierlist-Serie als eigenständiger Clip."
+  ]
+}

@@ -1,0 +1,126 @@
+{
+  "titel": "03_clip_pilates",
+  "ausgabe": "../reels/03_clip_pilates.mp4",
+  "uebung": false,
+  "ton_reparatur": true,
+  "skript": {
+    "hook": "Pilates bei Rückenschmerzen?",
+    "aufbau": "Pilates bei Rückenschmerzen? Ja, kann richtig gut sein. Und ja, Matcha-Trinker sind klar im Vorteil.",
+    "payoff": "Einordnung: A-Tier + Verweis auf die ganze Tierlist"
+  },
+  "hook": {
+    "text": "Pilates bei\n*Rückenschmerzen?*",
+    "unterzeile": "Und was Matcha damit zu tun hat",
+    "dauer": 3.0,
+    "animation": "slam",
+    "punch_in": true,
+    "visuell": "Punch-in auf André"
+  },
+  "segmente": [
+    {
+      "quelle": "../roh/teil_1.mov",
+      "start": 105.0,
+      "ende": 105.54,
+      "transkript": "../transkripte/teil_1.json",
+      "zoom": 1.18,
+      "fokus_x": 0.05,
+      "fokus_y": 0.2
+    },
+    {
+      "quelle": "../roh/teil_2.mov",
+      "start": 87.1,
+      "ende": 89.64,
+      "transkript": "../transkripte/teil_2.json",
+      "zoom": 1.3,
+      "fokus_x": 0.05,
+      "fokus_y": 0.2
+    },
+    {
+      "quelle": "../roh/teil_2.mov",
+      "start": 89.92,
+      "ende": 90.84,
+      "transkript": "../transkripte/teil_2.json",
+      "zoom": 1.18,
+      "fokus_x": 0.05,
+      "fokus_y": 0.2
+    },
+    {
+      "quelle": "../roh/teil_2.mov",
+      "start": 91.46,
+      "ende": 96.06,
+      "transkript": "../transkripte/teil_2.json",
+      "zoom": 1.3,
+      "fokus_x": 0.05,
+      "fokus_y": 0.2
+    },
+    {
+      "quelle": "../roh/teil_1.mov",
+      "start": 12.1,
+      "ende": 14.7,
+      "ton": false,
+      "zoom": 1.18,
+      "fokus_x": 0.05,
+      "fokus_y": 0.2
+    }
+  ],
+  "untertitel": true,
+  "untertitel_korrekturen": {
+    "esstier,": "S-Tier,",
+    "esstier": "S-Tier",
+    "Belastungstheoranz": "Belastungstoleranz",
+    "Rutebete": "Rote Bete",
+    "Komplette": "Komponente",
+    "Den?": "Dehnen?",
+    "Den": "Dehnen",
+    "Stutzgürtel?": "Stützgürtel?",
+    "Pilatus?": "Pilates?",
+    "Art": "A-",
+    "hier": "Tier",
+    "hier.": "Tier.",
+    "esst": "S-",
+    "Verschehen": "Verstehen"
+  },
+  "einblendungen": [
+    {
+      "stil": "fussnote",
+      "start": 3.3,
+      "ende": 8.6,
+      "text": "Gerankt nach Nachhaltigkeit, nicht nach Wirkung"
+    },
+    {
+      "start": 8.6,
+      "ende": 11.2,
+      "text": "Ganze Tierlist\n*auf meinem Profil*"
+    }
+  ],
+  "bilder": [
+    {
+      "datei": "../grafiken/einzel_pilates.png",
+      "start": 3.3,
+      "ende": 8.6,
+      "x": 10,
+      "y": 230,
+      "breite": 600,
+      "ein": 0.15
+    }
+  ],
+  "aussagen": [
+    {
+      "text": "Pilates gehört bei chronischem unspezifischem Rückenschmerz zu den wirksamsten Übungsformen (Schmerz).",
+      "quelle": "Owen PJ et al. Which specific modes of exercise training are most effective for treating low back pain? Network meta-analysis. Br J Sports Med 2020;54(21):1279–1287",
+      "status": "belegt",
+      "beleg": "NMA, 89 Studien; Pilates höchste SUCRA für Schmerz, Evidenz niedrige Qualität."
+    }
+  ],
+  "caption": "Pilates bei Rückenschmerzen? Ja, kann richtig gut sein. Und ja, Matcha-Trinker sind klar im Vorteil.\n\nGerankt nach Nachhaltigkeit, also danach, wie gut etwas auf lange Sicht hilft, nicht ob es überhaupt wirkt. Jeder Schmerz ist individuell.\n\nSpeicher dir das Reel. Die ganze Tierlist findest du auf meinem Profil.",
+  "hashtags": [
+    "#pilates",
+    "#rückenschmerzen",
+    "#physiotherapie",
+    "#matcha",
+    "#tierlist"
+  ],
+  "hinweise": [
+    "Ausschnitt aus der Tierlist-Serie als eigenständiger Clip."
+  ]
+}
