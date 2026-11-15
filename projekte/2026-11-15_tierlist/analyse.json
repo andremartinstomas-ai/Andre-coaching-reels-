@@ -1,0 +1,418 @@
+[
+  {
+    "datei": "projekte/2026-11-15_tierlist/roh/teil_1.mov",
+    "dauer": 119.55,
+    "ton": true,
+    "breite": 720,
+    "hoehe": 1280,
+    "drehung": 0,
+    "fps": 30.0,
+    "format": "hochkant",
+    "pausen": [
+      {
+        "start": 3.61,
+        "ende": 5.38
+      },
+      {
+        "start": 7.31,
+        "ende": 7.85
+      },
+      {
+        "start": 10.92,
+        "ende": 11.56
+      },
+      {
+        "start": 21.21,
+        "ende": 22.2
+      },
+      {
+        "start": 23.21,
+        "ende": 23.77
+      },
+      {
+        "start": 25.6,
+        "ende": 26.72
+      },
+      {
+        "start": 28.24,
+        "ende": 30.68
+      },
+      {
+        "start": 31.04,
+        "ende": 31.45
+      },
+      {
+        "start": 34.38,
+        "ende": 34.89
+      },
+      {
+        "start": 37.96,
+        "ende": 39.65
+      },
+      {
+        "start": 42.32,
+        "ende": 43.11
+      },
+      {
+        "start": 45.23,
+        "ende": 46.01
+      },
+      {
+        "start": 46.39,
+        "ende": 47.05
+      },
+      {
+        "start": 47.66,
+        "ende": 50.57
+      },
+      {
+        "start": 51.04,
+        "ende": 51.5
+      },
+      {
+        "start": 53.59,
+        "ende": 54.08
+      },
+      {
+        "start": 56.08,
+        "ende": 56.51
+      },
+      {
+        "start": 58.18,
+        "ende": 59.42
+      },
+      {
+        "start": 60.89,
+        "ende": 61.4
+      },
+      {
+        "start": 64.75,
+        "ende": 65.2
+      },
+      {
+        "start": 67.36,
+        "ende": 68.02
+      },
+      {
+        "start": 68.37,
+        "ende": 68.98
+      },
+      {
+        "start": 69.06,
+        "ende": 69.7
+      },
+      {
+        "start": 71.0,
+        "ende": 71.84
+      },
+      {
+        "start": 72.13,
+        "ende": 72.71
+      },
+      {
+        "start": 73.26,
+        "ende": 74.67
+      },
+      {
+        "start": 80.3,
+        "ende": 80.7
+      },
+      {
+        "start": 83.58,
+        "ende": 85.4
+      },
+      {
+        "start": 87.13,
+        "ende": 88.4
+      },
+      {
+        "start": 91.1,
+        "ende": 91.71
+      },
+      {
+        "start": 93.94,
+        "ende": 94.39
+      },
+      {
+        "start": 97.84,
+        "ende": 98.6
+      },
+      {
+        "start": 104.1,
+        "ende": 104.98
+      },
+      {
+        "start": 105.34,
+        "ende": 106.07
+      },
+      {
+        "start": 108.39,
+        "ende": 109.09
+      },
+      {
+        "start": 109.76,
+        "ende": 110.25
+      },
+      {
+        "start": 113.42,
+        "ende": 113.99
+      },
+      {
+        "start": 114.0,
+        "ende": 114.71
+      },
+      {
+        "start": 116.26,
+        "ende": 116.91
+      },
+      {
+        "start": 117.82,
+        "ende": 118.24
+      },
+      {
+        "start": 118.77,
+        "ende": 119.53
+      }
+    ]
+  },
+  {
+    "datei": "projekte/2026-11-15_tierlist/roh/teil_2.mov",
+    "dauer": 109.84,
+    "ton": true,
+    "breite": 720,
+    "hoehe": 1280,
+    "drehung": 0,
+    "fps": 30.01,
+    "format": "hochkant",
+    "pausen": [
+      {
+        "start": 0.0,
+        "ende": 2.53
+      },
+      {
+        "start": 2.65,
+        "ende": 10.19
+      },
+      {
+        "start": 11.97,
+        "ende": 12.37
+      },
+      {
+        "start": 13.3,
+        "ende": 13.75
+      },
+      {
+        "start": 19.18,
+        "ende": 19.93
+      },
+      {
+        "start": 31.89,
+        "ende": 32.8
+      },
+      {
+        "start": 39.71,
+        "ende": 40.43
+      },
+      {
+        "start": 41.44,
+        "ende": 42.39
+      },
+      {
+        "start": 44.41,
+        "ende": 45.21
+      },
+      {
+        "start": 46.72,
+        "ende": 47.2
+      },
+      {
+        "start": 49.0,
+        "ende": 49.89
+      },
+      {
+        "start": 52.4,
+        "ende": 53.64
+      },
+      {
+        "start": 54.09,
+        "ende": 55.37
+      },
+      {
+        "start": 60.45,
+        "ende": 60.87
+      },
+      {
+        "start": 63.55,
+        "ende": 64.78
+      },
+      {
+        "start": 67.43,
+        "ende": 68.59
+      },
+      {
+        "start": 69.08,
+        "ende": 69.67
+      },
+      {
+        "start": 70.59,
+        "ende": 72.02
+      },
+      {
+        "start": 73.97,
+        "ende": 74.46
+      },
+      {
+        "start": 75.2,
+        "ende": 76.6
+      },
+      {
+        "start": 85.49,
+        "ende": 86.5
+      },
+      {
+        "start": 86.51,
+        "ende": 87.03
+      },
+      {
+        "start": 89.46,
+        "ende": 89.93
+      },
+      {
+        "start": 90.77,
+        "ende": 91.4
+      },
+      {
+        "start": 95.87,
+        "ende": 97.62
+      },
+      {
+        "start": 98.9,
+        "ende": 99.64
+      },
+      {
+        "start": 99.81,
+        "ende": 100.39
+      },
+      {
+        "start": 102.81,
+        "ende": 103.46
+      },
+      {
+        "start": 104.18,
+        "ende": 105.27
+      },
+      {
+        "start": 108.69,
+        "ende": 109.52
+      }
+    ]
+  },
+  {
+    "datei": "projekte/2026-11-15_tierlist/roh/teil_3.mov",
+    "dauer": 83.89,
+    "ton": true,
+    "breite": 720,
+    "hoehe": 1280,
+    "drehung": 0,
+    "fps": 30.0,
+    "format": "hochkant",
+    "pausen": [
+      {
+        "start": 0.36,
+        "ende": 1.89
+      },
+      {
+        "start": 2.07,
+        "ende": 2.49
+      },
+      {
+        "start": 8.85,
+        "ende": 9.29
+      },
+      {
+        "start": 11.35,
+        "ende": 11.99
+      },
+      {
+        "start": 17.66,
+        "ende": 19.12
+      },
+      {
+        "start": 19.51,
+        "ende": 20.37
+      },
+      {
+        "start": 31.72,
+        "ende": 32.2
+      },
+      {
+        "start": 34.77,
+        "ende": 35.24
+      },
+      {
+        "start": 36.22,
+        "ende": 37.64
+      },
+      {
+        "start": 38.23,
+        "ende": 39.17
+      },
+      {
+        "start": 41.72,
+        "ende": 42.28
+      },
+      {
+        "start": 43.17,
+        "ende": 43.63
+      },
+      {
+        "start": 46.88,
+        "ende": 47.42
+      },
+      {
+        "start": 49.65,
+        "ende": 50.08
+      },
+      {
+        "start": 50.29,
+        "ende": 51.38
+      },
+      {
+        "start": 52.96,
+        "ende": 53.86
+      },
+      {
+        "start": 57.05,
+        "ende": 58.36
+      },
+      {
+        "start": 61.41,
+        "ende": 61.95
+      },
+      {
+        "start": 62.21,
+        "ende": 62.83
+      },
+      {
+        "start": 63.32,
+        "ende": 63.77
+      },
+      {
+        "start": 74.45,
+        "ende": 74.86
+      },
+      {
+        "start": 76.78,
+        "ende": 77.49
+      },
+      {
+        "start": 80.38,
+        "ende": 80.96
+      },
+      {
+        "start": 82.14,
+        "ende": 82.68
+      }
+    ]
+  }
+]

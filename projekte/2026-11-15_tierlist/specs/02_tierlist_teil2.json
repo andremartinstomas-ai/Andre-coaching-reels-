@@ -1,0 +1,442 @@
+{
+  "titel": "02_tierlist_teil2",
+  "ausgabe": "../reels/02_tierlist_teil2.mp4",
+  "uebung": false,
+  "ton_reparatur": true,
+  "skript": {
+    "hook": "Was hilft eigentlich bei Schmerzen? Tierlist.",
+    "aufbau": "Behandlungen werden nacheinander eingeordnet, das Board füllt sich live.",
+    "payoff": "Fertiges Board + Hinweis: Caption lesen (Ranking nach Nachhaltigkeit)."
+  },
+  "hook": {
+    "text": "Was hilft *wirklich*\nbei Schmerzen?",
+    "unterzeile": "Tierlist · Teil 2",
+    "dauer": 3.0,
+    "animation": "slam",
+    "punch_in": true,
+    "visuell": "Punch-in auf André, Tierlist-Board erscheint direkt nach dem Hook"
+  },
+  "segmente": [
+    {
+      "quelle": "../roh/teil_1.mov",
+      "start": 0.24,
+      "ende": 3.5,
+      "ton": true,
+      "transkript": "../transkripte/teil_1.json",
+      "zoom": 1.18,
+      "fokus_x": 0.05,
+      "fokus_y": 0.2
+    },
+    {
+      "quelle": "../roh/teil_1.mov",
+      "start": 59.48,
+      "ende": 61.04,
+      "ton": true,
+      "transkript": "../transkripte/teil_1.json",
+      "zoom": 1.28,
+      "fokus_x": 0.05,
+      "fokus_y": 0.2
+    },
+    {
+      "quelle": "../roh/teil_1.mov",
+      "start": 77.92,
+      "ende": 80.46,
+      "ton": true,
+      "transkript": "../transkripte/teil_1.json",
+      "zoom": 1.18,
+      "fokus_x": 0.05,
+      "fokus_y": 0.2
+    },
+    {
+      "quelle": "../roh/teil_1.mov",
+      "start": 80.74,
+      "ende": 83.5,
+      "ton": true,
+      "transkript": "../transkripte/teil_1.json",
+      "zoom": 1.28,
+      "fokus_x": 0.05,
+      "fokus_y": 0.2
+    },
+    {
+      "quelle": "../roh/teil_3.mov",
+      "start": 58.36,
+      "ende": 61.18,
+      "ton": true,
+      "transkript": "../transkripte/teil_3.json",
+      "zoom": 1.18,
+      "fokus_x": 0.05,
+      "fokus_y": 0.2
+    },
+    {
+      "quelle": "../roh/teil_3.mov",
+      "start": 70.38,
+      "ende": 71.34,
+      "ton": true,
+      "transkript": "../transkripte/teil_3.json",
+      "zoom": 1.28,
+      "fokus_x": 0.05,
+      "fokus_y": 0.2
+    },
+    {
+      "quelle": "../roh/teil_3.mov",
+      "start": 71.58,
+      "ende": 74.56,
+      "ton": true,
+      "transkript": "../transkripte/teil_3.json",
+      "zoom": 1.18,
+      "fokus_x": 0.05,
+      "fokus_y": 0.2
+    },
+    {
+      "quelle": "../roh/teil_3.mov",
+      "start": 74.86,
+      "ende": 76.96,
+      "ton": true,
+      "transkript": "../transkripte/teil_3.json",
+      "zoom": 1.28,
+      "fokus_x": 0.05,
+      "fokus_y": 0.2
+    },
+    {
+      "quelle": "../roh/teil_3.mov",
+      "start": 77.56,
+      "ende": 80.56,
+      "ton": true,
+      "transkript": "../transkripte/teil_3.json",
+      "zoom": 1.18,
+      "fokus_x": 0.05,
+      "fokus_y": 0.2
+    },
+    {
+      "quelle": "../roh/teil_3.mov",
+      "start": 80.96,
+      "ende": 82.0,
+      "ton": true,
+      "transkript": "../transkripte/teil_3.json",
+      "zoom": 1.28,
+      "fokus_x": 0.05,
+      "fokus_y": 0.2
+    },
+    {
+      "quelle": "../roh/teil_1.mov",
+      "start": 27.0,
+      "ende": 28.36,
+      "ton": true,
+      "transkript": "../transkripte/teil_1.json",
+      "zoom": 1.18,
+      "fokus_x": 0.05,
+      "fokus_y": 0.2
+    },
+    {
+      "quelle": "../roh/teil_1.mov",
+      "start": 51.8,
+      "ende": 53.74,
+      "ton": true,
+      "transkript": "../transkripte/teil_1.json",
+      "zoom": 1.28,
+      "fokus_x": 0.05,
+      "fokus_y": 0.2
+    },
+    {
+      "quelle": "../roh/teil_1.mov",
+      "start": 54.06,
+      "ende": 56.2,
+      "ton": true,
+      "transkript": "../transkripte/teil_1.json",
+      "zoom": 1.18,
+      "fokus_x": 0.05,
+      "fokus_y": 0.2
+    },
+    {
+      "quelle": "../roh/teil_1.mov",
+      "start": 56.5,
+      "ende": 58.32,
+      "ton": true,
+      "transkript": "../transkripte/teil_1.json",
+      "zoom": 1.28,
+      "fokus_x": 0.05,
+      "fokus_y": 0.2
+    },
+    {
+      "quelle": "../roh/teil_1.mov",
+      "start": 85.4,
+      "ende": 87.3,
+      "ton": true,
+      "transkript": "../transkripte/teil_1.json",
+      "zoom": 1.18,
+      "fokus_x": 0.05,
+      "fokus_y": 0.2
+    },
+    {
+      "quelle": "../roh/teil_1.mov",
+      "start": 88.42,
+      "ende": 91.28,
+      "ton": true,
+      "transkript": "../transkripte/teil_1.json",
+      "zoom": 1.28,
+      "fokus_x": 0.05,
+      "fokus_y": 0.2
+    },
+    {
+      "quelle": "../roh/teil_1.mov",
+      "start": 91.72,
+      "ende": 94.1,
+      "ton": true,
+      "transkript": "../transkripte/teil_1.json",
+      "zoom": 1.18,
+      "fokus_x": 0.05,
+      "fokus_y": 0.2
+    },
+    {
+      "quelle": "../roh/teil_1.mov",
+      "start": 94.38,
+      "ende": 98.0,
+      "ton": true,
+      "transkript": "../transkripte/teil_1.json",
+      "zoom": 1.28,
+      "fokus_x": 0.05,
+      "fokus_y": 0.2
+    },
+    {
+      "quelle": "../roh/teil_1.mov",
+      "start": 98.64,
+      "ende": 104.2,
+      "ton": true,
+      "transkript": "../transkripte/teil_1.json",
+      "zoom": 1.18,
+      "fokus_x": 0.05,
+      "fokus_y": 0.2
+    },
+    {
+      "quelle": "../roh/teil_2.mov",
+      "start": 97.66,
+      "ende": 98.7,
+      "ton": true,
+      "transkript": "../transkripte/teil_2.json",
+      "zoom": 1.28,
+      "fokus_x": 0.05,
+      "fokus_y": 0.2
+    },
+    {
+      "quelle": "../roh/teil_3.mov",
+      "start": 2.44,
+      "ende": 4.26,
+      "ton": true,
+      "transkript": "../transkripte/teil_3.json",
+      "zoom": 1.18,
+      "fokus_x": 0.05,
+      "fokus_y": 0.2
+    },
+    {
+      "quelle": "../roh/teil_3.mov",
+      "start": 4.44,
+      "ende": 5.78,
+      "ton": true,
+      "transkript": "../transkripte/teil_3.json",
+      "zoom": 1.28,
+      "fokus_x": 0.05,
+      "fokus_y": 0.2
+    },
+    {
+      "quelle": "../roh/teil_3.mov",
+      "start": 5.98,
+      "ende": 7.56,
+      "ton": true,
+      "transkript": "../transkripte/teil_3.json",
+      "zoom": 1.18,
+      "fokus_x": 0.05,
+      "fokus_y": 0.2
+    },
+    {
+      "quelle": "../roh/teil_3.mov",
+      "start": 7.74,
+      "ende": 8.94,
+      "ton": true,
+      "transkript": "../transkripte/teil_3.json",
+      "zoom": 1.28,
+      "fokus_x": 0.05,
+      "fokus_y": 0.2
+    },
+    {
+      "quelle": "../roh/teil_3.mov",
+      "start": 9.24,
+      "ende": 11.48,
+      "ton": true,
+      "transkript": "../transkripte/teil_3.json",
+      "zoom": 1.18,
+      "fokus_x": 0.05,
+      "fokus_y": 0.2
+    },
+    {
+      "quelle": "../roh/teil_3.mov",
+      "start": 11.96,
+      "ende": 12.64,
+      "ton": true,
+      "transkript": "../transkripte/teil_3.json",
+      "zoom": 1.28,
+      "fokus_x": 0.05,
+      "fokus_y": 0.2
+    },
+    {
+      "quelle": "../roh/teil_3.mov",
+      "start": 12.82,
+      "ende": 13.82,
+      "ton": true,
+      "transkript": "../transkripte/teil_3.json",
+      "zoom": 1.18,
+      "fokus_x": 0.05,
+      "fokus_y": 0.2
+    },
+    {
+      "quelle": "../roh/teil_3.mov",
+      "start": 14.04,
+      "ende": 17.7,
+      "ton": true,
+      "transkript": "../transkripte/teil_3.json",
+      "zoom": 1.28,
+      "fokus_x": 0.05,
+      "fokus_y": 0.2
+    },
+    {
+      "quelle": "../roh/teil_1.mov",
+      "start": 12.1,
+      "ende": 13.02,
+      "ton": false,
+      "transkript": "../transkripte/teil_1.json",
+      "zoom": 1.18,
+      "fokus_x": 0.05,
+      "fokus_y": 0.2
+    },
+    {
+      "quelle": "../roh/teil_1.mov",
+      "start": 13.2,
+      "ende": 15.9,
+      "ton": false,
+      "transkript": "../transkripte/teil_1.json",
+      "zoom": 1.28,
+      "fokus_x": 0.05,
+      "fokus_y": 0.2
+    }
+  ],
+  "untertitel": true,
+  "untertitel_korrekturen": {
+    "esstier,": "S-Tier,",
+    "esstier": "S-Tier",
+    "Belastungstheoranz": "Belastungstoleranz",
+    "Rutebete": "Rote Bete",
+    "Komplette": "Komponente",
+    "Den?": "Dehnen?",
+    "Den": "Dehnen",
+    "Stutzgürtel?": "Stützgürtel?",
+    "Pilatus?": "Pilates?",
+    "Art": "A-",
+    "hier": "Tier",
+    "hier.": "Tier.",
+    "esst": "S-",
+    "Verschehen": "Verstehen"
+  },
+  "einblendungen": [
+    {
+      "start": 61.16,
+      "ende": 64.78,
+      "text": "Das ist die Liste\n*Lies die Caption!*"
+    }
+  ],
+  "bilder": [
+    {
+      "datei": "../grafiken/02_tierlist_teil2_board_0.png",
+      "start": 3.2,
+      "ende": 6.9,
+      "x": 10,
+      "y": 250,
+      "breite": 560,
+      "ein": 0.12
+    },
+    {
+      "datei": "../grafiken/02_tierlist_teil2_board_1.png",
+      "start": 6.88,
+      "ende": 14.78,
+      "x": 10,
+      "y": 250,
+      "breite": 560,
+      "ein": 0.12
+    },
+    {
+      "datei": "../grafiken/02_tierlist_teil2_board_2.png",
+      "start": 14.76,
+      "ende": 25.76,
+      "x": 10,
+      "y": 250,
+      "breite": 560,
+      "ein": 0.12
+    },
+    {
+      "datei": "../grafiken/02_tierlist_teil2_board_3.png",
+      "start": 25.74,
+      "ende": 46.32,
+      "x": 10,
+      "y": 250,
+      "breite": 560,
+      "ein": 0.12
+    },
+    {
+      "datei": "../grafiken/02_tierlist_teil2_board_4.png",
+      "start": 46.3,
+      "ende": 50.3,
+      "x": 10,
+      "y": 250,
+      "breite": 560,
+      "ein": 0.12
+    },
+    {
+      "datei": "../grafiken/02_tierlist_teil2_board_5.png",
+      "start": 50.28,
+      "ende": 61.18,
+      "x": 10,
+      "y": 250,
+      "breite": 560,
+      "ein": 0.12
+    }
+  ],
+  "aussagen": [
+    {
+      "text": "Langsam gesteigertes Krafttraining baut Belastungstoleranz auf und gehört zu den wirksamsten Übungsformen.",
+      "quelle": "Owen PJ et al. Br J Sports Med 2020; Hayden JA et al. Cochrane 2021",
+      "status": "belegt"
+    },
+    {
+      "text": "Bandagen/Stützgürtel können Sicherheit vermitteln, werden bei Rückenschmerz aber nicht empfohlen.",
+      "quelle": "NICE NG59, Empfehlung 1.2.3 ('Do not offer belts or corsets')",
+      "status": "belegt"
+    },
+    {
+      "text": "Schmerz muss nicht immer strukturell bedingt sein; Schmerzaufklärung hilft, das zu verstehen.",
+      "quelle": "Raja SN et al. Revised IASP definition of pain. Pain 2020; Louw A et al. Physiother Theory Pract 2016",
+      "status": "konsens"
+    },
+    {
+      "text": "Psychologische Ansätze (v. a. KVT) helfen bei chronischen Schmerzen, Effekte sind aber klein und nicht für jeden passend.",
+      "quelle": "Williams ACdC et al. Psychological therapies for the management of chronic pain (excluding headache) in adults. Cochrane 2020",
+      "status": "belegt"
+    },
+    {
+      "text": "Schlaf und Stress beeinflussen das Schmerzerleben.",
+      "quelle": "Finan PH et al. The association of sleep and pain. J Pain 2013; Raja SN et al. Pain 2020",
+      "status": "konsens"
+    }
+  ],
+  "caption": "Teil 2 unserer Schmerz-Tierlist, jetzt ist das Board komplett.\n\nWichtig: Wir haben nach NACHHALTIGKEIT gerankt, also danach, wie gut etwas deine Schmerzen auf lange Sicht in den Griff bekommt. Nicht danach, ob es überhaupt wirkt. Eine Bandage oder Akupunktur kann kurzfristig helfen, macht dich aber langfristig nicht belastbarer. Und: Jeder Schmerz ist individuell, das ersetzt keine Untersuchung.\n\nStimmst du zu? Schreib's in die Kommentare und speicher dir die Liste.",
+  "hashtags": [
+    "#schmerztherapie",
+    "#physiotherapie",
+    "#rückenschmerzen",
+    "#tierlist",
+    "#schmerzverstehen"
+  ],
+  "hinweise": [
+    "Board-Grafik füllt sich genau dann, wenn André die Stufe ausspricht.",
+    "'Dehnen' aus dem Ton erschlossen (Transkript: 'Den?'), bitte bestätigen.",
+    "Psychologische Ansätze: keine Stufe ausgesprochen, vorläufig B (Evidenz: kleine Effekte, Cochrane 2020).",
+    "Keine Soundeffekte; Trend-Sound optional leise in Instagram darunter."
+  ]
+}

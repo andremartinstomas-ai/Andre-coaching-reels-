@@ -1,0 +1,32 @@
+# 01_tierlist_teil1  (51.4 s)
+
+## Caption (zum Posten)
+Was hilft eigentlich bei Schmerzen? Teil 1 unserer Schmerz-Tierlist.
+
+Wichtig: Wir haben nach NACHHALTIGKEIT gerankt, also danach, wie gut etwas deine Schmerzen auf lange Sicht in den Griff bekommt. Nicht danach, ob es überhaupt wirkt. Eine Bandage oder Akupunktur kann kurzfristig helfen, macht dich aber langfristig nicht belastbarer. Und: Jeder Schmerz ist individuell, das ersetzt keine Untersuchung.
+
+Wo würdest du anders ranken? Schreib's in die Kommentare und speicher dir das Reel für Teil 2.
+
+#schmerztherapie #physiotherapie #rückenschmerzen #tierlist #schmerzverstehen
+
+## Hooks
+- Audio-Hook: kein Soundeffekt, Trend-Sound in Instagram darunterlegen
+- Visueller Hook: Punch-in auf André, Tierlist-Board erscheint direkt nach dem Hook
+- Text-Hook: Was hilft wirklich bei Schmerzen? / Tierlist · Teil 1
+
+## Skript
+- Hook: Was hilft eigentlich bei Schmerzen? Tierlist.
+- Aufbau: Behandlungen werden nacheinander eingeordnet, das Board füllt sich live.
+- Payoff: Fertiges Board + Hinweis: Caption lesen (Ranking nach Nachhaltigkeit).
+
+## Aussagen & Quellen
+- "Bei Rückenschmerzen aktiv bleiben und den Alltag weiterführen statt Schonung." -> NVL Nicht-spezifischer Kreuzschmerz, 2. Aufl. 2017; NICE NG59 (2016/2020) [konsens]
+- "Akupunktur: bescheidene Evidenz, NICE empfiehlt sie bei Rückenschmerz nicht." -> NICE NG59 Low back pain and sciatica in over 16s, Empfehlung 1.2.8 ('Do not offer acupuncture') [belegt]
+- "Pilates gehört bei chronischem unspezifischem Rückenschmerz zu den wirksamsten Übungsformen (Schmerz)." -> Owen PJ et al. Which specific modes of exercise training are most effective for treating low back pain? Network meta-analysis. Br J Sports Med 2020;54(21):1279–1287 [belegt] - NMA, 89 Studien; Pilates höchste SUCRA für Schmerz, Evidenz niedrige Qualität.
+- "Dehnen kann Schmerzen lindern, als alleinige Maßnahme aber begrenzt; ergänzend sinnvoll." -> Owen PJ et al. Br J Sports Med 2020 (Dehnen nicht unter den wirksamsten Formen); Hayden JA et al. Exercise therapy for chronic low back pain. Cochrane 2021 [konsens]
+
+## Hinweise fuer Andre
+- Board-Grafik füllt sich genau dann, wenn André die Stufe ausspricht.
+- 'Dehnen' aus dem Ton erschlossen (Transkript: 'Den?'), bitte bestätigen.
+- Psychologische Ansätze: keine Stufe ausgesprochen, vorläufig B (Evidenz: kleine Effekte, Cochrane 2020).
+- Keine Soundeffekte; Trend-Sound optional leise in Instagram darunter.

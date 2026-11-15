@@ -1,0 +1,793 @@
+{
+ "datei": "projekte/2026-11-15_tierlist/roh/teil_3.mov",
+ "sprache": "de",
+ "woerter": [
+  {
+   "text": "Schlaf",
+   "start": 2.320000000000003,
+   "ende": 2.8
+  },
+  {
+   "text": "und",
+   "start": 2.8,
+   "ende": 2.96
+  },
+  {
+   "text": "Stress",
+   "start": 2.96,
+   "ende": 3.16
+  },
+  {
+   "text": "verbessern,",
+   "start": 3.16,
+   "ende": 3.66
+  },
+  {
+   "text": "definitiv",
+   "start": 3.82,
+   "ende": 4.54
+  },
+  {
+   "text": "S",
+   "start": 4.54,
+   "ende": 4.9
+  },
+  {
+   "text": "oder",
+   "start": 4.9,
+   "ende": 5.2
+  },
+  {
+   "text": "A",
+   "start": 5.2,
+   "ende": 5.44
+  },
+  {
+   "text": "-Tier,",
+   "start": 5.44,
+   "ende": 5.88
+  },
+  {
+   "text": "kommt",
+   "start": 6.02,
+   "ende": 6.18
+  },
+  {
+   "text": "natürlich",
+   "start": 6.18,
+   "ende": 6.6
+  },
+  {
+   "text": "immer",
+   "start": 6.6,
+   "ende": 6.82
+  },
+  {
+   "text": "drauf",
+   "start": 6.82,
+   "ende": 7.08
+  },
+  {
+   "text": "an,",
+   "start": 7.08,
+   "ende": 7.8
+  },
+  {
+   "text": "woher",
+   "start": 7.94,
+   "ende": 8.14
+  },
+  {
+   "text": "der",
+   "start": 8.14,
+   "ende": 8.26
+  },
+  {
+   "text": "Schmerz",
+   "start": 8.26,
+   "ende": 8.54
+  },
+  {
+   "text": "kommt,",
+   "start": 8.54,
+   "ende": 8.9
+  },
+  {
+   "text": "also",
+   "start": 9.78,
+   "ende": 9.9
+  },
+  {
+   "text": "welchen",
+   "start": 9.9,
+   "ende": 10.1
+  },
+  {
+   "text": "Ursprungs",
+   "start": 10.1,
+   "ende": 10.52
+  },
+  {
+   "text": "der",
+   "start": 10.52,
+   "ende": 10.72
+  },
+  {
+   "text": "Schmerz",
+   "start": 10.72,
+   "ende": 11.08
+  },
+  {
+   "text": "ist.",
+   "start": 11.08,
+   "ende": 11.84
+  },
+  {
+   "text": "Deswegen",
+   "start": 13.360000000000007,
+   "ende": 13.840000000000003
+  },
+  {
+   "text": "will",
+   "start": 13.840000000000003,
+   "ende": 14.32
+  },
+  {
+   "text": "ich",
+   "start": 14.32,
+   "ende": 14.4
+  },
+  {
+   "text": "mich",
+   "start": 14.4,
+   "ende": 14.54
+  },
+  {
+   "text": "da",
+   "start": 14.54,
+   "ende": 14.64
+  },
+  {
+   "text": "nicht",
+   "start": 14.64,
+   "ende": 14.8
+  },
+  {
+   "text": "festsetzen,",
+   "start": 14.8,
+   "ende": 15.68
+  },
+  {
+   "text": "kann",
+   "start": 15.9,
+   "ende": 16.02
+  },
+  {
+   "text": "S",
+   "start": 16.02,
+   "ende": 16.28
+  },
+  {
+   "text": "-Tier",
+   "start": 16.28,
+   "ende": 16.34
+  },
+  {
+   "text": "sein,",
+   "start": 16.34,
+   "ende": 16.66
+  },
+  {
+   "text": "kann",
+   "start": 16.84,
+   "ende": 17.0
+  },
+  {
+   "text": "auch",
+   "start": 17.0,
+   "ende": 17.16
+  },
+  {
+   "text": "A",
+   "start": 17.16,
+   "ende": 17.34
+  },
+  {
+   "text": "-Tier",
+   "start": 17.34,
+   "ende": 17.48
+  },
+  {
+   "text": "sein.",
+   "start": 17.48,
+   "ende": 18.16
+  },
+  {
+   "text": "Den?",
+   "start": 19.28,
+   "ende": 19.52
+  },
+  {
+   "text": "Den",
+   "start": 20.76,
+   "ende": 21.02
+  },
+  {
+   "text": "würde",
+   "start": 21.02,
+   "ende": 21.22
+  },
+  {
+   "text": "ich",
+   "start": 21.22,
+   "ende": 21.4
+  },
+  {
+   "text": "eher",
+   "start": 21.4,
+   "ende": 21.64
+  },
+  {
+   "text": "auf",
+   "start": 21.64,
+   "ende": 22.3
+  },
+  {
+   "text": "B",
+   "start": 22.3,
+   "ende": 22.6
+  },
+  {
+   "text": "-Tier",
+   "start": 22.6,
+   "ende": 22.74
+  },
+  {
+   "text": "packen,",
+   "start": 22.74,
+   "ende": 23.46
+  },
+  {
+   "text": "kann",
+   "start": 23.64,
+   "ende": 23.88
+  },
+  {
+   "text": "Schmerz",
+   "start": 23.88,
+   "ende": 24.28
+  },
+  {
+   "text": "lindern,",
+   "start": 24.28,
+   "ende": 24.78
+  },
+  {
+   "text": "kann",
+   "start": 25.0,
+   "ende": 25.16
+  },
+  {
+   "text": "aber",
+   "start": 25.16,
+   "ende": 25.32
+  },
+  {
+   "text": "auch",
+   "start": 25.32,
+   "ende": 25.52
+  },
+  {
+   "text": "in",
+   "start": 25.52,
+   "ende": 25.62
+  },
+  {
+   "text": "manchen",
+   "start": 25.62,
+   "ende": 25.86
+  },
+  {
+   "text": "Fällen",
+   "start": 25.86,
+   "ende": 26.38
+  },
+  {
+   "text": "den",
+   "start": 26.38,
+   "ende": 26.6
+  },
+  {
+   "text": "Schmerz",
+   "start": 26.6,
+   "ende": 26.92
+  },
+  {
+   "text": "verstärken.",
+   "start": 26.92,
+   "ende": 27.96
+  },
+  {
+   "text": "Deswegen",
+   "start": 27.96,
+   "ende": 28.74
+  },
+  {
+   "text": "als",
+   "start": 28.74,
+   "ende": 29.28
+  },
+  {
+   "text": "einzige",
+   "start": 29.28,
+   "ende": 29.7
+  },
+  {
+   "text": "Intervention",
+   "start": 29.7,
+   "ende": 30.44
+  },
+  {
+   "text": "definitiv",
+   "start": 30.44,
+   "ende": 31.04
+  },
+  {
+   "text": "nur",
+   "start": 31.04,
+   "ende": 31.44
+  },
+  {
+   "text": "B",
+   "start": 31.44,
+   "ende": 31.58
+  },
+  {
+   "text": "-Tier,",
+   "start": 31.58,
+   "ende": 32.06
+  },
+  {
+   "text": "sonst",
+   "start": 32.24,
+   "ende": 32.68
+  },
+  {
+   "text": "ergänzend",
+   "start": 32.68,
+   "ende": 33.44
+  },
+  {
+   "text": "kann",
+   "start": 33.44,
+   "ende": 33.62
+  },
+  {
+   "text": "das",
+   "start": 33.62,
+   "ende": 33.84
+  },
+  {
+   "text": "dem",
+   "start": 33.84,
+   "ende": 34.0
+  },
+  {
+   "text": "ein",
+   "start": 34.0,
+   "ende": 34.18
+  },
+  {
+   "text": "oder",
+   "start": 34.18,
+   "ende": 34.24
+  },
+  {
+   "text": "anderen",
+   "start": 34.24,
+   "ende": 34.44
+  },
+  {
+   "text": "helfen,",
+   "start": 34.44,
+   "ende": 34.92
+  },
+  {
+   "text": "vor",
+   "start": 35.38,
+   "ende": 35.48
+  },
+  {
+   "text": "allem",
+   "start": 35.48,
+   "ende": 35.58
+  },
+  {
+   "text": "im",
+   "start": 35.58,
+   "ende": 35.72
+  },
+  {
+   "text": "Büroalltag.",
+   "start": 35.72,
+   "ende": 37.38
+  },
+  {
+   "text": "Akupunktur?",
+   "start": 37.82,
+   "ende": 38.46
+  },
+  {
+   "text": "Akupunktur",
+   "start": 40.18,
+   "ende": 40.82
+  },
+  {
+   "text": "würde",
+   "start": 40.82,
+   "ende": 41.08
+  },
+  {
+   "text": "ich",
+   "start": 41.08,
+   "ende": 41.24
+  },
+  {
+   "text": "eher",
+   "start": 41.24,
+   "ende": 41.44
+  },
+  {
+   "text": "auf",
+   "start": 41.44,
+   "ende": 42.38
+  },
+  {
+   "text": "C",
+   "start": 42.38,
+   "ende": 42.68
+  },
+  {
+   "text": "-Tier",
+   "start": 42.68,
+   "ende": 42.82
+  },
+  {
+   "text": "packen,",
+   "start": 42.82,
+   "ende": 43.54
+  },
+  {
+   "text": "ist",
+   "start": 43.78,
+   "ende": 43.86
+  },
+  {
+   "text": "auch",
+   "start": 43.86,
+   "ende": 44.1
+  },
+  {
+   "text": "als",
+   "start": 44.1,
+   "ende": 44.34
+  },
+  {
+   "text": "alleinige",
+   "start": 44.34,
+   "ende": 44.68
+  },
+  {
+   "text": "Intervention",
+   "start": 44.68,
+   "ende": 45.5
+  },
+  {
+   "text": "nicht",
+   "start": 45.5,
+   "ende": 46.02
+  },
+  {
+   "text": "das",
+   "start": 46.02,
+   "ende": 46.24
+  },
+  {
+   "text": "hilfreichste",
+   "start": 46.24,
+   "ende": 47.12
+  },
+  {
+   "text": "und",
+   "start": 47.12,
+   "ende": 48.06
+  },
+  {
+   "text": "die",
+   "start": 48.06,
+   "ende": 48.22
+  },
+  {
+   "text": "Evidenz",
+   "start": 48.22,
+   "ende": 48.58
+  },
+  {
+   "text": "dafür",
+   "start": 48.58,
+   "ende": 48.86
+  },
+  {
+   "text": "ist",
+   "start": 48.86,
+   "ende": 49.12
+  },
+  {
+   "text": "auch",
+   "start": 49.12,
+   "ende": 49.42
+  },
+  {
+   "text": "eher",
+   "start": 49.42,
+   "ende": 50.54
+  },
+  {
+   "text": "bescheiden.",
+   "start": 50.54,
+   "ende": 52.32
+  },
+  {
+   "text": "Deswegen",
+   "start": 53.519999999999996,
+   "ende": 54.16
+  },
+  {
+   "text": "lieber",
+   "start": 54.16,
+   "ende": 54.8
+  },
+  {
+   "text": "rein",
+   "start": 54.8,
+   "ende": 54.96
+  },
+  {
+   "text": "in",
+   "start": 54.96,
+   "ende": 55.08
+  },
+  {
+   "text": "die",
+   "start": 55.08,
+   "ende": 55.28
+  },
+  {
+   "text": "Bewegung",
+   "start": 55.28,
+   "ende": 55.58
+  },
+  {
+   "text": "und",
+   "start": 55.58,
+   "ende": 55.82
+  },
+  {
+   "text": "raus",
+   "start": 55.82,
+   "ende": 55.96
+  },
+  {
+   "text": "aus",
+   "start": 55.96,
+   "ende": 56.2
+  },
+  {
+   "text": "der",
+   "start": 56.2,
+   "ende": 56.56
+  },
+  {
+   "text": "Passivität.",
+   "start": 56.56,
+   "ende": 57.14
+  },
+  {
+   "text": "Jegliche",
+   "start": 57.96,
+   "ende": 58.84
+  },
+  {
+   "text": "Art",
+   "start": 58.84,
+   "ende": 59.0
+  },
+  {
+   "text": "von",
+   "start": 59.0,
+   "ende": 59.32
+  },
+  {
+   "text": "Bandagen,",
+   "start": 59.32,
+   "ende": 59.88
+  },
+  {
+   "text": "Rücken,",
+   "start": 59.98,
+   "ende": 60.3
+  },
+  {
+   "text": "Knie",
+   "start": 60.48,
+   "ende": 60.74
+  },
+  {
+   "text": "oder",
+   "start": 60.74,
+   "ende": 61.28
+  },
+  {
+   "text": "Stutzgürtel?",
+   "start": 61.28,
+   "ende": 64.52
+  },
+  {
+   "text": "Bandagen",
+   "start": 70.28,
+   "ende": 70.92
+  },
+  {
+   "text": "würde",
+   "start": 70.92,
+   "ende": 71.08
+  },
+  {
+   "text": "ich",
+   "start": 71.08,
+   "ende": 71.64
+  },
+  {
+   "text": "auf",
+   "start": 71.64,
+   "ende": 72.44
+  },
+  {
+   "text": "C",
+   "start": 72.44,
+   "ende": 72.86
+  },
+  {
+   "text": "-Tier",
+   "start": 72.86,
+   "ende": 76.62
+  },
+  {
+   "text": "packen,",
+   "start": 76.62,
+   "ende": 77.58
+  },
+  {
+   "text": "finde",
+   "start": 77.82,
+   "ende": 77.82
+  },
+  {
+   "text": "ich",
+   "start": 77.82,
+   "ende": 78.14
+  },
+  {
+   "text": "persönlich",
+   "start": 78.14,
+   "ende": 78.7
+  },
+  {
+   "text": "kann",
+   "start": 78.7,
+   "ende": 80.36
+  },
+  {
+   "text": "es",
+   "start": 80.36,
+   "ende": 81.1
+  },
+  {
+   "text": "einem",
+   "start": 81.1,
+   "ende": 81.4
+  },
+  {
+   "text": "Sicherheit",
+   "start": 81.4,
+   "ende": 81.66
+  },
+  {
+   "text": "vermitteln.",
+   "start": 81.66,
+   "ende": 82.22
+  },
+  {
+   "text": "Das",
+   "start": 82.22,
+   "ende": 82.42
+  },
+  {
+   "text": "Problem",
+   "start": 82.42,
+   "ende": 83.1
+  },
+  {
+   "text": "ist",
+   "start": 83.1,
+   "ende": 83.32
+  },
+  {
+   "text": "halt...",
+   "start": 83.32,
+   "ende": 83.92
+  }
+ ],
+ "saetze": [
+  {
+   "text": "Schlaf und Stress verbessern, definitiv S oder A -Tier, kommt natürlich immer drauf an, woher der Schmerz kommt,",
+   "start": 2.320000000000003,
+   "ende": 8.9
+  },
+  {
+   "text": "also welchen Ursprungs der Schmerz ist.",
+   "start": 9.78,
+   "ende": 11.84
+  },
+  {
+   "text": "Deswegen will ich mich da nicht festsetzen, kann S -Tier sein, kann auch A -Tier sein.",
+   "start": 13.360000000000007,
+   "ende": 18.16
+  },
+  {
+   "text": "Den?",
+   "start": 19.28,
+   "ende": 19.52
+  },
+  {
+   "text": "Den würde ich eher auf B -Tier packen, kann Schmerz lindern, kann aber auch in manchen Fällen den Schmerz verstärken.",
+   "start": 20.76,
+   "ende": 27.96
+  },
+  {
+   "text": "Deswegen als einzige Intervention definitiv nur B -Tier, sonst ergänzend kann das dem ein oder anderen helfen, vor allem im Büroalltag.",
+   "start": 27.96,
+   "ende": 37.38
+  },
+  {
+   "text": "Akupunktur?",
+   "start": 37.82,
+   "ende": 38.46
+  },
+  {
+   "text": "Akupunktur würde ich eher auf C -Tier packen, ist auch als alleinige Intervention nicht das hilfreichste und die Evidenz dafür ist auch eher bescheiden.",
+   "start": 40.18,
+   "ende": 52.32
+  },
+  {
+   "text": "Deswegen lieber rein in die Bewegung und raus aus der Passivität.",
+   "start": 53.519999999999996,
+   "ende": 57.14
+  },
+  {
+   "text": "Jegliche Art von Bandagen, Rücken, Knie oder Stutzgürtel?",
+   "start": 57.96,
+   "ende": 64.52
+  },
+  {
+   "text": "Bandagen würde ich auf C -Tier packen, finde ich persönlich kann es einem Sicherheit vermitteln.",
+   "start": 70.28,
+   "ende": 82.22
+  },
+  {
+   "text": "Das Problem ist halt...",
+   "start": 82.22,
+   "ende": 83.92
+  }
+ ]
+}
