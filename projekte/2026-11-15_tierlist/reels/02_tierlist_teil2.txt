@@ -1,4 +1,4 @@
-# 02_tierlist_teil2  (64.8 s)
+# 02_tierlist_teil2  (48.5 s)
 
 ## Caption (zum Posten)
 Teil 2 unserer Schmerz-Tierlist, jetzt ist das Board komplett.
@@ -23,11 +23,9 @@ Stimmst du zu? Schreib's in die Kommentare und speicher dir die Liste.
 - "Langsam gesteigertes Krafttraining baut Belastungstoleranz auf und gehört zu den wirksamsten Übungsformen." -> Owen PJ et al. Br J Sports Med 2020; Hayden JA et al. Cochrane 2021 [belegt]
 - "Bandagen/Stützgürtel können Sicherheit vermitteln, werden bei Rückenschmerz aber nicht empfohlen." -> NICE NG59, Empfehlung 1.2.3 ('Do not offer belts or corsets') [belegt]
 - "Schmerz muss nicht immer strukturell bedingt sein; Schmerzaufklärung hilft, das zu verstehen." -> Raja SN et al. Revised IASP definition of pain. Pain 2020; Louw A et al. Physiother Theory Pract 2016 [konsens]
-- "Psychologische Ansätze (v. a. KVT) helfen bei chronischen Schmerzen, Effekte sind aber klein und nicht für jeden passend." -> Williams ACdC et al. Psychological therapies for the management of chronic pain (excluding headache) in adults. Cochrane 2020 [belegt]
 - "Schlaf und Stress beeinflussen das Schmerzerleben." -> Finan PH et al. The association of sleep and pain. J Pain 2013; Raja SN et al. Pain 2020 [konsens]
 
 ## Hinweise fuer Andre
 - Board-Grafik füllt sich genau dann, wenn André die Stufe ausspricht.
 - 'Dehnen' aus dem Ton erschlossen (Transkript: 'Den?'), bitte bestätigen.
-- Psychologische Ansätze: keine Stufe ausgesprochen, vorläufig B (Evidenz: kleine Effekte, Cochrane 2020).
 - Keine Soundeffekte; Trend-Sound optional leise in Instagram darunter.

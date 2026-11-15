@@ -122,6 +122,8 @@ Fertige Videos nicht ins Git committen (zu groß, `.gitignore`), sondern per Sen
   Quellbild), zoom, drehungen}]` = Zoom aufs Gesicht + volle Drehung, ohne schwarze Ecken.
 - **Englische Versionen:** Spec kopieren, `"sprache": "en"` setzen, alle Texte/Caption/Hashtags übersetzen
   (Regelprüfung dann mit „Save“ und „If something hurts, don't go deeper into the movement.“).
+- **Moderner Textstil** (optional pro Spec, André 2026-11-15 für die Tierlist): `"textstil": "modern"` = Inter Medium,
+  normale Schreibweise, keine Kontur, Untertitel auf halbtransparenter Box. Grafiken dazu im Glas-Look (dunkles Panel).
 - Werte in `config/brand.json`.
 
 ## Grenzen der Umgebung

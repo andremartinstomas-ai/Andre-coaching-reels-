@@ -3,6 +3,7 @@
   "ausgabe": "../reels/01_tierlist_teil1.mp4",
   "uebung": false,
   "ton_reparatur": true,
+  "textstil": "modern",
   "skript": {
     "hook": "Was hilft eigentlich bei Schmerzen? Tierlist.",
     "aufbau": "Behandlungen werden nacheinander eingeordnet, das Board füllt sich live.",
@@ -309,7 +310,7 @@
     {
       "start": 47.78,
       "ende": 51.4,
-      "text": "Teil 2 folgt\n*Lies die Caption!*"
+      "text": "Teil 2 folgt\n*Lies die Caption*"
     }
   ],
   "bilder": [
@@ -318,8 +319,8 @@
       "start": 3.2,
       "ende": 6.04,
       "x": 10,
-      "y": 250,
-      "breite": 560,
+      "y": 230,
+      "breite": 600,
       "ein": 0.12
     },
     {
@@ -327,8 +328,8 @@
       "start": 6.02,
       "ende": 12.68,
       "x": 10,
-      "y": 250,
-      "breite": 560,
+      "y": 230,
+      "breite": 600,
       "ein": 0.12
     },
     {
@@ -336,8 +337,8 @@
       "start": 12.66,
       "ende": 26.68,
       "x": 10,
-      "y": 250,
-      "breite": 560,
+      "y": 230,
+      "breite": 600,
       "ein": 0.12
     },
     {
@@ -345,8 +346,8 @@
       "start": 26.66,
       "ende": 35.18,
       "x": 10,
-      "y": 250,
-      "breite": 560,
+      "y": 230,
+      "breite": 600,
       "ein": 0.12
     },
     {
@@ -354,8 +355,8 @@
       "start": 35.16,
       "ende": 47.8,
       "x": 10,
-      "y": 250,
-      "breite": 560,
+      "y": 230,
+      "breite": 600,
       "ein": 0.12
     }
   ],
@@ -393,7 +394,6 @@
   "hinweise": [
     "Board-Grafik füllt sich genau dann, wenn André die Stufe ausspricht.",
     "'Dehnen' aus dem Ton erschlossen (Transkript: 'Den?'), bitte bestätigen.",
-    "Psychologische Ansätze: keine Stufe ausgesprochen, vorläufig B (Evidenz: kleine Effekte, Cochrane 2020).",
     "Keine Soundeffekte; Trend-Sound optional leise in Instagram darunter."
   ]
 }

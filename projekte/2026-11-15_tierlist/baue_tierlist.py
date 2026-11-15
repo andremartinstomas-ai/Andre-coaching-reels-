@@ -13,7 +13,8 @@ from pausen_schnitt import sprechbereiche  # noqa: E402
 
 BEBAS = str(ROOT / "fonts" / "BebasNeue-Regular.ttf")
 INTER = str(ROOT / "fonts" / "Inter-SemiBold.otf")
-TIERS = [("S", (255, 127, 127)), ("A", (255, 191, 127)), ("B", (255, 223, 127)), ("C", (191, 255, 127)), ("D", (127, 191, 255))]
+INTER_MED = str(ROOT / "fonts" / "Inter-Medium.otf")
+TIERS = [("S", (255, 138, 138)), ("A", (255, 196, 140)), ("B", (255, 226, 145)), ("C", (190, 236, 150)), ("D", (140, 196, 255))]
 GELB = (248, 184, 0, 255)
 
 # Passagen: (teil, start, ende) -> Pausen werden automatisch entfernt
@@ -75,44 +76,50 @@ def chip_breite(d, text, font):
 
 
 def board_png(ziel, eintraege, neu=None):
-    """eintraege: Liste (tier, label). neu = label, das gelb umrandet wird."""
-    B, LB, RH = 540, 96, 116
-    f_tier = ImageFont.truetype(BEBAS, 92)
-    f_chip = ImageFont.truetype(INTER, 34)
-    f_titel = ImageFont.truetype(BEBAS, 64)
+    """Modernes Board: dunkles Glas-Panel, leichte Schrift, keine Konturen. Neuester Eintrag gelb gefuellt."""
+    B, LB, RH, GAP = 600, 80, 100, 10
+    f_tier = ImageFont.truetype(INTER, 48)
+    f_chip = ImageFont.truetype(INTER_MED, 35)
+    f_titel = ImageFont.truetype(INTER, 44)
     tmp = ImageDraw.Draw(Image.new("RGBA", (1, 1)))
-    # Zeilen mit Umbruch berechnen
-    layout, y = [], 96
+    layout, y = [], 86
     for t, farbe in TIERS:
         items = [lab for tt, lab in eintraege if tt == t]
         zeilen, akt, x = [], [], 0
         for lab in items:
-            w = chip_breite(tmp, lab, f_chip)
-            if akt and x + w > B - LB - 20:
+            w = int(tmp.textlength(lab, font=f_chip)) + 32
+            if akt and x + w > B - LB - 44:
                 zeilen.append(akt); akt, x = [], 0
             akt.append((lab, w)); x += w + 8
         if akt:
             zeilen.append(akt)
-        h = max(RH, 20 + len(zeilen) * 58)
+        h = max(RH, 22 + len(zeilen) * 60)
         layout.append((t, farbe, zeilen, y, h))
-        y += h + 6
-    img = Image.new("RGBA", (B + 20, y + 10), (0, 0, 0, 0))
-    d = ImageDraw.Draw(img)
-    d.text((10, 10), "SCHMERZ-TIERLIST", font=f_titel, fill=(255, 255, 255, 255), stroke_width=4, stroke_fill=(20, 20, 20, 255))
+        y += h + GAP
+    img = Image.new("RGBA", (B + 20, y + 24), (0, 0, 0, 0))
+
+    def ebene(zeichne):  # jede Form/Schrift auf eigener Ebene, dann echt ueberblenden
+        lay = Image.new("RGBA", img.size, (0, 0, 0, 0))
+        zeichne(ImageDraw.Draw(lay))
+        img.alpha_composite(lay)
+
+    ebene(lambda d: d.rounded_rectangle([0, 0, B + 20, y + 24], radius=28, fill=(14, 14, 16, 242)))
+    ebene(lambda d: d.text((24, 24), "Schmerz-Tierlist", font=f_titel, fill=(255, 255, 255, 240)))
     for t, farbe, zeilen, y0, h in layout:
-        d.rounded_rectangle([10, y0, 10 + LB, y0 + h], radius=10, fill=farbe + (255,))
-        d.text((10 + LB / 2, y0 + h / 2 + 3), t, font=f_tier, fill=(25, 25, 25, 255), anchor="mm")
-        d.rounded_rectangle([10 + LB + 6, y0, 10 + B, y0 + h], radius=10, fill=(20, 20, 20, 190))
-        cy = y0 + (h - len(zeilen) * 58) / 2 + 4
+        ebene(lambda d: d.rounded_rectangle([20, y0, 20 + LB, y0 + h], radius=16, fill=farbe + (235,)))
+        ebene(lambda d: d.text((20 + LB / 2, y0 + h / 2), t, font=f_tier, fill=(25, 25, 28, 255), anchor="mm"))
+        ebene(lambda d: d.rounded_rectangle([20 + LB + 8, y0, B, y0 + h], radius=16, fill=(255, 255, 255, 14)))
+        cy = y0 + (h - len(zeilen) * 60) / 2 + 5
         for z in zeilen:
-            x = 10 + LB + 18
+            x = 20 + LB + 22
             for lab, w in z:
-                rand = GELB if lab == neu else (255, 255, 255, 60)
-                d.rounded_rectangle([x, cy, x + w, cy + 50], radius=25, fill=(255, 255, 255, 235), outline=rand,
-                                    width=5 if lab == neu else 1)
-                d.text((x + w / 2, cy + 26), lab, font=f_chip, fill=(20, 20, 20, 255), anchor="mm")
+                ist_neu = lab == neu
+                ebene(lambda d: d.rounded_rectangle([x, cy, x + w, cy + 52], radius=26,
+                                                    fill=GELB if ist_neu else (255, 255, 255, 30)))
+                ebene(lambda d: d.text((x + w / 2, cy + 26), lab, font=f_chip,
+                                       fill=(20, 20, 20, 255) if ist_neu else (255, 255, 255, 245), anchor="mm"))
                 x += w + 8
-            cy += 58
+            cy += 60
     img.save(ziel)
 
 
@@ -154,12 +161,12 @@ def baue(name, reihe, vorher, titel, unterzeile, endtext, caption, tags):
         f = gr / f"{name}_board_{i}.png"
         board_png(f, stand, neu[1] if neu else None)
         bilder.append({"datei": f"../grafiken/{f.name}", "start": round(start, 2), "ende": round(ende + 0.02, 2),
-                       "x": 10, "y": 250, "breite": 560, "ein": 0.12})
+                       "x": 10, "y": 230, "breite": 600, "ein": 0.12})
     a_end = marken["pause"][0]
     einbl = [{"start": round(a_end, 2), "ende": round(t, 2), "text": endtext}]
     aussagen = [QUELLEN[k] for k in reihe if k in QUELLEN]
     spec = {
-        "titel": name, "ausgabe": f"../reels/{name}.mp4", "uebung": False, "ton_reparatur": True,
+        "titel": name, "ausgabe": f"../reels/{name}.mp4", "uebung": False, "ton_reparatur": True, "textstil": "modern",
         "skript": {"hook": "Was hilft eigentlich bei Schmerzen? Tierlist.",
                    "aufbau": "Behandlungen werden nacheinander eingeordnet, das Board füllt sich live.",
                    "payoff": "Fertiges Board + Hinweis: Caption lesen (Ranking nach Nachhaltigkeit)."},
@@ -175,7 +182,6 @@ def baue(name, reihe, vorher, titel, unterzeile, endtext, caption, tags):
         "aussagen": aussagen, "caption": caption, "hashtags": tags,
         "hinweise": ["Board-Grafik füllt sich genau dann, wenn André die Stufe ausspricht.",
                      "'Dehnen' aus dem Ton erschlossen (Transkript: 'Den?'), bitte bestätigen.",
-                     "Psychologische Ansätze: keine Stufe ausgesprochen, vorläufig B (Evidenz: kleine Effekte, Cochrane 2020).",
                      "Keine Soundeffekte; Trend-Sound optional leise in Instagram darunter."],
     }
     (P / "specs" / f"{name}.json").write_text(json.dumps(spec, ensure_ascii=False, indent=2))
@@ -190,12 +196,12 @@ TAGS = ["#schmerztherapie", "#physiotherapie", "#rückenschmerzen", "#tierlist",
 
 if __name__ == "__main__":
     stand1, d1 = baue("01_tierlist_teil1", ["intro", "aktiv", "akupunktur", "pilates", "dehnen", "pause"], [],
-                      "Was hilft *wirklich*\nbei Schmerzen?", "Tierlist · Teil 1", "Teil 2 folgt\n*Lies die Caption!*",
+                      "Was hilft *wirklich*\nbei Schmerzen?", "Tierlist · Teil 1", "Teil 2 folgt\n*Lies die Caption*",
                       "Was hilft eigentlich bei Schmerzen? Teil 1 unserer Schmerz-Tierlist.\n\n" + DISCLAIMER +
                       "\n\nWo würdest du anders ranken? Schreib's in die Kommentare und speicher dir das Reel für Teil 2.",
                       TAGS)
-    stand2, d2 = baue("02_tierlist_teil2", ["intro", "kraft", "bandagen", "aufklaerung", "psycho", "schlaf", "pause"],
-                      stand1, "Was hilft *wirklich*\nbei Schmerzen?", "Tierlist · Teil 2", "Das ist die Liste\n*Lies die Caption!*",
+    stand2, d2 = baue("02_tierlist_teil2", ["intro", "kraft", "bandagen", "aufklaerung", "schlaf", "pause"],
+                      stand1, "Was hilft *wirklich*\nbei Schmerzen?", "Tierlist · Teil 2", "Das ist die Liste\n*Lies die Caption*",
                       "Teil 2 unserer Schmerz-Tierlist, jetzt ist das Board komplett.\n\n" + DISCLAIMER +
                       "\n\nStimmst du zu? Schreib's in die Kommentare und speicher dir die Liste.", TAGS)
     print(f"Teil 1: {d1:.1f}s  Teil 2: {d2:.1f}s")

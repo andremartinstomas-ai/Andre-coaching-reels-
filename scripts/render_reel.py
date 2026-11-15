@@ -90,9 +90,20 @@ def textbreite(text, groesse):
     return breite / upm * groesse
 
 
+MODERN = {"an": False}
+MODERN_FONT = FONTS / "Inter-Medium.otf"
+
+
+def textbreite_modern(text, groesse):
+    from PIL import ImageFont
+    f = ImageFont.truetype(str(MODERN_FONT), 1000)
+    return f.getlength(text.replace("*", "")) / 1000 * groesse * 2048 / 2478  # libass skaliert auf winAscent+Descent
+
+
 def passende_groesse(zeilen, max_groesse, max_breite, fett=False):
     faktor = 1.04 if fett else 1.0
-    breitest = max(textbreite(z, 100) * faktor for z in zeilen) or 1
+    messen = textbreite_modern if MODERN["an"] else textbreite
+    breitest = max(messen(z, 100) * faktor for z in zeilen) or 1
     return min(max_groesse, int(max_breite / breitest * 100))
 
 
@@ -342,7 +353,11 @@ def ass_schreiben(spec, spec_dir, pfad, dauer):
     Fortschrittsbalken oben, Kapitel-Label rechts ('UEBUNG 1 VON 3' + gelbe Linie + Uebungsname)."""
     W, H = BRAND["video"]["breite"], BRAND["video"]["hoehe"]
     f, gr = BRAND["farben"], BRAND["groessen"]
-    schrift = BRAND["schrift"]["familie"]
+    modern = spec.get("textstil") == "modern"
+    MODERN["an"] = modern
+    schrift = "Inter Medium" if modern else BRAND["schrift"]["familie"]
+    if modern:  # kleinere, ruhigere Groessen fuer die schmalere Inter
+        gr = dict(gr, hook=min(gr["hook"], 92), hook_unterzeile=44, fakt=84, untertitel=54, label=48, titel=72, info=44)
     weiss, gelb = hex_ass(f["weiss"]), hex_ass(f["gelb"])
     teal = hex_ass(f.get("teal_dunkel", f["teal"]))
     kontur = hex_ass(f.get("kontur", "#141414"))
@@ -350,6 +365,12 @@ def ass_schreiben(spec, spec_dir, pfad, dauer):
     links = BRAND["layout"]["rand"]
 
     def style(name, groesse, farbe, outline, align, margin_v=0, kontur_farbe=kontur):
+        if modern:  # keine Kontur, kein Fett; Untertitel auf halbtransparenter Box, Rest mit weichem Schatten
+            if name == "Sub":
+                return (f"Style: {name},{schrift},{groesse},{farbe},{farbe},&H48000000,&H48000000,0,0,0,0,100,100,0,0,"
+                        f"3,14,0,{align},60,60,{margin_v},1")
+            return (f"Style: {name},{schrift},{groesse},{farbe},{farbe},&H00000000,&H70000000,0,0,0,0,100,100,0,0,"
+                    f"1,0,2,{align},60,60,{margin_v},1")
         fett = -1 if name in BRAND["schrift"].get("fett_stile", []) else 0
         return (f"Style: {name},{schrift},{groesse},{farbe},{farbe},{kontur_farbe},&H80000000,{fett},0,0,0,100,100,1,0,"
                 f"1,{outline},0,{align},60,60,{margin_v},1")
@@ -379,9 +400,10 @@ def ass_schreiben(spec, spec_dir, pfad, dauer):
         zeilen.append(f"Dialogue: {layer},{ass_zeit(start)},{ass_zeit(ende)},{stil},,0,0,0,,{text}")
 
     def text(t):
-        return markup(t.upper(), gelb)
+        return markup(t if modern else t.upper(), gelb)
 
-    def zeilen_block(a, e, stil, roh, x, y, an, groesse, extra="", layer=3, abstand=0.86):
+    def zeilen_block(a, e, stil, roh, x, y, an, groesse, extra="", layer=3, abstand=None):
+        abstand = abstand or (1.2 if modern else 0.86)
         """Setzt jede Zeile einzeln mit engem Zeilenabstand (Bebas hat grosse Standard-Zeilenhoehe).
         Gibt die y-Position unter dem Block zurueck."""
         for i, zeile in enumerate(roh.split("\n")):
@@ -482,7 +504,8 @@ def ass_schreiben(spec, spec_dir, pfad, dauer):
         for g in gruppen(woerter):
             for i, w in enumerate(g):
                 ende = g[i + 1]["start"] if i + 1 < len(g) else max(w["ende"], g[-1]["ende"])
-                teile = [(f"{{\\c{gelb}}}{x['text'].upper()}{{\\c{weiss}}}" if x is w else x["text"].upper()) for x in g]
+                tx = (lambda s_: s_) if modern else (lambda s_: s_.upper())
+                teile = [(f"{{\\c{gelb}}}{tx(x['text'])}{{\\c{weiss}}}" if x is w else tx(x["text"])) for x in g]
                 ev(w["start"], ende, "Sub", " ".join(teile))
     for u in spec.get("untertitel_manuell", []):
         gross = f"\\fs{u['groesse']}" if u.get("groesse") else ""
