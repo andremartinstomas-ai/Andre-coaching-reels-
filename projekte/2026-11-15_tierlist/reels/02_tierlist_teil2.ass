@@ -7,136 +7,138 @@ ScaledBorderAndShadow: yes
 
 [V4+ Styles]
 Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
-Style: Hook,Inter Medium,92,&H00FFFFFF,&H00FFFFFF,&H00000000,&H70000000,0,0,0,0,100,100,0,0,1,0,2,5,60,60,0,1
-Style: HookUnter,Inter Medium,44,&H00FFFFFF,&H00FFFFFF,&H00000000,&H70000000,0,0,0,0,100,100,0,0,1,0,2,8,60,60,0,1
-Style: Fakt,Inter Medium,84,&H00FFFFFF,&H00FFFFFF,&H00000000,&H70000000,0,0,0,0,100,100,0,0,1,0,2,8,60,60,0,1
-Style: Label,Inter Medium,48,&H00585000,&H00585000,&H00000000,&H70000000,0,0,0,0,100,100,0,0,1,0,2,9,60,60,0,1
-Style: Titel,Inter Medium,72,&H0000B8F8,&H0000B8F8,&H00000000,&H70000000,0,0,0,0,100,100,0,0,1,0,2,9,60,60,0,1
-Style: Info,Inter Medium,44,&H00FFFFFF,&H00FFFFFF,&H00000000,&H70000000,0,0,0,0,100,100,0,0,1,0,2,9,60,60,0,1
-Style: Sub,Inter Medium,54,&H00FFFFFF,&H00FFFFFF,&H48000000,&H48000000,0,0,0,0,100,100,0,0,3,14,0,2,60,60,500,1
-Style: Quelle,Inter Medium,44,&H00FFFFFF,&H00FFFFFF,&H00000000,&H70000000,0,0,0,0,100,100,0,0,1,0,2,2,60,60,400,1
+Style: Hook,Bebas Neue,230,&H00FFFFFF,&H00FFFFFF,&H00141414,&H80000000,-1,0,0,0,100,100,1,0,1,5,0,5,60,60,0,1
+Style: HookUnter,Bebas Neue,70,&H00FFFFFF,&H00FFFFFF,&H00141414,&H80000000,0,0,0,0,100,100,1,0,1,3,0,8,60,60,0,1
+Style: Fakt,Bebas Neue,118,&H00FFFFFF,&H00FFFFFF,&H00141414,&H80000000,-1,0,0,0,100,100,1,0,1,4,0,8,60,60,0,1
+Style: Label,Bebas Neue,84,&H00585000,&H00585000,&H00FFFFFF,&H80000000,0,0,0,0,100,100,1,0,1,3,0,9,60,60,0,1
+Style: Titel,Bebas Neue,160,&H0000B8F8,&H0000B8F8,&H00141414,&H80000000,-1,0,0,0,100,100,1,0,1,4,0,9,60,60,0,1
+Style: Info,Bebas Neue,66,&H00FFFFFF,&H00FFFFFF,&H00141414,&H80000000,0,0,0,0,100,100,1,0,1,3,0,9,60,60,0,1
+Style: Sub,Bebas Neue,96,&H00FFFFFF,&H00FFFFFF,&H00141414,&H80000000,0,0,0,0,100,100,1,0,1,5,0,2,60,60,500,1
+Style: Quelle,Bebas Neue,44,&H00FFFFFF,&H00FFFFFF,&H00141414,&H80000000,0,0,0,0,100,100,1,0,1,2,0,2,60,60,400,1
 Style: Trend,Inter SemiBold,58,&H00FFFFFF,&H00FFFFFF,&H96000000,&H78000000,0,0,0,0,100,100,0,0,1,1.5,2,5,60,60,0,1
-Style: Form,Inter Medium,20,&H00FFFFFF,&H00FFFFFF,&H00000000,&H00000000,0,0,0,0,100,100,0,0,1,0,0,7,0,0,0,1
+Style: Form,Bebas Neue,20,&H00FFFFFF,&H00FFFFFF,&H00000000,&H00000000,0,0,0,0,100,100,0,0,1,0,0,7,0,0,0,1
+Style: Fuss,Inter Medium,34,&H18FFFFFF,&H18FFFFFF,&H00000000,&H90000000,0,0,0,0,100,100,0,0,1,0,2,1,0,0,0,1
 
 [Events]
 Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
-Dialogue: 5,0:00:00.00,0:00:03.00,Hook,,0,0,0,,{\an8\pos(540,457)\fscx118\fscy118\t(0,140,\fscx100\fscy100)\fad(60,120)\fs92}Was hilft {\c&H0000B8F8}wirklich{\c&H00FFFFFF&}
-Dialogue: 5,0:00:00.00,0:00:03.00,Hook,,0,0,0,,{\an8\pos(540,567)\fscx118\fscy118\t(0,140,\fscx100\fscy100)\fad(60,120)\fs92}bei Schmerzen?
-Dialogue: 5,0:00:00.00,0:00:03.00,HookUnter,,0,0,0,,{\an8\pos(540,705)\fscx118\fscy118\t(0,140,\fscx100\fscy100)\fad(60,120)}Tierlist · Teil 2
-Dialogue: 4,0:00:44.84,0:00:48.46,Fakt,,0,0,0,,{\an8\pos(540,260)\fad(120,120)\fs84}Das ist die Liste
-Dialogue: 4,0:00:44.84,0:00:48.46,Fakt,,0,0,0,,{\an8\pos(540,361)\fad(120,120)\fs84}{\c&H0000B8F8}Lies die Caption{\c&H00FFFFFF&}
-Dialogue: 1,0:00:00.00,0:00:00.34,Sub,,0,0,0,,{\c&H0000B8F8}Was{\c&H00FFFFFF} hilft eigentlich
-Dialogue: 1,0:00:00.34,0:00:00.56,Sub,,0,0,0,,Was {\c&H0000B8F8}hilft{\c&H00FFFFFF} eigentlich
-Dialogue: 1,0:00:00.56,0:00:00.80,Sub,,0,0,0,,Was hilft {\c&H0000B8F8}eigentlich{\c&H00FFFFFF}
-Dialogue: 1,0:00:00.80,0:00:00.94,Sub,,0,0,0,,{\c&H0000B8F8}bei{\c&H00FFFFFF} Schmerzen?
-Dialogue: 1,0:00:00.94,0:00:01.42,Sub,,0,0,0,,bei {\c&H0000B8F8}Schmerzen?{\c&H00FFFFFF}
-Dialogue: 1,0:00:01.56,0:00:01.76,Sub,,0,0,0,,{\c&H0000B8F8}Heute{\c&H00FFFFFF} ranken wir
-Dialogue: 1,0:00:01.76,0:00:01.98,Sub,,0,0,0,,Heute {\c&H0000B8F8}ranken{\c&H00FFFFFF} wir
-Dialogue: 1,0:00:01.98,0:00:02.12,Sub,,0,0,0,,Heute ranken {\c&H0000B8F8}wir{\c&H00FFFFFF}
-Dialogue: 1,0:00:02.12,0:00:02.22,Sub,,0,0,0,,{\c&H0000B8F8}das{\c&H00FFFFFF} Ganze mal
-Dialogue: 1,0:00:02.22,0:00:02.40,Sub,,0,0,0,,das {\c&H0000B8F8}Ganze{\c&H00FFFFFF} mal
-Dialogue: 1,0:00:02.40,0:00:02.72,Sub,,0,0,0,,das Ganze {\c&H0000B8F8}mal{\c&H00FFFFFF}
-Dialogue: 1,0:00:02.72,0:00:02.88,Sub,,0,0,0,,{\c&H0000B8F8}in{\c&H00FFFFFF} der Tierlist.
-Dialogue: 1,0:00:02.88,0:00:02.96,Sub,,0,0,0,,in {\c&H0000B8F8}der{\c&H00FFFFFF} Tierlist.
-Dialogue: 1,0:00:02.96,0:00:03.26,Sub,,0,0,0,,in der {\c&H0000B8F8}Tierlist.{\c&H00FFFFFF}
-Dialogue: 1,0:00:03.26,0:00:04.02,Sub,,0,0,0,,{\c&H0000B8F8}Krafttraining{\c&H00FFFFFF} langsam
-Dialogue: 1,0:00:04.02,0:00:04.32,Sub,,0,0,0,,Krafttraining {\c&H0000B8F8}langsam{\c&H00FFFFFF}
-Dialogue: 1,0:00:04.32,0:00:04.82,Sub,,0,0,0,,{\c&H0000B8F8}steigern?{\c&H00FFFFFF}
-Dialogue: 1,0:00:04.82,0:00:05.60,Sub,,0,0,0,,{\c&H0000B8F8}Krafttraining{\c&H00FFFFFF} langsam
-Dialogue: 1,0:00:05.60,0:00:05.88,Sub,,0,0,0,,Krafttraining {\c&H0000B8F8}langsam{\c&H00FFFFFF}
-Dialogue: 1,0:00:05.88,0:00:06.34,Sub,,0,0,0,,{\c&H0000B8F8}gesteigert{\c&H00FFFFFF} definitiv S-Tier,
-Dialogue: 1,0:00:06.34,0:00:06.88,Sub,,0,0,0,,gesteigert {\c&H0000B8F8}definitiv{\c&H00FFFFFF} S-Tier,
-Dialogue: 1,0:00:06.88,0:00:07.36,Sub,,0,0,0,,gesteigert definitiv {\c&H0000B8F8}S-Tier,{\c&H00FFFFFF}
-Dialogue: 1,0:00:07.38,0:00:07.60,Sub,,0,0,0,,{\c&H0000B8F8}vor{\c&H00FFFFFF} allem,
-Dialogue: 1,0:00:07.60,0:00:07.76,Sub,,0,0,0,,vor {\c&H0000B8F8}allem,{\c&H00FFFFFF}
-Dialogue: 1,0:00:08.00,0:00:08.22,Sub,,0,0,0,,{\c&H0000B8F8}um{\c&H00FFFFFF} langfristig die
-Dialogue: 1,0:00:08.22,0:00:08.62,Sub,,0,0,0,,um {\c&H0000B8F8}langfristig{\c&H00FFFFFF} die
-Dialogue: 1,0:00:08.62,0:00:08.76,Sub,,0,0,0,,um langfristig {\c&H0000B8F8}die{\c&H00FFFFFF}
-Dialogue: 1,0:00:08.76,0:00:09.54,Sub,,0,0,0,,{\c&H0000B8F8}Belastungstoleranz{\c&H00FFFFFF} aufzubauen.
-Dialogue: 1,0:00:09.54,0:00:09.93,Sub,,0,0,0,,Belastungstoleranz {\c&H0000B8F8}aufzubauen.{\c&H00FFFFFF}
-Dialogue: 1,0:00:10.12,0:00:10.60,Sub,,0,0,0,,{\c&H0000B8F8}Jegliche{\c&H00FFFFFF} A- von
-Dialogue: 1,0:00:10.60,0:00:10.76,Sub,,0,0,0,,Jegliche {\c&H0000B8F8}A-{\c&H00FFFFFF} von
-Dialogue: 1,0:00:10.76,0:00:11.08,Sub,,0,0,0,,Jegliche A- {\c&H0000B8F8}von{\c&H00FFFFFF}
-Dialogue: 1,0:00:11.08,0:00:11.64,Sub,,0,0,0,,{\c&H0000B8F8}Bandagen,{\c&H00FFFFFF}
-Dialogue: 1,0:00:11.74,0:00:12.06,Sub,,0,0,0,,{\c&H0000B8F8}Rücken,{\c&H00FFFFFF}
-Dialogue: 1,0:00:12.24,0:00:12.50,Sub,,0,0,0,,{\c&H0000B8F8}Knie{\c&H00FFFFFF} oder Bandagen
-Dialogue: 1,0:00:12.50,0:00:12.94,Sub,,0,0,0,,Knie {\c&H0000B8F8}oder{\c&H00FFFFFF} Bandagen
-Dialogue: 1,0:00:12.94,0:00:13.48,Sub,,0,0,0,,Knie oder {\c&H0000B8F8}Bandagen{\c&H00FFFFFF}
-Dialogue: 1,0:00:13.48,0:00:13.64,Sub,,0,0,0,,{\c&H0000B8F8}würde{\c&H00FFFFFF} ich auf
-Dialogue: 1,0:00:13.64,0:00:13.96,Sub,,0,0,0,,würde {\c&H0000B8F8}ich{\c&H00FFFFFF} auf
-Dialogue: 1,0:00:13.96,0:00:14.76,Sub,,0,0,0,,würde ich {\c&H0000B8F8}auf{\c&H00FFFFFF}
+Dialogue: 5,0:00:00.00,0:00:03.00,Hook,,0,0,0,,{\an8\pos(540,365)\fscx118\fscy118\t(0,140,\fscx100\fscy100)\fad(60,120)\fs182}WAS HILFT {\c&H0000B8F8}WIRKLICH{\c&H00FFFFFF&}
+Dialogue: 5,0:00:00.00,0:00:03.00,Hook,,0,0,0,,{\an8\pos(540,522)\fscx118\fscy118\t(0,140,\fscx100\fscy100)\fad(60,120)\fs182}BEI SCHMERZEN?
+Dialogue: 5,0:00:00.00,0:00:03.00,HookUnter,,0,0,0,,{\an8\pos(540,706)\fscx118\fscy118\t(0,140,\fscx100\fscy100)\fad(60,120)}TIERLIST · TEIL 2
+Dialogue: 4,0:00:44.84,0:00:48.46,Fakt,,0,0,0,,{\an8\pos(540,260)\fad(120,120)\fs118}DAS IST DIE LISTE
+Dialogue: 4,0:00:44.84,0:00:48.46,Fakt,,0,0,0,,{\an8\pos(540,361)\fad(120,120)\fs118}{\c&H0000B8F8}LIES DIE CAPTION!{\c&H00FFFFFF&}
+Dialogue: 2,0:00:03.30,0:00:44.84,Fuss,,0,0,0,,{\an1\pos(44,1490)\fad(300,300)}Gerankt nach Nachhaltigkeit, nicht nach Wirkung
+Dialogue: 1,0:00:00.00,0:00:00.34,Sub,,0,0,0,,{\c&H0000B8F8}WAS{\c&H00FFFFFF} HILFT EIGENTLICH
+Dialogue: 1,0:00:00.34,0:00:00.56,Sub,,0,0,0,,WAS {\c&H0000B8F8}HILFT{\c&H00FFFFFF} EIGENTLICH
+Dialogue: 1,0:00:00.56,0:00:00.80,Sub,,0,0,0,,WAS HILFT {\c&H0000B8F8}EIGENTLICH{\c&H00FFFFFF}
+Dialogue: 1,0:00:00.80,0:00:00.94,Sub,,0,0,0,,{\c&H0000B8F8}BEI{\c&H00FFFFFF} SCHMERZEN?
+Dialogue: 1,0:00:00.94,0:00:01.42,Sub,,0,0,0,,BEI {\c&H0000B8F8}SCHMERZEN?{\c&H00FFFFFF}
+Dialogue: 1,0:00:01.56,0:00:01.76,Sub,,0,0,0,,{\c&H0000B8F8}HEUTE{\c&H00FFFFFF} RANKEN WIR
+Dialogue: 1,0:00:01.76,0:00:01.98,Sub,,0,0,0,,HEUTE {\c&H0000B8F8}RANKEN{\c&H00FFFFFF} WIR
+Dialogue: 1,0:00:01.98,0:00:02.12,Sub,,0,0,0,,HEUTE RANKEN {\c&H0000B8F8}WIR{\c&H00FFFFFF}
+Dialogue: 1,0:00:02.12,0:00:02.22,Sub,,0,0,0,,{\c&H0000B8F8}DAS{\c&H00FFFFFF} GANZE MAL
+Dialogue: 1,0:00:02.22,0:00:02.40,Sub,,0,0,0,,DAS {\c&H0000B8F8}GANZE{\c&H00FFFFFF} MAL
+Dialogue: 1,0:00:02.40,0:00:02.72,Sub,,0,0,0,,DAS GANZE {\c&H0000B8F8}MAL{\c&H00FFFFFF}
+Dialogue: 1,0:00:02.72,0:00:02.88,Sub,,0,0,0,,{\c&H0000B8F8}IN{\c&H00FFFFFF} DER TIERLIST.
+Dialogue: 1,0:00:02.88,0:00:02.96,Sub,,0,0,0,,IN {\c&H0000B8F8}DER{\c&H00FFFFFF} TIERLIST.
+Dialogue: 1,0:00:02.96,0:00:03.26,Sub,,0,0,0,,IN DER {\c&H0000B8F8}TIERLIST.{\c&H00FFFFFF}
+Dialogue: 1,0:00:03.26,0:00:04.02,Sub,,0,0,0,,{\c&H0000B8F8}KRAFTTRAINING{\c&H00FFFFFF} LANGSAM
+Dialogue: 1,0:00:04.02,0:00:04.32,Sub,,0,0,0,,KRAFTTRAINING {\c&H0000B8F8}LANGSAM{\c&H00FFFFFF}
+Dialogue: 1,0:00:04.32,0:00:04.82,Sub,,0,0,0,,{\c&H0000B8F8}STEIGERN?{\c&H00FFFFFF}
+Dialogue: 1,0:00:04.82,0:00:05.60,Sub,,0,0,0,,{\c&H0000B8F8}KRAFTTRAINING{\c&H00FFFFFF} LANGSAM
+Dialogue: 1,0:00:05.60,0:00:05.88,Sub,,0,0,0,,KRAFTTRAINING {\c&H0000B8F8}LANGSAM{\c&H00FFFFFF}
+Dialogue: 1,0:00:05.88,0:00:06.34,Sub,,0,0,0,,{\c&H0000B8F8}GESTEIGERT{\c&H00FFFFFF} DEFINITIV S-TIER,
+Dialogue: 1,0:00:06.34,0:00:06.88,Sub,,0,0,0,,GESTEIGERT {\c&H0000B8F8}DEFINITIV{\c&H00FFFFFF} S-TIER,
+Dialogue: 1,0:00:06.88,0:00:07.36,Sub,,0,0,0,,GESTEIGERT DEFINITIV {\c&H0000B8F8}S-TIER,{\c&H00FFFFFF}
+Dialogue: 1,0:00:07.38,0:00:07.60,Sub,,0,0,0,,{\c&H0000B8F8}VOR{\c&H00FFFFFF} ALLEM,
+Dialogue: 1,0:00:07.60,0:00:07.76,Sub,,0,0,0,,VOR {\c&H0000B8F8}ALLEM,{\c&H00FFFFFF}
+Dialogue: 1,0:00:08.00,0:00:08.22,Sub,,0,0,0,,{\c&H0000B8F8}UM{\c&H00FFFFFF} LANGFRISTIG DIE
+Dialogue: 1,0:00:08.22,0:00:08.62,Sub,,0,0,0,,UM {\c&H0000B8F8}LANGFRISTIG{\c&H00FFFFFF} DIE
+Dialogue: 1,0:00:08.62,0:00:08.76,Sub,,0,0,0,,UM LANGFRISTIG {\c&H0000B8F8}DIE{\c&H00FFFFFF}
+Dialogue: 1,0:00:08.76,0:00:09.54,Sub,,0,0,0,,{\c&H0000B8F8}BELASTUNGSTOLERANZ{\c&H00FFFFFF} AUFZUBAUEN.
+Dialogue: 1,0:00:09.54,0:00:09.93,Sub,,0,0,0,,BELASTUNGSTOLERANZ {\c&H0000B8F8}AUFZUBAUEN.{\c&H00FFFFFF}
+Dialogue: 1,0:00:10.12,0:00:10.60,Sub,,0,0,0,,{\c&H0000B8F8}JEGLICHE{\c&H00FFFFFF} A- VON
+Dialogue: 1,0:00:10.60,0:00:10.76,Sub,,0,0,0,,JEGLICHE {\c&H0000B8F8}A-{\c&H00FFFFFF} VON
+Dialogue: 1,0:00:10.76,0:00:11.08,Sub,,0,0,0,,JEGLICHE A- {\c&H0000B8F8}VON{\c&H00FFFFFF}
+Dialogue: 1,0:00:11.08,0:00:11.64,Sub,,0,0,0,,{\c&H0000B8F8}BANDAGEN,{\c&H00FFFFFF}
+Dialogue: 1,0:00:11.74,0:00:12.06,Sub,,0,0,0,,{\c&H0000B8F8}RÜCKEN,{\c&H00FFFFFF}
+Dialogue: 1,0:00:12.24,0:00:12.50,Sub,,0,0,0,,{\c&H0000B8F8}KNIE{\c&H00FFFFFF} ODER BANDAGEN
+Dialogue: 1,0:00:12.50,0:00:12.94,Sub,,0,0,0,,KNIE {\c&H0000B8F8}ODER{\c&H00FFFFFF} BANDAGEN
+Dialogue: 1,0:00:12.94,0:00:13.48,Sub,,0,0,0,,KNIE ODER {\c&H0000B8F8}BANDAGEN{\c&H00FFFFFF}
+Dialogue: 1,0:00:13.48,0:00:13.64,Sub,,0,0,0,,{\c&H0000B8F8}WÜRDE{\c&H00FFFFFF} ICH AUF
+Dialogue: 1,0:00:13.64,0:00:13.96,Sub,,0,0,0,,WÜRDE {\c&H0000B8F8}ICH{\c&H00FFFFFF} AUF
+Dialogue: 1,0:00:13.96,0:00:14.76,Sub,,0,0,0,,WÜRDE ICH {\c&H0000B8F8}AUF{\c&H00FFFFFF}
 Dialogue: 1,0:00:14.76,0:00:15.18,Sub,,0,0,0,,{\c&H0000B8F8}C{\c&H00FFFFFF}
-Dialogue: 1,0:00:16.88,0:00:18.64,Sub,,0,0,0,,{\c&H0000B8F8}-Tier{\c&H00FFFFFF} packen,
-Dialogue: 1,0:00:18.64,0:00:18.98,Sub,,0,0,0,,-Tier {\c&H0000B8F8}packen,{\c&H00FFFFFF}
-Dialogue: 1,0:00:19.24,0:00:19.56,Sub,,0,0,0,,{\c&H0000B8F8}ich{\c&H00FFFFFF} persönlich kann
-Dialogue: 1,0:00:19.56,0:00:20.12,Sub,,0,0,0,,ich {\c&H0000B8F8}persönlich{\c&H00FFFFFF} kann
-Dialogue: 1,0:00:20.12,0:00:21.78,Sub,,0,0,0,,ich persönlich {\c&H0000B8F8}kann{\c&H00FFFFFF}
-Dialogue: 1,0:00:21.78,0:00:22.12,Sub,,0,0,0,,{\c&H0000B8F8}es{\c&H00FFFFFF} einem Sicherheit
-Dialogue: 1,0:00:22.12,0:00:22.42,Sub,,0,0,0,,es {\c&H0000B8F8}einem{\c&H00FFFFFF} Sicherheit
-Dialogue: 1,0:00:22.42,0:00:22.68,Sub,,0,0,0,,es einem {\c&H0000B8F8}Sicherheit{\c&H00FFFFFF}
-Dialogue: 1,0:00:22.68,0:00:23.02,Sub,,0,0,0,,{\c&H0000B8F8}vermitteln.{\c&H00FFFFFF}
-Dialogue: 1,0:00:23.06,0:00:23.66,Sub,,0,0,0,,{\c&H0000B8F8}Schmerzaufklärung.{\c&H00FFFFFF}
-Dialogue: 1,0:00:23.68,0:00:23.96,Sub,,0,0,0,,{\c&H0000B8F8}Verstehen{\c&H00FFFFFF} wie Schmerz.
-Dialogue: 1,0:00:23.96,0:00:24.08,Sub,,0,0,0,,Verstehen {\c&H0000B8F8}wie{\c&H00FFFFFF} Schmerz.
-Dialogue: 1,0:00:24.08,0:00:24.38,Sub,,0,0,0,,Verstehen wie {\c&H0000B8F8}Schmerz.{\c&H00FFFFFF}
-Dialogue: 1,0:00:24.46,0:00:25.10,Sub,,0,0,0,,{\c&H0000B8F8}Schmerzaufklärung{\c&H00FFFFFF} definitiv
-Dialogue: 1,0:00:25.10,0:00:25.74,Sub,,0,0,0,,Schmerzaufklärung {\c&H0000B8F8}definitiv{\c&H00FFFFFF}
-Dialogue: 1,0:00:25.74,0:00:26.32,Sub,,0,0,0,,{\c&H0000B8F8}S-Tier,{\c&H00FFFFFF}
-Dialogue: 1,0:00:26.44,0:00:26.58,Sub,,0,0,0,,{\c&H0000B8F8}denn{\c&H00FFFFFF} Schmerz muss
-Dialogue: 1,0:00:26.58,0:00:27.10,Sub,,0,0,0,,denn {\c&H0000B8F8}Schmerz{\c&H00FFFFFF} muss
-Dialogue: 1,0:00:27.10,0:00:27.34,Sub,,0,0,0,,denn Schmerz {\c&H0000B8F8}muss{\c&H00FFFFFF}
-Dialogue: 1,0:00:27.34,0:00:27.48,Sub,,0,0,0,,{\c&H0000B8F8}nicht{\c&H00FFFFFF} immer strukturell
-Dialogue: 1,0:00:27.48,0:00:27.66,Sub,,0,0,0,,nicht {\c&H0000B8F8}immer{\c&H00FFFFFF} strukturell
-Dialogue: 1,0:00:27.66,0:00:28.10,Sub,,0,0,0,,nicht immer {\c&H0000B8F8}strukturell{\c&H00FFFFFF}
-Dialogue: 1,0:00:28.10,0:00:28.38,Sub,,0,0,0,,{\c&H0000B8F8}sein,{\c&H00FFFFFF}
-Dialogue: 1,0:00:28.60,0:00:28.80,Sub,,0,0,0,,{\c&H0000B8F8}deswegen{\c&H00FFFFFF} ist das
-Dialogue: 1,0:00:28.80,0:00:28.98,Sub,,0,0,0,,deswegen {\c&H0000B8F8}ist{\c&H00FFFFFF} das
-Dialogue: 1,0:00:28.98,0:00:29.18,Sub,,0,0,0,,deswegen ist {\c&H0000B8F8}das{\c&H00FFFFFF}
-Dialogue: 1,0:00:29.18,0:00:29.48,Sub,,0,0,0,,{\c&H0000B8F8}ganz{\c&H00FFFFFF} wichtig zu
-Dialogue: 1,0:00:29.48,0:00:29.66,Sub,,0,0,0,,ganz {\c&H0000B8F8}wichtig{\c&H00FFFFFF} zu
-Dialogue: 1,0:00:29.66,0:00:29.90,Sub,,0,0,0,,ganz wichtig {\c&H0000B8F8}zu{\c&H00FFFFFF}
-Dialogue: 1,0:00:29.90,0:00:30.22,Sub,,0,0,0,,{\c&H0000B8F8}verstehen.{\c&H00FFFFFF}
-Dialogue: 1,0:00:30.56,0:00:30.68,Sub,,0,0,0,,{\c&H0000B8F8}Schlaf{\c&H00FFFFFF} und Stress
-Dialogue: 1,0:00:30.68,0:00:30.90,Sub,,0,0,0,,Schlaf {\c&H0000B8F8}und{\c&H00FFFFFF} Stress
-Dialogue: 1,0:00:30.90,0:00:31.20,Sub,,0,0,0,,Schlaf und {\c&H0000B8F8}Stress{\c&H00FFFFFF}
-Dialogue: 1,0:00:31.20,0:00:31.32,Sub,,0,0,0,,{\c&H0000B8F8}verbessern.{\c&H00FFFFFF}
-Dialogue: 1,0:00:31.32,0:00:31.68,Sub,,0,0,0,,{\c&H0000B8F8}Schlaf{\c&H00FFFFFF} und Stress
-Dialogue: 1,0:00:31.68,0:00:31.84,Sub,,0,0,0,,Schlaf {\c&H0000B8F8}und{\c&H00FFFFFF} Stress
-Dialogue: 1,0:00:31.84,0:00:32.04,Sub,,0,0,0,,Schlaf und {\c&H0000B8F8}Stress{\c&H00FFFFFF}
-Dialogue: 1,0:00:32.04,0:00:32.54,Sub,,0,0,0,,{\c&H0000B8F8}verbessern,{\c&H00FFFFFF}
-Dialogue: 1,0:00:32.70,0:00:33.24,Sub,,0,0,0,,{\c&H0000B8F8}definitiv{\c&H00FFFFFF} S oder
-Dialogue: 1,0:00:33.24,0:00:33.60,Sub,,0,0,0,,definitiv {\c&H0000B8F8}S{\c&H00FFFFFF} oder
-Dialogue: 1,0:00:33.60,0:00:33.90,Sub,,0,0,0,,definitiv S {\c&H0000B8F8}oder{\c&H00FFFFFF}
-Dialogue: 1,0:00:33.90,0:00:34.14,Sub,,0,0,0,,{\c&H0000B8F8}A{\c&H00FFFFFF} -Tier,
-Dialogue: 1,0:00:34.14,0:00:34.48,Sub,,0,0,0,,A {\c&H0000B8F8}-Tier,{\c&H00FFFFFF}
-Dialogue: 1,0:00:34.52,0:00:34.68,Sub,,0,0,0,,{\c&H0000B8F8}kommt{\c&H00FFFFFF} natürlich immer
-Dialogue: 1,0:00:34.68,0:00:35.10,Sub,,0,0,0,,kommt {\c&H0000B8F8}natürlich{\c&H00FFFFFF} immer
-Dialogue: 1,0:00:35.10,0:00:35.32,Sub,,0,0,0,,kommt natürlich {\c&H0000B8F8}immer{\c&H00FFFFFF}
-Dialogue: 1,0:00:35.32,0:00:35.58,Sub,,0,0,0,,{\c&H0000B8F8}drauf{\c&H00FFFFFF} an,
-Dialogue: 1,0:00:35.58,0:00:36.06,Sub,,0,0,0,,drauf {\c&H0000B8F8}an,{\c&H00FFFFFF}
-Dialogue: 1,0:00:36.26,0:00:36.46,Sub,,0,0,0,,{\c&H0000B8F8}woher{\c&H00FFFFFF} der Schmerz
-Dialogue: 1,0:00:36.46,0:00:36.58,Sub,,0,0,0,,woher {\c&H0000B8F8}der{\c&H00FFFFFF} Schmerz
-Dialogue: 1,0:00:36.58,0:00:36.86,Sub,,0,0,0,,woher der {\c&H0000B8F8}Schmerz{\c&H00FFFFFF}
-Dialogue: 1,0:00:36.86,0:00:37.22,Sub,,0,0,0,,{\c&H0000B8F8}kommt,{\c&H00FFFFFF}
-Dialogue: 1,0:00:37.80,0:00:37.92,Sub,,0,0,0,,{\c&H0000B8F8}also{\c&H00FFFFFF} welchen Ursprungs
-Dialogue: 1,0:00:37.92,0:00:38.12,Sub,,0,0,0,,also {\c&H0000B8F8}welchen{\c&H00FFFFFF} Ursprungs
-Dialogue: 1,0:00:38.12,0:00:38.54,Sub,,0,0,0,,also welchen {\c&H0000B8F8}Ursprungs{\c&H00FFFFFF}
-Dialogue: 1,0:00:38.54,0:00:38.74,Sub,,0,0,0,,{\c&H0000B8F8}der{\c&H00FFFFFF} Schmerz ist.
-Dialogue: 1,0:00:38.74,0:00:39.10,Sub,,0,0,0,,der {\c&H0000B8F8}Schmerz{\c&H00FFFFFF} ist.
-Dialogue: 1,0:00:39.10,0:00:39.50,Sub,,0,0,0,,der Schmerz {\c&H0000B8F8}ist.{\c&H00FFFFFF}
-Dialogue: 1,0:00:40.72,0:00:41.18,Sub,,0,0,0,,{\c&H0000B8F8}Deswegen{\c&H00FFFFFF} will ich
-Dialogue: 1,0:00:41.18,0:00:41.46,Sub,,0,0,0,,Deswegen {\c&H0000B8F8}will{\c&H00FFFFFF} ich
-Dialogue: 1,0:00:41.46,0:00:41.54,Sub,,0,0,0,,Deswegen will {\c&H0000B8F8}ich{\c&H00FFFFFF}
-Dialogue: 1,0:00:41.54,0:00:41.68,Sub,,0,0,0,,{\c&H0000B8F8}mich{\c&H00FFFFFF} da nicht
-Dialogue: 1,0:00:41.68,0:00:41.78,Sub,,0,0,0,,mich {\c&H0000B8F8}da{\c&H00FFFFFF} nicht
-Dialogue: 1,0:00:41.78,0:00:41.94,Sub,,0,0,0,,mich da {\c&H0000B8F8}nicht{\c&H00FFFFFF}
-Dialogue: 1,0:00:41.94,0:00:42.82,Sub,,0,0,0,,{\c&H0000B8F8}festsetzen,{\c&H00FFFFFF}
-Dialogue: 1,0:00:43.04,0:00:43.16,Sub,,0,0,0,,{\c&H0000B8F8}kann{\c&H00FFFFFF} S -Tier
-Dialogue: 1,0:00:43.16,0:00:43.42,Sub,,0,0,0,,kann {\c&H0000B8F8}S{\c&H00FFFFFF} -Tier
-Dialogue: 1,0:00:43.42,0:00:43.48,Sub,,0,0,0,,kann S {\c&H0000B8F8}-Tier{\c&H00FFFFFF}
-Dialogue: 1,0:00:43.48,0:00:43.80,Sub,,0,0,0,,{\c&H0000B8F8}sein,{\c&H00FFFFFF}
-Dialogue: 1,0:00:43.98,0:00:44.14,Sub,,0,0,0,,{\c&H0000B8F8}kann{\c&H00FFFFFF} auch A
-Dialogue: 1,0:00:44.14,0:00:44.30,Sub,,0,0,0,,kann {\c&H0000B8F8}auch{\c&H00FFFFFF} A
-Dialogue: 1,0:00:44.30,0:00:44.48,Sub,,0,0,0,,kann auch {\c&H0000B8F8}A{\c&H00FFFFFF}
-Dialogue: 1,0:00:44.48,0:00:44.62,Sub,,0,0,0,,{\c&H0000B8F8}-Tier{\c&H00FFFFFF} sein.
-Dialogue: 1,0:00:44.62,0:00:44.84,Sub,,0,0,0,,-Tier {\c&H0000B8F8}sein.{\c&H00FFFFFF}
+Dialogue: 1,0:00:16.88,0:00:18.64,Sub,,0,0,0,,{\c&H0000B8F8}-TIER{\c&H00FFFFFF} PACKEN,
+Dialogue: 1,0:00:18.64,0:00:18.98,Sub,,0,0,0,,-TIER {\c&H0000B8F8}PACKEN,{\c&H00FFFFFF}
+Dialogue: 1,0:00:19.24,0:00:19.56,Sub,,0,0,0,,{\c&H0000B8F8}ICH{\c&H00FFFFFF} PERSÖNLICH KANN
+Dialogue: 1,0:00:19.56,0:00:20.12,Sub,,0,0,0,,ICH {\c&H0000B8F8}PERSÖNLICH{\c&H00FFFFFF} KANN
+Dialogue: 1,0:00:20.12,0:00:21.78,Sub,,0,0,0,,ICH PERSÖNLICH {\c&H0000B8F8}KANN{\c&H00FFFFFF}
+Dialogue: 1,0:00:21.78,0:00:22.12,Sub,,0,0,0,,{\c&H0000B8F8}ES{\c&H00FFFFFF} EINEM SICHERHEIT
+Dialogue: 1,0:00:22.12,0:00:22.42,Sub,,0,0,0,,ES {\c&H0000B8F8}EINEM{\c&H00FFFFFF} SICHERHEIT
+Dialogue: 1,0:00:22.42,0:00:22.68,Sub,,0,0,0,,ES EINEM {\c&H0000B8F8}SICHERHEIT{\c&H00FFFFFF}
+Dialogue: 1,0:00:22.68,0:00:23.02,Sub,,0,0,0,,{\c&H0000B8F8}VERMITTELN.{\c&H00FFFFFF}
+Dialogue: 1,0:00:23.06,0:00:23.66,Sub,,0,0,0,,{\c&H0000B8F8}SCHMERZAUFKLÄRUNG.{\c&H00FFFFFF}
+Dialogue: 1,0:00:23.68,0:00:23.96,Sub,,0,0,0,,{\c&H0000B8F8}VERSTEHEN{\c&H00FFFFFF} WIE SCHMERZ.
+Dialogue: 1,0:00:23.96,0:00:24.08,Sub,,0,0,0,,VERSTEHEN {\c&H0000B8F8}WIE{\c&H00FFFFFF} SCHMERZ.
+Dialogue: 1,0:00:24.08,0:00:24.38,Sub,,0,0,0,,VERSTEHEN WIE {\c&H0000B8F8}SCHMERZ.{\c&H00FFFFFF}
+Dialogue: 1,0:00:24.46,0:00:25.10,Sub,,0,0,0,,{\c&H0000B8F8}SCHMERZAUFKLÄRUNG{\c&H00FFFFFF} DEFINITIV
+Dialogue: 1,0:00:25.10,0:00:25.74,Sub,,0,0,0,,SCHMERZAUFKLÄRUNG {\c&H0000B8F8}DEFINITIV{\c&H00FFFFFF}
+Dialogue: 1,0:00:25.74,0:00:26.32,Sub,,0,0,0,,{\c&H0000B8F8}S-TIER,{\c&H00FFFFFF}
+Dialogue: 1,0:00:26.44,0:00:26.58,Sub,,0,0,0,,{\c&H0000B8F8}DENN{\c&H00FFFFFF} SCHMERZ MUSS
+Dialogue: 1,0:00:26.58,0:00:27.10,Sub,,0,0,0,,DENN {\c&H0000B8F8}SCHMERZ{\c&H00FFFFFF} MUSS
+Dialogue: 1,0:00:27.10,0:00:27.34,Sub,,0,0,0,,DENN SCHMERZ {\c&H0000B8F8}MUSS{\c&H00FFFFFF}
+Dialogue: 1,0:00:27.34,0:00:27.48,Sub,,0,0,0,,{\c&H0000B8F8}NICHT{\c&H00FFFFFF} IMMER STRUKTURELL
+Dialogue: 1,0:00:27.48,0:00:27.66,Sub,,0,0,0,,NICHT {\c&H0000B8F8}IMMER{\c&H00FFFFFF} STRUKTURELL
+Dialogue: 1,0:00:27.66,0:00:28.10,Sub,,0,0,0,,NICHT IMMER {\c&H0000B8F8}STRUKTURELL{\c&H00FFFFFF}
+Dialogue: 1,0:00:28.10,0:00:28.38,Sub,,0,0,0,,{\c&H0000B8F8}SEIN,{\c&H00FFFFFF}
+Dialogue: 1,0:00:28.60,0:00:28.80,Sub,,0,0,0,,{\c&H0000B8F8}DESWEGEN{\c&H00FFFFFF} IST DAS
+Dialogue: 1,0:00:28.80,0:00:28.98,Sub,,0,0,0,,DESWEGEN {\c&H0000B8F8}IST{\c&H00FFFFFF} DAS
+Dialogue: 1,0:00:28.98,0:00:29.18,Sub,,0,0,0,,DESWEGEN IST {\c&H0000B8F8}DAS{\c&H00FFFFFF}
+Dialogue: 1,0:00:29.18,0:00:29.48,Sub,,0,0,0,,{\c&H0000B8F8}GANZ{\c&H00FFFFFF} WICHTIG ZU
+Dialogue: 1,0:00:29.48,0:00:29.66,Sub,,0,0,0,,GANZ {\c&H0000B8F8}WICHTIG{\c&H00FFFFFF} ZU
+Dialogue: 1,0:00:29.66,0:00:29.90,Sub,,0,0,0,,GANZ WICHTIG {\c&H0000B8F8}ZU{\c&H00FFFFFF}
+Dialogue: 1,0:00:29.90,0:00:30.22,Sub,,0,0,0,,{\c&H0000B8F8}VERSTEHEN.{\c&H00FFFFFF}
+Dialogue: 1,0:00:30.56,0:00:30.68,Sub,,0,0,0,,{\c&H0000B8F8}SCHLAF{\c&H00FFFFFF} UND STRESS
+Dialogue: 1,0:00:30.68,0:00:30.90,Sub,,0,0,0,,SCHLAF {\c&H0000B8F8}UND{\c&H00FFFFFF} STRESS
+Dialogue: 1,0:00:30.90,0:00:31.20,Sub,,0,0,0,,SCHLAF UND {\c&H0000B8F8}STRESS{\c&H00FFFFFF}
+Dialogue: 1,0:00:31.20,0:00:31.32,Sub,,0,0,0,,{\c&H0000B8F8}VERBESSERN.{\c&H00FFFFFF}
+Dialogue: 1,0:00:31.32,0:00:31.68,Sub,,0,0,0,,{\c&H0000B8F8}SCHLAF{\c&H00FFFFFF} UND STRESS
+Dialogue: 1,0:00:31.68,0:00:31.84,Sub,,0,0,0,,SCHLAF {\c&H0000B8F8}UND{\c&H00FFFFFF} STRESS
+Dialogue: 1,0:00:31.84,0:00:32.04,Sub,,0,0,0,,SCHLAF UND {\c&H0000B8F8}STRESS{\c&H00FFFFFF}
+Dialogue: 1,0:00:32.04,0:00:32.54,Sub,,0,0,0,,{\c&H0000B8F8}VERBESSERN,{\c&H00FFFFFF}
+Dialogue: 1,0:00:32.70,0:00:33.24,Sub,,0,0,0,,{\c&H0000B8F8}DEFINITIV{\c&H00FFFFFF} S ODER
+Dialogue: 1,0:00:33.24,0:00:33.60,Sub,,0,0,0,,DEFINITIV {\c&H0000B8F8}S{\c&H00FFFFFF} ODER
+Dialogue: 1,0:00:33.60,0:00:33.90,Sub,,0,0,0,,DEFINITIV S {\c&H0000B8F8}ODER{\c&H00FFFFFF}
+Dialogue: 1,0:00:33.90,0:00:34.14,Sub,,0,0,0,,{\c&H0000B8F8}A{\c&H00FFFFFF} -TIER,
+Dialogue: 1,0:00:34.14,0:00:34.48,Sub,,0,0,0,,A {\c&H0000B8F8}-TIER,{\c&H00FFFFFF}
+Dialogue: 1,0:00:34.52,0:00:34.68,Sub,,0,0,0,,{\c&H0000B8F8}KOMMT{\c&H00FFFFFF} NATÜRLICH IMMER
+Dialogue: 1,0:00:34.68,0:00:35.10,Sub,,0,0,0,,KOMMT {\c&H0000B8F8}NATÜRLICH{\c&H00FFFFFF} IMMER
+Dialogue: 1,0:00:35.10,0:00:35.32,Sub,,0,0,0,,KOMMT NATÜRLICH {\c&H0000B8F8}IMMER{\c&H00FFFFFF}
+Dialogue: 1,0:00:35.32,0:00:35.58,Sub,,0,0,0,,{\c&H0000B8F8}DRAUF{\c&H00FFFFFF} AN,
+Dialogue: 1,0:00:35.58,0:00:36.06,Sub,,0,0,0,,DRAUF {\c&H0000B8F8}AN,{\c&H00FFFFFF}
+Dialogue: 1,0:00:36.26,0:00:36.46,Sub,,0,0,0,,{\c&H0000B8F8}WOHER{\c&H00FFFFFF} DER SCHMERZ
+Dialogue: 1,0:00:36.46,0:00:36.58,Sub,,0,0,0,,WOHER {\c&H0000B8F8}DER{\c&H00FFFFFF} SCHMERZ
+Dialogue: 1,0:00:36.58,0:00:36.86,Sub,,0,0,0,,WOHER DER {\c&H0000B8F8}SCHMERZ{\c&H00FFFFFF}
+Dialogue: 1,0:00:36.86,0:00:37.22,Sub,,0,0,0,,{\c&H0000B8F8}KOMMT,{\c&H00FFFFFF}
+Dialogue: 1,0:00:37.80,0:00:37.92,Sub,,0,0,0,,{\c&H0000B8F8}ALSO{\c&H00FFFFFF} WELCHEN URSPRUNGS
+Dialogue: 1,0:00:37.92,0:00:38.12,Sub,,0,0,0,,ALSO {\c&H0000B8F8}WELCHEN{\c&H00FFFFFF} URSPRUNGS
+Dialogue: 1,0:00:38.12,0:00:38.54,Sub,,0,0,0,,ALSO WELCHEN {\c&H0000B8F8}URSPRUNGS{\c&H00FFFFFF}
+Dialogue: 1,0:00:38.54,0:00:38.74,Sub,,0,0,0,,{\c&H0000B8F8}DER{\c&H00FFFFFF} SCHMERZ IST.
+Dialogue: 1,0:00:38.74,0:00:39.10,Sub,,0,0,0,,DER {\c&H0000B8F8}SCHMERZ{\c&H00FFFFFF} IST.
+Dialogue: 1,0:00:39.10,0:00:39.50,Sub,,0,0,0,,DER SCHMERZ {\c&H0000B8F8}IST.{\c&H00FFFFFF}
+Dialogue: 1,0:00:40.72,0:00:41.18,Sub,,0,0,0,,{\c&H0000B8F8}DESWEGEN{\c&H00FFFFFF} WILL ICH
+Dialogue: 1,0:00:41.18,0:00:41.46,Sub,,0,0,0,,DESWEGEN {\c&H0000B8F8}WILL{\c&H00FFFFFF} ICH
+Dialogue: 1,0:00:41.46,0:00:41.54,Sub,,0,0,0,,DESWEGEN WILL {\c&H0000B8F8}ICH{\c&H00FFFFFF}
+Dialogue: 1,0:00:41.54,0:00:41.68,Sub,,0,0,0,,{\c&H0000B8F8}MICH{\c&H00FFFFFF} DA NICHT
+Dialogue: 1,0:00:41.68,0:00:41.78,Sub,,0,0,0,,MICH {\c&H0000B8F8}DA{\c&H00FFFFFF} NICHT
+Dialogue: 1,0:00:41.78,0:00:41.94,Sub,,0,0,0,,MICH DA {\c&H0000B8F8}NICHT{\c&H00FFFFFF}
+Dialogue: 1,0:00:41.94,0:00:42.82,Sub,,0,0,0,,{\c&H0000B8F8}FESTSETZEN,{\c&H00FFFFFF}
+Dialogue: 1,0:00:43.04,0:00:43.16,Sub,,0,0,0,,{\c&H0000B8F8}KANN{\c&H00FFFFFF} S -TIER
+Dialogue: 1,0:00:43.16,0:00:43.42,Sub,,0,0,0,,KANN {\c&H0000B8F8}S{\c&H00FFFFFF} -TIER
+Dialogue: 1,0:00:43.42,0:00:43.48,Sub,,0,0,0,,KANN S {\c&H0000B8F8}-TIER{\c&H00FFFFFF}
+Dialogue: 1,0:00:43.48,0:00:43.80,Sub,,0,0,0,,{\c&H0000B8F8}SEIN,{\c&H00FFFFFF}
+Dialogue: 1,0:00:43.98,0:00:44.14,Sub,,0,0,0,,{\c&H0000B8F8}KANN{\c&H00FFFFFF} AUCH A
+Dialogue: 1,0:00:44.14,0:00:44.30,Sub,,0,0,0,,KANN {\c&H0000B8F8}AUCH{\c&H00FFFFFF} A
+Dialogue: 1,0:00:44.30,0:00:44.48,Sub,,0,0,0,,KANN AUCH {\c&H0000B8F8}A{\c&H00FFFFFF}
+Dialogue: 1,0:00:44.48,0:00:44.62,Sub,,0,0,0,,{\c&H0000B8F8}-TIER{\c&H00FFFFFF} SEIN.
+Dialogue: 1,0:00:44.62,0:00:44.84,Sub,,0,0,0,,-TIER {\c&H0000B8F8}SEIN.{\c&H00FFFFFF}
