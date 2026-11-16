@@ -1,0 +1,162 @@
+{
+  "titel": "Outside of my elbow hurts: lateral elbow tendinopathy (EN)",
+  "ausgabe": "../reels/01_ellenbogen_LET_EN.mp4",
+  "uebung": true,
+  "skript": {
+    "hook": "Patient shakes his arm: 'The outside of my elbow hurts!!!'",
+    "aufbau": "Physio: 'Where?' → patient points exactly to the outside of the elbow → physio: lateral elbow tendinopathy (scream).",
+    "payoff": "3 exercises: isometric hold → pronation & supination with dumbbell → side-lying external rotation, eccentric back to neutral."
+  },
+  "hook": {
+    "stil": "trend",
+    "text": "“The outside of my elbow hurts!!!”",
+    "start": 0.0,
+    "dauer": 1.33,
+    "y": 1180,
+    "groesse": 46,
+    "animation": "pop",
+    "punch_in": false,
+    "visuell": "André schüttelt den schmerzenden Arm, kurzer Zoom drauf und wieder raus"
+  },
+  "segmente": [
+    {
+      "quelle": "../roh/IMG_4127.mov",
+      "start": 3.75,
+      "ende": 5.08,
+      "ton": false,
+      "zoom_puls": {
+        "x": 0.5,
+        "y": 0.45,
+        "staerke": 0.6,
+        "ein": 0.15,
+        "halten": 0.5,
+        "aus": 0.3
+      }
+    },
+    {
+      "quelle": "../roh/IMG_4114.mov",
+      "start": 1.0,
+      "ende": 2.47,
+      "ton": false
+    },
+    {
+      "quelle": "../roh/IMG_4126.mov",
+      "start": 4.0,
+      "ende": 5.57,
+      "ton": false
+    },
+    {
+      "quelle": "../roh/IMG_4115.mov",
+      "start": 0.8,
+      "ende": 2.2,
+      "ton": false
+    },
+    {
+      "quelle": "../roh/IMG_4128.mov",
+      "start": 0.6,
+      "ende": 3.03,
+      "ton": false
+    },
+    {
+      "quelle": "../roh/IMG_4129.mov",
+      "start": 3.5,
+      "ende": 6.6,
+      "ton": false
+    },
+    {
+      "quelle": "../roh/IMG_4130.mov",
+      "start": 0.0,
+      "ende": 3.4,
+      "ton": false
+    }
+  ],
+  "untertitel": false,
+  "einblendungen": [
+    {
+      "stil": "trend",
+      "text": "“Where?”",
+      "x": 540,
+      "y": 960,
+      "start": 1.33,
+      "ende": 2.8,
+      "groesse": 50
+    },
+    {
+      "stil": "trend",
+      "text": "\\*points exactly to the spot\non the outside of the elbow\\*",
+      "x": 540,
+      "y": 960,
+      "start": 2.8,
+      "ende": 4.37,
+      "groesse": 46
+    },
+    {
+      "stil": "trend",
+      "text": "“Lateral elbow\ntendinopathy”",
+      "x": 540,
+      "y": 1150,
+      "start": 4.37,
+      "ende": 5.77,
+      "groesse": 50
+    },
+    {
+      "stil": "trend",
+      "text": "Isometric hold\nwrist extended · 5 × 45 sec",
+      "x": 540,
+      "y": 960,
+      "start": 5.77,
+      "ende": 8.2,
+      "groesse": 46
+    },
+    {
+      "stil": "trend",
+      "text": "Pronation & supination\nwith dumbbell · 3 × 15 slow",
+      "x": 540,
+      "y": 960,
+      "start": 8.2,
+      "ende": 11.3,
+      "groesse": 46
+    },
+    {
+      "stil": "trend",
+      "text": "Side-lying external rotation\neccentric: slowly lower\nback to neutral · 3 × 10",
+      "x": 540,
+      "y": 520,
+      "start": 11.3,
+      "ende": 14.7,
+      "groesse": 46
+    }
+  ],
+  "sounds": [
+    {
+      "name": "../roh/vorlage_sound.wav",
+      "zeit": 0,
+      "lautstaerke": 1.0
+    }
+  ],
+  "aussagen": [
+    {
+      "text": "Pain on the outside of the elbow often fits lateral elbow tendinopathy, the currently accepted term instead of 'lateral epicondylitis' or 'tennis elbow'.",
+      "quelle": "Bateman M et al. Development of a core outcome set for lateral elbow tendinopathy (COS-LET) using best available evidence and an international consensus process. Br J Sports Med 2022;56(12):657–666",
+      "status": "konsens"
+    },
+    {
+      "text": "Active strengthening of the arm is first-line treatment for lateral elbow tendinopathy and better than wait-and-see.",
+      "quelle": "Karanasios S, Korakakis V, Moutzouri M et al. Exercise interventions in lateral elbow tendinopathy have better outcomes than passive interventions, but the effects are small: a systematic review and meta-analysis of 2123 subjects in 30 trials. Br J Sports Med 2021;55(9):477–485",
+      "status": "belegt"
+    }
+  ],
+  "caption": "Pain on the outside of your elbow, especially when gripping, carrying or typing? That often fits lateral elbow tendinopathy (formerly 'tennis elbow'). This is not a remote diagnosis though, get your elbow checked.\n\n3 exercises you can try, from easier to harder.\n\nIf something hurts, don't go deeper into the movement.\n\nSave this reel for your next workout.",
+  "hashtags": [
+    "#tenniselbow",
+    "#elbowpain",
+    "#tendinopathy",
+    "#physiotherapy",
+    "#armworkout"
+  ],
+  "hinweise": [
+    "English version of the German elbow reel; same cuts and sound timing.",
+    "Better: use the original trend sound via 'Use audio' in Instagram and mute the embedded sound."
+  ],
+  "sprache": "en"
+}
