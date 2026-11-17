@@ -1,9 +1,11 @@
-# 02_tierlist_teil2  (48.5 s)
+# 02_tierlist_teil2  (54.0 s)
 
 ## Caption (zum Posten)
 Teil 2 unserer Schmerz-Tierlist, jetzt ist das Board komplett.
 
 Wichtig: Wir haben nach NACHHALTIGKEIT gerankt, also danach, wie gut etwas deine Schmerzen auf lange Sicht in den Griff bekommt. Nicht danach, ob es überhaupt wirkt. Eine Bandage oder Akupunktur kann kurzfristig helfen, macht dich aber langfristig nicht belastbarer. Und: Jeder Schmerz ist individuell, das ersetzt keine Untersuchung.
+
+Übrigens: Schlaf und Stress sind nicht immer die Ursache von Schmerz. Studien zeigen aber, dass sie wie ein Lautstärkeregler wirken: Schlechter Schlaf und Dauerstress können Schmerz lauter machen.
 
 Stimmst du zu? Schreib's in die Kommentare und speicher dir die Liste.
 
@@ -24,6 +26,7 @@ Stimmst du zu? Schreib's in die Kommentare und speicher dir die Liste.
 - "Bandagen/Stützgürtel können Sicherheit vermitteln, werden bei Rückenschmerz aber nicht empfohlen." -> NICE NG59, Empfehlung 1.2.3 ('Do not offer belts or corsets') [belegt]
 - "Schmerz muss nicht immer strukturell bedingt sein; Schmerzaufklärung hilft, das zu verstehen." -> Raja SN et al. Revised IASP definition of pain. Pain 2020; Louw A et al. Physiother Theory Pract 2016 [konsens]
 - "Schlaf und Stress beeinflussen das Schmerzerleben." -> Finan PH et al. The association of sleep and pain. J Pain 2013; Raja SN et al. Pain 2020 [konsens]
+- "Schlaf und Stress müssen nicht die Ursache von Schmerz sein, beeinflussen aber, wie stark er wahrgenommen wird (Schlafmangel senkt die Schmerzschwelle; chronischer Stress kann das Schmerzsystem sensibilisieren)." -> Krause AJ et al. The Pain of Sleep Loss: A Brain Characterization in Humans. J Neurosci 2019;39(12):2291–2300; Hannibal KE, Bishop MD. Chronic stress, cortisol dysfunction, and pain. Phys Ther 2014;94(12):1816–1825; Finan PH et al. J Pain 2013 [belegt] - Krause: Schlafentzug senkt Schmerzschwelle, schlechtere Nacht -> mehr Schmerz am Folgetag. Hannibal & Bishop: Übersicht Stress/Cortisol und Schmerz.
 
 ## Hinweise fuer Andre
 - Board-Grafik füllt sich genau dann, wenn André die Stufe ausspricht.

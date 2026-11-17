@@ -24,8 +24,13 @@ Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
 Dialogue: 5,0:00:00.00,0:00:03.00,Hook,,0,0,0,,{\an8\pos(540,365)\fscx118\fscy118\t(0,140,\fscx100\fscy100)\fad(60,120)\fs182}WAS HILFT {\c&H0000B8F8}WIRKLICH{\c&H00FFFFFF&}
 Dialogue: 5,0:00:00.00,0:00:03.00,Hook,,0,0,0,,{\an8\pos(540,522)\fscx118\fscy118\t(0,140,\fscx100\fscy100)\fad(60,120)\fs182}BEI SCHMERZEN?
 Dialogue: 5,0:00:00.00,0:00:03.00,HookUnter,,0,0,0,,{\an8\pos(540,706)\fscx118\fscy118\t(0,140,\fscx100\fscy100)\fad(60,120)}TIERLIST · TEIL 2
-Dialogue: 4,0:00:44.84,0:00:48.46,Fakt,,0,0,0,,{\an8\pos(540,260)\fad(120,120)\fs118}DAS IST DIE LISTE
-Dialogue: 4,0:00:44.84,0:00:48.46,Fakt,,0,0,0,,{\an8\pos(540,361)\fad(120,120)\fs118}{\c&H0000B8F8}LIES DIE CAPTION!{\c&H00FFFFFF&}
+Dialogue: 4,0:00:50.34,0:00:53.96,Fakt,,0,0,0,,{\an8\pos(540,260)\fad(120,120)\fs118}DAS IST DIE LISTE
+Dialogue: 4,0:00:50.34,0:00:53.96,Fakt,,0,0,0,,{\an8\pos(540,361)\fad(120,120)\fs118}{\c&H0000B8F8}LIES DIE CAPTION!{\c&H00FFFFFF&}
+Dialogue: 4,0:00:44.84,0:00:50.34,Fakt,,0,0,0,,{\an8\pos(540,1000)\fad(120,120)\fs118}GUT ZU WISSEN:
+Dialogue: 4,0:00:44.84,0:00:50.34,Fakt,,0,0,0,,{\an8\pos(540,1101)\fad(120,120)\fs118}SCHLAF & STRESS SIND NICHT
+Dialogue: 4,0:00:44.84,0:00:50.34,Fakt,,0,0,0,,{\an8\pos(540,1203)\fad(120,120)\fs118}IMMER DIE URSACHE.
+Dialogue: 4,0:00:44.84,0:00:50.34,Fakt,,0,0,0,,{\an8\pos(540,1304)\fad(120,120)\fs118}EHER EIN {\c&H0000B8F8}LAUTSTÄRKEREGLER{\c&H00FFFFFF&},
+Dialogue: 4,0:00:44.84,0:00:50.34,Fakt,,0,0,0,,{\an8\pos(540,1406)\fad(120,120)\fs118}WIE LAUT SCHMERZ WIRD.
 Dialogue: 2,0:00:03.30,0:00:44.84,Fuss,,0,0,0,,{\an1\pos(44,1490)\fad(300,300)}Gerankt nach Nachhaltigkeit, nicht nach Wirkung
 Dialogue: 1,0:00:00.00,0:00:00.34,Sub,,0,0,0,,{\c&H0000B8F8}WAS{\c&H00FFFFFF} HILFT EIGENTLICH
 Dialogue: 1,0:00:00.34,0:00:00.56,Sub,,0,0,0,,WAS {\c&H0000B8F8}HILFT{\c&H00FFFFFF} EIGENTLICH

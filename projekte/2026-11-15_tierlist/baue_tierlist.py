@@ -143,6 +143,9 @@ def baue(name, reihe, vorher, titel, unterzeile, endtext, caption, tags):
                 quellzeit.append((teil, s0, s1, t))
                 t += s1 - s0
         marken[key][1] = t
+        if key == "schlaf":
+            regler = regler_standbild(segs, t)
+            t = regler[1]
 
     def aus(teil, q):
         for tl, s0, s1, o in quellzeit:
@@ -170,8 +173,12 @@ def baue(name, reihe, vorher, titel, unterzeile, endtext, caption, tags):
                        "x": 10, "y": 230, "breite": 600, "ein": 0.12})
     a_end = marken["pause"][0]
     einbl = [{"start": round(a_end, 2), "ende": round(t, 2), "text": endtext},
-             {"stil": "fussnote", "start": 3.3, "ende": round(a_end, 2), "text": FUSSNOTE}]
-    aussagen = [QUELLEN[k] for k in reihe if k in QUELLEN]
+             *([{"start": round(regler[0], 2), "ende": round(regler[1], 2), "text": REGLER_TEXT, "y": 1000}]
+               if "schlaf" in reihe else []),
+             {"stil": "fussnote", "start": 3.3, "ende": round(regler[0] if "schlaf" in reihe else a_end, 2), "text": FUSSNOTE}]
+    aussagen = [QUELLEN[k] for k in reihe if k in QUELLEN] + ([REGLER_AUSSAGE] if "schlaf" in reihe else [])
+    if "schlaf" in reihe:
+        caption = caption.replace("\n\nStimmst du zu?", REGLER_CAPTION + "\n\nStimmst du zu?")
     spec = {
         "titel": name, "ausgabe": f"../reels/{name}.mp4", "uebung": False, "ton_reparatur": True,
         "skript": {"hook": "Was hilft eigentlich bei Schmerzen? Tierlist.",
@@ -192,6 +199,26 @@ def baue(name, reihe, vorher, titel, unterzeile, endtext, caption, tags):
 
 
 FUSSNOTE = "Gerankt nach Nachhaltigkeit, nicht nach Wirkung"
+REGLER_DAUER = 5.5
+REGLER_TEXT = "Gut zu wissen:\nSchlaf & Stress sind nicht\nimmer die Ursache.\nEher ein *Lautstärkeregler*,\nwie laut Schmerz wird."
+REGLER_AUSSAGE = {
+    "text": "Schlaf und Stress müssen nicht die Ursache von Schmerz sein, beeinflussen aber, wie stark er wahrgenommen wird "
+            "(Schlafmangel senkt die Schmerzschwelle; chronischer Stress kann das Schmerzsystem sensibilisieren).",
+    "quelle": "Krause AJ et al. The Pain of Sleep Loss: A Brain Characterization in Humans. J Neurosci 2019;39(12):2291–2300; "
+              "Hannibal KE, Bishop MD. Chronic stress, cortisol dysfunction, and pain. Phys Ther 2014;94(12):1816–1825; "
+              "Finan PH et al. J Pain 2013",
+    "status": "belegt",
+    "beleg": "Krause: Schlafentzug senkt Schmerzschwelle, schlechtere Nacht -> mehr Schmerz am Folgetag. Hannibal & Bishop: Übersicht Stress/Cortisol und Schmerz."}
+REGLER_CAPTION = ("\n\nÜbrigens: Schlaf und Stress sind nicht immer die Ursache von Schmerz. Studien zeigen aber, dass sie "
+                  "wie ein Lautstärkeregler wirken: Schlechter Schlaf und Dauerstress können Schmerz lauter machen.")
+
+
+def regler_standbild(segs, t):
+    """Friert das letzte Bild ein (Schlaf/Stress-Hinweis) und gibt Start/Ende auf der Reel-Zeitachse zurueck."""
+    letzt = segs[-1]
+    segs.append({"quelle": letzt["quelle"], "start": letzt["ende"] - 0.05, "ende": round(letzt["ende"] - 0.05 + REGLER_DAUER, 2),
+                 "ton": False, "standbild": True, "zoom": letzt["zoom"], "fokus_x": letzt["fokus_x"], "fokus_y": letzt["fokus_y"]})
+    return t, t + REGLER_DAUER
 DISCLAIMER = ("Wichtig: Wir haben nach NACHHALTIGKEIT gerankt, also danach, wie gut etwas deine Schmerzen auf lange Sicht "
               "in den Griff bekommt. Nicht danach, ob es überhaupt wirkt. Eine Bandage oder Akupunktur kann kurzfristig "
               "helfen, macht dich aber langfristig nicht belastbarer. Und: Jeder Schmerz ist individuell, das ersetzt "
@@ -227,6 +254,9 @@ def baue_einzel(nr, key):
                          "transkript": f"../transkripte/teil_{teil}.json", "zoom": [1.18, 1.3][len(segs) % 2],
                          "fokus_x": 0.05, "fokus_y": 0.2})
             quellzeit.append((teil, s0, s1, t)); t += s1 - s0
+    regler = regler_standbild(segs, t) if key == "schlaf" else None
+    if regler:
+        t = regler[1]
     sprech_ende = t
     for teil, a, e in PASS["pause"]:
         for s0, s1 in [(a, a + 2.6)]:
@@ -246,13 +276,15 @@ def baue_einzel(nr, key):
         "hook": {"text": hook, "unterzeile": unter, "dauer": 3.0, "animation": "slam", "punch_in": True,
                  "visuell": "Punch-in auf André"},
         "segmente": segs, "untertitel": True, "untertitel_korrekturen": KORREKTUR,
-        "einblendungen": [{"stil": "fussnote", "start": 3.3, "ende": round(sprech_ende, 2), "text": FUSSNOTE},
+        "einblendungen": [{"stil": "fussnote", "start": 3.3, "ende": round(regler[0] if regler else sprech_ende, 2), "text": FUSSNOTE},
+                          *([{"start": round(regler[0], 2), "ende": round(regler[1], 2), "text": REGLER_TEXT, "y": 1000}]
+                            if regler else []),
                           {"start": round(sprech_ende, 2), "ende": round(t, 2),
                            "text": "Ganze Tierlist\n*auf meinem Profil*"}],
         "bilder": [{"datei": f"../grafiken/{f.name}", "start": round(rang, 2), "ende": round(sprech_ende, 2),
                     "x": 10, "y": 230, "breite": 600, "ein": 0.15}],
-        "aussagen": [QUELLEN[key]],
-        "caption": satz + "\n\nGerankt nach Nachhaltigkeit, also danach, wie gut etwas auf lange Sicht hilft, nicht ob es "
+        "aussagen": [QUELLEN[key]] + ([REGLER_AUSSAGE] if regler else []),
+        "caption": satz + (REGLER_CAPTION if regler else "") + "\n\nGerankt nach Nachhaltigkeit, also danach, wie gut etwas auf lange Sicht hilft, nicht ob es "
                    "überhaupt wirkt. Jeder Schmerz ist individuell.\n\nSpeicher dir das Reel. Die ganze Tierlist findest du auf meinem Profil.",
         "hashtags": tags,
         "hinweise": ["Ausschnitt aus der Tierlist-Serie als eigenständiger Clip."],

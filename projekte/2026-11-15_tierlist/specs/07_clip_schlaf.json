@@ -99,6 +99,16 @@
       "fokus_y": 0.2
     },
     {
+      "quelle": "../roh/teil_3.mov",
+      "start": 17.65,
+      "ende": 23.15,
+      "ton": false,
+      "standbild": true,
+      "zoom": 1.18,
+      "fokus_x": 0.05,
+      "fokus_y": 0.2
+    },
+    {
       "quelle": "../roh/teil_1.mov",
       "start": 12.1,
       "ende": 14.7,
@@ -134,7 +144,13 @@
     },
     {
       "start": 14.56,
-      "ende": 17.16,
+      "ende": 20.06,
+      "text": "Gut zu wissen:\nSchlaf & Stress sind nicht\nimmer die Ursache.\nEher ein *Lautstärkeregler*,\nwie laut Schmerz wird.",
+      "y": 1000
+    },
+    {
+      "start": 20.06,
+      "ende": 22.66,
       "text": "Ganze Tierlist\n*auf meinem Profil*"
     }
   ],
@@ -142,7 +158,7 @@
     {
       "datei": "../grafiken/einzel_schlaf.png",
       "start": 3.68,
-      "ende": 14.56,
+      "ende": 20.06,
       "x": 10,
       "y": 230,
       "breite": 600,
@@ -154,9 +170,15 @@
       "text": "Schlaf und Stress beeinflussen das Schmerzerleben.",
       "quelle": "Finan PH et al. The association of sleep and pain. J Pain 2013; Raja SN et al. Pain 2020",
       "status": "konsens"
+    },
+    {
+      "text": "Schlaf und Stress müssen nicht die Ursache von Schmerz sein, beeinflussen aber, wie stark er wahrgenommen wird (Schlafmangel senkt die Schmerzschwelle; chronischer Stress kann das Schmerzsystem sensibilisieren).",
+      "quelle": "Krause AJ et al. The Pain of Sleep Loss: A Brain Characterization in Humans. J Neurosci 2019;39(12):2291–2300; Hannibal KE, Bishop MD. Chronic stress, cortisol dysfunction, and pain. Phys Ther 2014;94(12):1816–1825; Finan PH et al. J Pain 2013",
+      "status": "belegt",
+      "beleg": "Krause: Schlafentzug senkt Schmerzschwelle, schlechtere Nacht -> mehr Schmerz am Folgetag. Hannibal & Bishop: Übersicht Stress/Cortisol und Schmerz."
     }
   ],
-  "caption": "Schlaf und Stress beeinflussen, wie stark du Schmerz wahrnimmst. Je nach Ursache S- oder A-Tier.\n\nGerankt nach Nachhaltigkeit, also danach, wie gut etwas auf lange Sicht hilft, nicht ob es überhaupt wirkt. Jeder Schmerz ist individuell.\n\nSpeicher dir das Reel. Die ganze Tierlist findest du auf meinem Profil.",
+  "caption": "Schlaf und Stress beeinflussen, wie stark du Schmerz wahrnimmst. Je nach Ursache S- oder A-Tier.\n\nÜbrigens: Schlaf und Stress sind nicht immer die Ursache von Schmerz. Studien zeigen aber, dass sie wie ein Lautstärkeregler wirken: Schlechter Schlaf und Dauerstress können Schmerz lauter machen.\n\nGerankt nach Nachhaltigkeit, also danach, wie gut etwas auf lange Sicht hilft, nicht ob es überhaupt wirkt. Jeder Schmerz ist individuell.\n\nSpeicher dir das Reel. Die ganze Tierlist findest du auf meinem Profil.",
   "hashtags": [
     "#schlaf",
     "#stress",

@@ -202,7 +202,10 @@ def segment_rendern(seg, idx, spec, spec_dir, tmp, punch_in, qualitaet):
     if spiral and not puls and not punch_in:
         vf = (f"scale={int(bw / 2) * 2 + 2}:{int(bh / 2) * 2 + 2}," + spiral +
               f"crop={W}:{H}:(iw-{W})*{fx}:(ih-{H})*{fy}")
+    if seg.get("standbild"):  # Bild einfrieren (z. B. fuer eine Einblendung zum Lesen)
+        vf = "trim=end_frame=1," + vf + f",tpad=stop_mode=clone:stop_duration={seg['ende'] - seg['start'] + 0.1:.2f}"
     if seg.get("filter"):  # z. B. Helligkeit: "eq=brightness=0.05:gamma=1.15"
+
         vf += "," + seg["filter"]
     if seg.get("geschwindigkeit"):
         vf += f",setpts=PTS/{seg['geschwindigkeit']}"
@@ -211,7 +214,7 @@ def segment_rendern(seg, idx, spec, spec_dir, tmp, punch_in, qualitaet):
 
     args = ["ffmpeg", "-y", "-hide_banner", "-loglevel", "error",
             "-ss", f"{seg['start']}", "-to", f"{seg['ende']}", "-i", str(quelle)]
-    nutze_ton = seg.get("ton", True) and hat_ton
+    nutze_ton = seg.get("ton", True) and hat_ton and not seg.get("standbild")
     if not nutze_ton:
         args += ["-f", "lavfi", "-t", f"{dauer}", "-i", "anullsrc=r=48000:cl=stereo"]
     reparatur = ""
@@ -470,7 +473,7 @@ def ass_schreiben(spec, spec_dir, pfad, dauer):
                    f"\\fs{g}\\fad({e.get('ein_ms', 60)},0)}}" + markup(z, gelb), layer=4)
             continue
         fg = passende_groesse(e["text"].split("\n"), gr["fakt"], W - 2 * BRAND["layout"]["rand"], fett=True)
-        zeilen_block(e["start"], e["ende"], "Fakt", e["text"], W // 2, BRAND["layout"]["fakt_y"], 8, fg,
+        zeilen_block(e["start"], e["ende"], "Fakt", e["text"], W // 2, e.get("y", BRAND["layout"]["fakt_y"]), 8, fg,
                      f"\\fad(120,120)\\fs{fg}", layer=4)
     q = spec.get("quelle_einblendung")
     if q:

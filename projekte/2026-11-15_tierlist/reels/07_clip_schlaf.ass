@@ -25,8 +25,13 @@ Dialogue: 5,0:00:00.00,0:00:03.00,Hook,,0,0,0,,{\an8\pos(540,386)\fscx118\fscy11
 Dialogue: 5,0:00:00.00,0:00:03.00,Hook,,0,0,0,,{\an8\pos(540,522)\fscx118\fscy118\t(0,140,\fscx100\fscy100)\fad(60,120)\fs157}{\c&H0000B8F8}MEHR SCHMERZEN?{\c&H00FFFFFF&}
 Dialogue: 5,0:00:00.00,0:00:03.00,HookUnter,,0,0,0,,{\an8\pos(540,685)\fscx118\fscy118\t(0,140,\fscx100\fscy100)\fad(60,120)}SCHLAF UND STRESS IN MEINER TIERLIST
 Dialogue: 2,0:00:03.30,0:00:14.56,Fuss,,0,0,0,,{\an1\pos(44,1490)\fad(300,300)}Gerankt nach Nachhaltigkeit, nicht nach Wirkung
-Dialogue: 4,0:00:14.56,0:00:17.16,Fakt,,0,0,0,,{\an8\pos(540,260)\fad(120,120)\fs118}GANZE TIERLIST
-Dialogue: 4,0:00:14.56,0:00:17.16,Fakt,,0,0,0,,{\an8\pos(540,361)\fad(120,120)\fs118}{\c&H0000B8F8}AUF MEINEM PROFIL{\c&H00FFFFFF&}
+Dialogue: 4,0:00:14.56,0:00:20.06,Fakt,,0,0,0,,{\an8\pos(540,1000)\fad(120,120)\fs118}GUT ZU WISSEN:
+Dialogue: 4,0:00:14.56,0:00:20.06,Fakt,,0,0,0,,{\an8\pos(540,1101)\fad(120,120)\fs118}SCHLAF & STRESS SIND NICHT
+Dialogue: 4,0:00:14.56,0:00:20.06,Fakt,,0,0,0,,{\an8\pos(540,1203)\fad(120,120)\fs118}IMMER DIE URSACHE.
+Dialogue: 4,0:00:14.56,0:00:20.06,Fakt,,0,0,0,,{\an8\pos(540,1304)\fad(120,120)\fs118}EHER EIN {\c&H0000B8F8}LAUTSTÄRKEREGLER{\c&H00FFFFFF&},
+Dialogue: 4,0:00:14.56,0:00:20.06,Fakt,,0,0,0,,{\an8\pos(540,1406)\fad(120,120)\fs118}WIE LAUT SCHMERZ WIRD.
+Dialogue: 4,0:00:20.06,0:00:22.66,Fakt,,0,0,0,,{\an8\pos(540,260)\fad(120,120)\fs118}GANZE TIERLIST
+Dialogue: 4,0:00:20.06,0:00:22.66,Fakt,,0,0,0,,{\an8\pos(540,361)\fad(120,120)\fs118}{\c&H0000B8F8}AUF MEINEM PROFIL{\c&H00FFFFFF&}
 Dialogue: 1,0:00:00.28,0:00:00.40,Sub,,0,0,0,,{\c&H0000B8F8}SCHLAF{\c&H00FFFFFF} UND STRESS
 Dialogue: 1,0:00:00.40,0:00:00.62,Sub,,0,0,0,,SCHLAF {\c&H0000B8F8}UND{\c&H00FFFFFF} STRESS
 Dialogue: 1,0:00:00.62,0:00:00.92,Sub,,0,0,0,,SCHLAF UND {\c&H0000B8F8}STRESS{\c&H00FFFFFF}
