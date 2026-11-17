@@ -220,7 +220,7 @@ def regler_standbild(segs, t):
                  "ton": False, "standbild": True, "zoom": letzt["zoom"], "fokus_x": letzt["fokus_x"], "fokus_y": letzt["fokus_y"]})
     return t, t + REGLER_DAUER
 DISCLAIMER = ("Wichtig: Wir haben nach NACHHALTIGKEIT gerankt, also danach, wie gut etwas deine Schmerzen auf lange Sicht "
-              "in den Griff bekommt. Nicht danach, ob es überhaupt wirkt. Eine Bandage oder Akupunktur kann kurzfristig "
+              "in den Griff bekommt. Nicht danach, ob es überhaupt wirkt. Akupunktur zum Beispiel kann kurzfristig "
               "helfen, macht dich aber langfristig nicht belastbarer. Und: Jeder Schmerz ist individuell, das ersetzt "
               "keine Untersuchung.")
 TAGS = ["#schmerztherapie", "#physiotherapie", "#rückenschmerzen", "#tierlist", "#schmerzverstehen"]
@@ -328,12 +328,12 @@ if __name__ == "__main__":
                       "Was hilft eigentlich bei Schmerzen? Teil 1 unserer Schmerz-Tierlist.\n\n" + DISCLAIMER +
                       "\n\nWo würdest du anders ranken? Schreib's in die Kommentare und speicher dir das Reel für Teil 2.",
                       TAGS)
-    stand2, d2 = baue("02_tierlist_teil2", ["intro", "kraft", "bandagen", "aufklaerung", "schlaf", "pause"],
+    stand2, d2 = baue("02_tierlist_teil2", ["intro", "kraft", "aufklaerung", "schlaf", "pause"],
                       stand1, "Was hilft *wirklich*\nbei Schmerzen?", "Tierlist · Teil 2", "Das ist die Liste\n*Lies die Caption!*",
                       "Teil 2 unserer Schmerz-Tierlist, jetzt ist das Board komplett.\n\n" + DISCLAIMER +
                       "\n\nStimmst du zu? Schreib's in die Kommentare und speicher dir die Liste.", TAGS)
     print(f"Teil 1: {d1:.1f}s  Teil 2: {d2:.1f}s")
     print("Endstand:", stand2)
-    for i, k in enumerate(["pilates", "kraft", "bandagen", "aufklaerung", "schlaf"], start=3):
+    for i, k in [(3, "pilates"), (4, "kraft"), (6, "aufklaerung"), (7, "schlaf")]:  # Bandagen gestrichen (André, 2026-11-17)
         baue_einzel(i, k)
     baue_outtakes(8)

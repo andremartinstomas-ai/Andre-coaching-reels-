@@ -58,66 +58,6 @@
       "fokus_y": 0.2
     },
     {
-      "quelle": "../roh/teil_3.mov",
-      "start": 58.36,
-      "ende": 61.18,
-      "ton": true,
-      "transkript": "../transkripte/teil_3.json",
-      "zoom": 1.18,
-      "fokus_x": 0.05,
-      "fokus_y": 0.2
-    },
-    {
-      "quelle": "../roh/teil_3.mov",
-      "start": 70.38,
-      "ende": 71.34,
-      "ton": true,
-      "transkript": "../transkripte/teil_3.json",
-      "zoom": 1.28,
-      "fokus_x": 0.05,
-      "fokus_y": 0.2
-    },
-    {
-      "quelle": "../roh/teil_3.mov",
-      "start": 71.58,
-      "ende": 74.56,
-      "ton": true,
-      "transkript": "../transkripte/teil_3.json",
-      "zoom": 1.18,
-      "fokus_x": 0.05,
-      "fokus_y": 0.2
-    },
-    {
-      "quelle": "../roh/teil_3.mov",
-      "start": 74.86,
-      "ende": 76.96,
-      "ton": true,
-      "transkript": "../transkripte/teil_3.json",
-      "zoom": 1.28,
-      "fokus_x": 0.05,
-      "fokus_y": 0.2
-    },
-    {
-      "quelle": "../roh/teil_3.mov",
-      "start": 77.56,
-      "ende": 80.56,
-      "ton": true,
-      "transkript": "../transkripte/teil_3.json",
-      "zoom": 1.18,
-      "fokus_x": 0.05,
-      "fokus_y": 0.2
-    },
-    {
-      "quelle": "../roh/teil_3.mov",
-      "start": 80.96,
-      "ende": 82.0,
-      "ton": true,
-      "transkript": "../transkripte/teil_3.json",
-      "zoom": 1.28,
-      "fokus_x": 0.05,
-      "fokus_y": 0.2
-    },
-    {
       "quelle": "../roh/teil_1.mov",
       "start": 27.0,
       "ende": 28.36,
@@ -297,20 +237,20 @@
   },
   "einblendungen": [
     {
-      "start": 50.34,
-      "ende": 53.96,
+      "start": 37.44,
+      "ende": 41.06,
       "text": "Das ist die Liste\n*Lies die Caption!*"
     },
     {
-      "start": 44.84,
-      "ende": 50.34,
+      "start": 31.94,
+      "ende": 37.44,
       "text": "Gut zu wissen:\nSchlaf & Stress sind nicht\nimmer die Ursache.\nEher ein *Lautstärkeregler*,\nwie laut Schmerz wird.",
       "y": 1000
     },
     {
       "stil": "fussnote",
       "start": 3.3,
-      "ende": 44.84,
+      "ende": 31.94,
       "text": "Gerankt nach Nachhaltigkeit, nicht nach Wirkung"
     }
   ],
@@ -327,7 +267,7 @@
     {
       "datei": "../grafiken/02_tierlist_teil2_board_1.png",
       "start": 6.88,
-      "ende": 14.78,
+      "ende": 12.86,
       "x": 10,
       "y": 230,
       "breite": 600,
@@ -335,8 +275,8 @@
     },
     {
       "datei": "../grafiken/02_tierlist_teil2_board_2.png",
-      "start": 14.76,
-      "ende": 25.76,
+      "start": 12.84,
+      "ende": 21.08,
       "x": 10,
       "y": 230,
       "breite": 600,
@@ -344,17 +284,8 @@
     },
     {
       "datei": "../grafiken/02_tierlist_teil2_board_3.png",
-      "start": 25.74,
-      "ende": 33.98,
-      "x": 10,
-      "y": 230,
-      "breite": 600,
-      "ein": 0.12
-    },
-    {
-      "datei": "../grafiken/02_tierlist_teil2_board_4.png",
-      "start": 33.96,
-      "ende": 50.36,
+      "start": 21.06,
+      "ende": 37.46,
       "x": 10,
       "y": 230,
       "breite": 600,
@@ -365,11 +296,6 @@
     {
       "text": "Langsam gesteigertes Krafttraining baut Belastungstoleranz auf und gehört zu den wirksamsten Übungsformen.",
       "quelle": "Owen PJ et al. Br J Sports Med 2020; Hayden JA et al. Cochrane 2021",
-      "status": "belegt"
-    },
-    {
-      "text": "Bandagen/Stützgürtel können Sicherheit vermitteln, werden bei Rückenschmerz aber nicht empfohlen.",
-      "quelle": "NICE NG59, Empfehlung 1.2.3 ('Do not offer belts or corsets')",
       "status": "belegt"
     },
     {
@@ -389,7 +315,7 @@
       "beleg": "Krause: Schlafentzug senkt Schmerzschwelle, schlechtere Nacht -> mehr Schmerz am Folgetag. Hannibal & Bishop: Übersicht Stress/Cortisol und Schmerz."
     }
   ],
-  "caption": "Teil 2 unserer Schmerz-Tierlist, jetzt ist das Board komplett.\n\nWichtig: Wir haben nach NACHHALTIGKEIT gerankt, also danach, wie gut etwas deine Schmerzen auf lange Sicht in den Griff bekommt. Nicht danach, ob es überhaupt wirkt. Eine Bandage oder Akupunktur kann kurzfristig helfen, macht dich aber langfristig nicht belastbarer. Und: Jeder Schmerz ist individuell, das ersetzt keine Untersuchung.\n\nÜbrigens: Schlaf und Stress sind nicht immer die Ursache von Schmerz. Studien zeigen aber, dass sie wie ein Lautstärkeregler wirken: Schlechter Schlaf und Dauerstress können Schmerz lauter machen.\n\nStimmst du zu? Schreib's in die Kommentare und speicher dir die Liste.",
+  "caption": "Teil 2 unserer Schmerz-Tierlist, jetzt ist das Board komplett.\n\nWichtig: Wir haben nach NACHHALTIGKEIT gerankt, also danach, wie gut etwas deine Schmerzen auf lange Sicht in den Griff bekommt. Nicht danach, ob es überhaupt wirkt. Akupunktur zum Beispiel kann kurzfristig helfen, macht dich aber langfristig nicht belastbarer. Und: Jeder Schmerz ist individuell, das ersetzt keine Untersuchung.\n\nÜbrigens: Schlaf und Stress sind nicht immer die Ursache von Schmerz. Studien zeigen aber, dass sie wie ein Lautstärkeregler wirken: Schlechter Schlaf und Dauerstress können Schmerz lauter machen.\n\nStimmst du zu? Schreib's in die Kommentare und speicher dir die Liste.",
   "hashtags": [
     "#schmerztherapie",
     "#physiotherapie",
