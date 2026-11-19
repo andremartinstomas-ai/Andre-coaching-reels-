@@ -25,20 +25,20 @@ VO = HIER / "roh" / "voiceover2.m4a"
 T = {  # Takes (Quellzeiten im Memo)
     "hook_rezept": [(3.6, 5.95), (16.2, 19.35)],          # So, heute mal keine Übung, sondern ein Rezept ... eine geile Buchweizenpasta mit Rote Bete
     "hook_saft": [(23.6, 27.6)],                           # Wenn du deinen Rote-Bete-Saft immer noch trinkst, dann mach dir diese Pasta hier
-    "zutaten": [(41.2, 42.1), (46.8, 57.6)],               # Alles, was wir dafür brauchen ...
+    "zutaten": [(46.8, 57.6)],                             # Was wir dafür brauchen ... (abgebrochenen Ansatz bei 41 s raus)
     "mixen": [(59.6, 62.9)],
     "tofu": [(65.6, 68.1)],                                # Dazu hab ich dann auch Tofu und Champignons angebraten
     "tofu_protein": [(70.5, 73.6)],                        # Für die Proteine hab ich nochmal Tofu und Champignons angebraten
     "hoeren_verruehren": [(75.9, 79.9)],                   # Und dann alles einmal zusammen verrühren, einmal ganz genau hinhören
     "hoeren_geil": [(83.1, 86.2)],                         # Hört euch mal an, wie geil das klingt
     "hoeren_jetzt": [(87.9, 90.3)],                        # Und jetzt einmal ganz genau hinhören
-    "fertig": [(99.6, 103.9)],                             # Und schon habt ihr die Rote-Bete-Pasta fertig
+    "fertig": [(96.3, 99.0)],                              # Und schon habt ihr die Rote-Bete-Pasta fertig (sauberer erster Take)
     "nitrat_protein": [(105.6, 111.4)],                    # Rote Bete hat richtig viel Nitrat und Tofu plus Frischkäse bringen ordentlich Proteine
     "nitrat_kurz": [(105.6, 107.4)],                       # Rote Bete hat richtig viel Nitrat
     "no": [(145.8, 150.1)],                                # Und aus den Nitraten der Rote Bete wird Stickstoffmonoxid gemacht
     "wirkung": [(158.2, 162.2)],                           # Stickstoffmonoxid kann die Gefäße weiten und die Muskeln sparsamer arbeiten lassen
-    "effekt": [(175.2, 181.6)],                            # Wie groß ist der Effekt? Klein bis moderat. Vor allem bei untrainierten ...
-    "outro": [(197.6, 200.7)],                             # So und jetzt abspeichern und nicht nachkochen
+    "effekt": [(175.2, 179.72)],                            # Wie groß ist der Effekt? Klein bis moderat. Vor allem bei Untrainierten. (Versprecher danach raus)
+    "outro": [(197.6, 201.0)],                             # So und jetzt abspeichern und nicht nachkochen
 }
 
 VERSIONEN = {
@@ -68,7 +68,7 @@ def voice_spur(tmp, v):
             teile.append(("stille", NUR_SOUND)); t += NUR_SOUND
             continue
         m[key] = [t, None]
-        stuecke = [s for a, e in T[key] for s in sprechbereiche(str(VO), a, e)]
+        stuecke = [s for a, e in T[key] for s in sprechbereiche(str(VO), a, e, nach=0.25)]  # leise Wortenden nicht abschneiden
         for i, (a, e) in enumerate(stuecke):
             teile.append((a, e)); t += e - a
             if i < len(stuecke) - 1:
