@@ -112,7 +112,8 @@ def szenen_planen(teil1, teil2):
     s1 = hook + extra + sosse + [tofu]
     ruehr = ("IMG_4163", 1.50, 7.17, 1.0)
     rest = teil2 - 5.67
-    fueller = [("IMG_4167", 3.5, 6.87), ("IMG_4165", 0.0, 3.47), ("IMG_4167", 0.0, 3.5), ("IMG_4166", 0.0, 2.97)]
+    fueller = [("IMG_4167", 3.5, 6.87), ("IMG_4165", 0.0, 3.47), ("IMG_4167", 0.0, 3.5), ("IMG_4166", 0.0, 2.97),
+               ("IMG_4164", 0.3, 3.07), ("IMG_4165", 0.0, 3.47)]  # genug Teller-Bilder auch fuer lange Voice-Spuren
     s2, summe = [ruehr], 0.0
     for d, a, e in fueller:
         if summe >= rest - 0.05:
