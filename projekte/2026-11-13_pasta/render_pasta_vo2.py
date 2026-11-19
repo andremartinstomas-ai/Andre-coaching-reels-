@@ -68,6 +68,19 @@ VERSIONEN = {
                      "effekt": "Effekt: klein bis moderat"}},
 }
 LUECKE, NUR_SOUND = 0.22, 3.0
+# Ton-Reparatur fuer zu nah besprochenes Handy-Mikro: Dumpfheit (200/450 Hz) runter, Praesenz (3-3,5 kHz) + Luft hoch,
+# Zischlaute daempfen, leicht komprimieren, Grundrauschen etwas runter. Gemessen: Mitten->Praesenz 17 dB (alt) -> 12 / 9,5 dB.
+KETTEN = {
+    "alt": "highpass=f=80,equalizer=f=170:t=q:w=1.2:g=-4,deesser=i=0.3,"
+           "acompressor=threshold=-22dB:ratio=3:attack=8:release=150:makeup=2,loudnorm=I=-16:TP=-1.5:LRA=7",
+    "klar": "adeclip,highpass=f=90,equalizer=f=200:t=q:w=1.0:g=-6,equalizer=f=450:t=q:w=1.2:g=-3,"
+            "equalizer=f=3500:t=q:w=1.0:g=4,equalizer=f=9000:t=q:w=1.5:g=2,deesser=i=0.4,"
+            "acompressor=threshold=-24dB:ratio=3:attack=5:release=120:makeup=2,afftdn=nf=-42,loudnorm=I=-16:TP=-1.5:LRA=7",
+    "extraklar": "adeclip,highpass=f=100,equalizer=f=220:t=q:w=0.9:g=-8,equalizer=f=500:t=q:w=1.2:g=-4,"
+                 "equalizer=f=3200:t=q:w=1.0:g=6,equalizer=f=8000:t=q:w=1.5:g=3,deesser=i=0.5,"
+                 "acompressor=threshold=-24dB:ratio=3.5:attack=5:release=120:makeup=2,afftdn=nf=-40,loudnorm=I=-16:TP=-1.5:LRA=7",
+}
+KETTE = {"name": "klar"}
 
 
 def voice_spur(tmp, v):
@@ -95,8 +108,7 @@ def voice_spur(tmp, v):
             fc.append(f"[{qi}:a]atrim={a}:{e},asetpts=PTS-STARTPTS,volume={GAIN_DB[qi]}dB,aresample=48000,aformat=channel_layouts=stereo,"
                       f"afade=t=in:d=0.02,afade=t=out:st={e - a - 0.03:.3f}:d=0.03[p{i}]")
     fc.append("".join(f"[p{i}]" for i in range(len(teile))) + f"concat=n={len(teile)}:v=0:a=1,"
-              "highpass=f=80,equalizer=f=170:t=q:w=1.2:g=-4,deesser=i=0.3,"
-              "acompressor=threshold=-22dB:ratio=3:attack=8:release=150:makeup=2,loudnorm=I=-16:TP=-1.5:LRA=7[vo]")
+              + KETTEN[KETTE["name"]] + "[vo]")
     ziel = tmp / "voice.wav"
     sh(["ffmpeg", "-y", "-hide_banner", "-loglevel", "error", "-i", str(QUELLEN[0]), "-i", str(QUELLEN[1]), "-filter_complex", ";".join(fc),
         "-map", "[vo]", "-ar", "48000", str(ziel)])
@@ -143,7 +155,7 @@ def szenen_planen(teil1, teil2):
 
 def main(vname):
     v = VERSIONEN[vname]
-    aus = HIER / "reels" / f"pasta_vo2_{vname}.mp4"
+    aus = HIER / "reels" / (f"pasta_vo2_{vname}.mp4" if KETTE["name"] == "klar" else f"pasta_vo2_{vname}_{KETTE['name']}.mp4")
     with tempfile.TemporaryDirectory() as td:
         tmp = Path(td)
         voice, m, vo_len = voice_spur(tmp, v)
@@ -236,5 +248,8 @@ def main(vname):
 
 
 if __name__ == "__main__":
-    for vn in sys.argv[1:] or ["v1", "v2", "v3"]:
+    args = sys.argv[1:]
+    for a in [x for x in args if x.startswith("--ton=")]:
+        KETTE["name"] = a.split("=", 1)[1]
+    for vn in [x for x in args if not x.startswith("--")] or ["v1", "v2", "v3"]:
         main(vn)
