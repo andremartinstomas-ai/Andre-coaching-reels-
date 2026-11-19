@@ -21,6 +21,8 @@ rp = importlib.util.module_from_spec(spec)
 spec.loader.exec_module(rp)
 W, H, FPS, sh = rp.W, rp.H, rp.FPS, rp.sh
 VO = HIER / "roh" / "voiceover2.m4a"
+QUELLEN = [VO, HIER / "roh" / "voiceover3.m4a"]  # Index 0 = Aufnahme 2, 1 = Aufnahme 3
+GAIN_DB = [2.4, 0.0]                                 # Pegel der Aufnahmen angleichen
 
 T = {  # Takes (Quellzeiten im Memo)
     "hook_rezept": [(3.6, 5.95), (16.2, 19.35)],          # So, heute mal keine Übung, sondern ein Rezept ... eine geile Buchweizenpasta mit Rote Bete
@@ -38,23 +40,31 @@ T = {  # Takes (Quellzeiten im Memo)
     "no": [(145.8, 150.1)],                                # Und aus den Nitraten der Rote Bete wird Stickstoffmonoxid gemacht
     "wirkung": [(158.2, 162.2)],                           # Stickstoffmonoxid kann die Gefäße weiten und die Muskeln sparsamer arbeiten lassen
     "effekt": [(175.2, 179.72)],                            # Wie groß ist der Effekt? Klein bis moderat. Vor allem bei Untrainierten. (Versprecher danach raus)
-    "outro": [(197.6, 201.0)],                             # So und jetzt abspeichern und nicht nachkochen
+    "outro": [(197.6, 201.0)],
+    # --- Aufnahme 3 (Neuaufnahmen) ---
+    "hook_saft3": [(72.3, 75.6, 1)],                       # Wenn du deinen Rote-Bete-Saft noch trinkst, dann mach dir diese Pasta.
+    "fertig3": [(1.0, 3.1, 1)],                            # Und schon habt ihr die Rote-Bete-Pasta fertig.
+    "protein": [(108.15, 111.4)],                           # Tofu plus Frischkäse bringen ordentlich Proteine. (Aufnahme 2)
+    "nitrat3": [(30.7, 37.8, 1)],                          # Rote Bete hat richtig viel Nitrat, woraus Stickstoffmonoxid wird. Das kann die Gefäße weiten ...
+    "effekt3": [(38.5, 45.7, 1)],                          # Wie groß ist der Effekt? Eher klein bis moderat. Vor allem bei Untrainierten ... kleinen Unterschied
+    "addon3": [(47.0, 49.95, 1)],                          # Also kein Wundermittel, aber ein nice Add-on.
+    "outro3": [(59.3, 61.8, 1)],                           # So, jetzt abspeichern und bloß nicht nachkochen.                             # So und jetzt abspeichern und nicht nachkochen
 }
 
 VERSIONEN = {
     "v1": {"titel": "Physio-Twist", "hook": ["Heute keine Übung,", "sondern ein Rezept."],
            "teil1": ["hook_rezept", "zutaten", "mixen", "tofu"], "hoeren": "hoeren_verruehren",
-           "teil2": ["fertig", "nitrat_protein", "outro"],
+           "teil2": ["fertig3", "nitrat_protein", "outro3"],
            "pills": {}},
     "v2": {"titel": "Rote-Bete-Saft", "hook": ["Trinkst du noch", "Rote-Bete-Saft?"],
-           "teil1": ["hook_saft", "zutaten", "mixen", "tofu_protein"], "hoeren": "hoeren_jetzt",
-           "teil2": ["fertig", "nitrat_protein", "no", "wirkung", "effekt", "outro"],
-           "pills": {"no": "Nitrat → Stickstoffmonoxid", "wirkung": "Gefäße weiten, Muskeln sparsamer",
-                     "effekt": "Effekt: klein bis moderat"}},
+           "teil1": ["hook_saft3", "zutaten", "mixen", "tofu_protein"], "hoeren": "hoeren_jetzt",
+           "teil2": ["fertig3", "protein", "nitrat3", "effekt3", "addon3", "outro3"],
+           "pills": {"nitrat3": "Nitrat wird zu Stickstoffmonoxid", "effekt3": "Effekt: klein bis moderat",
+                     "addon3": "Kein Wundermittel, aber ein Add-on"}},
     "v3": {"titel": "Wissen zuerst", "hook": ["Was Rote Bete", "in deinem Körper macht"],
            "teil1": ["nitrat_kurz", "no", "wirkung", "effekt", "tofu_protein"], "hoeren": "hoeren_geil",
            "teil2": ["fertig", "outro"],
-           "pills": {"no": "Nitrat → Stickstoffmonoxid", "wirkung": "Gefäße weiten, Muskeln sparsamer",
+           "pills": {"no": "Nitrat wird zu Stickstoffmonoxid", "wirkung": "Gefäße weiten, Muskeln sparsamer",
                      "effekt": "Effekt: klein bis moderat"}},
 }
 LUECKE, NUR_SOUND = 0.22, 3.0
@@ -68,9 +78,10 @@ def voice_spur(tmp, v):
             teile.append(("stille", NUR_SOUND)); t += NUR_SOUND
             continue
         m[key] = [t, None]
-        stuecke = [s for a, e in T[key] for s in sprechbereiche(str(VO), a, e, nach=0.25)]  # leise Wortenden nicht abschneiden
-        for i, (a, e) in enumerate(stuecke):
-            teile.append((a, e)); t += e - a
+        stuecke = [(s0, s1, q[2] if len(q) > 2 else 0) for q in T[key]
+                   for s0, s1 in sprechbereiche(str(QUELLEN[q[2] if len(q) > 2 else 0]), q[0], q[1], nach=0.25)]
+        for i, (a, e, qi) in enumerate(stuecke):
+            teile.append((a, e, qi)); t += e - a
             if i < len(stuecke) - 1:
                 teile.append(("stille", 0.06)); t += 0.06
         m[key][1] = t
@@ -80,14 +91,14 @@ def voice_spur(tmp, v):
         if tl[0] == "stille":
             fc.append(f"anullsrc=r=48000:cl=stereo,atrim=0:{tl[1]}[p{i}]")
         else:
-            a, e = tl
-            fc.append(f"[0:a]atrim={a}:{e},asetpts=PTS-STARTPTS,aresample=48000,aformat=channel_layouts=stereo,"
+            a, e, qi = tl
+            fc.append(f"[{qi}:a]atrim={a}:{e},asetpts=PTS-STARTPTS,volume={GAIN_DB[qi]}dB,aresample=48000,aformat=channel_layouts=stereo,"
                       f"afade=t=in:d=0.02,afade=t=out:st={e - a - 0.03:.3f}:d=0.03[p{i}]")
     fc.append("".join(f"[p{i}]" for i in range(len(teile))) + f"concat=n={len(teile)}:v=0:a=1,"
               "highpass=f=80,equalizer=f=170:t=q:w=1.2:g=-4,deesser=i=0.3,"
               "acompressor=threshold=-22dB:ratio=3:attack=8:release=150:makeup=2,loudnorm=I=-16:TP=-1.5:LRA=7[vo]")
     ziel = tmp / "voice.wav"
-    sh(["ffmpeg", "-y", "-hide_banner", "-loglevel", "error", "-i", str(VO), "-filter_complex", ";".join(fc),
+    sh(["ffmpeg", "-y", "-hide_banner", "-loglevel", "error", "-i", str(QUELLEN[0]), "-i", str(QUELLEN[1]), "-filter_complex", ";".join(fc),
         "-map", "[vo]", "-ar", "48000", str(ziel)])
     return ziel, {k: (round(a, 2), round(b, 2)) for k, (a, b) in m.items()}, t
 
@@ -115,7 +126,8 @@ def szenen_planen(teil1, teil2):
     fueller = [("IMG_4167", 3.5, 6.87), ("IMG_4165", 0.0, 3.47), ("IMG_4167", 0.0, 3.5), ("IMG_4166", 0.0, 2.97),
                ("IMG_4164", 0.3, 3.07), ("IMG_4165", 0.0, 3.47)]  # genug Teller-Bilder auch fuer lange Voice-Spuren
     s2, summe = [ruehr], 0.0
-    for d, a, e in fueller:
+    from itertools import cycle, islice
+    for d, a, e in islice(cycle(fueller), 20):  # Teller-Clips bei Bedarf wiederholen, damit nie Voice abgeschnitten wird
         if summe >= rest - 0.05:
             break
         laenge = e - a
@@ -177,7 +189,7 @@ def main(vname):
                        ("3", "Alles cremig vermischen", ruehr[1], ruehr[2], 300)]
         if zeste_nah:
             rp.SCHRITTE.append(("4", "Zitronenzeste drüber", zeste_nah[1], zeste_nah[2], 300))
-        ende_start = m["outro"][0]
+        ende_start = m["outro3" if "outro3" in m else "outro"][0]
         rp.ENDE = (rp.ENDE[0], ende_start, t - 0.05, rp.ENDE[3], rp.ENDE[4])
 
         args = ["ffmpeg", "-y", "-hide_banner", "-loglevel", "error", "-i", str(tmp / "roh.mp4"), "-i", str(voice)]
