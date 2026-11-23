@@ -1,0 +1,30 @@
+{
+  "titel": "BWS-Routine: Steif ist nicht kaputt",
+  "ausgabe": "../reels/56-bws-routine-zuhause-v5.mp4",
+  "uebung": true,
+  "look": false,
+  "skript": {
+    "hook": "Steif ist nicht kaputt. Probier mal diese 6 Übungen.",
+    "aufbau": "6 Übungen für die Brustwirbelsäule (Katze-Kuh, Vierfüßler-Rotation, Kobra-Liegestütz, Rotation an der Wand, kniende Windmühlen, Aufrichtung).",
+    "payoff": "Komplette Routine für zu Hause zum Mitmachen."
+  },
+  "hook": {
+    "text": "Steif ist nicht kaputt.\n*Probier mal diese 6 Übungen*",
+    "unterzeile": "Brustwirbelsäule · für zu Hause",
+    "dauer": 3.03, "animation": "slam", "punch_in": false,
+    "visuell": "Vierfüßlerstand, Katze-Kuh läuft schon an; alter Titel entfernt, neuer Hook mittig"
+  },
+  "segmente": [
+    {"quelle": "../roh/original.mp4", "start": 0.0, "ende": 39.3, "ton": true,
+     "filter": "delogo=x=130:y=400:w=830:h=150:enable='lt(t,3.04)'"}
+  ],
+  "untertitel": false,
+  "aussagen": [
+    {"text": "Ein Steifigkeitsgefühl im oberen Rücken bedeutet nicht, dass etwas kaputt ist; Schmerz/Beschwerden und Gewebeschaden sind nicht gleichzusetzen.",
+     "quelle": "Raja SN et al. The revised IASP definition of pain. Pain 2020;161(9):1976–1982; Slater D et al. 'Sit Up Straight': Time to Re-evaluate. JOSPT 2019;49(8):562–564",
+     "status": "konsens"}
+  ],
+  "caption": "Oberer Rücken fühlt sich steif an? Steif heißt nicht kaputt. Oft hilft schon regelmäßige Bewegung.\n\n6 Übungen für deine Brustwirbelsäule, die du zu Hause ausprobieren kannst, ganz ohne Equipment.\n\nWenn etwas wehtut, nicht tiefer in die Bewegung gehen.\n\nSpeicher dir die Routine für deine nächste Sitzpause.",
+  "hashtags": ["#brustwirbelsäule", "#mobility", "#rückenschmerzen", "#physiotherapie", "#homeworkout"],
+  "hinweise": ["Nur der Anfang wurde geändert: alter Titel entfernt (delogo), neuer Hook im Markenstil. Rest des Videos unverändert, Ton original."]
+}

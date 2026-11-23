@@ -440,9 +440,9 @@ def ass_schreiben(spec, spec_dir, pfad, dauer):
         hg = passende_groesse(zeilen_hook, gr["hook"], W - 2 * BRAND["layout"]["rand"], fett=True)
         hoehe = len(zeilen_hook) * hg * 0.86 + (gr["hook_unterzeile"] * 1.1 if hook.get("unterzeile") else 0)
         y0 = BRAND["layout"]["hook_y"] - hoehe / 2
-        y = zeilen_block(0, hd, "Hook", hook["text"], W // 2, y0, 8, hg, anim + f"\\fs{hg}", layer=5)
+        y = zeilen_block(0, hd, "Hook", hook["text"], W // 2, y0, 8, hg, anim + f"\\fs{hg}\\q2", layer=5)  # q2: nie umbrechen
         if hook.get("unterzeile"):
-            zeilen_block(0, hd, "HookUnter", hook["unterzeile"], W // 2, y + 28, 8, gr["hook_unterzeile"], anim, layer=5)
+            zeilen_block(0, hd, "HookUnter", hook["unterzeile"], W // 2, y + 28, 8, gr["hook_unterzeile"], anim + "\\q2", layer=5)
 
     # --- Fakten (Aufbau) mittig oben, Quelle klein darunter
     for e in spec.get("einblendungen", []):
