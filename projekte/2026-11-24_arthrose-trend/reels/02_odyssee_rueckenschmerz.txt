@@ -1,0 +1,33 @@
+# 02_odyssee_rueckenschmerz  (25.0 s)
+
+## Caption (zum Posten)
+Was nachweislich am meisten hilft bei Rückenschmerzen? Aktiv bleiben und sich schrittweise wieder mehr zutrauen. Bewegungstherapie und Krafttraining gehören laut Leitlinien zur Basis, dazu verstehen, was hinter dem Schmerz steckt.
+
+Gut zu wissen: Ein MRT ist nur bei Warnzeichen nötig, Bandscheibenvorwölbungen haben auch viele Menschen ohne Schmerzen. Und die eine richtige Haltung gibt es nicht.
+
+Jeder Rücken ist individuell, lass dich gut untersuchen.
+
+Speicher dir das Reel und schick es jemandem, der gerade diese Odyssee durchmacht.
+
+#rückenschmerzen #bandscheibenvorfall #physiotherapie #schmerztherapie #krafttraining
+
+## Hooks
+- Audio-Hook: kein Soundeffekt, Trend-Sound in Instagram darunterlegen
+- Visueller Hook: Durchgehende Trainingsszene wie in der Vorlage, Text mittig
+- Text-Hook: Monat 1: Dein Rücken tut weh. „Schonen Sie sich, viel liegen.“
+
+## Skript
+- Hook: Monat 1: Dein Rücken tut weh. „Schonen Sie sich, viel liegen.“
+- Aufbau: Patienten-Odyssee über 18 Monate, nichts hilft nachhaltig.
+- Payoff: Was nachweislich hilft, steht in der Caption.
+
+## Aussagen & Quellen
+- "Bei Rückenschmerzen aktiv bleiben statt Bettruhe." -> NVL Nicht-spezifischer Kreuzschmerz 2017; NICE NG59 [konsens]
+- "Bildgebung nur bei Warnzeichen; Befunde wie Bandscheibenvorwölbungen sind auch bei Schmerzfreien häufig." -> NVL Kreuzschmerz 2017; Brinjikji W et al. AJNR 2015 [belegt]
+- "Stützgürtel werden bei Rückenschmerz nicht empfohlen." -> NICE NG59, Empfehlung 1.2.3 [belegt]
+- "Für eine 'richtige' Haltung gibt es keine starke Evidenz." -> Slater D et al. JOSPT 2019 [belegt]
+- "Bewegungstherapie und Krafttraining sind bei chronischem Rückenschmerz wirksam." -> Hayden JA et al. Cochrane 2021; Owen PJ et al. BJSM 2020 [belegt]
+
+## Hinweise fuer Andre
+- Format nach Trend-Vorlage ('Patienten-Odyssee'), Sound aus der Vorlage übernommen. Besser in Instagram über 'Audio verwenden' den Original-Sound nehmen.
+- Die Stationen sind bewusst überzeichnete Beispiele, keine Kritik an einzelnen Berufsgruppen.

@@ -1,0 +1,31 @@
+# 01_odyssee_kniearthrose  (25.0 s)
+
+## Caption (zum Posten)
+Was nachweislich am meisten hilft bei Kniearthrose? Bewegung. Gezieltes Krafttraining und Ausdauer sind laut Leitlinie die Kernbehandlung, dazu Wissen über die Erkrankung und, wenn nötig, Gewichtsmanagement.
+
+Gut zu wissen: Für die Diagnose braucht es meist kein Röntgen oder MRT, und wie das Bild aussieht, sagt wenig darüber, wie gut es dir gehen kann. Hyaluron-Spritzen empfiehlt die Leitlinie nicht.
+
+Jeder Verlauf ist individuell, und manchmal ist auch eine OP sinnvoll. Aber Bewegung gehört immer dazu.
+
+Speicher dir das Reel und schick es jemandem mit Knieschmerzen.
+
+#kniearthrose #arthrose #knieschmerzen #physiotherapie #krafttraining
+
+## Hooks
+- Audio-Hook: kein Soundeffekt, Trend-Sound in Instagram darunterlegen
+- Visueller Hook: Durchgehende Trainingsszene wie in der Vorlage, Text mittig
+- Text-Hook: Monat 1: Dein Knie tut weh. Röntgen: „Arthrose. Schonen Sie sich.“
+
+## Skript
+- Hook: Monat 1: Dein Knie tut weh. Röntgen: „Arthrose. Schonen Sie sich.“
+- Aufbau: Patienten-Odyssee über 18 Monate, nichts hilft nachhaltig.
+- Payoff: Was nachweislich hilft, steht in der Caption.
+
+## Aussagen & Quellen
+- "Bei Arthrose sind Bewegungstherapie (Kraft, Ausdauer) und ggf. Gewichtsmanagement die Kernbehandlung." -> NICE NG226 Osteoarthritis in over 16s (2022), Empfehlungen 1.4 [konsens]
+- "Arthrose wird ab 45 bei belastungsabhängigem Schmerz klinisch diagnostiziert, ohne Routine-Bildgebung." -> NICE NG226 (2022), Empfehlung 1.1 [konsens]
+- "Hyaluron-Spritzen werden bei Arthrose nicht empfohlen." -> NICE NG226 (2022): 'Do not offer intra-articular hyaluronan injections to manage osteoarthritis' [belegt]
+
+## Hinweise fuer Andre
+- Format nach Trend-Vorlage ('Patienten-Odyssee'), Sound aus der Vorlage übernommen. Besser in Instagram über 'Audio verwenden' den Original-Sound nehmen.
+- Die Stationen sind bewusst überzeichnete Beispiele, keine Kritik an einzelnen Berufsgruppen.

@@ -1,0 +1,155 @@
+{
+  "titel": "01_odyssee_kniearthrose",
+  "ausgabe": "../reels/01_odyssee_kniearthrose.mp4",
+  "uebung": false,
+  "keine_aussagen": false,
+  "skript": {
+    "hook": "Monat 1: Dein Knie tut weh. Röntgen: „Arthrose. Schonen Sie sich.“",
+    "aufbau": "Patienten-Odyssee über 18 Monate, nichts hilft nachhaltig.",
+    "payoff": "Was nachweislich hilft, steht in der Caption."
+  },
+  "hook": {
+    "stil": "trend",
+    "text": "Monat 1:\nDein Knie tut weh. Röntgen:\n„Arthrose. Schonen Sie sich.“",
+    "start": 0.0,
+    "dauer": 2.8,
+    "y": 860,
+    "groesse": 48,
+    "punch_in": false,
+    "visuell": "Durchgehende Trainingsszene wie in der Vorlage, Text mittig"
+  },
+  "segmente": [
+    {
+      "quelle": "../../2026-11-11_knie-trend/roh/IMG_4123.mov",
+      "start": 0.0,
+      "ende": 10.8,
+      "ton": false,
+      "filter": "eq=brightness=-0.09:saturation=0.85:contrast=1.05"
+    },
+    {
+      "quelle": "../../2026-11-11_knie-trend/roh/IMG_4119.mov",
+      "start": 0.0,
+      "ende": 7.93,
+      "ton": false,
+      "filter": "eq=brightness=-0.09:saturation=0.85:contrast=1.05"
+    },
+    {
+      "quelle": "../../2026-11-11_knie-trend/roh/IMG_4120.mov",
+      "start": 0.0,
+      "ende": 5.6,
+      "ton": false,
+      "geschwindigkeit": 0.89,
+      "filter": "eq=brightness=-0.09:saturation=0.85:contrast=1.05"
+    }
+  ],
+  "untertitel": false,
+  "einblendungen": [
+    {
+      "stil": "trend",
+      "text": "Monat 3:\nHyaluron-Spritzen.\nDrei Stück, selbst bezahlt.",
+      "x": 540,
+      "y": 860,
+      "groesse": 48,
+      "start": 2.8,
+      "ende": 5.6,
+      "ein_ms": 0
+    },
+    {
+      "stil": "trend",
+      "text": "Monat 5:\nBandage, Einlagen\nund lieber keinen Sport mehr.",
+      "x": 540,
+      "y": 860,
+      "groesse": 48,
+      "start": 5.6,
+      "ende": 8.6,
+      "ein_ms": 0
+    },
+    {
+      "stil": "trend",
+      "text": "Monat 8:\nMRT. „Der Knorpel ist dünn,\ndas wird nicht mehr besser.“",
+      "x": 540,
+      "y": 860,
+      "groesse": 48,
+      "start": 8.6,
+      "ende": 11.6,
+      "ein_ms": 0
+    },
+    {
+      "stil": "trend",
+      "text": "Monat 12:\nSchmerzmittel jeden Tag.\nDas erste Gespräch über ein neues Knie.",
+      "x": 540,
+      "y": 860,
+      "groesse": 48,
+      "start": 11.6,
+      "ende": 14.6,
+      "ein_ms": 0
+    },
+    {
+      "stil": "trend",
+      "text": "Nach anderthalb Jahren tut dein Knie\ngenauso weh wie am ersten Tag.",
+      "x": 540,
+      "y": 860,
+      "groesse": 48,
+      "start": 14.6,
+      "ende": 18.1,
+      "ein_ms": 0
+    },
+    {
+      "stil": "trend",
+      "text": "Weil in dieser Zeit niemand das gemacht hat,\nwas nachweislich am besten hilft\nund in der Caption steht…",
+      "x": 540,
+      "y": 860,
+      "groesse": 48,
+      "start": 18.1,
+      "ende": 25.0,
+      "ein_ms": 0
+    }
+  ],
+  "sounds": [
+    {
+      "name": "../roh/vorlage_sound.wav",
+      "zeit": 0,
+      "lautstaerke": 1.0
+    }
+  ],
+  "aussagen": [
+    {
+      "text": "Bei Arthrose sind Bewegungstherapie (Kraft, Ausdauer) und ggf. Gewichtsmanagement die Kernbehandlung.",
+      "quelle": "NICE NG226 Osteoarthritis in over 16s (2022), Empfehlungen 1.4",
+      "status": "konsens"
+    },
+    {
+      "text": "Arthrose wird ab 45 bei belastungsabhängigem Schmerz klinisch diagnostiziert, ohne Routine-Bildgebung.",
+      "quelle": "NICE NG226 (2022), Empfehlung 1.1",
+      "status": "konsens"
+    },
+    {
+      "text": "Hyaluron-Spritzen werden bei Arthrose nicht empfohlen.",
+      "quelle": "NICE NG226 (2022): 'Do not offer intra-articular hyaluronan injections to manage osteoarthritis'",
+      "status": "belegt"
+    }
+  ],
+  "caption": "Was nachweislich am meisten hilft bei Kniearthrose? Bewegung. Gezieltes Krafttraining und Ausdauer sind laut Leitlinie die Kernbehandlung, dazu Wissen über die Erkrankung und, wenn nötig, Gewichtsmanagement.\n\nGut zu wissen: Für die Diagnose braucht es meist kein Röntgen oder MRT, und wie das Bild aussieht, sagt wenig darüber, wie gut es dir gehen kann. Hyaluron-Spritzen empfiehlt die Leitlinie nicht.\n\nJeder Verlauf ist individuell, und manchmal ist auch eine OP sinnvoll. Aber Bewegung gehört immer dazu.\n\nSpeicher dir das Reel und schick es jemandem mit Knieschmerzen.",
+  "hashtags": [
+    "#kniearthrose",
+    "#arthrose",
+    "#knieschmerzen",
+    "#physiotherapie",
+    "#krafttraining"
+  ],
+  "hinweise": [
+    "Format nach Trend-Vorlage ('Patienten-Odyssee'), Sound aus der Vorlage übernommen. Besser in Instagram über 'Audio verwenden' den Original-Sound nehmen.",
+    "Die Stationen sind bewusst überzeichnete Beispiele, keine Kritik an einzelnen Berufsgruppen."
+  ],
+  "bilder": [
+    {
+      "datei": "../grafiken/textband.png",
+      "start": 0.0,
+      "ende": 25.0,
+      "x": 0,
+      "y": 640,
+      "breite": 1080,
+      "ein": 0.01
+    }
+  ]
+}
